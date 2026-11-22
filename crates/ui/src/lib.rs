@@ -7,6 +7,15 @@ use iced::widget::{button, column, container, row, text, text_input, Column};
 use iced::{Background, Color, Element, Length};
 use unicode_normalization::UnicodeNormalization;
 
+pub mod shell;
+pub use shell::{
+    activity_rail, bottom_panel, center_width, clamp_panel_height, context_bar,
+    panel_height_from_cursor, shell, split_area_height, split_heights, tab_bar, Panel, Region,
+    ShellMessage, ShellParts, ShellState, ACTIVITY_RAIL_WIDTH, BOTTOM_PANEL_DEFAULT_HEIGHT,
+    BOTTOM_PANEL_MIN_HEIGHT, CONTEXT_BAR_WIDTH, HEADER_HEIGHT, MIN_WORKSPACE_HEIGHT,
+    REGION_BUTTON_HEIGHT, SPLITTER_THICKNESS, TAB_BAR_HEIGHT,
+};
+
 pub const SPACE_XS: f32 = 4.0;
 pub const SPACE_SM: f32 = 8.0;
 pub const SPACE_MD: f32 = 12.0;
@@ -121,7 +130,9 @@ pub fn filter_commands<'a>(query: &str, items: &'a [CommandItem]) -> Vec<&'a Com
         .collect()
 }
 
-fn panel_style(tokens: Tokens) -> impl Fn(&iced::Theme) -> iced::widget::container::Style {
+/// Shared panel style. Exposed so the shell module uses exactly the same
+/// token-derived colors as the Phase 1 widgets.
+pub fn panel_style(tokens: Tokens) -> impl Fn(&iced::Theme) -> iced::widget::container::Style {
     move |_| iced::widget::container::Style {
         background: Some(Background::Color(tokens.surface)),
         text_color: Some(tokens.text),
