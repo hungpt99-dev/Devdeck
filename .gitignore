@@ -1,0 +1,6 @@
+/target/
+/target-*/
+/out/
+*.log
+.DS_Store
+.spikes-target/

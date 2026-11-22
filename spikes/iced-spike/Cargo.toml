@@ -1,0 +1,13 @@
+[package]
+name = "iced-spike"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+iced = { version = "=0.14.0", features = ["canvas", "tokio"] }
+
+[profile.dev]
+opt-level = 1
+
+[workspace]

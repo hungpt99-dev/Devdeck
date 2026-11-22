@@ -1,0 +1,18 @@
+[package]
+name = "devdeck-i18n"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+repository.workspace = true
+
+[dependencies]
+fluent = { workspace = true }
+unic-langid = { workspace = true }
+icu = { workspace = true }
+sys-locale = { workspace = true }
+thiserror = { workspace = true }
+
+[build-dependencies]
+fluent-syntax = { workspace = true }

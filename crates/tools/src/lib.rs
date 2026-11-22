@@ -1,0 +1,234 @@
+//! Typed tool schema layer — the single source of truth for every Devdeck
+//! capability. UI, CLI, MCP server and agents all consume these definitions.
+#![forbid(unsafe_code)]
+
+use std::collections::BTreeMap;
+
+use schemars::JsonSchema;
+use serde::{Deserialize, Serialize};
+use serde_json::{json, Value};
+use thiserror::Error;
+
+/// Default policy applied when a tool is called. Workspace policies can raise
+/// this (never lower it for high-risk tools).
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+#[serde(rename_all = "snake_case")]
+pub enum PermissionLevel {
+    Allow,
+    Ask,
+    Deny,
+}
+
+/// Blast radius of a tool call. Drives approval prompts and audit retention.
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Serialize, Deserialize, JsonSchema,
+)]
+#[serde(rename_all = "snake_case")]
+pub enum RiskLevel {
+    Low,
+    Medium,
+    High,
+    Critical,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+#[serde(rename_all = "snake_case", tag = "kind", content = "id")]
+pub enum ToolSource {
+    BuiltIn,
+    Extension { extension_id: String },
+}
+
+/// Canonical, language-neutral tool definition. Names and descriptions are
+/// stable English strings; localized display text lives in `devdeck_i18n`.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub struct ToolDefinition {
+    pub name: String,
+    pub description: String,
+    pub input_schema: Value,
+    pub output_schema: Value,
+    pub permission: PermissionLevel,
+    pub risk: RiskLevel,
+    pub source: ToolSource,
+    pub version: String,
+    pub keybinding: Option<String>,
+    pub command_palette_key: String,
+    pub cli_subcommand: Option<String>,
+    pub mcp_exposed: bool,
+    pub activation_events: Vec<String>,
+}
+
+impl ToolDefinition {
+    pub fn new(
+        name: impl Into<String>,
+        description: impl Into<String>,
+        input_schema: Value,
+        permission: PermissionLevel,
+        risk: RiskLevel,
+        source: ToolSource,
+    ) -> Self {
+        Self {
+            name: name.into(),
+            description: description.into(),
+            input_schema,
+            output_schema: json!({ "type": "object" }),
+            permission,
+            risk,
+            source,
+            version: "1.0.0".into(),
+            keybinding: None,
+            command_palette_key: String::new(),
+            cli_subcommand: None,
+            mcp_exposed: true,
+            activation_events: Vec::new(),
+        }
+    }
+}
+
+#[derive(Debug, Error, PartialEq, Eq)]
+pub enum RegistryError {
+    #[error("tool name '{0}' is invalid: expected 'namespace.name' in lowercase")]
+    InvalidName(String),
+    #[error("tool '{0}' is already registered")]
+    Duplicate(String),
+    #[error("tool '{0}' was not found")]
+    NotFound(String),
+}
+
+/// Every capability — built-in or extension-provided — is registered here.
+#[derive(Debug, Default)]
+pub struct ToolRegistry {
+    tools: BTreeMap<String, ToolDefinition>,
+}
+
+impl ToolRegistry {
+    pub fn new() -> Self {
+        Self::default()
+    }
+
+    pub fn register(&mut self, tool: ToolDefinition) -> Result<(), RegistryError> {
+        let parts: Vec<&str> = tool.name.split('.').collect();
+        if parts.len() < 2
+            || parts.iter().any(|p| p.is_empty())
+            || tool
+                .name
+                .chars()
+                .any(|c| c.is_uppercase() || c.is_whitespace())
+        {
+            return Err(RegistryError::InvalidName(tool.name.clone()));
+        }
+        if self.tools.contains_key(&tool.name) {
+            return Err(RegistryError::Duplicate(tool.name.clone()));
+        }
+        self.tools.insert(tool.name.clone(), tool);
+        Ok(())
+    }
+
+    pub fn get(&self, name: &str) -> Option<&ToolDefinition> {
+        self.tools.get(name)
+    }
+
+    pub fn list(&self) -> impl Iterator<Item = &ToolDefinition> {
+        self.tools.values()
+    }
+
+    pub fn len(&self) -> usize {
+        self.tools.len()
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.tools.is_empty()
+    }
+
+    /// Stable JSON representation for MCP `tools/list` and `devdeck --json`.
+    pub fn to_mcp_json(&self) -> Value {
+        Value::Array(
+            self.tools
+                .values()
+                .map(|t| {
+                    json!({
+                        "name": t.name,
+                        "description": t.description,
+                        "inputSchema": t.input_schema,
+                        "outputSchema": t.output_schema,
+                        "annotations": {
+                            "permission": t.permission,
+                            "risk": t.risk,
+                            "source": t.source,
+                        }
+                    })
+                })
+                .collect(),
+        )
+    }
+}
+
+/// Input of the first typed tool (Phase 1 acceptance criterion).
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ReadFileInput {
+    /// Path relative to the active workspace root.
+    pub path: String,
+    /// Refuse files larger than this many bytes; protects the UI thread.
+    #[serde(default)]
+    pub max_bytes: Option<u64>,
+}
+
+/// Build the canonical `files.read` tool definition, deriving its JSON Schema
+/// from the typed input rather than hand-writing it.
+pub fn files_read_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "files.read",
+        "Read a UTF-8 text file inside the active workspace.",
+        serde_json::to_value(schemars::schema_for!(ReadFileInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Low,
+        ToolSource::BuiltIn,
+    );
+    tool.command_palette_key = "tool-files-read".into();
+    tool.keybinding = Some("ctrl+o".into());
+    tool.cli_subcommand = Some("read".into());
+    tool.activation_events = vec!["workspace.opened".into()];
+    tool
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn typed_tool_schema_is_generated() {
+        let tool = files_read_tool();
+        let schema = tool.input_schema.clone();
+        assert_eq!(schema["type"], "object");
+        assert_eq!(schema["properties"]["path"]["type"], "string");
+        assert_eq!(tool.name, "files.read");
+        assert_eq!(tool.permission, PermissionLevel::Allow);
+        assert_eq!(tool.risk, RiskLevel::Low);
+    }
+
+    #[test]
+    fn registry_rejects_bad_and_duplicate_names() {
+        let mut registry = ToolRegistry::new();
+        registry.register(files_read_tool()).unwrap();
+        assert!(matches!(
+            registry.register(files_read_tool()),
+            Err(RegistryError::Duplicate(_))
+        ));
+        let mut bad = files_read_tool();
+        bad.name = "no_namespace".into();
+        assert!(matches!(
+            registry.register(bad),
+            Err(RegistryError::InvalidName(_))
+        ));
+        assert_eq!(registry.len(), 1);
+    }
+
+    #[test]
+    fn mcp_export_contains_annotations() {
+        let mut registry = ToolRegistry::new();
+        registry.register(files_read_tool()).unwrap();
+        let json = registry.to_mcp_json();
+        assert_eq!(json[0]["name"], "files.read");
+        assert_eq!(json[0]["annotations"]["risk"], "low");
+    }
+}

@@ -1,0 +1,10 @@
+[package]
+name = "devdeck-xtask"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+repository.workspace = true
+
+[dependencies]

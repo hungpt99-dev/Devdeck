@@ -1,0 +1,17 @@
+[package]
+name = "devdeck-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+repository.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+devdeck-tools = { workspace = true }
+devdeck-audit = { workspace = true }
+devdeck-extension-api = { workspace = true }
