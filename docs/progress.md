@@ -20,7 +20,7 @@ Last updated: 2026-11-22. Status-first summary: **Phase 0 and the Phase 1 slice 
 | Iced spike `cargo test` | PASS 2/2; Xvfb window mapped |
 | GPUI spike `cargo build --example hello_world` | FAIL — `xattr v0.2.3` vs libc `ENOATTR` on linux-gnu; full spike not completed |
 
-`cargo deny check`: PASS (advisories ok, bans ok, licenses ok, sources ok; exit 0) after adding BSL-1.0 for `clipboard-win` and exact-pinning direct dependencies. The 3-OS build runs only in GitHub Actions and has NOT been verified locally.
+`cargo deny check`: PASS (advisories ok, bans ok, licenses ok, sources ok; exit 0) after adding BSL-1.0 for `clipboard-win` and exact-pinning direct dependencies. Hosted CI run [45012466036](https://github.com/hungpt99-dev/Devdeck/actions/runs/45012466036) on commit `4e31d13` is GREEN: quality (fmt/clippy/tests/i18n/deny), dependency audit, and release builds on ubuntu-latest, macos-latest and windows-latest all passed. The earlier run 45012219795 had only the audit job fail because `rustsec/audit-check@v2` treated the six advisory warnings as fatal and lacked check-run permission; CI now runs `cargo audit` directly so warnings stay visible without hiding advisories.
 
 ## What works
 
@@ -48,4 +48,4 @@ Last updated: 2026-11-22. Status-first summary: **Phase 0 and the Phase 1 slice 
 
 ## Next action
 
-Verify the 3-OS CI build on GitHub, commit and push Phase 0/1, then start Phase 2: terminal (portable-pty + alacritty_terminal), task runner and extension-host MVP loading a WASM command/tool with permission enforcement and crash isolation.
+Hosted CI is green. Next: start Phase 2: terminal (portable-pty + alacritty_terminal), task runner and extension-host MVP loading a WASM command/tool with permission enforcement and crash isolation.
