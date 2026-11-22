@@ -825,6 +825,7 @@ dependencies = [
  "serde_json",
  "thiserror 2.0.21",
  "tokio",
+ "toml",
 ]
 
 [[package]]
@@ -912,6 +913,17 @@ version = "0.1.0"
 [[package]]
 name = "devdeck-taskrunner"
 version = "0.1.0"
+dependencies = [
+ "devdeck-audit",
+ "devdeck-core",
+ "devdeck-i18n",
+ "devdeck-terminal",
+ "devdeck-tools",
+ "serde",
+ "thiserror 2.0.21",
+ "tokio",
+ "toml",
+]
 
 [[package]]
 name = "devdeck-terminal"

@@ -8,7 +8,7 @@ use std::io::{Read, Write};
 use std::path::Path;
 use std::thread::{self, JoinHandle};
 
-use portable_pty::{native_pty_system, Child, CommandBuilder, MasterPty, PtySize};
+use portable_pty::{native_pty_system, Child, CommandBuilder, ExitStatus, MasterPty, PtySize};
 use tokio::sync::mpsc::{self, Receiver, Sender};
 
 use crate::TerminalSettings;
@@ -169,6 +169,18 @@ impl Session {
             events += 1;
         }
         result
+    }
+
+    /// Non-blocking child status. `None` means the process is still running.
+    /// Callers must keep draining output while polling so a chatty child
+    /// cannot block on a full event channel.
+    pub fn try_wait(&mut self) -> Result<Option<ExitStatus>, SessionError> {
+        let Some(child) = self.child.as_mut() else {
+            return Ok(None);
+        };
+        child
+            .try_wait()
+            .map_err(|error| SessionError::Io(error.to_string()))
     }
 
     pub fn write(&mut self, bytes: &[u8]) -> Result<(), SessionError> {
