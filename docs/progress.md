@@ -85,6 +85,26 @@ Explicitly out of scope for Phase 2 Foundation: WASM extension host, LSP/DAP, mi
 
 Budget discipline: Tech Lead 2500 cents (0 spent), Developer 3000 (200 spent, 4 children), Art Director 1500 (0 spent, 3 children), QA 2000 (0 spent, reviewer only). All assigned agents are idle and under budget; no new agents were created (four hire approvals remain pending with the founder).
 
+## IND-212 — six-region native shell (verified 2026-11-22)
+
+Implemented in `crates/ui/src/shell.rs` and wired into `app/src/main.rs`. The shell renders header, 48 px activity rail, 200 px primary sidebar, tabbed center, optional 240 px context bar, collapsible 240 px bottom panel with Terminal/Problems/Output/Logs tabs, and the 28 px status bar. All colors come from `Tokens`; every label is resolved through `devdeck_i18n` (46 en/vi keys, lint passing). No webview and no new dependencies.
+
+| Gate | Result |
+| --- | --- |
+| `cargo fmt --all -- --check` | PASS (exit 0) |
+| `cargo clippy --workspace --all-targets -- -D warnings` | PASS (exit 0) |
+| `cargo test --workspace` | PASS — 33 tests, 0 failed (12 new shell geometry/state tests; UI crate 14 total) |
+| `cargo run -p devdeck-xtask -- i18n-lint` | PASS — en/vi parity OK (46 keys) |
+| `cargo deny check` | PASS — advisories ok, bans ok, licenses ok, sources ok (exit 0) |
+| Xvfb smoke | Window `Devdeck` mapped at 1200x800 (origin 0,0), screenshots captured with `import -window` |
+| Keyboard/mouse interaction | Ctrl+K, Escape, Ctrl+J, Ctrl+`, Ctrl+Shift+B, F6/Shift+F6 and splitter mouse drag all produced the expected pixel diffs |
+
+Real screenshots: `docs/screenshots/phase2-shell-dark.png`, `phase2-shell-light.png`, `phase2-shell-contrast.png`, `phase2-shell-vi.png`. Screenshot inspection note with measured region boundaries, theme diffs and interaction evidence: `docs/screenshots/phase2-shell-inspection.md`.
+
+Also fixed at boot: the persisted locale from `config.json` is now applied to the translator (previously the host locale won), so the vi screenshot genuinely shows Vietnamese and startup matches runtime switching.
+
+Hosted CI could not be triggered from this run: `gh auth status` reports no logged-in GitHub host. The five local gates above are the same checks the quality job runs; hosted 3-OS CI is still required before the child is closed. No design-review gate was invented for this child; QA remains the reviewer.
+
 ## IND-213 terminal engine (2026-11-22)
 
 Implemented in `crates/terminal` on a dedicated branch from `main`: real PTY sessions (`portable-pty 0.9.0`), vte 0.15.0 grid with `rows + scrollback_lines` cap, bounded/coalesced tokio events, one shared redactor in `devdeck-audit`, and typed `terminal.spawn/write/resize/close` tools. `terminal.spawn` calls `devdeck_core::PermissionPolicy::decide`; dangerous commands return a decision and never auto-execute. Tests cover grid parsing/cap, redaction, policy decisions, localized missing-cwd errors, PTY lifecycle, idempotent resize/close and zero planted tokens in audit. en/vi bundles updated; no UI, task runner or approval dialog. Status: in review — founder human review (Security Lead not yet approved) and QA verdict still required; not done.
