@@ -13,6 +13,7 @@ rust-version = "1.100"
 [workspace.dependencies]
 devdeck-core = { version = "0.1.0", path = "crates/core" }
 devdeck-tools = { version = "0.1.0", path = "crates/tools" }
+devdeck-toolchain = { version = "0.1.0", path = "crates/toolchain" }
 devdeck-ui = { version = "0.1.0", path = "crates/ui" }
 devdeck-i18n = { version = "0.1.0", path = "crates/i18n" }
 devdeck-extension-api = { version = "0.1.0", path = "crates/extension-api" }

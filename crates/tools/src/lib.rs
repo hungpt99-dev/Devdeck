@@ -4,6 +4,7 @@
 
 use std::collections::BTreeMap;
 
+use devdeck_toolchain::{DetectedTool, ToolId};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 use serde_json::{json, Value};
@@ -191,6 +192,71 @@ pub fn files_read_tool() -> ToolDefinition {
     tool
 }
 
+/// Input of `tools.detect`: one tool from the fixed allow-list. Callers
+/// cannot name an arbitrary executable, so this tool cannot probe or reveal
+/// unrelated host binaries.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct ToolsDetectInput {
+    pub tool: ToolId,
+}
+
+/// Output of `tools.detect`: a typed status with a sanitized version or a
+/// closed-set failure reason. Never contains raw stderr, paths or env data.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct ToolsDetectOutput {
+    pub result: DetectedTool,
+}
+
+/// Input of `tools.list_detected`. Empty by design: detection is read-only and
+/// takes no caller-supplied path or command.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default, Serialize, Deserialize, JsonSchema)]
+pub struct ListDetectedInput {}
+
+/// Output of `tools.list_detected`, sorted by canonical `ToolId` order.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct ListDetectedOutput {
+    pub tools: Vec<DetectedTool>,
+}
+
+/// Canonical read-only `tools.detect` tool. Detection is executed by
+/// `devdeck_toolchain::Detector`; this definition is only the typed boundary.
+pub fn tools_detect_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "tools.detect",
+        "Check whether a known developer tool is installed on this host, read-only.",
+        serde_json::to_value(schemars::schema_for!(ToolsDetectInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Low,
+        ToolSource::BuiltIn,
+    );
+    tool.output_schema = serde_json::to_value(schemars::schema_for!(ToolsDetectOutput))
+        .expect("JSON Schema serialization cannot fail");
+    tool.command_palette_key = "tool-tools-detect".into();
+    tool.cli_subcommand = Some("detect".into());
+    tool.activation_events = vec!["workspace.opened".into()];
+    tool
+}
+
+/// Canonical read-only `tools.list_detected` tool for the Tool Center and MCP.
+pub fn tools_list_detected_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "tools.list_detected",
+        "List known developer tools with their read-only detection status.",
+        serde_json::to_value(schemars::schema_for!(ListDetectedInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Low,
+        ToolSource::BuiltIn,
+    );
+    tool.output_schema = serde_json::to_value(schemars::schema_for!(ListDetectedOutput))
+        .expect("JSON Schema serialization cannot fail");
+    tool.command_palette_key = "tool-tools-list-detected".into();
+    tool.cli_subcommand = Some("tools".into());
+    tool.activation_events = vec!["workspace.opened".into()];
+    tool
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -229,6 +295,48 @@ mod tests {
         registry.register(files_read_tool()).unwrap();
         let json = registry.to_mcp_json();
         assert_eq!(json[0]["name"], "files.read");
+        assert_eq!(json[0]["annotations"]["risk"], "low");
+    }
+
+    #[test]
+    fn detection_tools_have_generated_schemas_and_register() {
+        let detect = tools_detect_tool();
+        let list = tools_list_detected_tool();
+        assert_eq!(detect.name, "tools.detect");
+        assert_eq!(list.name, "tools.list_detected");
+        assert_eq!(
+            detect.input_schema["properties"]["tool"]["$ref"],
+            "#/$defs/ToolId"
+        );
+        assert_eq!(
+            detect.input_schema["$defs"]["ToolId"]["enum"],
+            json!(["cargo", "git", "go", "mise", "node", "python", "rustc"])
+        );
+        assert_eq!(
+            detect.output_schema["properties"]["result"]["$ref"],
+            "#/$defs/DetectedTool"
+        );
+        let reasons = detect.output_schema["$defs"]["DetectionFailure"]["oneOf"].clone();
+        assert!(reasons.to_string().contains("unparseable_version"));
+        assert_eq!(list.input_schema["type"], "object");
+        assert_eq!(list.output_schema["properties"]["tools"]["type"], "array");
+        assert_eq!(detect.permission, PermissionLevel::Allow);
+        assert_eq!(list.permission, PermissionLevel::Allow);
+        assert_eq!(detect.risk, RiskLevel::Low);
+        assert_eq!(list.risk, RiskLevel::Low);
+        assert!(detect.mcp_exposed && list.mcp_exposed);
+        assert!(!detect.command_palette_key.is_empty());
+        assert!(!list.command_palette_key.is_empty());
+        let serialized = serde_json::to_string(&detect.output_schema).expect("serializable");
+        assert!(!serialized.contains("\"stderr\""));
+        assert!(!serialized.contains("\"command\""));
+        let mut registry = ToolRegistry::new();
+        registry.register(detect).unwrap();
+        registry.register(list).unwrap();
+        assert_eq!(registry.len(), 2);
+        let json = registry.to_mcp_json();
+        assert_eq!(json[0]["name"], "tools.detect");
+        assert_eq!(json[1]["name"], "tools.list_detected");
         assert_eq!(json[0]["annotations"]["risk"], "low");
     }
 }

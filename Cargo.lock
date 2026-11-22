@@ -916,11 +916,16 @@ version = "0.1.0"
 [[package]]
 name = "devdeck-toolchain"
 version = "0.1.0"
+dependencies = [
+ "schemars",
+ "serde",
+]
 
 [[package]]
 name = "devdeck-tools"
 version = "0.1.0"
 dependencies = [
+ "devdeck-toolchain",
  "schemars",
  "serde",
  "serde_json",
