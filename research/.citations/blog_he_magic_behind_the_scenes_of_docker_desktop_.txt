@@ -1,0 +1,100 @@
+# The Magic Behind the Scenes of Docker Desktop
+
+ Posted Sep 9, 2021
+
+**November 2024 update: See the**[ **Docker Subscriptions pricing page**](https://www.docker.com/pricing/)** for upgraded Docker plans. Simpler, more value, better development and productivity.**
+
+**Read our [Docker Desktop release collection](https://www.docker.com/blog/tag/docker-desktop-release/) to learn about our latest improvements and innovations.**
+
+—
+
+With all [the changes recently](https://www.docker.com/blog/updating-product-subscriptions/) quite a few people have been talking about Docker Desktop and trying to understand what it actually does on your machine. A few people have asked, “is it just a container UI?”
+
+Great developer tools are magic for new developers and save experienced developers a ton of time. This is what we set out to do with Docker Desktop. Docker Desktop is designed to let you build, share and run containers as easily on Mac and Windows as you do on Linux. Docker handles the tedious and complex setup so you can focus on writing code.
+
+Some of the magic Docker Desktop takes care of for developers includes:
+
+- A secure, optimized Linux VM that runs Linux tools and containers
+- Seamless plumbing into the host OS giving containers access to the filesystem and networking
+- Bundled container tools including Kubernetes, Docker Compose, buildkit, scanning
+- Docker Dashboard for visually managing all your container content
+- A simple one click installer for Mac and Windows
+- Preconfigured sane and secure defaults
+- Automatic incremental updates to keep your system running securely
+
+Let’s dive into some of these in more detail!
+
+![Moby Group 4](https://www.docker.com/app/uploads/2021/09/Moby-Group-4-1110x747.jpeg)
+
+### Start with a single package
+
+Starting from the top, Docker Desktop comes as one single package for Mac or Windows. By this we have a single installer which, in one click, sets up everything you need to use Docker in seconds.
+
+But what is it that Docker Desktop is installing when it does this?
+
+### Built securely and maintained by Docker
+
+At the heart of Docker Desktop we have a lightweight LinuxKit VM that Docker manages for you.
+
+This means we help address tricky issues with annoying customer impacts like the [previous work](https://www.docker.com/blog/addressing-time-drift-in-docker-desktop-for-mac/) on Docker Desktop for Mac. As well as setting up this VM, Docker Desktop will keep this VM up to date for you over time by applying kernel patches or other security fixes as are required. This gives you the peace of mind that you don’t have another machine image you are managing in your estate and instead Docker will look after this for you.This VM is where all of the Linux tools that we include will run and is where in turn all of your Linux containers will run when you are using Docker Engine.
+
+On Windows we run this VM under WSL2 and in doing so are able to give all of your WSL2 distro’s access to Docker, simply by toggling them on in the UI. If you want to learn more about the WSL 2 backend, check out [Introducing the Docker Desktop WSL 2 Backend](https://www.docker.com/blog/new-docker-desktop-wsl2-backend/) On Mac (on Intel and M1 machines) we are currently transitioning away from our previous HyperKit implementation to use Apple’s new Virtualization framework to run this VM.
+
+Docker Desktop also provides you with a graphical interface to manage the settings for this VM, on Mac we provide the tools to change the resources this has access to (CPU, RAM etc) and on Windows we provide the tools to choose which distros can access this. Being in a VM also means we can limit which areas of the file system on your host machine can be accessed by the containers running the VM, this is great for security as it means you know exactly what files anything you are running in containers could possibly have access to and keep this locked down.
+
+### Integrating with the host machine
+
+Just having a VM doesn’t make this magic, as most of you who have used Docker Desktop will have noticed, you don’t need to “go into a VM” to use Docker. Instead this just works as if natively on your local machine. This is achieved through integrations in both networking and the file system into the VM to make this seem like a seamless piece of your local machine.
+
+With networking, Docker Desktop maps your local host ports to those in the VM meaning that you can run a container on say port 80 on the VM and be able to access that from the browser on your local host – being able to see what you are running! Along with this it also uses VPNKit to guarantee networking is seamless, as if each container were running as a native app on the host, even when your IT department has configured a complicated VPN policy or requires the use of network proxies. Docker Desktop automates all of this and provides you a simple UI to make changes as you need.
+
+Along with networking we also have the file system integration, Docker Desktop setups up bind mounts from your host to the VM giving you access to your local files (as you want!) inside the VM. Filesystem change notifications (fsnotify/inotify) work transparently, automatically triggering page reload when source code changes. It also allows you to route back from the container to the host allowing Docker containers to access local services running on the host. If you want to learn more about the file sharing implementation on Mac, check out Dave’s deep dive blog post [Deep Dive Into the New Docker Desktop filesharing Implementation Using FUSE](https://www.docker.com/blog/deep-dive-into-new-docker-desktop-filesharing-implementation/).
+
+### The best container tools included
+
+All of this integration is great into the VM, but without the contents of the VM it won’t provide you with a lot. This is why we install and keep up to date the best Linux container tooling for you inside the VM.
+
+What most people think of as the ‘Docker’ experience is a lot more now than just the Docker Engine, it is a setup including multiple tools that together produce a seamless environment for developers to work with their containers. The heart of this is still the Docker Engine, an OCI compatible container run time included as part of Docker Desktop. Docker Desktop also bundles the Docker CLI to provide access to this and then includes Docker Compose 2.0 as well, allowing developers to work with their favorite multi container manifest format locally.
+
+Docker Desktop also includes buildkit and buildx as part of the Docker CLI, giving developers access to faster builds and empowers developers to build for x86 or ARM from any local machine. Along with this Docker Desktop includes tools for scanning your images for vulnerabilities (docker scan), for working with your content and teams on Docker Hub (hub-tool) and the ability to connect and deploy to AWS ECS and Microsoft Azure ACI straight from the CLI (docker context).
+
+These aren’t the only Linux container tools in Docker Desktop, we appreciate that there is a great community of tools and we are continuing to review which are the best we should also be including as part of the developer experience. The first of these which was introduced was support for Kubernetes (K8s) in Docker Desktop. In one click you can install and set up K8s with a load balancer ready to use with your local image store to run clusters.
+
+### Graphical controls
+
+All of these core components of Docker Desktop come with a simple graphical interface to help you control and manage these settings. Nestled in the menu bar on Mac and system tray on Windows you will find the Docker Desktop whale icon which allows you to jump in and get into settings, control core actions and jump into the Docker Dashboard.
+
+The Docker Dashboard provides you with a simplified UI to manage your core Docker components on Docker Desktop. The Docker Dashboard now supports the management of [Docker images locally and in Docker Hub](https://www.docker.com/blog/the-docker-dashboard-welcomes-hub-and-local-images/), management of[ local running containers](https://www.docker.com/blog/docker-desktop-release-2-2-is-here/) and the ability to manage and explore your [Docker volumes.](https://www.docker.com/blog/improved-volume-management-docker-dev-environments-and-more-in-desktop-3-5/)
+
+### Portable developer tooling
+
+Docker Desktop also includes new features like Dev Environments. With Dev Environments developers can now easily set up repeatable and reproducible development environments by keeping the environment details versioned in their SCM along with their code. Once a developer is working in a Dev Environment, they can share their work-in-progress code and dependencies in one click via Docker Hub. They can then switch between their developer environments or their teammates’ environments, moving between branches to look at work-in-progress changes without moving off their current Git branch. This makes reviewing PRs as simple as opening a new environment.
+
+### Multi-architecture support
+
+Along with all of these tools, Docker Desktop also supports you in using them whatever system architecture you choose. With support for Apple M1 ARM Mac and QEMU included in Docker Desktop, you are able to build and use multi-architecture images (Linux x86, ARM, Windows) on whatever platform you are working on out of the box.
+
+As with all of these components, Docker’s updates keep these all in sync working together and secure with the latest fixes applied automatically for you. This keeps your team in sync, working with the same tools and secure.
+
+And with a Docker subscription, if you have issues getting any of these items to work successfully for your team, you get support to unblock you to keep all of your developers productive.
+
+### Get started
+
+To get started download [Docker Desktop](https://www.docker.com/products/docker-desktop). To learn more about using Docker for your developer workflows check out our [Getting Started guide](https://docs.docker.com/get-started/). We are continuing to build new features for all Desktop users and are keen to hear what you need so let us know on [our roadmap](https://github.com/docker/roadmap)!
+
+**Read our [Docker Desktop release collection](https://www.docker.com/blog/tag/docker-desktop-release/) to learn about our latest improvements and innovations.**
+
+## Related Posts
+
+- [Nov 19, 2026
+  #### Meet the New Docker: Built to Run on Trust
+  Docker launches a new brand built on trust. Learn why Docker is evolving for AI agents, what stays the same, and how to run agents securely with Docker.
+  Read now](https://www.docker.com/blog/meet-the-new-docker-built-to-run-on-trust/)
+- [Trusted Foundation Nov 19, 2026
+  #### Docker patches Java4Shell and the NGINX HTTP/2 with Docker Hardened Images
+  Docker publishes fixed images for both Java4Shell and the NGINX HTTP/2 in the Docker Hardened Images (DHI) catalog.
+  Read now](https://www.docker.com/blog/docker-patches-java4shell-and-the-nginx-http-2-with-docker-hardened-images/)
+- [Nov 18, 2026
+  #### The Trust Layer: Securing Agentic AI with Docker AI Governance
+  Learn how Docker AI Governance secures agentic AI with sandbox policies, MCP tool governance, and audit visibility to support controlled AI agent workflows.
+  Read now](https://www.docker.com/blog/agentic-ai-security-docker-governance/)

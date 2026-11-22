@@ -1,0 +1,24 @@
+# Homebrew/brew
+- Page: GitHub repository
+- URL: https://github.com/Homebrew/brew
+- Description: 🍺 The Package Manager for Everywhere
+- License: BSD-2-Clause license
+- Default branch: main
+- Created: 2016-03-06T05:08:38.000Z
+- Commits: 53,706
+
+...
+
+# 🍺 Homebrew
+See [Homebrew's homepage at `brew.sh`](https://brew.sh/) for installation instructions, what homebrew does, packages, `brew bundle` and more.
+
+...
+
+## 🔐 Security
+Please see [our security policy](https://github.com/Homebrew/.github/blob/HEAD/SECURITY.md) for how to report security issues and what is in scope.
+
+...
+
+## 📜 License
+Code is under the [BSD 2-clause "Simplified" License](https://github.com/Homebrew/brew/blob/main/LICENSE.txt) .
+Documentation is under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) .

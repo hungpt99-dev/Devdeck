@@ -1,0 +1,56 @@
+## October 21, 2025 by Slint Developers
+
+# Slint 1.14 Released [![Blog RSS](https://slint.dev/assets/img/rss.png)](https://slint.dev/feed/blog.rss)
+
+---
+
+We're proud to announce the release of Slint 1.14. Supporting powerful graphics transformations and improving the Python integration.
+
+## Universal Graphical Transforms
+
+Scale and rotate are now a key part of the language and apply to all elements. Previously it was possible to rotate Images and Text, but now any visual item can be transformed. This also makes the language significantly easier to use as you no longer need to think about how you parent items.
+
+Checkout this [demo](https://releases.slint.dev/1.14.0/demos/speedometer/) which highlights these new features.
+
+## Python Integration
+
+We've added [`asyncio`](https://docs.python.org/3/library/asyncio.html) support to Slint for Python, which allows you to write asynchronous code. Slint's own event loop now acts as a running `asyncio.EventLoop` and provides the necessary primitives so that frameworks like `aiohttp` work out of the box. To make the API even more pythonic, you can use `async` even for Slint callbacks. Here's a brief example of Python code that fetches different poem each time:
+
+```
+import slintimport aiohttp
+class AppWindow(slint.loader.app_window.AppWindow):    # Callback automatically connected to `refresh-peom` callback in .Slint. When invoked, it's run as    # a new asyncio Task    @slint.callback    async def refresh_poem(self):        async with aiohttp.ClientSession() as session:            async with session.get("https://poetrydb.org/random") as response:                json = await response.json()                lines = json[0]["lines"]                text = "\n".join(lines)                # Update peom text property from Slint that updates TextEdit                self.poem = text
+async def main():    app = AppWindow()    app.show()    app.refresh_poem()
+slint.run_event_loop(main())
+```
+
+python
+
+The Python integration also now works with Slint's [localization files](https://docs.slint.dev/latest/docs/python/slint.html#init_translations).
+
+## Unified Text Layout
+
+Slint comes with four built-in renderers: FemtoVG, Skia, Qt, and our own Software renderer. When it comes to text, each of these come with their own mechanism of loading fonts and laying out text.
+
+In this release, we've unified everything behind the Fontique and Parley crates from the [Linebender organization](https://linebender.org). This provides a consistent behavior for all users across platforms, improves font selection on Linux, and paves the way for [Rich text](https://github.com/slint-ui/slint/issues/9560) support.
+
+## 🛠️ Other Changes
+
+For a complete list of all changes, check out the full [ChangeLog](https://github.com/slint-ui/slint/blob/master/CHANGELOG.md#1140---2025-10-21).
+
+## 🚀 Getting Started with Slint 1.14
+
+- New to Slint? Start here: [Get Started](https://slint.dev/get-started)
+- Upgrading? Follow the steps on our [GitHub release page](https://github.com/slint-ui/slint/releases)
+- Browse the latest docs at [https://docs.slint.dev](https://docs.slint.dev)
+
+Don’t forget to [star us on GitHub](https://github.com/slint-ui/slint), join our [Mattermost chat](https://chat.slint.dev), and [share your projects](https://madewithslint.com).
+
+## 🌟 Thanks
+
+Big thanks to everyone who contributed code, fixes, or feedback. You help us make Slint better with every release.
+
+[@0x6e](https://github.com/0x6e) [@6he](https://github.com/6he) [@arkus7](https://github.com/arkus7) [@bennysj](https://github.com/bennysj) [@bryce-happel-walton](https://github.com/bryce-happel-walton) [@DataTriny](https://github.com/DataTriny) [@dfaure](https://github.com/dfaure) [@gustavo-hms](https://github.com/gustavo-hms) [@LeonMatthes](https://github.com/LeonMatthes) [@LouisBouch](https://github.com/LouisBouch) [@michalfita](https://github.com/michalfita) [@Montel](https://github.com/Montel) [@MuhAssar](https://github.com/MuhAssar) [@npwoods](https://github.com/npwoods) [@redstrate](https://github.com/redstrate) [@task-jp](https://github.com/task-jp) [@woile](https://github.com/woile)
+
+---
+
+Slint is a Rust-based toolkit for creating reactive and fluent user interfaces across a range of targets, from embedded devices with limited resources to powerful mobile devices and desktop machines. Supporting Android, Windows, Mac, Linux, and bare-metal systems, Slint features an easy-to-learn domain-specific language (DSL) that compiles into native code, optimizing for the target device's capabilities. It facilitates collaboration between designers and developers on shared projects and supports business logic development in Rust, C++, JavaScript, or Python.

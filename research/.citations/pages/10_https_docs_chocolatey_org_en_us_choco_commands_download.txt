@@ -1,0 +1,78 @@
+# Chocolatey Software Docs | Download
+URL: https://docs.chocolatey.org/en-us/choco/commands/download/
+Author: Chocolatey Software
+
+Chocolatey Software Docs | Download
+
+# Download Command (choco download)
+
+### Package Copy / Package Downloader
+
+Chocolatey Licensed Editions only.
+
+Downloads a package from a source and unpacks it.
+
+### Package Internalizer
+
+Chocolatey for Business (C4B) and Managed Service Providers (MSP) only.
+
+Downloads a package from a source, optionally downloading remote resources and recompiling the package to use internal resources. This takes an existing package and makes it available without any internet requirement.
+
+See https://docs.chocolatey.org/en-us/features/package-internalizer
+
+## Usage
+
+```
+choco download <pkg> [<options/switches>] [install_script_variable=value]
+
+```
+
+Install script variables are values that are discovered in the chocolateyInstall.ps1 (or a script it calls). When you find values there maybe don’t get found and replaced or they use a default value and you want to provide a value for them to use instead, you can find them and then provide the value you want to pass instead. For example, in the Firefox package, it uses a default value of ‘en-US’ for `$locale`. If you want to change that, you can add `locale` and a value, which will replace `$locale` in the script, e.g. `choco download firefox --internalize locale=en-GB`.
+
+## Examples
+
+```
+choco download sysinternals
+
+#### [Chocolatey for Business](https://chocolatey.org/compare) / Chocolatey for MSP
+choco download notepadplusplus --internalize
+choco download notepadplusplus.install --internalize --resources-location \\server\share
+choco download notepadplusplus.install --internalize --resources-location http://somewhere/internal --append-useoriginallocation
+choco download KB3033929 --internalize -internalize-all-urls --append-useoriginallocation
+choco download firefox --internalize locale=es-AR
+
+```
+
+## Options and Switches
+
+> :choco-info: NOTE
+> 
+> Options and switches apply to all items passed, so if you are downloading multiple packages, and you use `--version=1.0.0`, it is going to look for and try to download version 1.0.0 of every package passed. So please split out multiple package calls when wanting to pass specific options.
+
+Includes default options/switches (included below for completeness).
+
+```
+ -?, --help, -h
+     Prints out the help menu.
+
+     --online
+     Online - Open help for specified command in default browser application. 
+       This option only works when used in combination with the -?/--help/-h 
+       option.  Available in 2.0.0+
+
+ -d, --debug
+     Debug - Show debug messaging.
+
+ -v, --verbose
+     Verbose - Show verbose messaging. Very verbose messaging, avoid using 
+       under normal circumstances.
+
+     --trace
+     Trace - Show trace messaging. Very, very verbose trace messaging. Avoid 
+       except when needing super low-level .NET Framework debugging.
+
+     --nocolor, --no-color
+     No Color - Do not show colorization in logging output. This overrides 
+       the feature 'logWithoutColor', set to 'False'.
+
+     --acceptlicense, --accept-licen

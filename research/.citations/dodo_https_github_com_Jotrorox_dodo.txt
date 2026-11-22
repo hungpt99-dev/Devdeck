@@ -1,0 +1,140 @@
+## Repository
+
+- Public, BSD 2-Clause "Simplified" License
+- Website: https://jotrorox.github.io/dodo/
+- Stars: 0 · Watchers: 0 · Forks: 0
+- Default branch: main · Releases: 6 · Tags: 7
+- Created: 2026-09-10
+
+# Dodo
+
+Dodo is an ahead-of-time compiled systems language with checked borrowing, explicit memory ownership, and native output. Start with small terminal programs; use the same language for portable libraries, hosted applications, and low-level hardware code.
+
+**Compiler 0.1.6 · Language design 0.1 · [BSD-2-Clause](/Jotrorox/dodo/blob/main/LICENSE)**
+
+## Start in five minutes
+
+[Install Dodo and a C toolchain](https://jotrorox.github.io/dodo/installation/), create a folder named `hello`, and save this as `main.dodo` inside it:
+
+```
+package main
+
+import "std/console"
+
+fn main() {
+    console.println("Hello, world!")!
+}
+```
+
+From that folder, run:
+
+```
+dodo run
+```
+
+It prints `Hello, world!`. `println` returns a Result because output can fail; postfix `!` takes success or panics on failure. The [first-program tutorial](https://jotrorox.github.io/dodo/first-program/) explains every line, shows how to change the program, and builds a persistent executable on Linux, macOS, or Windows.
+
+The standard library is embedded in the compiler. Projects use ordinary folders and imports; no manifest, lockfile, or package manager is needed.
+
+## Learn the language
+
+The [documentation](https://jotrorox.github.io/dodo/) has a sequential learning path and a separate reference:
+
+1. [Variables, values, and expressions](https://jotrorox.github.io/dodo/language-basics/)
+2. [Types and functions](https://jotrorox.github.io/dodo/types-and-functions/)
+3. [Control flow](https://jotrorox.github.io/dodo/control-flow/)
+4. [Ownership and borrowing](https://jotrorox.github.io/dodo/ownership/)
+5. [Patterns, options, and Results](https://jotrorox.github.io/dodo/patterns-and-results/)
+6. [Generics](https://jotrorox.github.io/dodo/generics/)
+7. [A complete temperature-report walkthrough](https://jotrorox.github.io/dodo/practical-program/)
+8. [Packages and imports](https://jotrorox.github.io/dodo/packages/) and [testing](https://jotrorox.github.io/dodo/testing/)
+
+Use the [glossary](https://jotrorox.github.io/dodo/glossary/) for unfamiliar terms, the [syntax reference](https://jotrorox.github.io/dodo/implementation-syntax/) for exact rules, and [diagnostics](https://jotrorox.github.io/dodo/diagnostics-and-editors/) when a program is rejected. Runnable examples are also in [examples/](/Jotrorox/dodo/blob/main/examples).
+
+Dodo implements part of the broader 0.1 design. Read [implementation decisions and limits](https://jotrorox.github.io/dodo/implementation/) alongside the [language specification](https://jotrorox.github.io/dodo/language-spec-0.1/). The specification is also available as [plain text](https://jotrorox.github.io/dodo/downloads/language-spec-0.1.txt) and [PDF](https://jotrorox.github.io/dodo/downloads/language-spec-0.1.pdf).
+
+These docs follow `main`, which can contain APIs added after a release. Use the [`v0.1.6` tag](https://github.com/Jotrorox/dodo/tree/v0.1.6) for released source and [CHANGELOG.md](/Jotrorox/dodo/blob/main/CHANGELOG.md) for version changes.
+
+## Find a library
+
+The [standard-library guide](https://jotrorox.github.io/dodo/standard-library/) helps you choose a package. The [API reference](https://jotrorox.github.io/dodo/stdlib-api/) contains exact public signatures, types, fields, methods, and source contracts for every bundled source package. It is generated from the library at each documentation build.
+
+| Build with | Guides |
+|---|---|
+| Terminal input/output | [Console](https://jotrorox.github.io/dodo/console/), [formatting](https://jotrorox.github.io/dodo/formatting/) |
+| Data and storage | [Bytes](https://jotrorox.github.io/dodo/bytes/), [UTF-8 text](https://jotrorox.github.io/dodo/text/), [JSON](https://jotrorox.github.io/dodo/json/), [collections](https://jotrorox.github.io/dodo/collections/), [allocation](https://jotrorox.github.io/dodo/allocation/) |
+| Calculations | [Core](https://jotrorox.github.io/dodo/core/), [math](https://jotrorox.github.io/dodo/math/), [hashing](https://jotrorox.github.io/dodo/hash/), [time](https://jotrorox.github.io/dodo/time/) |
+| OS services | [Files](https://jotrorox.github.io/dodo/filesystem/), [environment](https://jotrorox.github.io/dodo/environment/), [processes](https://jotrorox.github.io/dodo/processes/), [threads](https://jotrorox.github.io/dodo/threads/), [synchronization](https://jotrorox.github.io/dodo/synchronization/) |
+| Scripting | [Embedded Lua 5.4](https://jotrorox.github.io/dodo/script/) and a standalone `lua` interpreter |
+| Network applications | [Sockets and DNS](https://jotrorox.github.io/dodo/networking/), [TLS](https://jotrorox.github.io/dodo/tls/), [QUIC](https://jotrorox.github.io/dodo/quic/), [HTTP](https://jotrorox.github.io/dodo/http/), [web servers](https://jotrorox.github.io/dodo/web/) |
+| Hardware and firmware | [Registers, interrupts, and portable drivers](https://jotrorox.github.io/dodo/hardware/); [tasks that sleep until they have work](https://jotrorox.github.io/dodo/hardware/#tasks-and-the-executor), written as [`async fn`s](https://jotrorox.github.io/dodo/async/); [firmware for boards such as the Raspberry Pi Pico and the ESP32-C6-DevKitC-1](https://jotrorox.github.io/dodo/hardware/#boards), [printing over its USB cable](https://jotrorox.github.io/dodo/hardware/#usb-serial-on-the-rp2040-and-rp2350) |
+
+Portable packages work with explicit storage and no required OS, global allocator, or scheduler. Hosted adapters currently support Linux GNU (x86-64 and AArch64), macOS, and Windows x64. Each guide documents its actual target and dependency requirements.
+
+## Everyday commands
+
+```
+dodo fmt
+dodo check
+dodo run
+dodo test
+dodo build --release
+dodo --help
+```
+
+`check`, `run`, and `compile` select `main.dodo` by default. Pass a filename or project folder to choose another input. `compile` is an alias for `build`. `dodo test` discovers named tests and explicitly executable Markdown examples. Add an optional [`dodo.toml`](https://jotrorox.github.io/dodo/project-manifests/) for named targets, profiles, and saved arguments. Use `dodo build -b NAME`, `dodo targets`, and `dodo build --print-config` to work with configured projects. `dodo init` creates a small project without overwriting files.
+
+See the [command-line guide](https://jotrorox.github.io/dodo/command-line/) for output paths, debug information, optimization, cross-compilation, and linkers. The [VS Code extension](/Jotrorox/dodo/blob/main/editor-support/dodo-vscode) supplies highlighting and connects to `dodo lsp`; other editors can use the same [language server](https://jotrorox.github.io/dodo/editors/).
+
+## Build and contribute
+
+Frontend development needs Rust 1.98.1 and its platform linker. LLVM is optional for parser, checker, formatter, package-loader, and editor-analysis tests:
+
+```
+cargo test --locked --no-default-features --all-targets
+cargo clippy --locked --no-default-features --all-targets -- -D warnings
+```
+
+A full compiler build additionally needs LLVM 23 development files and a C toolchain. The [source-build guide](/Jotrorox/dodo/blob/main/docs/src/content/docs/building-from-source.md) explains prerequisites, Windows setup, release builds, debugging checks, and CI. After configuring `LLVM_SYS_231_PREFIX`:
+
+```
+cargo build --locked
+cargo test --locked --all-targets
+cargo run --locked -- test
+cargo run --locked -- test -O 3
+```
+
+For repeatable JSON, routing, and loopback HTTP performance measurements, see the [stdlib benchmark guide](/Jotrorox/dodo/blob/main/benchmarks/README.md) and [recorded baseline](/Jotrorox/dodo/blob/main/benchmarks/RESULTS.md).
+
+To edit and verify documentation with Node.js 24+ and Python 3.10+:
+
+```
+npm ci --prefix docs
+npm run build --prefix docs
+python3 scripts/generate_api_docs.py --check
+python3 scripts/render_spec.py --check
+python3 scripts/check_docs.py
+```
+
+`npm run dev --prefix docs` previews the site. Follow [Edit these docs](/Jotrorox/dodo/blob/main/docs/src/content/docs/contributing.md) for writing standards, executable examples, generated API pages, and navigation. The existing GitHub Actions workflow publishes documentation changes on `main`.
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| [src/](/Jotrorox/dodo/blob/main/src) | Compiler, CLI, formatter, semantic checker, and language server. |
+| [stdlib/](/Jotrorox/dodo/blob/main/stdlib) | Bundled Dodo library sources and dependency notices. |
+| [examples/](/Jotrorox/dodo/blob/main/examples) | Small programs to read, check, and run. |
+| [tests/](/Jotrorox/dodo/blob/main/tests) | Acceptance, rejection, execution, and platform fixtures. |
+| [docs/](/Jotrorox/dodo/blob/main/docs) | Guides, canonical specification, generated API reference, and Astro site. |
+| [editor-support/](/Jotrorox/dodo/blob/main/editor-support) | VS Code extension and editor instructions. |
+| [scripts/](/Jotrorox/dodo/blob/main/scripts) | Documentation generation, release tooling, and validation. |
+| [.github/workflows/](/Jotrorox/dodo/blob/main/.github/workflows) | Compiler, editor, release, and documentation automation. |
+
+Generated `target/`, `build/`, documentation build outputs, and extension packages are ignored by Git. They can contain local toolchains or unfinished work; inspect paths before deleting them. The [contributor guide](/Jotrorox/dodo/blob/main/docs/src/content/docs/contributing.md) explains which documentation files are generated.
+
+Copyright © 2026 Johannes Müller and Dodo contributors. Licensed under [BSD-2-Clause](/Jotrorox/dodo/blob/main/LICENSE).
+
+## Files
+
+[.config/](https://github.com/Jotrorox/dodo/tree/main/.config), [.github/](https://github.com/Jotrorox/dodo/tree/main/.github), [benchmarks/](https://github.com/Jotrorox/dodo/tree/main/benchmarks), [docs/](https://github.com/Jotrorox/dodo/tree/main/docs), [editor-support/](https://github.com/Jotrorox/dodo/tree/main/editor-support), [emulator/](https://github.com/Jotrorox/dodo/tree/main/emulator), [examples/](https://github.com/Jotrorox/dodo/tree/main/examples), [fuzz/](https://github.com/Jotrorox/dodo/tree/main/fuzz), [scripts/](https://github.com/Jotrorox/dodo/tree/main/scripts), [src/](https://github.com/Jotrorox/dodo/tree/main/src), [stdlib/](https://github.com/Jotrorox/dodo/tree/main/stdlib), [tests/](https://github.com/Jotrorox/dodo/tree/main/tests), [.editorconfig](https://github.com/Jotrorox/dodo/blob/main/.editorconfig), [.gitattributes](https://github.com/Jotrorox/dodo/blob/main/.gitattributes), [.gitignore](https://github.com/Jotrorox/dodo/blob/main/.gitignore), [CHANGELOG.md](https://github.com/Jotrorox/dodo/blob/main/CHANGELOG.md), [Cargo.lock](https://github.com/Jotrorox/dodo/blob/main/Cargo.lock), [Cargo.toml](https://github.com/Jotrorox/dodo/blob/main/Cargo.toml), [LICENSE](https://github.com/Jotrorox/dodo/blob/main/LICENSE), [README.md](https://github.com/Jotrorox/dodo/blob/main/README.md), [build.rs](https://github.com/Jotrorox/dodo/blob/main/build.rs), [rust-toolchain.toml](https://github.com/Jotrorox/dodo/blob/main/rust-toolchain.toml)

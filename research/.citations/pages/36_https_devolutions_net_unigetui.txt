@@ -1,0 +1,200 @@
+# description: Discover, install, and update your packages on Windows, macOS, and Linux. UniGetUI is one open-source GUI for WinGet, Scoop, Chocolatey, Snap, and more.
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[Devolutions](https://devolutions.net/)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+management Diminish the risk of insider threats and cyberattacks while providing audit and compliance requirements for your team.](https://devolutions.net/privileged-access-management/) [Remote access
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+Products
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[![Devolutions Gateway](https://cdnweb.devolutions.net/web/common/logos/img-devolutions-gateway-icon.svg)Devolutions Gateway Secure remote access — no VPN required](https://devolutions.net/gateway/)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+services.](https://devolutions.net/academy/) [![](https://cdnweb.devolutions.net/web/common/logos/img-devolutions-forum-icon.svg) Forum The Devolutions Forum is the place to go to connect with your peers
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+Resources
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[Learn a quick tip in 5 minutes!](https://academy.devolutions.net/student/catalog/list?category_ids=40215-quick-tips) [Browse feature requests](https://forum.devolutions.net/)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[In the news](https://devolutions.net/company/newsroom/in-the-news/)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[Report a security issue](https://devolutions.net/security/#security-contact-form)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[Devolutions logo](https://devolutions.net/company/media/)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+Security & compliance
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+![Devolutions UniGetUI](https://cdnweb.devolutions.net/web/common/logos/img-devolutions-unigetui.svg)
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[Release notes](https://devolutions.net/unigetui/release-notes/) [ GitHub](https://github.com/Devolutions/UniGetUI)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+management Establish a secure entry point for internal or external segmented networks that require authorized just-in-time (JIT) access.](https://devolutions.net/gateway/)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[Devolutions
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[![Devolutions Gateway](https://cdnweb.devolutions.net/web/common/logos/img-devolutions-gateway-icon.svg)Devolutions Gateway Secure remote access — no VPN required](https://devolutions.net/gateway/)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[![](https://cdnweb.devolutions.net/web/common/logos/img-devolutions-academy-icon.svg) Academy Your FREE go-to hub for mastering Devolutions' suite of products and
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+Company
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[Spontaneous application](https://devolutions.net/company/positions/#application)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[Report a security issue](https://devolutions.net/security/#security-contact-form)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[Release notes](https://devolutions.net/unigetui/release-notes/)
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+[UniGetUI on GitHub](https://github.com/Devolutions/UniGetUI)
+
+...
+
+image: https://cdnweb.devolutions.net/images/og/default.jpg
+title: UniGetUI for Windows, macOS, and Linux | Devolutions
+Open source
+
+...
+
+# UniGetUI: one user interface for all package managers
+[Download UniGetUI](https://devolutions.net/download-center/#unigetui) [Visit GitHub page](https://github.com/Devolutions/UniGetUI)
+
+...
+
+Monthly active users
+21,000+
+GitHub stars
+90+
+Contributors
+40+
+Languages
+Auto-update or get notified·Backup & restore packages·Bulk install & uninstall·Windows, macOS, and Linux
+
+## One GUI for WinGet, Scoop, Snap, Chocolatey, Pip, Npm, and more
+UniGetUI combines packages from the most used Windows package managers into one intuitive interface. Install, update, and uninstall software from Winget, Chocolatey, Scoop, Snap, Pip, Npm, .NET Tool, and PowerShell Gallery — no CLI required.
+
+### Install, update & remove
+One-click install, update, and uninstall. UniGetUI combines packages from Winget, Chocolatey, Scoop, Snap, Pip, Npm, and .NET Tool.
+
+...
+
+### Discover & filter packages
+Search and filter packages across all supported managers. Find the software you want quickly with detailed metadata.
+- Browse by package manager
+- Publisher and size info
+- Direct download URL
+
+### Bulk operations
+Bulk-install, update, or uninstall multiple packages at once. Select several packages and perform operations in a single batch.
+- Select multiple packages
+- Auto-update or notifications
+- Skip or ignore updates per package
+
+...
+
+## UniGetUI (formerly WingetUI)
+UniGetUI is the intuitive GUI for the most common CLI package managers on Windows, macOS, and Linux: WinGet, Scoop, Snap, Chocolatey, Pip, Npm, .NET Tool, PowerShell Gallery, and more. On Windows, install via Microsoft Store, winget, scoop, or Chocolatey. macOS and Linux builds are on the [download center](https://devolutions.net/download-center/#unigetui).
+[Get UniGetUI](https://devolutions.net/download-center/#unigetui)
+
+### What's included
+Winget, Scoop, Snap, Chocolatey, Pip, Npm, .NET Tool
+PowerShell Gallery support
+21,000+ GitHub stars. Unofficial, not affiliated with package managers.
+
+### What it's for
+Managing software without the command line
+Discovering packages across all managers
+Migrating setups between machines
+[View release notes](https://devolutions.net/unigetui/release-notes/)
+
+...
+
+### Frequently asked questions
+UniGetUI can auto-update or notify you when updates are available. You can also update manually through your installation method (winget, scoop, Chocolatey, or Microsoft Store). For the full list of changes in every version, check the [release notes](https://devolutions.net/unigetui/release-notes/).
+
+...
+
+Ensure Windows Package Manager (winget) is installed and up to date. Some packages may require administrator privileges or have additional dependencies. Check the UniGetUI documentation for troubleshooting.
+How do I see a package's full name/ID?
+In UniGetUI, you can view package details including the full name and ID by clicking on a package. The ID format varies by manager (e.g., winget uses Package.Publisher format).
+My antivirus says UniGetUI is a virus!
+UniGetUI is open source and safe. Some antivirus software may flag installers that bundle multiple package managers. You can verify the source on GitHub and check the project's security documentation.
+Are Winget and Scoop packages safe?
+UniGetUI displays packages from official package manager repositories. Security depends on each package and its publisher. Always review package details and source before installing.
+What package managers are supported?
+UniGetUI supports Winget, Scoop, Snap, Chocolatey, Pip, Npm, .NET Tool, and PowerShell Gallery. Support may vary by operating system. Check the [official documentation](https://github.com/Devolutions/UniGetUI) for the latest list.

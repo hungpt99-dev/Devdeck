@@ -1,0 +1,52 @@
+## Repository
+
+- Public, MIT License
+- Website: https://moonrepo.dev/proto
+- Stars: 1,454 · Watchers: 5 · Forks: 103
+- Default branch: master · Releases: 253 · Tags: 1,816
+- Created: 2023-02-17
+
+# proto
+
+[![Crates.io](https://camo.githubusercontent.com/c7bd0bbf7407e4e4653d258f25a11de3e3529d2e9125ed88f36ba1223bafb4b0/68747470733a2f2f696d672e736869656c64732e696f2f6372617465732f762f70726f746f5f636c69)](https://camo.githubusercontent.com/c7bd0bbf7407e4e4653d258f25a11de3e3529d2e9125ed88f36ba1223bafb4b0/68747470733a2f2f696d672e736869656c64732e696f2f6372617465732f762f70726f746f5f636c69) [![Crates.io](https://camo.githubusercontent.com/953a124ea9780d1c7d282ee4ec029cc41e49f5c54c2d9cae2c4009f886fa2023/68747470733a2f2f696d672e736869656c64732e696f2f6372617465732f642f70726f746f5f636c69)](https://camo.githubusercontent.com/953a124ea9780d1c7d282ee4ec029cc41e49f5c54c2d9cae2c4009f886fa2023/68747470733a2f2f696d672e736869656c64732e696f2f6372617465732f642f70726f746f5f636c69)
+
+proto is a pluggable next-generation version manager for multiple programming languages. A unified toolchain.
+
+- [Learn more](https://moonrepo.dev/proto)
+- [Documentation](https://moonrepo.dev/docs/proto)
+- [Get started](https://moonrepo.dev/docs/proto/install)
+- [Supported tools](https://moonrepo.dev/docs/proto/tools)
+
+> proto powers [moon's](https://github.com/moonrepo/moon) toolchain!
+
+## Why use proto?
+
+- Lightspeed! With Rust, we can guarantee exceptional performance.
+- Multi-language. A single CLI for managing versions for all of your languages.
+- Cross-platform, for a consistent experience across machines and teams.
+- Contextual version detection, ensuring the correct version of a tool is always used.
+- Checksum verification, ensuring a tool came from a trusted source.
+- Detects and infers from a language's ecosystem for maximum compatibility.
+- Pluggable architecture via WASM, enabling custom integrations.
+
+## Supported languages
+
+- Bun
+- Deno
+- Go
+- moon
+- Node (and npm, pnpm, yarn)
+- Python (and poetry, uv)
+- Ruby
+- Rust
+- ... [and more via plugins!](https://moonrepo.dev/docs/proto/tools)
+
+## Contributors
+
+Special thanks to the wonderful people who have contributed to this project:
+
+[![Contributors](https://camo.githubusercontent.com/84261f2ed9bcdf20c1ef0cfa8274f2bd1cd09873041c39072e383fc7cc8dec70/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d6d6f6f6e7265706f2f70726f746f)](https://github.com/moonrepo/proto/graphs/contributors)
+
+## Files
+
+[.agents/skills/improve-code-quality/](https://github.com/moonrepo/proto/tree/master/.agents/skills/improve-code-quality), [.cargo/](https://github.com/moonrepo/proto/tree/master/.cargo), [.claude/skills/](https://github.com/moonrepo/proto/tree/master/.claude/skills), [.github/](https://github.com/moonrepo/proto/tree/master/.github), [.vscode/](https://github.com/moonrepo/proto/tree/master/.vscode), [crates/](https://github.com/moonrepo/proto/tree/master/crates), [dev/otel/](https://github.com/moonrepo/proto/tree/master/dev/otel), [docs/](https://github.com/moonrepo/proto/tree/master/docs), [e2e/](https://github.com/moonrepo/proto/tree/master/e2e), [package/](https://github.com/moonrepo/proto/tree/master/package), [plugins/](https://github.com/moonrepo/proto/tree/master/plugins), [registry/](https://github.com/moonrepo/proto/tree/master/registry), [.gitattributes](https://github.com/moonrepo/proto/blob/master/.gitattributes), [.gitignore](https://github.com/moonrepo/proto/blob/master/.gitignore), [.protolock](https://github.com/moonrepo/proto/blob/master/.protolock), [.prototools](https://github.com/moonrepo/proto/blob/master/.prototools), [CHANGELOG.md](https://github.com/moonrepo/proto/blob/master/CHANGELOG.md), [CONTRIBUTING.md](https://github.com/moonrepo/proto/blob/master/CONTRIBUTING.md), [Cargo.lock](https://github.com/moonrepo/proto/blob/master/Cargo.lock), [Cargo.toml](https://github.com/moonrepo/proto/blob/master/Cargo.toml), [LICENSE](https://github.com/moonrepo/proto/blob/master/LICENSE), [README.md](https://github.com/moonrepo/proto/blob/master/README.md), [depot.json](https://github.com/moonrepo/proto/blob/master/depot.json), [dist-workspace.toml](https://github.com/moonrepo/proto/blob/master/dist-workspace.toml), [flake.lock](https://github.com/moonrepo/proto/blob/master/flake.lock), [flake.nix](https://github.com/moonrepo/proto/blob/master/flake.nix), [justfile](https://github.com/moonrepo/proto/blob/master/justfile), [rust-toolchain.toml](https://github.com/moonrepo/proto/blob/master/rust-toolchain.toml), [version](https://github.com/moonrepo/proto/blob/master/version)

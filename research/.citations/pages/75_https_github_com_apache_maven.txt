@@ -1,0 +1,60 @@
+## Repository
+
+- Public, Apache License 2.0
+- Website: https://maven.apache.org/ref/current
+- Stars: 5,377 · Watchers: 234 · Forks: 3,078
+- Default branch: master · Releases: 37 · Tags: 119
+- Created: 2009-05-21
+
+# Apache Maven
+
+[![Apache License, Version 2.0, January 2004](https://camo.githubusercontent.com/5d17742d1b9d407833665cbf8605d0790f63958ac966a8f20fa72168f42ef030/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6170616368652f6d6176656e2e7376673f6c6162656c3d4c6963656e7365)](https://www.apache.org/licenses/LICENSE-2.0) [![Reproducible Builds](https://camo.githubusercontent.com/ba8f8ea54096d1558d3c50f29de9ec6411e2968c59e5951b789f82a92a010610/68747470733a2f2f696d672e736869656c64732e696f2f656e64706f696e743f75726c3d68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6a766d2d7265706f2d72656275696c642f726570726f64756369626c652d63656e7472616c2f6d61737465722f636f6e74656e742f6f72672f6170616368652f6d6176656e2f6d6176656e2f62616467652e6a736f6e)](https://github.com/jvm-repo-rebuild/reproducible-central/blob/master/content/org/apache/maven/maven/README.md)
+
+- [master](https://github.com/apache/maven) = 4.1.x [![Jenkins Build](https://camo.githubusercontent.com/384810836336dd87313923b31d3a23e3c03029acd7a3dcc29767b72f3bb3e8aa/68747470733a2f2f696d672e736869656c64732e696f2f6a656e6b696e732f6275696c643f6a6f6255726c3d687474707325334125324625324663692d6d6176656e2e6170616368652e6f72672532466a6f622532464d6176656e2532466a6f622532466d6176656e2d626f782532466a6f622532466d6176656e2532466a6f622532466d6173746572253246)](https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven/job/master/) [![Java CI](https://github.com/apache/maven/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/apache/maven/actions/workflows/maven.yml?query=branch%3Amaster)
+- [4.0.x](https://github.com/apache/maven/tree/maven-4.0.x): [![Maven Central](https://camo.githubusercontent.com/dbdf49a0b283007e062e226f4700d01728f39f6123d79824cf513fca85f54992/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f6f72672e6170616368652e6d6176656e2f6170616368652d6d6176656e2e7376673f6c6162656c3d4d6176656e25323043656e7472616c2676657273696f6e5072656669783d342e30)](https://central.sonatype.com/artifact/org.apache.maven/apache-maven) [![Jenkins Build](https://camo.githubusercontent.com/3c684e572642a7dbd9e6a7d950ec42ff4d01b1ecfcfd2837f13626ae51d7499a/68747470733a2f2f696d672e736869656c64732e696f2f6a656e6b696e732f6275696c643f6a6f6255726c3d687474707325334125324625324663692d6d6176656e2e6170616368652e6f72672532466a6f622532464d6176656e2532466a6f622532466d6176656e2d626f782532466a6f622532466d6176656e2532466a6f622532466d6176656e2d342e302e78253246)](https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven/job/maven-4.0.x/) [![Java CI](https://github.com/apache/maven/actions/workflows/maven.yml/badge.svg?branch=maven-4.0.x)](https://github.com/apache/maven/actions/workflows/maven.yml?query=branch%3Amaven-4.0.x)
+- [3.10.x](https://github.com/apache/maven/tree/maven-3.10.x): [![Jenkins Build](https://camo.githubusercontent.com/2ff282c8dad7ef185580f3decd0e2cbdfd6f4ff4bd8b51eb28d9bc4ee0067350/68747470733a2f2f696d672e736869656c64732e696f2f6a656e6b696e732f6275696c643f6a6f6255726c3d687474707325334125324625324663692d6d6176656e2e6170616368652e6f72672532466a6f622532464d6176656e2532466a6f622532466d6176656e2d626f782532466a6f622532466d6176656e2532466a6f622532466d6176656e2d332e31302e78253246)](https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven/job/maven-3.10.x/) [![Java CI](https://github.com/apache/maven/actions/workflows/maven.yml/badge.svg?branch=maven-3.10.x)](https://github.com/apache/maven/actions/workflows/maven.yml?query=branch%3Amaven-3.10.x)
+- [3.9.x](https://github.com/apache/maven/tree/maven-3.9.x): [![Maven Central](https://camo.githubusercontent.com/88a5f9b64ffcbdc892ae13c11e899760bf42954d26746f79c176986c1afd30a9/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f6f72672e6170616368652e6d6176656e2f6170616368652d6d6176656e2e7376673f6c6162656c3d4d6176656e25323043656e7472616c2676657273696f6e5072656669783d332e392e)](https://central.sonatype.com/artifact/org.apache.maven/apache-maven) [![Jenkins Build](https://camo.githubusercontent.com/4729e105445b1dd5802f4b9654191de34f5f4f2dec424dc1af47444b69f636b4/68747470733a2f2f696d672e736869656c64732e696f2f6a656e6b696e732f6275696c643f6a6f6255726c3d687474707325334125324625324663692d6d6176656e2e6170616368652e6f72672532466a6f622532464d6176656e2532466a6f622532466d6176656e2d626f782532466a6f622532466d6176656e2532466a6f622532466d6176656e2d332e392e78253246)](https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven/job/maven-3.9.x/) [![Java CI](https://github.com/apache/maven/actions/workflows/maven.yml/badge.svg?branch=maven-3.9.x)](https://github.com/apache/maven/actions/workflows/maven.yml?query=branch%3Amaven-3.9.x)
+
+Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+
+If you think you have found a bug, please file an issue in the [Maven Issue Tracker](https://github.com/apache/maven/issues).
+
+## Documentation
+
+More information can be found on [Apache Maven Homepage](https://maven.apache.org/). Questions related to the usage of Maven should be posted on the [Maven User List](https://maven.apache.org/mailing-lists.html).
+
+## Where can I get the latest release?
+
+You can download the release source from our [download page](https://maven.apache.org/download.cgi).
+
+## Contributing
+
+If you are interested in the development of Maven, please consult the documentation first and afterward you are welcome to join the developers mailing list to ask questions or discuss new ideas/features/bugs etc.
+
+Take a look into the [contribution guidelines](/apache/maven/blob/master/CONTRIBUTING.md).
+
+## License
+
+This code is under the [Apache License, Version 2.0, January 2004](https://www.apache.org/licenses/LICENSE-2.0).
+
+See the [`NOTICE`](/apache/maven/blob/master/NOTICE) file for required notices and attributions.
+
+## Donations
+
+Do you like Apache Maven? Then [donate back to the ASF](https://www.apache.org/foundation/contributing.html) to support the development.
+
+## Quick Build
+
+If you want to bootstrap Maven, you'll need:
+
+- Java 17+
+- Maven 3.9.0 or later
+- Run Maven, specifying a location into which the completed Maven distro should be installed:
+
+  ```
+  mvn -DdistributionTargetDir="$HOME/app/maven/apache-maven-4.1.x-SNAPSHOT" clean package
+  ```
+
+## Files
+
+[.github/](https://github.com/apache/maven/tree/master/.github), [.idea/](https://github.com/apache/maven/tree/master/.idea), [.mvn/](https://github.com/apache/maven/tree/master/.mvn), [apache-maven/](https://github.com/apache/maven/tree/master/apache-maven), [api/](https://github.com/apache/maven/tree/master/api), [compat/](https://github.com/apache/maven/tree/master/compat), [impl/](https://github.com/apache/maven/tree/master/impl), [its/](https://github.com/apache/maven/tree/master/its), [src/](https://github.com/apache/maven/tree/master/src), [.asf.yaml](https://github.com/apache/maven/blob/master/.asf.yaml), [.git-blame-ignore-revs](https://github.com/apache/maven/blob/master/.git-blame-ignore-revs), [.gitattributes](https://github.com/apache/maven/blob/master/.gitattributes), [.gitignore](https://github.com/apache/maven/blob/master/.gitignore), [AGENTS.md](https://github.com/apache/maven/blob/master/AGENTS.md), [CONTRIBUTING.md](https://github.com/apache/maven/blob/master/CONTRIBUTING.md), [Jenkinsfile](https://github.com/apache/maven/blob/master/Jenkinsfile), [LICENSE](https://github.com/apache/maven/blob/master/LICENSE), [NOTICE](https://github.com/apache/maven/blob/master/NOTICE), [README.md](https://github.com/apache/maven/blob/master/README.md), [SECURITY.md](https://github.com/apache/maven/blob/master/SECURITY.md), [THREAT\_MODEL.md](https://github.com/apache/maven/blob/master/THREAT_MODEL.md), [deploySite.sh](https://github.com/apache/maven/blob/master/deploySite.sh), [doap\_Maven.rdf](https://github.com/apache/maven/blob/master/doap_Maven.rdf), [pom.xml](https://github.com/apache/maven/blob/master/pom.xml)

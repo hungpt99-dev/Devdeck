@@ -1,0 +1,146 @@
+# WebStorm and Rider Are Now Free for Non-Commercial Use
+
+**Update**: [CLion](https://blog.jetbrains.com/clion/2025/05/clion-is-now-free-for-non-commercial-use/), [RubyMine](https://blog.jetbrains.com/ruby/2025/09/rubymine-is-now-free-for-non-commercial-use/), and [DataGrip](https://blog.jetbrains.com/datagrip/2025/10/01/datagrip-is-now-free-for-non-commercial-use/) are now also free for non-commercial use.
+
+We’re excited to announce a change in our licensing model that we believe will benefit the developer community – [WebStorm](https://www.jetbrains.com/webstorm/) and [Rider](https://www.jetbrains.com/rider/) are now free for non-commercial use!
+
+Read on to learn more about the change and why we’re making it, and be sure to check out the FAQ section below for additional details.
+
+## What’s happening?
+
+Earlier this year, we implemented a new licensing model for our recently introduced IDEs, [RustRover](https://www.jetbrains.com/rust/) and [Aqua](https://www.jetbrains.com/aqua/), making them free for non-commercial use. We’re now extending this model to WebStorm and Rider. If you’re using these IDEs for non-commercial purposes, such as **learning**, **open-source project development**, **content creation**, or **hobby development**, you can now do so for free.
+
+For commercial projects, nothing will change – our existing licensing remains in place. Other JetBrains IDEs are not affected by this update, either. We’ll evaluate the outcomes of this free non-commercial licensing initiative to see if it can be expanded.
+
+## Why are we doing this?
+
+In making non-commercial development free, we aim to make JetBrains IDEs more accessible to a broader audience. We hope the new licensing model will further lower the barrier to using our IDEs, helping you learn, grow, and stay creative.
+
+We’ve explored various ways to achieve this goal. As many of you have asked for more community editions, this was one of the possible options that we considered. However, JetBrains IDEs often have monolithic functionality, with all features deeply integrated and essential for productive work. Creating additional community editions would risk offering a feature set that doesn’t meet the needs of the many different types of users we have.
+
+## Why WebStorm and Rider?
+
+According to various surveys like [Stack Overflow](https://survey.stackoverflow.co/2024/work#coding-outside-of-work-coding-activities), 68% of developers code outside of work as a hobby, and nearly 40% for professional growth or self-paced learning. This share is even higher for game and web development. For example, game developers often begin their careers by creating games as a hobby, using free game engines. This inspired our choice to apply the new licensing model to WebStorm and Rider.
+
+## Commercial vs. non-commercial use
+
+As defined in the [Toolbox Subscription Agreement for Non-Commercial Use](https://www.jetbrains.com/legal/docs/toolbox/license_non-commercial/), commercial use means developing products and earning commercial benefits from your activities. However, certain categories are explicitly excluded from this definition. Common examples of non-commercial uses include learning and self-education, open-source contributions without earning commercial benefits, any form of content creation, and hobby development.
+
+It’s important to note that, if you’re using a non-commercial license, you cannot opt out of the collection of anonymous usage statistics. We use this information to improve our products. The data we collect is exclusively that of anonymous feature usages of our IDEs. It is focused on what actions are performed and what types of functionality of the IDE are used. We do not collect any other data. This is similar to our Early Access Program (EAP) and is in compliance with [our Privacy Policy](https://www.jetbrains.com/legal/docs/privacy/privacy/).
+
+## FAQ
+
+Below are answers to some other related questions. If you don’t find an answer to your question, feel free to leave a comment or contact [sales@jetbrains.com](https://www.jetbrains.com/support/sales/#email-sales).
+
+### Licensing
+
+#### What features are included under the free license?
+
+With the new non-commercial license type, you can enjoy a full-featured IDE that is identical to its paid version. The only difference is in the Code With Me feature – you get [Code With Me Community](https://www.jetbrains.com/code-with-me/buy/?section=personal&billing=monthly) with your free license.
+
+#### Do RustRover and Aqua have the same conditions for non-commercial use?
+
+Yes, RustRover and Aqua follow the same guidelines for non-commercial use. They previously had slightly different criteria for certain use cases, but we’ve updated them to align with the licensing model used for WebStorm and Rider.
+
+#### Which license should I choose if I want to use Rider or WebStorm for both non-commercial and commercial projects?
+
+If you intend to use Rider or WebStorm for commercial development for which you will receive direct or indirect commercial advantage or monetary compensation within the meaning of the definitions provided in the [Toolbox Subscription Agreement for Non-Commercial Use](https://www.jetbrains.com/legal/docs/toolbox/license_non-commercial/), you will need to purchase a commercial subscription (either individual or organizational). This license can then also be used for non-commercial development.
+
+#### What license should I choose if I just started a new project?
+
+If you plan to release the product and get commercial benefits from it, either now or in the future, you should use a commercial license. If your project is for non-commercial purposes, then a non-commercial license is valid. However, if your intentions change over time, you’ll need to reassess whether you still qualify for non-commercial use. If you’re unsure after considering your intentions, it’s safer to choose a commercial license.
+
+#### The company I am working for doesn’t do commercial development. Am I eligible to apply for a non-commercial license?
+
+If you’re working and receiving payment, even if your employer doesn’t receive commercial benefits from the end product, such as in a non-profit organization, you should be using a commercial license. For startups and non-profit organizations, we have separate offers mentioned on [this page](https://www.jetbrains.com/store/?section=discounts&billing=yearly).
+
+#### Can I use the IDE for free to create educational courses and stream content while earning money through course sales or advertisements in the stream?
+
+With the non-commercial license agreement, you can create any type of content, even if it involves receiving commercial benefits. Here are some examples of such content creation:
+
+- Creators of educational courses looking to sell their courses.
+- Content creators who share posts on platforms like YouTube and earn commissions from ads.
+- Podcasters and streamers who sell ad space in their content.
+
+#### Will this change affect our paid subscriptions for individuals or organizations?
+
+Don’t worry, this new license type will not impact any of our other paid subscription options. You’ll still be able to purchase personal and organizational subscriptions for WebStorm, Rider, dotUltimate, and the All Products Pack with exactly the same terms and conditions as are currently in place.
+
+#### How do renewals and upgrades work now?
+
+Non-commercial subscriptions are issued for one year and will automatically renew after that. However, for the renewal to happen, you must have used the assigned license at least once during the last 6 months of the subscription period. If it has been more than 6 months since you last used an IDE activated with this type of license and the renewal did not occur automatically, you can request a new non-commercial subscription again at any time.
+
+#### Am I eligible for a refund if I’ve already bought a paid subscription but do non-commercial development?
+
+If you’re unsure whether you qualify for a refund, you’ll find full details of our policy [here](https://sales.jetbrains.com/hc/en-gb/articles/115000913704-How-can-I-get-a-refund). Please note that if you also work on projects that qualify as commercial usage, you can’t use the free license for them.
+
+#### What are my other options if I don’t qualify for this non-commercial option?
+
+We’re sorry you can’t benefit from the non-commercial use license, but we’re sure we’ve got something to suit your needs. It’s always worth checking [our special offers](https://www.jetbrains.com/store/?section=discounts&billing=yearly) and [Community page](https://www.jetbrains.com/store/?section=students&billing=yearly) to see all our latest promotional pricing options.
+
+#### How and where can I get technical support if I encounter a problem or wish to ask a question?
+
+As a non-commercial license holder, we encourage you to reach out with any questions you might have via our public community forums. You can also report any issues you might be experiencing by submitting a new request on the relevant issue tracker.
+
+These resources can be accessed via the following links:
+
+- WebStorm [community forum](https://intellij-support.jetbrains.com/hc/en-us/community/topics/200367229-WebStorm) and [bug tracker](https://youtrack.jetbrains.com/issues/WEB)
+- Rider [community forum](https://rider-support.jetbrains.com/hc/en-us/community/topics/200410195-General-Discussion) and [bug tracker](https://youtrack.jetbrains.com/issues/RIDER)
+
+Please note that support via private tickets is not included under this license.
+
+### Data collection
+
+#### Does my IDE send any data to JetBrains, and can I opt out?
+
+When using a commercial subscription, you have full control over whether or not you want the product to send IDE telemetry to JetBrains, and detailed data collection is disabled by default.
+
+With a non-commercial subscription, JetBrains IDEs may collect the following types of data:
+
+- **Anonymous telemetry**. This refers to generalized, anonymous statistics about how features are used (such as time spent, clicks, or general workflows). Like with Early Access Program builds, using the free non-commercial subscription means agreeing to send anonymized usage statistics, which enables us to improve the product. It is not possible to opt out.
+- **Detailed code‑related data** pertaining to IDE activity, such as edit history, terminal usage, and your interactions with AI features. This may include code snippets, prompt text, and AI responses. If you’re using a non-commercial subscription, detailed code‑related data collection is enabled by default. To disable it, you must do so manually via the product settings:* Settings | Appearance & Behavior | System Settings | Data Sharing*.
+
+If you allow us to collect this data, we will make sure that:
+
+- No sensitive or personal information is shared.
+- Data is properly secured.
+- Access is restricted to authorized personnel and use cases.
+
+Read more about [what data is collected and how it is protected](https://www.jetbrains.com/legal/docs/terms/product_data_collection/).
+
+### Getting a non-commercial subscription
+
+#### What should I do to apply for this subscription?
+
+It can be easily done right inside your IDE:
+
+1. Install Rider or WebStorm and run it.
+2. Upon startup, there will be a license dialog box where you can choose the *Non-commercial use* option.
+3. Log in to your JetBrains account or create a new one.
+4. Accept the [Toolbox Subscription Agreement for Non-Commercial Use](https://www.jetbrains.com/legal/docs/toolbox/license_non-commercial/).
+5. Enjoy development in your IDE.
+
+If you’ve already started a trial period or have activated your IDE using a paid license, you still can switch to a non-commercial subscription by following these steps:
+
+1. If you’re using Rider, go to *Help | Manage Licenses*. If you’re using WebStorm, go to *Help | Register.*
+2. In the window that opens, click on the *Remove License* button.
+3. Choose *Non-commercial use.*
+4. Log in to your JetBrains Account or create a new one.
+5. Accept the [Toolbox Subscription Agreement for Non-Commercial Use](https://www.jetbrains.com/legal/docs/toolbox/license_non-commercial/).
+6. Enjoy development in your IDE.
+
+#### I don’t see the *Non-commercial use* option in my IDE. What should I do?
+
+The most likely explanation for this is that you’re using an older version of Rider or WebStorm. Unfortunately, we don’t support obtaining the non-commercial license for any releases prior to Rider 2024.2.7 and WebStorm 2024.2.4.
+
+#### Will a single subscription cover both Rider and WebStorm?
+
+The new non-commercial subscription type is product-specific. This means that if you want to use both Rider and WebStorm for non-commercial purposes, you’ll have to obtain two separate licenses – one for each product.
+
+#### Can I generate an activation code for offline activation?
+
+Unfortunately, acquiring an activation code for a non-commercial subscription is not possible. You can only activate an IDE through your JetBrains Account.
+
+#### Subscribe to JetBrains Blog updates
+
+## Discover more

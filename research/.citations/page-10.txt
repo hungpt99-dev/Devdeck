@@ -1,0 +1,209 @@
+[Skip to main content](https://docs.slint.dev/latest/docs/rust/slint/docs/cargo_features/#main-content)
+
+[Settings](https://docs.slint.dev/latest/docs/rust/settings.html)
+
+[Help](https://docs.slint.dev/latest/docs/rust/help.html)
+
+## [Module cargo\_features](https://docs.slint.dev/latest/docs/rust/slint/docs/cargo_features/\#)
+
+[show sidebar](https://docs.slint.dev/latest/docs/rust/slint/all.html "show sidebar")
+
+[slint](https://docs.slint.dev/latest/docs/rust/slint/index.html):: [docs](https://docs.slint.dev/latest/docs/rust/slint/docs/index.html)
+
+# Module cargo\_featuresCopy item path
+
+[Search](https://docs.slint.dev/latest/docs/rust/slint/docs/cargo_features/?search=)
+
+[Settings](https://docs.slint.dev/latest/docs/rust/settings.html)
+
+[Help](https://docs.slint.dev/latest/docs/rust/help.html)
+
+Summary[Source](https://docs.slint.dev/latest/docs/rust/src/slint/docs.rs.html#227)
+
+Expand description
+
+## [§](https://docs.slint.dev/latest/docs/rust/slint/docs/cargo_features/\#feature-flags-and-backend-selection) Feature flags and backend selection.
+
+Use the following feature flags in your Cargo.toml to enable additional features.
+
+- **`compat-1-18`** _(enabled by default)_ — Mandatory feature:
+This feature is required to keep the compatibility with Slint 1.18
+Newer patch version may put current functionality behind a new feature
+that would be enabled by default only if this feature was added.
+[More info in this blog post](https://slint.dev/blog/rust-adding-default-cargo-feature.html)
+
+- **`std`** _(enabled by default)_ — Enable use of the Rust standard library.
+
+- **`gettext`** — Enable the translations using [gettext](https://www.gnu.org/software/gettext/gettext)
+
+the `@tr(...)` code from .slint files will be transformed into call to `dgettext`
+with the crate name as domain name
+
+translations must be enabled with the [`init_translations!`](https://docs.slint.dev/latest/docs/rust/slint/macro.init_translations.html "macro slint::init_translations") macro
+
+- **`libm`** — This feature enables floating point arithmetic emulation using the [libm](https://crates.io/crates/libm) crate. Use this
+in MCU environments where the processor does not support floating point arithmetic.
+
+- **`log`** — If enabled, calls of `debug()` in `.slint` files use to the [`log::debug!()`](https://docs.rs/log/latest/log/macro.debug.html)
+macro of the [log](https://crates.io/crates/log) crate instead of just `println!()`.
+
+- **`serde`** — Implement the `serde::Serialize` and `serde::Deserialize` for some of the base types
+such as `SharedString` and `SharedVector`.
+
+- **`unsafe-single-threaded`** — Slint uses internally some `thread_local` state.
+
+When the `std` feature is enabled, Slint can use [`std::thread_local!`](https://doc.rust-lang.org/nightly/std/macro.thread_local.html "macro std::thread_local"), but when in a `#![no_std]`
+environment, we need a replacement. Using this feature, Slint will just use static variable
+disregarding Rust’s Send and Sync safety
+
+**Safety** : You must ensure that there is only one single thread that call into the Slint API
+
+- **`accessibility`** _(enabled by default)_ — Enable integration with operating system provided accessibility APIs
+
+Enabling this feature will try to expose the tree of UI elements to OS provided accessibility
+APIs to support screen readers and other assistive technologies.
+
+- **`system-tray`** _(enabled by default)_ — Enable the `SystemTrayIcon` element. On Linux/BSD this pulls in
+[`ksni`](https://crates.io/crates/ksni). It is on by default; to drop the
+tray dependency, disable default features and re-enable the ones you need
+without `system-tray` (keep the mandatory `compat-1-2`).
+
+- **`raw-window-handle-06`** — Enable integration with [raw-window-handle](https://docs.rs/raw_window_handle/0.6/raw_window_handle/index.html "mod raw_window_handle") version 0.6. This provides a
+[`Window::window_handle()`](https://docs.slint.dev/latest/docs/rust/slint/struct.Window.html#method.window_handle "method slint::Window::window_handle") function that returns a struct that implements
+[HasWindowHandle](https://docs.rs/raw_window_handle/0.6/raw_window_handle/borrowed/trait.HasWindowHandle.html "trait raw_window_handle::borrowed::HasWindowHandle") and
+[HasDisplayHandle](https://docs.rs/raw_window_handle/0.6/raw_window_handle/borrowed/trait.HasDisplayHandle.html "trait raw_window_handle::borrowed::HasDisplayHandle") implementation.
+
+- **`image-default-formats`** — Enable the default image formats from the `image` crate, to support additional image formats in [`Image::load_from_path`](https://docs.slint.dev/latest/docs/rust/slint/struct.Image.html#method.load_from_path "associated function slint::Image::load_from_path")
+and `@image-url`. When this feature is disabled, only PNG and JPEG are supported. When enabled,
+the following image formats are supported:
+AVIF, BMP, DDS, Farbfeld, GIF, HDR, ICO, JPEG, EXR, PNG, PNM, QOI, TGA, TIFF, WebP.
+This feature has no effect on the web, where the browser decodes images.
+
+- **`image-pixel-format-rgb565`** — Enable storing an image’s pixels in the RGB565 format ( [`Image::from_rgb565`](https://docs.slint.dev/latest/docs/rust/slint/struct.Image.html#method.from_rgb565 "associated function slint::Image::from_rgb565")).
+The software renderer then draws such an image
+without any per-pixel conversion when the render target is RGB565 too.
+
+- **`image-pixel-format-gray8`** — Enable storing an image’s pixels as a single 8 bit grayscale channel
+( [`Image::from_gray8`](https://docs.slint.dev/latest/docs/rust/slint/struct.Image.html#method.from_gray8 "associated function slint::Image::from_gray8")).
+
+- **`live-preview`** — Enable the live preview feature
+
+Enable this feature to reload the .slint files at runtime and reload it whenever the files are modified on disk.
+For this feature to work, it’s also required to set the `SLINT_LIVE_PREVIEW` environment variable during
+application compilation.
+
+This is a feature for debugging and development. It’s not recommended to add this feature to your Cargo.toml.
+Instead, use the `--features` command line argument like so when building your app:
+
+
+
+```bash
+SLINT_LIVE_PREVIEW=1 cargo build --features slint/live-preview
+```
+
+- **`mcp`** — Enable the embedded MCP (Model Context Protocol) server.
+
+When this feature is enabled and the `SLINT_MCP_PORT` environment variable is set
+at runtime, the application starts an HTTP server implementing the MCP Streamable HTTP
+transport. This allows MCP clients to inspect and interact with the running UI.
+
+This is a developer/debug feature. It is not recommended to enable it in production builds.
+
+- **`system-testing`** — Enable support for controlling the application from a system testing tool.
+
+When this feature is enabled and the `SLINT_TEST_SERVER` environment variable is set
+at runtime, the application connects to the system test server at the given address
+and permits remote introspection and control of the user interface.
+
+This is a developer/testing feature. It is not recommended to enable it in production builds.
+
+
+#### [§](https://docs.slint.dev/latest/docs/rust/slint/docs/cargo_features/\#backends) Backends
+
+Slint needs a backend that will act as liaison between Slint and the OS.
+By default, Slint will use the [Winit](https://crates.io/crates/winit) backend
+with [FemtoVG](https://crates.io/crates/femtovg).
+You can also enable the Qt backend with the `backend-qt` feature.
+If you want to use a different backend,
+disable the default feature and re-enable the desired backend.
+It is also possible to use Slint without a backend if you provide
+the platform abstraction yourself with [`platform::set_platform()`](https://docs.slint.dev/latest/docs/rust/slint/platform/fn.set_platform.html "fn slint::platform::set_platform").
+
+If you enable the Winit backend, you need to also include a renderer.
+`renderer-femtovg` is the default renderer.
+
+It is also possible to select the backend and renderer at runtime when several
+are enabled, using the `SLINT_BACKEND` environment variable.
+
+- `SLINT_BACKEND=Qt` selects the Qt backend
+- `SLINT_BACKEND=winit` selects the winit backend
+- `SLINT_BACKEND=winit-femtovg` selects the winit backend with the FemtoVG renderer
+- `SLINT_BACKEND=winit-skia` selects the winit backend with the skia renderer
+- `SLINT_BACKEND=winit-software` selects the winit backend with the software renderer
+
+If the selected backend is not available, the default will be used.
+
+Here are the cargo features controlling the backend:
+
+- **`backend-qt`** — The Qt backend feature uses Qt for the windowing system integration and rendering.
+This backend also provides the `native` style.
+It requires Qt 5.15 or later to be installed. If Qt is not installed, the
+backend will not be operational
+
+- **`backend-winit`** — The [winit](https://crates.io/crates/winit) crate is used for the event loop and windowing system integration.
+It supports Windows, macOS, web browsers, X11 and Wayland. X11 and wayland are only available when
+
+[... middle omitted — see footer ...]
+
+windowing system.
+
+With `compat-1-2` this implies libseat and libinput support. With `compat-1-18` or newer it is
+the minimal feature set, without libseat and libinput; add `backend-linuxkms-libseat` and
+`backend-linuxkms-libinput` to opt back in.
+
+- **`backend-linuxkms-libseat`** — Add libseat to the LinuxKMS backend, for GPU and input device access without root privileges.
+
+- **`backend-linuxkms-libinput`** — Add libinput to the LinuxKMS backend, to react to mouse, touch and keyboard input.
+
+- **`backend-linuxkms-noseat`** — **Deprecated** Use `backend-linuxkms-libinput` instead, which selects the same
+combination of the LinuxKMS backend: libinput for mouse, touch and keyboard input,
+but no libseat.
+
+- **`backend-linuxkms-libdlmclient`** — Add libdlmclient to the LinuxKMS backend, to obtain a DRM lease by name from the AGL
+drm-lease-manager. Enables the backend on its own.
+
+- **`backend-android-activity-06`** — Use the backend based on the [android-activity](https://docs.rs/android-activity) crate. (Using it’s native activity feature)
+
+- **`backend-android-activity-05`** — **Deprecated** Use previous version of android-activity. This is mutually exclusive with `backend-android-activity-06`.
+
+
+#### [§](https://docs.slint.dev/latest/docs/rust/slint/docs/cargo_features/\#unstable-features) Unstable features
+
+The following features expose APIs built on top of third-party crates that release new major
+versions more frequently than Slint. They carry the major version of that crate as a suffix
+and are _NOT_ subject to the usual Slint API stability guarantees: a future minor release of
+Slint may change or remove them, typically replacing them with a feature of the same name but
+a bumped version suffix.
+
+To avoid unintended compilation failures, we recommend using the
+[tilde requirement](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html#tilde-requirements)
+in your `Cargo.toml` when enabling any of these features:
+
+```toml
+slint = { version = "~1.19", features = ["unstable-wgpu-30"] }
+```
+
+- **`unstable-wgpu-29`** — Enable support for [WGPU](http://wgpu.rs/) based rendering and expose WGPU based APIs based on WGPU version 29.x.
+- **`unstable-wgpu-30`** — Enable support for [WGPU](http://wgpu.rs/) based rendering and expose WGPU based APIs based on WGPU version 30.x.
+- **`unstable-winit-030`** — Expose [winit](https://crates.io/crates/winit) based APIs in the winit backend, based on winit version 0.30.x.
+- **`unstable-libinput-09`** — Enable support for exposing [libinput](https://docs.rs/input/latest/input/index.html) related APIs in the LinuxKMS backend.
+- **`unstable-fontique-012`** — Enable support for exposing [fontique](https://docs.rs/fontique/0.12.0/fontique/) related APIs.
+
+More information about the backend and renderers is available in the
+[Slint Documentation](https://docs.slint.dev/latest/docs/slint/guide/backends-and-renderers/backends_and_renderers/)
+
+──────── [TRUNCATED] ────────
+Showing 8,991 chars (head) + 2,929 chars (tail) of 14,080 total clean characters.
+Full text saved to: /root/.hermes/cache/web/docs.slint.dev-12e9bb4457.md
+To read the omitted middle: read_file path="/root/.hermes/cache/web/docs.slint.dev-12e9bb4457.md" offset=155 limit=200  (the file is the complete page; raise/lower offset to page through it).
+─────────────────────────────

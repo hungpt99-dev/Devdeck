@@ -1,0 +1,301 @@
+[Skip to content](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#_top)
+
+This is the unreleased documentation for the **next** version of Slint. Switch to [the latest released version](https://docs.slint.dev/).
+
+You are viewing contents of an older version. Switch to [the latest released version](https://docs.slint.dev/).
+
+# TextInput
+
+Every page of the Slint documentation has a Markdown version, ~10x smaller. Replace a link's trailing slash with .md: this page is /latest/docs/slint/reference/keyboard-input/textinput.md. /latest/docs/slint/llms.txt lists all pages.
+
+The `TextInput` is a lower-level item that shows text and allows entering text.
+You should probably not use this directly, but instead use the [LineEdit](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/lineedit/) or [TextEdit](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/) component.
+
+When not part of a layout, its width and height defaults to 100% of the parent element.
+
+The `TextInput` does not scroll automatically when the cursor is outside of the visible area.
+This is the responsibility of the enclosing widget to ensure using the `cursor-position-changed` callback.
+
+## Example
+
+[Section titled “Example”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#example)
+
+```
+export component Example inherits Window {
+
+    width: 270px;
+
+    height: 40px;
+
+    Rectangle {
+
+        clip: true;
+
+        TextInput {
+
+            text: "Edit me";
+
+            width: max(parent.width, self.preferred-width);
+
+            vertical-alignment: center;
+
+            private property <length> margin: 1rem;
+
+            cursor-position-changed(cursor-position) => {
+
+                if cursor-position.x + self.x < margin {
+
+                    self.x = - cursor-position.x + margin;
+
+                } else if cursor-position.x + self.x > parent.width - margin - self.text-cursor-width {
+
+                    self.x = parent.width - cursor-position.x - margin - self.text-cursor-width;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+```
+
+[Open in SlintPad](https://slintpad.com/?snippet=export%20component%20Example%20inherits%20Window%20%7B%0A%20%20%20%20width%3A%20270px%3B%0A%20%20%20%20height%3A%2040px%3B%0A%20%20%20%20Rectangle%20%7B%0A%20%20%20%20%20%20%20%20clip%3A%20true%3B%0A%0A%20%20%20%20%20%20%20%20TextInput%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20text%3A%20%22Edit%20me%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20max(parent.width%2C%20self.preferred-width)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20vertical-alignment%3A%20center%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20private%20property%20%3Clength%3E%20margin%3A%201rem%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20cursor-position-changed(cursor-position)%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20cursor-position.x%20%2B%20self.x%20%3C%20margin%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20self.x%20%3D%20-%20cursor-position.x%20%2B%20margin%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20cursor-position.x%20%2B%20self.x%20%3E%20parent.width%20-%20margin%20-%20self.text-cursor-width%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20self.x%20%3D%20parent.width%20-%20cursor-position.x%20-%20margin%20-%20self.text-cursor-width%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%7D "Open in SlintPad")
+
+slint
+
+## Properties
+
+[Section titled “Properties”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#properties)
+
+### text
+
+[Section titled “text”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#text)
+
+[string](https://docs.slint.dev/latest/docs/slint/reference/property-types/strings/#string)`(in-out)`default: `""`
+
+The text rendered and editable by the user.
+
+### font-family
+
+[Section titled “font-family”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#font-family)
+
+[string](https://docs.slint.dev/latest/docs/slint/reference/property-types/strings/#string) default: `""`
+
+The name of the font family selected for rendering the text.
+
+### font-size
+
+[Section titled “font-size”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#font-size)
+
+[length](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#length) default: `0px`
+
+The font size of the text.
+
+### font-italic
+
+[Section titled “font-italic”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#font-italic)
+
+[bool](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#bool) default: `false`
+
+Whether or not the font face should be drawn italicized or not.
+
+### font-weight
+
+[Section titled “font-weight”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#font-weight)
+
+[int](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#int) default: `0`
+
+The weight of the font. The values range from 100 (lightest) to 900 (thickest). 400 is the normal weight.
+
+### color
+
+[Section titled “color”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#color)
+
+[brush](https://docs.slint.dev/latest/docs/slint/reference/property-types/colors-and-brushes/#brush) default: `depends on the style`
+
+The color of the text.
+
+### selection-foreground-color
+
+[Section titled “selection-foreground-color”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#selection-foreground-color)
+
+[color](https://docs.slint.dev/latest/docs/slint/reference/property-types/colors-and-brushes/#color) default: `a transparent color`
+
+The foreground color of the selection.
+
+### selection-background-color
+
+[Section titled “selection-background-color”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#selection-background-color)
+
+[color](https://docs.slint.dev/latest/docs/slint/reference/property-types/colors-and-brushes/#color) default: `a transparent color`
+
+The background color of the selection.
+
+### horizontal-alignment
+
+[Section titled “horizontal-alignment”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#horizontal-alignment)
+
+[enum TextHorizontalAlignment](https://docs.slint.dev/latest/docs/slint/reference/property-types/builtin-enums/#texthorizontalalignment) default: `start`
+
+The horizontal alignment of the text.
+
+`TextHorizontalAlignment`
+
+This enum describes the different types of alignment of text along the horizontal axis of a `Text` or `StyledText` element.
+
+- **`start`**: The text will be aligned with the start edge of the containing box. This could be left or right depending on the direction of the text.
+- **`end`**: The text will be aligned with the end edge of the containing box. This could be left or right depending on the direction of the text.
+- **`left`**: The text will be aligned with the left edge of the containing box.
+- **`center`**: The text will be horizontally centered within the containing box.
+- **`right`**: The text will be aligned to the right of the containing box.
+
+### vertical-alignment
+
+[Section titled “vertical-alignment”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#vertical-alignment)
+
+[enum TextVerticalAlignment](https://docs.slint.dev/latest/docs/slint/reference/property-types/builtin-enums/#textverticalalignment) default: `top`
+
+The vertical alignment of the text.
+
+`TextVerticalAlignment`
+
+This enum describes the different types of alignment of text along the vertical axis of a `Text` or `StyledText` element.
+
+- **`top`**: The text will be aligned to the top of the containing box.
+- **`center`**: The text will be vertically centered within the containing box.
+- **`bottom`**: The text will be aligned to the bottom of the containing box.
+
+### wrap
+
+[Section titled “wrap”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#wrap)
+
+[enum TextWrap](https://docs.slint.dev/latest/docs/slint/reference/property-types/builtin-enums/#textwrap) default: `no-wrap`
+
+The way the text input wraps. Only makes sense when `single-line` is false.
+
+`TextWrap`
+
+This enum describes the how the text wraps if it is too wide to fit in the width of a `Text` or `StyledText` element.
+
+- **`no-wrap`**: The text won’t wrap, but instead will overflow.
+- **`word-wrap`**: The text will be wrapped at word boundaries if possible, or at any location for very long words.
+- **`char-wrap`**: The text will be wrapped at any character. Currently only supported by the Qt and Software renderers.
+
+### letter-spacing
+
+[Section titled “letter-spacing”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#letter-spacing)
+
+
+[... middle omitted — see footer ...]
+
+
+Selects the text between two UTF-8 offsets.
+`anchor` is the end of the selection that stays put and `focus` the end the cursor moves to,
+so `focus` may precede `anchor` to select backwards.
+Pass the same value for both to place the text cursor at that offset without selecting anything.
+
+### select-all()
+
+[Section titled “select-all()”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#select-all)
+
+Selects all text.
+
+### clear-selection()
+
+[Section titled “clear-selection()”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#clear-selection)
+
+Clears the selection.
+
+### cut()
+
+[Section titled “cut()”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#cut)
+
+Copies the selected text to the clipboard and removes it from the editable area.
+
+### copy()
+
+[Section titled “copy()”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#copy)
+
+Copies the selected text to the clipboard.
+
+### paste()
+
+[Section titled “paste()”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#paste)
+
+Pastes the text content of the clipboard at the cursor position.
+
+### undo()
+
+[Section titled “undo()”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#undo)
+
+Undoes the last text operation.
+
+### redo()
+
+[Section titled “redo()”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#redo)
+
+Redoes the last undone text operation.
+
+### focus()
+
+[Section titled “focus()”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#focus)
+
+Call this function to focus the text input and make it receive future keyboard events.
+
+### clear-focus()
+
+[Section titled “clear-focus()”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#clear-focus)
+
+Call this function to remove keyboard focus from this `TextInput` if it currently has the focus. See also [FocusHandling](https://docs.slint.dev/latest/docs/slint/guide/development/focus/).
+
+## Accessibility
+
+[Section titled “Accessibility”](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput/#accessibility)
+
+By default, `TextInput` elements have the following accessibility properties set:
+
+- `accessible-role: text-input;`
+- `accessible-value: text;`
+- `accessible-enabled: enabled;`
+- `accessible-read-only: read-only;`
+
+Set `accessible-role: none` when the element around the `TextInput` takes the
+`text-input` or `spinbox` role itself.
+Both of them describe the text of the same input otherwise,
+so a screen reader is given that text twice.
+The compiler warns when both of them keep the role.
+
+```
+component CustomLineEdit {
+
+    in-out property <string> text <=> input.text;
+
+    accessible-role: text-input;
+
+    accessible-value <=> root.text;
+
+    input := TextInput {
+
+        // The component around it describes this input
+
+        accessible-role: none;
+
+    }
+
+}
+```
+
+slint
+
+* * *
+
+© 2026 SixtyFPS GmbH
+
+──────── [TRUNCATED] ────────
+Showing 8,914 chars (head) + 2,999 chars (tail) of 21,931 total clean characters.
+Full text saved to: /root/.hermes/cache/web/docs.slint.dev-f265488320.md
+To read the omitted middle: read_file path="/root/.hermes/cache/web/docs.slint.dev-f265488320.md" offset=191 limit=200  (the file is the complete page; raise/lower offset to page through it).
+─────────────────────────────

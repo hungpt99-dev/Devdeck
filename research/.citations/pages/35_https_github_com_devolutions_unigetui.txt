@@ -1,0 +1,104 @@
+# Devolutions/UniGetUI
+URL: https://github.com/devolutions/unigetui
+
+# Devolutions/UniGetUI
+
+UniGetUI: The Graphical Interface for your package managers. Could be terribly described as a package manager manager to manage your package managers
+
+- Stars: 27133
+- Forks: 986
+- Watchers: 27133
+- Open issues: 267
+- License: MIT License
+- Homepage: https://devolutions.net/unigetui/
+- Default branch: main
+- Created: 2021-06-15T12:57:58Z
+
+## Languages
+
+- Batchfile
+- C#
+- CSS
+- HTML
+- Inno Setup
+- JavaScript
+- Objective-C
+- PowerShell
+- Shell
+
+## Topics
+
+- chocolatey
+- cli
+- npm
+- package
+- package-manager
+- pip
+- scoop
+- unigetui
+- windows
+- windows-10
+- windows-11
+- winget
+
+## Top Contributors
+
+- marticliment (6131 contributions)
+- GabrielDuf (388 contributions)
+- excel-bot (312 contributions)
+- mrixner (185 contributions)
+- skanda890 (135 contributions)
+- mamoreau-devolutions (124 contributions)
+- ppvnf (96 contributions)
+- Saibamen (73 contributions)
+- panther7 (71 contributions)
+- dependabot[bot] (33 contributions)
+
+---
+
+## README
+
+# WARNING: **wingetui • com** and **unigetui • com** are fake websites hosted by a third-party. please do NOT trust them
+ 
+
+## Devolutions UniGetUI
+
+> [!IMPORTANT]
+> **Major announcement:** UniGetUI has entered its next chapter with Devolutions.
+> Read the blog post and the official press release.
+
+Downloads
+Release Version Badge
+Issues Badge
+Closed Issues Badge 
+UniGetUI is a Windows-first, intuitive GUI for the most common CLI package managers on Windows 10 and 11. Cross-platform builds are also available for macOS and Linux, with support for package managers including WinGet, Scoop, Chocolatey, Homebrew, APT, DNF, Pacman, Flatpak, Snap, pip, npm, Bun, .NET Tool, PowerShell Gallery, and more.
+With UniGetUI, you can discover, install, update, and uninstall software from multiple package managers through one interface.
+
+image
+View more screenshots here
+
+Check out the Package Managers section for more details!
+
+**Disclaimer:** UniGetUI is not affiliated with the package managers it integrates with. Packages are provided by third parties, so review sources and publishers before installation.
+
+GitHub Actions Workflow Status 
+
+> [!CAUTION]
+> **The official website for UniGetUI is https://devolutions.net/unigetui/.** 
+> **The official source repository is https://github.com/Devolutions/UniGetUI.** 
+> **Any other website should be considered unofficial, despite what they may say.**
+
+🔒 Found a security issue? Please report it via the Devolutions security page
+
+## Project stewardship
+
+UniGetUI was created by Martí Climent and is now maintained by Devolutions. The project remains free, open source, and MIT-licensed. Devolutions' stewardship brings long-term investment, structured governance, stronger security processes, and a roadmap for broader enterprise readiness while keeping UniGetUI standalone and community-driven.
+
+Read more in the Devolutions announcement and the official press release.
+
+## Table of contents
+ - **UniGetUI Homepage**
+ - Table of contents
+ - Installation
+ - Update UniGetUI
+ -

@@ -1,0 +1,27 @@
+# cargo-bins/cargo-binstall — HELP.md
+- Page: GitHub code file
+- URL: https://github.com/cargo-bins/cargo-binstall/blob/main/HELP.md
+- Repository: cargo-bins/cargo-binstall
+- Path: HELP.md
+- Ref: main
+- Lines: 245
+
+# Command-Line Help for `cargo-binstall`
+This document contains the help content for the `cargo-binstall` command-line program.
+**Command Overview:**
+* `cargo-binstall`↴
+
+## `cargo-binstall`
+Install a Rust binary... from binaries!
+**Usage:** `cargo-binstall [OPTIONS] [crate[@version]]...`
+License: GPLv3. Source available at https://github.com/cargo-bins/cargo-binstall
+Some crate installation strategies may collect anonymized usage statistics by default. If you prefer not to participate on such data collection, you can opt out by using the `--disable-telemetry` flag or its associated environment variable. For more details about this data collection, please refer to the mentioned flag or the project's README file
+
+...
+
+### **Options:**
+<hr/>
+<i>
+This document was generated automatically by
+<a href="https://crates.io/crates/clap-markdown"><code>clap-markdown</code></a>.
+</i>

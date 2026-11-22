@@ -1,0 +1,16 @@
+[](https://forge.fedoraproject.org/security/docs/commits/branch/main/modules/ROOT/pages/cryptography/signatures.adoc "Page history")
+[](https://forge.fedoraproject.org/security/docs/src/branch/main/modules/ROOT/pages/cryptography/signatures.adoc "Edit this Page")
+[](https://forge.fedoraproject.org/security/docs/issues/new?title=%5Bmain%5D%20Doc%20issue%20in%20file%20modules/ROOT/pages/cryptography/signatures.adoc "Report an issue")
+
+...
+
+# Cryptographic Signatures in Fedora
+## Contents
+Cryptographic signatures are used throughout the Fedora ecosystem to ensure the integrity and authenticity of distributed artefacts. By verifying a signature, users can confirm that an artefact was produced by the Fedora Project and has not been tampered with since it was signed.
+Cryptographic signatures also simplify the use of mirrors within the Fedora Project. As the artefacts are signed with a key that is distributed out-of-band, it’s possible to establish trust even if the download did not come directly from Fedora infrastructure.
+Fedora currently signs the following artefacts:
+* Installation Media and Disk Images
+* RPM Packages
+* Secure-Boot PE Executables
+* OSTree Composes
+An authoritative list of Fedora’s GPG keys can be found on the Fedora website [here](https://fedoraproject.org/security/) and in the `fedora-gpg-keys` package.

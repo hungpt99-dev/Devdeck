@@ -1,0 +1,95 @@
+# Dev tools, env vars, and tasks in one CLI | mise-en-place
+URL: https://mise.jdx.dev/
+
+Dev tools, env vars, and tasks in one CLI | mise-en-place
+
+# mise-en-place
+
+Dev tools, env vars, and tasks in one CLI
+
+ mise is pronounced “meez”
+
+ mise installs a project's tools, sets its environment variables, and runs its tasks from one `mise.toml` that works in your shell, editor, and CI. With `mise bootstrap`, it can also set up a whole machine: packages, dotfiles, and services. 
+
+$`curl -fsSL https://mise.run | sh` Copy
+
+ macOS & Linux · Installing on Windows?
+
+≡ mise.toml Example configuration
+
+# Tool versions for this project
+
+```
+[tools]
+node = "24"
+python = "3.14"
+
+```
+
+ Example output ~/my-project
+
+```
+$ mise install
+✓ installed 2 tools in 6.2s: node@24.21.0, python@3.14.8
+
+```
+
+Open source, MIT licensed
+
+- macOS, Linux & Windows
+- Written in Rust
+- Releases several times a week
+
+## Showreel
+
+4:58
+
+1. mise, at 0:00.
+2. Project switching, at 0:10: cd switches node to the version each project's mise.toml sets. One mise.toml per project: tools, env vars, and tasks. With mise activate, cd in, and its tools and env vars load. mise run ci runs the tasks in that environment.
+3. Dev tools, at 0:58: No jq? mise use jq installs it and adds it to mise.toml. 1,000+ tools by short name, from node to terraform.
+4. Environments, at 1:32: Leave, and mise restores the environment. .env files load too, with _.file.
+5. Tasks, at 1:54: ci depends on lint, test, build. They can run in parallel. Each output line is labeled with its task. With sources and outputs, up-to-date work is skipped.
+6. Dotfiles, at 2:32: mise dot track keeps a history. A watcher saves each edit. mise dot rollback restores an earlier version.
+7. Everywhere, at 3:12: mise.toml asks for 24. mise.lock records 24.22.0. Commit both. CI and other machines can use the same versions.
+8. A new machine, at 3:36: mise bootstrap --adopt restores your dotfiles and mise config. Then it starts the watcher and installs your global tools. On a fresh clone, mise run ci installs what mise.lock pins. Then its tasks run with the project's env vars.
+9. Install mise, at 4:38.
+
+## What mise manages
+
+$ mise use node@24
+
+### Dev tools
+
+ Install any of 1,000+ tools, choose a version for each project, and switch automatically as you move between directories. 
+
+Read the dev tools guide
+
+$ mise env
+
+### Environments
+
+ Load a project's environment variables from `mise.toml`, .env files, and secrets when you enter its directory. 
+
+Read the environments guide
+
+$ mise run test
+
+### Tasks
+
+ Define build, test, lint, and deploy commands next to the tools and environment variables they need, with dependencies and parallel runs. 
+
+Read the tasks guide
+
+$ mise bootstrap
+
+### Bootstrap
+
+ Set up a whole machine: system packages, dotfiles, repositories, services, macOS defaults, and tools. 
+
+Read the bootstrap guide
+
+Already have `.tool-versions`, `.nvmrc`, or `.python-version` files? mise reads `.tool-versions` as it is and reads the others once you enable them.
+
+## Switch between project environments
+
+ Activate mise in yo

@@ -1,0 +1,118 @@
+# Chapter 8. The Debian package management tools
+## 8.1. What programs does Debian provide for managing its packages?
+### 8.1.2. APT
+APT is the _Advanced Package Tool_ , an advanced interface to
+the Debian packaging system which provides the **apt-get** program. It provides commandline tools for searching and managing packages,
+and for querying information about them, as well as low-level access to all
+features of the libapt-pkg library. For more information, see the User's Guide
+in `/usr/share/doc/apt-doc/guide.html/index.html` (you will
+have to install the `apt-doc` package).
+Starting with Debian Jessie, some frequently used **apt-get** and **apt-cache** commands have an equivalent via the new **apt** binary. This means some popular commands like **apt-get update** , **apt-get install** , **apt-get remove** , **apt-cache search** , or **apt-cache show** now can also be called simply via **apt** , say **apt update** , **apt install** , **apt remove** , **apt search** , or **apt show** .
+The following is an overview
+of the old and new commands:
+```
+ apt-get update             ->  apt update
+ apt-get upgrade            ->  apt upgrade
+ apt-get dist-upgrade       ->  apt full-upgrade
+ apt-get install package    ->  apt install package
+ apt-get remove package     ->  apt remove package
+ apt-get autoremove         ->  apt autoremove
+ apt-cache search string    ->  apt search string
+ apt-cache policy package   ->  apt list -a package
+ apt-cache show package     ->  apt show package
+ apt-cache showpkg package  ->  apt show -a package
+```
+
+...
+
+* To update the list of packages known by your system, you can run:
+  ```
+  apt update
+  ```
+(you should execute this regularly to update your package lists)
+* To install the _`foo`_ package and all its dependencies,
+run:
+  ```
+  apt install foo
+  ```
+* To remove the foo package from your system, run:
+  ```
+  apt remove foo
+  ```
+* To remove the foo package and its configuration files from your system, run:
+  ```
+  apt purge foo
+  ```
+* To list all packages for which newer versions are available, run:
+  ```
+  apt list --upgradable
+  ```
+* To upgrade all the packages on your system (without installing extra packages
+or removing packages), run:
+  ```
+  apt upgrade
+  ```
+* To upgrade all the packages on your system, and, if needed for a package
+upgrade, installing extra packages or removing packages, run:
+  ```
+  apt full-upgrade
+  ```
+(The command `upgrade` keeps a package at its installed
+obsolete version if upgrading would need an extra package to be installed, for
+a new dependency to be satisfied. The `full-upgrade` command
+is less conservative.)
+
+...
+
+For more information, install the `apt` package and read apt (8) , apt-get (8) , sources.list (5) and install the `apt-doc` package and
+read `/usr/share/doc/apt-doc/guide.html/index.html` .
+
+### 8.1.3. aptitude
+**aptitude** is a package manager for Debian GNU/Linux systems
+that provides a frontend to the apt package management infrastructure. **aptitude** is a text-based interface using the curses library.
+Actions may be performed from a visual interface or from the command-line.
+
+...
+
+available. For more information see [Section 8.1.5, “tasksel”](https://www.debian.org/doc/manuals/debian-faq/pkgtools.en.html "8.1.5. tasksel") .
+* **aptitude** in full screen mode has **su** functionality embedded and can be run by a normal user. It will call **su** (and ask for the root password, if any) when you really
+need administrative privileges.
+
+...
+
+Note that **aptitude** is the preferred program for daily
+package management from the console.
+For more information, read the manual page aptitude (8) and install the `aptitude-doc` package.
+
+...
+
+### 8.1.6. Other package management tools
+#### 8.1.6.1. dpkg-deb
+* Find out all the options: `dpkg-deb --help` .
+* Determine what files are contained in a Debian archive file: `dpkg-deb --contents foo_VVV-RRR.deb`
+* Extract the files contained in a named Debian archive into a user specified
+directory: `dpkg-deb --extract foo_VVV-RRR.deb tmp` extracts
+each of the files in `foo_VVV-RRR.deb` into the directory `tmp/` . This is convenient for examining the contents of a
+
+...
+
+Note that any packages that were merely unpacked using `dpkg-deb --extract` will be incorrectly installed,
+you should use `dpkg --install` instead.
+More information is given in the manual page dpkg-deb (1) .
+
+...
+
+## 8.5. How can I find out what package produced a particular file?
+* `zgrep foo Contents-ARCH.gz`
+This searches for files which contain the substring `foo` in
+their full path names. The files `Contents-ARCH.gz` (where
+ARCH represents the wanted architecture) reside in the major package
+directories (main, non-free, contrib) at a Debian archive site (i.e. under `/debian/dists/trixie` ). A `Contents` file
+refers only to the packages in the subdirectory tree where it resides.
+
+...
+
+expression `foo` in their full path names. The advantage over
+the example above is that there is no need to retrieve the `Contents-ARCH.gz` files as it will do this automatically for
+all the sources defined in `/etc/apt/sources.list` when you
+run (as root) `apt-file update` .

@@ -1,0 +1,90 @@
+[Administer](https://learning.postman.com/docs/administration/admin-overview) [Billing](https://learning.postman.com/docs/billing/billing-overview)
+
+...
+
+# About plans
+Your Postman plan and add-ons define what Postman features you and your team have access to. You can view your current plan and add-ons in the [Billing](https://go.postman.co/account/billing) section of your Postman account settings.
+Postman plan offerings changed in March 2026, and the new plans are now available for purchase. If you are on a legacy plan, you can continue to use your current plan and add-ons. You will stay on your legacy plan until renewal. Only Professional plans are able to renew on their existing plan. It’s possible to use both legacy and new plans with either Postman v11 or v12.
+With the March 2026 plans, there were a number of changes made to simplify and improve plan offerings. The following are general changes to the plans. For specific details about the new plans, see [Postman plans](https://www.postman.com/pricing/) .
+
+## Plans offered
+Prior to March 2026, Postman offered Free, Basic, Professional, and Enterprise plans. With the new plans, Postman offers Free, Solo, Team, and Enterprise plans. The new Team plan replaces the Basic plan. The Solo plan is a new offering that provides access to advanced Postman features such as higher AI credits and automation capabilities for individual users.
+
+## Add-ons offered
+Prior to March 2026, Postman offered the following add-ons: Postman AI, Collection Runner, Partner Editor, Advanced Security Administration, API Builder, Flows, and Postbot.
+Postman now offers the Advanced Security Administration add-on for Enterprise plans, the new Simple Security add-on for Team plans, and Premium Support for Enterprise plans. Many features from the other plans have been added to the new plans. See the [pricing page](https://www.postman.com/pricing/) for more details.
+
+## Mock servers and custom domains
+Mock Servers and Custom Domains will no longer be charged based on consumption. Mock server usage is now unlimited on all plans. Unlimited Custom Domains will be included in the Solo, Team and Enterprise plans.
+
+## Unlimited Collection runs
+Collection runs are now unlimited on all plans. On legacy plans, collection runs are limited based on plan type, and unlimited runs could be purchased as an add-on. With the new plans, you can run as many collections as you need without worrying about limits or additional costs.
+
+## Partner Workspace changes
+[Partner Workspaces](https://learning.postman.com/docs/collaborating-in-postman/using-workspaces/partner-workspaces/overview/) are now available in all Postman Enterprise plans. They were previously available as an add-on for Professional and Enterprise plans.
+Also, in new plans, all Partners (Viewers and Editors) are free. Partner editors no longer consume paid Postman seats. Note that you can’t add users in your domain as Partners. (You can still add them as internal users.)
+
+...
+
+## Team support
+Previously, Free plans could create a team and invite up to three users to collaborate. With the new plans, the Free plan is limited to one user and can’t create a team. To collaborate with others, you will need to upgrade to a paid plan.
+Was this page helpful?
+Yes No
+
+...
+
+- [Free and Solo experience](https://learning.postman.com/docs/administration/free-and-solo)
+- [Team migration](https://learning.postman.com/docs/administration/team-merge)
+- Team management
+- Billing
+* [Overview](https://learning.postman.com/docs/billing/billing-overview)
+* [Manage billing](https://learning.postman.com/docs/billing/billing)
+* [Purchase Postman](https://learning.postman.com/docs/billing/buying)
+
+...
+
+* [Overview](https://learning.postman.com/docs/getting-started/postman-trials/overview)
+* [FAQ](https://learning.postman.com/docs/getting-started/postman-trials/enterprise-trial-faq)
+* [Overview](https://learning.postman.com/docs/getting-started/importing-and-exporting/importing-and-exporting-overview)
+* [Data import methods](https://learning.postman.com/docs/getting-started/importing-and-exporting/importing-data)
+
+...
+
+* [Free and Solo experience](https://learning.postman.com/docs/administration/free-and-solo)
+* [Team migration](https://learning.postman.com/docs/administration/team-merge)
+* [Overview](https://learning.postman.com/docs/administration/managing-your-team/overview)
+* [Create an organization](https://learning.postman.com/docs/administration/managing-your-team/create-org)
+* [Create teams](https://learning.postman.com/docs/administration/managing-your-team/create-teams)
+
+...
+
+* [Secret Scanner patterns](https://learning.postman.com/docs/administration/managing-your-team/secret-scanner/secret-scanner-patterns)
+* [BYOK Encryption](https://learning.postman.com/docs/administration/managing-your-team/byok-encryption)
+* [Audit logs](https://learning.postman.com/docs/administration/managing-your-team/audit-logs)
+* [Overview](https://learning.postman.com/docs/billing/billing-overview)
+* [Manage billing](https://learning.postman.com/docs/billing/billing)
+* [Purchase Postman](https://learning.postman.com/docs/billing/buying)
+* [Purchase Postman from AWS Marketplace](https://learning.postman.com/docs/billing/buying-aws)
+* [About plans](https://learning.postman.com/docs/billing/about-plans)
+* [About resource usage](https://learning.postman.com/docs/billing/resource-usage)
+* [About Postman AI usage](https://learning.postman.com/docs/billing/agent-mode-usage)
+
+...
+
+* [Authentication](https://learning.postman.com/docs/postman-cli/postman-cli-auth)
+* [Basic](https://learning.postman.com/docs/postman-cli/postman-cli-basic)
+* [Team](https://learning.postman.com/docs/postman-cli/postman-cli-teams)
+* [Workspace](https://learning.postman.com/docs/postman-cli/postman-cli-workspace)
+* [Collection](https://learning.postman.com/docs/postman-cli/postman-cli-collections)
+
+...
+
+* [Plugin skills](https://learning.postman.com/docs/postman-plugin/skills)
+* [Postman Docs](https://learning.postman.com/)
+* [Postman API Docs](https://learning.postman.com/api-docs)
+* [Postman Flows](https://learning.postman.com/flows)
+* [Fabric Gateway](https://docs.fabricgateway.ai/)
+* [Passport](https://docs.usepassport.ai/)
+* [Astropods](https://docs.astropods.com/welcome)
+* [Latest (v12)](https://learning.postman.com/docs/billing/about-plans)
+* [v11](https://learning.postman.com/v11/docs/billing/about-plans)

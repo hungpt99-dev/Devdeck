@@ -1,0 +1,229 @@
+- [Home](https://dnf.readthedocs.io/en/latest/index.html)
+- DNF Command Reference
+- [Edit on GitHub](https://github.com/rpm-software-management/dnf/blob/master/doc/command_ref.rst)
+
+# DNF Command Reference 
+## Synopsis 
+`dnf [options] <command> [<args>...]`
+
+## Description 
+[DNF](https://github.com/rpm-software-management/dnf/) is the next upcoming major version of [YUM](http://yum.baseurl.org/), a package manager for RPM-based Linux distributions. It roughly maintains CLI compatibility with YUM and defines a strict API for extensions and plugins.
+
+...
+
+## Options 
+Include packages corresponding to the advisory ID, Eg. FEDORA-2201-123. Applicable for the <code>install</code>, <code>repoquery</code>, <code>updateinfo</code>, <code>upgrade</code> and <code>offline-upgrade</code> (dnf-plugins-core) commands.
+
+...
+
+will be empty at the time of creation, the modular dependency could be unsatisfied and modules content could be excluded).Installroot examples:<dl><dt><code>dnf --installroot=<installroot> --releasever=<release> install system-release</code></dt>
+
+...
+
+<dl><dt><code>--newpackage</code></dt>
+<dd>
+Include newpackage relevant packages. Applicable for the <code>install</code>, <code>repoquery</code>, <code>updateinfo</code>, <code>upgrade</code> and <code>offline-upgrade</code> (dnf-plugins-core) commands.
+
+...
+
+</dd><dt><code>-q, --quiet</code></dt>
+<dd>
+In combination with a non-interactive command, shows just the relevant content. Suppresses messages notifying about the current state or actions of DNF.
+</dd><dt><code>-R <minutes>, --randomwait=<minutes></code></dt>
+<dd>
+
+...
+
+Includes packages that provide a fix for an issue of the specified severity. Applicable for the <code>install</code>, <code>repoquery</code>, <code>updateinfo</code>, <code>upgrade</code> and <code>offline-upgrade</code> (dnf-plugins-core) commands.
+
+...
+
+## Commands 
+### Autoremove Command 
+> Removes all packages from the system that were originally installed as dependencies of user-installed packages, but which are no longer required by any such package.
+`dnf [options] autoremove <spec>...`
+
+...
+
+### Check Command 
+Command: `check`
+`dnf [options] check [--dependencies] [--duplicates] [--obsoleted] [--provides]`
+
+...
+
+### Clean Command 
+Removes any cached packages from the system.
+</dd><dt><code>dnf clean all</code></dt>
+<dd>
+Does all of the above.
+</dd></dl>
+
+### Deplist Command 
+<dl><dt><code>dnf [options] deplist [<select-options>] [<query-options>] [<package-spec>]</code></dt>
+<dd>
+Deprecated alias for <a href="#deplist-option-label">dnf repoquery –deplist</a>.
+</dd></dl>
+
+...
+
+### Help Command 
+Command: `help`
+<dl><dt><code>dnf help [<command>]</code></dt>
+<dd>
+Displays the help text for all commands. If given a command name then only displays help for that particular command.
+</dd></dl>
+
+...
+
+### Info Command 
+Command: `info`
+Aliases: `if`
+<dl><dt><code>dnf [options] info [<package-file-spec>...]</code></dt>
+<dd>
+Lists description and summary information about installed and available packages.
+</dd></dl>
+The info command limits the displayed packages the same way as the [list command](#list-command-label).
+This command by default does not force a sync of expired metadata. See also [Metadata Synchronization](#metadata-synchronization-label).
+
+### Install Command 
+Command: `install`
+Aliases: `in`
+Aliases for [explicit NEVRA matching](#specifying-nevra-matching-explicitly-label): `install-n`, `install-na`, `install-nevra`
+Deprecated aliases: `localinstall`
+<dl><dt><code>dnf [options] install <spec>...</code></dt>
+<dd>
+
+...
+
+### List Command 
+Lists extras, that is packages installed on the system that are not available in any known repository.
+</dd><dt><code>dnf [options] list --obsoletes [<package-file-spec>...]</code></dt>
+<dd>
+List packages installed on the system that are obsoleted by packages in any known repository.
+</dd><dt><code>dnf [options] list --recent [<package-file-spec>...]</code></dt>
+<dd>
+List packages recently added into the repositories.
+
+...
+
+### Module Command 
+Modularity overview is available at [man page dnf.modularity(7)](https://dnf.readthedocs.io/en/latest/modularity.html#modularity-label). Module subcommands take [<module-spec>](#specifying-modules-label)… arguments that specify modules or profiles.
+
+...
+
+</dd></dl><dl><dt><code>dnf [options] module enable <module-spec>...</code></dt>
+<dd>
+Enable a module stream and make the stream RPMs available in the package set.
+
+...
+
+### Provides Command 
+Command: `provides`
+Aliases: `prov`, `whatprovides`, `wp`
+<dl><dt><code>dnf [options] provides <provide-spec></code></dt>
+<dd>
+
+...
+
+### Remove Command 
+</dd><dt><code>dnf [options] remove --oldinstallonly</code></dt>
+<dd>
+Removes old installonly packages, keeping only latest versions and version of running kernel.
+</dd></dl>
+
+...
+
+### Repository-Packages Command 
+</dd><dt><code>dnf [options] repository-packages <repoid> install [<package-spec>...]</code></dt>
+<dd>
+Install packages matching <code><package-spec></code> from the repository. If <code><package-spec></code> isn’t specified at all, install all packages from the repository.
+</dd><dt><code>dnf [options] repository-packages <repoid> list [--all] [<package-file-spec>...]</code></dt>
+<dd>
+List all related packages.
+</dd><dt><code>dnf [options] repository-packages <repoid> list --installed [<package-file-spec>...]</code></dt>
+<dd>
+List packages installed from the repository.
+</dd><dt><code>dnf [options] repository-packages <repoid> list --available [<package-file-spec>...]</code></dt>
+<dd>
+List packages available in the repository but not currently installed on the system.
+</dd><dt><code>dnf [options] repository-packages <repoid> list --extras [<package-file-spec>...]</code></dt>
+<dd>
+List packages installed from the repository that are not available in any repository.
+</dd><dt><code>dnf [options] repository-packages <repoid> list --obsoletes [<package-file-spec>...]</code></dt>
+<dd>
+List packages in the repository that obsolete packages installed on the system.
+</dd><dt><code>dnf [options] repository-packages <repoid> list --recent [<package-file-spec>...]</code></dt>
+<dd>
+List packages recently added into the repository.
+</dd><dt><code>dnf [options] repository-packages <repoid> list --upgrades [<package-file-spec>...]</code></dt>
+<dd>
+List packages in the repository that upgrade packages installed on the system.
+</dd><dt><code>dnf [options] repository-packages <repoid> move-to [<package-spec>...]</code></dt>
+<dd>
+Reinstall all those packages that are available in the repository.
+</dd><dt><code>dnf [options] repository-packages <repoid> reinstall [<package-spec>...]</code></dt>
+<dd>
+Run the <code>reinstall-old</code> subcommand. If it fails, run the <code>move-to</code> subcommand.
+</dd><dt><code>dnf [options] repository-packages <repoid> reinstall-old [<package-spec>...]</code></dt>
+<dd>
+Reinstall all those packages that were installed from the repository and simultaneously are available in the repository.
+</dd><dt><code>dnf [options] repository-packages <repoid> remove [<package-spec>...]</code></dt>
+<dd>
+Remove all packages installed from the repository along with any packages depending on the packages being removed. If <code>clean_requirements_on_remove</code> is enabled (the default) also removes any dependencies that are no longer needed.
+</dd><dt><code>dnf [options] repository-packages <repoid> remove-or-distro-sync [<package-spec>...]</code></dt>
+<dd>
+Select all packages installed from the repository. Upgrade, downgrade or keep those of them that are available in another repository to match the latest version available there and remove the others along with any packages depending on the packages being removed. If <code>clean_requirements_on_remove</code> is enabled (the default) also removes any dependencies that are no longer needed.
+</dd><dt><code>dnf [options] repository-packages <repoid> remove-or-reinstall [<package-spec>...]</code></dt>
+<dd>
+
+...
+
+</dd><dt><code>dnf [options] repository-packages <repoid> upgrade [<package-spec>...]</code></dt>
+<dd>
+
+...
+
+</dd><dt><code>dnf [options] repository-packages <repoid> upgrade-to [<package-specs>...]</code></dt>
+<dd>
+A deprecated alias for the upgrade subcommand.
+</dd></dl>
+
+...
+
+### Shell Command 
+- list: resolve and list the content of the transaction
+- reset: reset the transaction
+- run: resolve and run the transaction
+</dd></dl>
+Note that all local packages must be used in the first shell transaction subcommand (e.g. *install /tmp/nodejs-1-1.x86_64.rpm /tmp/acpi-1-1.noarch.rpm*) otherwise an error will occur. Any *disable*, *enable*, and *reset* module operations (e.g. *module enable nodejs*) must also be performed before any other shell transaction subcommand is used.
+
+...
+
+### Updateinfo Command 
+Each advisory is displayed as a block that includes: the advisory title (as a header), Update ID, Type (bugfix, enhancement, security, newpackage, or unknown), Updated date, associated Bugs (bugzilla references), CVEs, a full Description, and Severity. When used with the <code>-v</code> option, additional fields are shown: Rights and Files (the RPM filenames related to the advisory).
+
+...
+
+### Upgrade-Minimal Command 
+Command: `upgrade-minimal`
+Aliases: `up-min`
+Deprecated aliases: `update-minimal`
+<dl><dt><code>dnf [options] upgrade-minimal</code></dt>
+<dd>
+
+...
+
+## Specifying Packages 
+### NEVRA Matching 
+The first form that matches any packages is used and the remaining forms are not tried. If none of the forms match any packages, an attempt is made to match the `<package-spec>` against full package NEVRAs. This is only relevant if globs are present in the `<package-spec>`.
+
+...
+
+You can specify globs as part of any of the five NEVRA components. You can also specify a glob pattern to match over multiple NEVRA components (in other words, to match across the NEVRA separators). In that case, however, you need to write the spec to match against full package NEVRAs, as it is not possible to split such spec into NEVRA forms.
+
+...
+
+## Package Filtering 
+### Exclude Filtering 
+To disable all excludes for e.g. the install command you can use the following combination of command line options:
+`dnf --disableexcludes=all --disableplugin="*" install bash`

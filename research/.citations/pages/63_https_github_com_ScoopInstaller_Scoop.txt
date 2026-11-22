@@ -1,0 +1,26 @@
+# ScoopInstaller/Scoop
+- Page: GitHub repository
+- URL: https://github.com/ScoopInstaller/Scoop
+- Description: A command-line installer for Windows
+- Default branch: master
+- Created: 2013-05-11T03:52:15.000Z
+- Commits: 10,377
+
+...
+
+# Scoop
+Scoop is a command-line installer for Windows.
+
+...
+
+## What does Scoop do?
+* Eliminates [User Account Control](https://learn.microsoft.com/windows/security/application-security/application-control/user-account-control/) (UAC) prompt notifications.
+* Hides the graphical user interface (GUI) of wizard-style installers.
+* Prevents polluting the `PATH` environment variable. Normally, this variable gets cluttered as different apps are installed on the device.
+* Avoids unexpected side effects from installing and uninstalling apps.
+
+...
+
+## Inspiration
+* [Homebrew](https://brew.sh/)
+* [Sub](https://signalvnoise.com/posts/3264-automating-with-convention-introducing-sub)

@@ -1,0 +1,134 @@
+# Plans & Pricing | Postman API Platform
+## Pricing built for how you work
+### Solo
+**Billed annually:** $9 per month (billed annually) — [Get Started](https://www.postman.com/buy?plan=solo&interval=annually&utm_source=www-next-llm)
+**Billed monthly:** $12 per month (billed monthly) — [Get Started](https://www.postman.com/buy?plan=solo&interval=monthly&utm_source=www-next-llm)
+
+...
+
+### Team
+**Billed annually:** $19 per user/month (billed annually) — [Get Started](https://www.postman.com/buy?plan=team&interval=annually&utm_source=www-next-llm)
+**Billed monthly:** $23 per user/month (billed monthly) — [Get Started](https://www.postman.com/buy?plan=team&interval=monthly&utm_source=www-next-llm)
+
+...
+
+## Comparison Table
+| Billing | Solo | Team |
+| Billed annually | $9 per month (billed annually) | $19 per user/month (billed annually) |
+| Billed monthly | $12 per month (billed monthly) | $23 per user/month (billed monthly) |
+
+### Postman AI
+| Feature | Free | Solo | Team | Enterprise |
+| Postman AI credits _(AI-powered assistance, via Agent Mode, to generate tests, review collections, debug failures, and improve API documentation directly in Postman.)_ | 50 / month | 400 / month | 400 / user / month | 800 / user / month (pooled) |
+| Postman AI overages (Pay-as-you-go) _(Continue using AI features beyond your included monthly credits with pay-as-you-go pricing (if enabled by your Billing Admin).)_ | — | $0.05 / credit | $0.04 / credit | $0.035 / credit (volume pricing available) |
+| Context Graph ingestion & refresh _(Postman continuously ingests your APIs, deployments, and dependencies into the Context Graph and refreshes it every 24 hours.)_ | Free, 24 hr refresh | Free, 24 hr refresh | Free, 24 hr refresh | Free, 24 hr refresh |
+| Context Graph API queries _(Included Context Graph API queries your agents and workflows can run each month. Additional queries are billed at a flat pay-as-you-go rate.)_ | 1,000 / month, then $0.01 / query | 5,000 / month, then $0.01 / query | 5,000 / month, then $0.01 / query | 5,000 / month, then $0.01 / query |
+
+...
+
+### Development
+| Feature | Free | Solo | Team | Enterprise |
+| Multi-protocol API client _(Run API workflows across multiple protocols in a single execution, making it easy to automate and repeat real-world API interactions beyond HTTP.)_ | ✓ | ✓ | ✓ | ✓ |
+| MCP Client (Model Context Protocol) _(Connect to and test MCP servers. Send requests, inspect responses, and evaluate server behaviour directly in Postman.)_ | ✓ | ✓ | ✓ | ✓ |
+| Collections and environments _(Group related requests together and manage variables like URLs, auth tokens, and headers across different environments (local, staging, production) so you can test and reuse APIs without duplication.)_ | ✓ | ✓ | ✓ | ✓ |
+| Unlimited manual Flows _(Run Flows on demand with full control over each step. Flows can be created or modified using Agent Mode, or edited locally and in the Postman interface.)_ | ✓ | ✓ | ✓ | ✓ |
+
+...
+
+### Testing
+| Feature | Free | Solo | Team | Enterprise |
+| Automated API testing (Unlimited, Collection Runner) _(Run automated collection tests repeatedly using the Collection Runner for regression and validation workflows.)_ | ✓ | ✓ | ✓ | ✓ |
+| Multi-protocol Runner _(Run API workflows across multiple protocols in a single execution, making it easy to automate and repeat real-world API interactions beyond HTTP.)_ | — | ✓ | ✓ | ✓ |
+| Data file support in Collection Runner _(Upload CSV or JSON files to run a collection multiple times with different input data for bulk and parameterized testing.)_ | — | ✓ | ✓ | ✓ |
+| Automation Flows _(Build automated workflows triggered by schedules or webhooks for recurring tasks and integrations.)_ | 25 credits / month | 50 credits / month | 100 credits / team / month | 500 credits / team / month |
+
+### Production
+| Feature | Free | Solo | Team | Enterprise |
+| API monitoring (per team, per month) _(Automatically run scheduled API tests to monitor availability, correctness, and response times. Usage is metered per team per month. Additional requests can be purchased on paid plans)_ | 1,000 requests | 10,000 requests | 10,000 requests | 10,000 requests |
+| Monitor reports _(Share monitor results as public, read-only status pages, with exclusive approval workflows for publishing and edits on Enterprise.)_ | — | ✓ | ✓ | Enterprise support & approval workflows |
+| Insights (production visibility) _(Analyze API traffic to understand usage patterns, performance trends, and operational issues across your APIs.)_ | — | — | — | ✓ |
+| API Catalog (system of record) _(Centralize and track your organization's APIs with searchable metadata, ownership, and health signals.)_ | — | — | — | ✓ |
+
+...
+
+### Distribution
+| Feature | Free | Solo | Team | Enterprise |
+| Public workspaces _(Set a workspace to public so its contents (APIs, collections) can be viewed without restrictions. Works independently of API Network publication.)_ | ✓ | ✓ | ✓ | ✓ |
+| Public API Network _(Explore the largest network of APIs, public workspaces, collections, and Flows by developers.)_ | ✓ | ✓ | ✓ | ✓ |
+| API documentation (public & private) _(Publish API documentation with live examples privately within your organization or publicly to external users.)_ | Postman branded | Custom branded | Custom branded | Custom branded |
+| Postman Shared Vault _(Store and use vault secrets using references in API requests, monitors, CI/CD, and scheduled collection runs. Secrets can be shared at user and organization levels.)_ | — | ✓ | ✓ | ✓ |
+| Shared package library _(Create and reuse shared packages across your APIs and workflows.)_ | — | ✓ | ✓ | ✓ |
+| Workspace & collection viewers _(Grant view-only access to workspaces or collections without edit permissions.)_ | — | — | Unlimited | Unlimited |
+| Private API Network _(Share and discover private APIs securely with internal teams or trusted partners, with organization-level ownership and governance.)_ | — | — | — | ✓ |
+
+### API Management
+| Feature | Free | Solo | Team | Enterprise |
+| Total users included _(The total number of users included in the plan.)_ | 1 user | 1 user | Unlimited | Unlimited |
+| Integrations _(Connect Postman with tools like Slack, Jira, Microsoft Teams, and Fern.)_ | Up to 5 | Up to 10 | Up to 50 | Up to 100 |
+| Calls to Postman API (monthly) _(Make programmatic calls to the Postman API to manage workspaces, collections, and other assets. Usage is metered monthly.)_ | 10,000 | 100,000 | 1 million | 10 million |
+| Collection recovery _(Restore recently deleted collections within a defined recovery window.)_ | 1 day | 30 days | 90 days | 90 days |
+| Postman Local Vault _(Store and manage secrets locally on your machine or in your workspace, with protection and Git-friendly workflows.)_ | ✓ | ✓ | ✓ | ✓ |
+| Secret Scanner - Local Secret Protection _(Detect secrets in collections and variables and prevent them from being shared or synced.)_ | ✓ | ✓ | ✓ | ✓ |
+| Secret Scanner - Cloud Secret Detection _(Scans public workspaces for exposed secrets and flags potential issues. For internal and partner workspaces, Advanced Security Administration (ASA) add-on is required.)_ | ✓ | ✓ | ✓ | ✓ |
+| Role-based access control (RBAC) _(Assign roles to control access to workspaces, collections, and organizational settings.)_ | — | — | Basic | Advanced |
+| Simple Security - SSO / SAML _(Authenticate users via SSO/SAML through your identity provider for centralized access management.)_ | — | — | Simple Security add-on | ✓ |
+| User provisioning (SCIM) _(Automatically provision and deprovision users through SCIM integration with your identity provider.)_ | — | — | — | ✓ |
+| User groups _(With Postman user groups, you can organize your team members into functional groups that mimic your organizational structure.)_ | — | — | — | ✓ |
+| Organizations _(Group multiple Postman teams under a single organization with centralized control over identity, access, and resources.)_ | — | — | — | ✓ |
+| Internal workspaces _(Free and Solo support single-user internal workspaces. Team and Enterprise support multi-user collaboration.)_ | ✓ | ✓ | ✓ | ✓ |
+| Private workspaces (invite only) _(Enterprise-only workspaces with restricted, invite-based access for specific members of your organization.)_ | — | — | — | ✓ |
+| External workspaces (Partner & multi-Partner) _(Invite external partners or multiple partner organizations into a dedicated workspace with controlled access.)_ | — | — | — | ✓ |
+| Workspace archival _(Archive inactive workspaces to preserve data and prevent further changes.)_ | — | — | — | ✓ |
+| Audit logs & compliance reporting _(Track user activity and administrative changes with downloadable audit logs for compliance reporting.)_ | — | — | — | ✓ |
+| Deployment control _(Control how the Postman Enterprise app is deployed and updated across your organization's devices.)_ | — | — | — | ✓ |
+
+...
+
+| Feature | Free | Solo | Team | Enterprise |
+| Total users included _(The total number of users included in the plan.)_ | 1 user | 1 user | Unlimited | Unlimited |
+| Integrations _(Connect Postman with tools like Slack, Jira, Microsoft Teams, and Fern.)_ | Up to 5 | Up to 10 | Up to 50 | Up to 100 |
+| Calls to Postman API (monthly) _(Make programmatic calls to the Postman API to manage workspaces, collections, and other assets. Usage is metered monthly.)_ | 10,000 | 100,000 | 1 million | 10 million |
+| Collection recovery _(Restore recently deleted collections within a defined recovery window.)_ | 1 day | 30 days | 90 days | 90 days |
+| Domain Capture _(Automatically migrate unmanaged Postman accounts on your verified domain into your Enterprise organization for centralized control.)_ | — | — | — | Advanced Security add-on |
+| Postman Vault integrations _(Store references to sensitive data in the Postman Local Vault or Shared Vault for use in collections, environments, and requests.)_ | — | — | — | Advanced Security add-on |
+| Advanced secret security controls _(Admin-enforced policies for secret storage, scanning, and handling across teams and workspaces, including the ability to keep secrets out of LLMs, with centralized visibility and reporting via Advanced Security Administration (ASA). View add-on details)_ | — | — | — | Advanced Security add-on |
+
+...
+
+| Feature | Free | Solo | Team | Enterprise |
+| Total users included _(The total number of users included in the plan.)_ | 1 user | 1 user | Unlimited | Unlimited |
+| Integrations _(Connect Postman with tools like Slack, Jira, Microsoft Teams, and Fern.)_ | Up to 5 | Up to 10 | Up to 50 | Up to 100 |
+| Calls to Postman API (monthly) _(Make programmatic calls to the Postman API to manage workspaces, collections, and other assets. Usage is metered monthly.)_ | 10,000 | 100,000 | 1 million | 10 million |
+| Collection recovery _(Restore recently deleted collections within a defined recovery window.)_ | 1 day | 30 days | 90 days | 90 days |
+| Account Control _(Restricts users on your company network to only approved domains or teams - preventing access from non-corporate email providers (e.g. gmail.com) or directing users onto a specific managed team, including in conjunction with Domain Capture.)_ | — | — | — | Advanced Security add-on |
+
+...
+
+## Extend Postman with add-ons
+### Simple Security
+#### Simple Security
+[$6 per user/month](https://www.postman.com/buy?quantity=5&plan=team&interval=annual&tab=0&simple_security=1&utm_source=www-next-llm)
+
+...
+
+## Usage-Based Services
+Extend your API development and testing with pay-as-you-go capabilities on paid plans only. Usage-based pricing lets you start small and scale intentionally.
+
+...
+
+### Flows Credits
+#### Flows Credits
+Each plan includes a monthly allotment of Flows credits. If you exceed your included credits, usage can continue with pay-as-you-go pricing when enabled by your Billing Admin. Enterprise customers can contact sales to discuss volume pricing.
+
+...
+
+## Frequently asked questions
+### How is Postman priced?
+Postman is priced per user, per month, with discounts for annual billing. Plans are designed around how you work:- **Free** and **Solo** are single-player plans.
+
+...
+
+### What happens if I exceed my included usage?
+- Additional usage may be billed on eligible paid plans where pay-as-you-go is enabled.
+- Or the specific usage-based feature may pause until the next billing cycle.
+  You can find details for each service in the Usage-based services section above, or in our [documentation](https://learning.postman.com/docs/billing/resource-usage?utm_source=www-next-llm).

@@ -1,0 +1,93 @@
+610170Z","downloads":3265478,"recent_downloads":777204,"default_version":"0.14.0","num_versions":23,"yanked":false,"max_version":"0.14.0","newest_version":"0.14.0","max_stable_version":"0.14.0","description":"A cross-platform GUI library inspired by Elm","homepage":"https://iced.rs","documentation":null,"repository":"https://github.
+
+...
+
+88","has_lib":true,"bin_names":[],"edition":"2024","description":"A cross-platform GUI library inspired by Elm","homepage":"https://iced.rs","documentation":null,"repository":"https://github.
+
+...
+
+80","has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":"https://iced.rs","documentation":null,"repository":"https://github.
+
+...
+
+Elm","homepage":"https://iced.rs","documentation":null,"repository":"https://github.
+
+...
+
+Elm","homepage":"https://iced.rs","documentation":null,"repository":"https://github.com/iced-rs/iced","trustpub_data":null,"linecounts":{"languages":{"Python":{"code_lines":55,"comment_lines":0,"files":1},"Rust":{"code_lines":520,"comment_lines":1,"files":12}},"total_code_lines":575,"total_comment_lines":1}},{"id":1052503,"crate":"iced","num":"0.12.
+
+...
+
+Elm","homepage":"https://iced.rs","documentation":null,"repository":"https://github.com/iced-rs/iced","trustpub_data":null,"linecounts":{"languages":{"Python":{"code_lines":55,"comment_lines":0,"files":1},"Rust":{"code_lines":519,"comment_lines":1,"files":12}},"total_code_lines":574,"total_comment_lines":1}},{"id":857330,"crate":"iced","num":"0.10.
+
+...
+
+712231Z"}],"checksum":"c708807ec86f99dd729dc4d42db5239acf118cec14d3c5f57679dcfdbbc472b1","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+751427Z"}],"checksum":"efbddf356d01e9d41cd394a9d04d62bfd89650a30f12fda5839cabb8c4591c88","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+633341Z"}],"checksum":"d11492d829f0035ed3fa9217faccf16e57a5612a74dc7c49822c6f6a5ab1b829","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+432394Z"}],"checksum":"df71e87f8211b57a439d0764131d2c421a9195036dd4b6608033b05f2f16c196","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+870099Z"}],"checksum":"47627e5bb0bcc0522aca5e11cf8187e34f072ab6da4e7c2fd3f23ed508697e9f","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+952806Z"}],"checksum":"139821b0929b3c00943b3b73405ee5ecf9a8863122c74622ddeda55a8553db1c","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+375967Z"}],"checksum":"cff04e3dc7b29f90a38e241673ca06ed4a5912c69bf1f98db01122f8ca6f780e","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+415611Z"}],"checksum":"26bf8b421e3154d152527fdf3b918baee8e5d13bb65fb7ee04e0ee206a685506","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+417291Z"}],"checksum":"6025abe6b1056c9b5adad79c484c5fd8b7012e5230f3b0439a1294ade7ded7bf","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+546394Z"}],"checksum":"892c61a60283f791d91d118696d6cce50dcf435b2e48dfc471624ba19250af94","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+975359Z"}],"checksum":"80a15cffd0059b242bbb6a1b9c82c690049dfe31d5c5bfcd3a411fd8504f9434","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2021","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+948842Z"}],"checksum":"05279cf5a83b960a1a01cff455fede8a33df720f3ff4fc9d33be79fcea9d2466","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2018","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+428664Z"}],"checksum":"fc8b909824aae021b8e6598ea3f021200d6bea10d27ae1b4202f678c68b0eed9","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2018","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+234819Z"}],"checksum":"0d81ebdbe2ac776369d8fbb022c306f35cc2fa8ba5f4464d048f18b0e173534a","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2018","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+269883Z"}],"checksum":"981b514ac7fa6cd3f98efffcc86749d1c7830f9fa2672623d7fa715f0c2d0ba8","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2018","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.rs/iced","repository":"https://github.
+
+...
+
+com/hecrj","github_username_matches":true,"created_at":"2010-12-10T20:06:42Z"},"audit_actions":[],"checksum":"2fad2a75ba15d91ffcb05952fdf0b9be81a26b4c079e0865837832e0d10418f8","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2018","description":"A cross-platform GUI library inspired by Elm","homepage":null,"documentation":"https://docs.
+
+...
+
+com/hecrj","github_username_matches":true,"created_at":"2010-12-10T20:06:42Z"},"audit_actions":[],"checksum":"91f7b87f3edf9eb9cd00779c06ae0ac2ebae4372d44b97d387abbbe9c254ceac","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2018","description":"A GUI runtime, heavily inspired by Elm.","homepage":null,"documentation":"https://docs.
+
+...
+
+com/hecrj","github_username_matches":true,"created_at":"2010-12-10T20:06:42Z"},"audit_actions":[],"checksum":"f3daea4fe80ce8dff83a7ae6cee6cb5b1bab7303e3979d83cced21f32d14e9b8","rust_version":null,"has_lib":true,"bin_names":[],"edition":"2018","description":"A simple GUI runtime inspired by Elm","homepage":null,"documentation":"https://docs.

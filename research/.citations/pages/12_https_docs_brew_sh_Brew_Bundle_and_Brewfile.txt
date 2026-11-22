@@ -1,0 +1,93 @@
+# Homebrew Documentation: Homebrew Bundle, brew bundle and Brewfile
+URL: https://docs.brew.sh/Brew-Bundle-and-Brewfile
+
+Homebrew Documentation: Homebrew Bundle, brew bundle and Brewfile
+
+# Homebrew Bundle, `brew bundle` and `Brewfile`
+
+Homebrew Bundle is run with the `brew bundle` command.
+
+It uses `Brewfile` s to provide a declarative interface for installing/upgrading packages with Homebrew and starting services with `brew services`.
+
+Rather than specifying the `brew` commands you wish to run, you can specify the state you wish to reach.
+
+See also the `brew bundle` section of `man brew` or `brew bundle --help`.
+
+## Basic usage
+
+### `brew bundle`
+
+A simple `Brewfile` might contain a formula:
+
+```
+brew "ruby"
+
+```
+
+When you run `brew bundle install` (or: just `brew bundle` for short), this will take instructions from the `Brewfile` to run `brew install ruby` and install Ruby if needed.
+
+```
+$ brew bundle
+Installing ruby
+`brew bundle` complete! 1 Brewfile dependency now installed.
+
+```
+
+If it’s outdated, this will run `brew upgrade ruby`. If it’s already installed, this will be a no-op.
+
+```
+$ brew bundle install
+Using ruby
+`brew bundle` complete! 1 Brewfile dependency now installed.
+
+```
+
+### `brew bundle check`
+
+You can check if a `brew bundle install` will do anything by running:
+
+```
+$ brew bundle check
+The Brewfile's dependencies are satisfied.
+
+```
+
+You can use this behaviour in scripts like so:
+
+```
+brew bundle check || brew bundle install
+
+```
+
+If this fails without `--verbose`, run `brew bundle check --verbose` to list unmet dependencies.
+
+### Types
+
+As well as supporting formulae (`brew "..."`), you can also use `brew bundle` with casks, taps, Mac App Store apps, WinGet packages on WSL, VS Code extensions, Go packages, Cargo packages, npm packages, uv tools, Flatpak packages and krew kubectl plugins and to start background services with `brew services`.
+
+```
+tap "apple/apple"
+brew "apple/apple/game-porting-toolkit"
+brew "postgresql@16", restart_service: true
+cask "firefox"
+mas "Refined GitHub", id: 1519867270
+winget "Steam", id: "Valve.Steam"
+winget "PowerToys", id: "XP89DCGQ3K6VLD", source: "msstore"
+vscode "editorconfig.editorconfig"
+go "github.com/charmbracelet/crush"
+cargo "ripgrep"
+cargo "bat", source: "https://github.com/sharkdp/bat"
+uv "mkdocs"
+uv "ruff", source: "git+https://github.com/astral-sh/ruff.git"
+krew "ctx"
+flatpak "com.visualstudio.code"
+flatpak "org.godotengine.Godot", remote: "flathub-beta", url: "https://dl.flathub.org/beta-repo/"
+flatpak "io.github.dvlv.boxbuddyrs", remote: "flathub-beta"
+
+```
+
+WinGet discovery in WSL requires Windows PowerShell 5.1 (`powershell.exe`) and `wslpath`. WinGet installs run with installer interactivity disabled. If WinGet reports that elevation is required, `brew bundle` retries through Windows UAC.
+
+uv tools use the installed `python` or `python@` formula with the highest major/minor Python version, including keg-only versions. If no Homebrew Python is installed, uv selects Python as usual. Already-installed tools keep their existing Python until reinstalled.
+
+A uv tool’s `source:` must resolve on anothe

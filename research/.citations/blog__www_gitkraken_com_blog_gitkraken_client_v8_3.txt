@@ -1,0 +1,213 @@
+NEW COURSE • 100% FREE
+
+Foundations Of AI For Software Development
+
+[ Enroll To Get Started → ](https://learn.gitkraken.com/courses/foundations-of-ai?coupon=AIFOUNDATIONS)
+
+![](https://www.gitkraken.com/wp-content/uploads/2026/10/marigold.png) OFERTA DÍA DE MUERTOSAHORRA HASTA 70%Oferta Por Tiempo Limitado[Comprar ahora](https://www.gitkraken.com/dia-de-muertos-26)
+
+![](https://www.gitkraken.com/wp-content/uploads/2026/10/marigold.png) DÍA DE MUERTOS [¡Consigue un 60-70% de Descuento!](https://www.gitkraken.com/dia-de-muertos-26)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2025/03/gitkraken-logo-stencil-monochrome-light.svg) ](https://gitkraken.com/)
+
+# Git Blog
+
+Releasing the Power of Git
+
+# GitKraken Client v8.3: Now 2x Faster for Apple Silicon Users
+
+- February 14, 2022
+
+What do Olympic speed skaters and developers have in common? They have a need…a need for speed. 😏
+
+Nobody likes moving slow, no matter if you’re competing for the gold, or just trying to deploy an awesome new feature. The GitKraken team has been hard at work making sure all GitKraken Client users, especially macOS users, have the speediest experience possible when leveraging our legendary Git client to collaborate with teams. Prepare to experience some serious speed boosts with the release of GitKraken Client v8.3!
+
+⚡️ Git in the fast lane with the supercharged, record-breaking speeds introduced in the release of GitKraken Client v8.3! ⚡️
+
+## **Native Support for Apple Silicon**
+
+GitKraken Client v8.3 introduces a new ARM64 compatible version, offering native support for Apple Silicon architectures, as used in Macs with M1 chips. Developers love the noticeably faster performance and improved resource management of devices using Apple Silicon technology; GitKraken Client is now fully leveraging this innovative architecture!
+
+If you’re on a Mac with Apple Silicon at its heart, you will need to download the new version of GitKraken Client from our website and replace your existing client, but don’t worry, all of your settings, including profiles and integrations, will remain intact.
+
+![Apple silicon support notice in GitKraken Client](https://www.gitkraken.com/wp-content/uploads/2022/02/apple-silicon-support-1024x565.png)
+
+### **Native Support vs Emulation**
+
+While GitKraken Client has always been fast, recent changes to how Apple builds their laptops and Mac Minis have created the need for some serious changes on our end. Up until now, in order to maintain compatibility with all Mac products, GitKraken Client has used an [emulation layer](https://en.wikipedia.org/wiki/Rosetta_(software)) to interact with Apple Silicon processors. Because it needs to translate between the operating system and application layers, emulation is slow by nature, no matter how well you sharpen your skates ⛸.
+
+With the new ARM64 compatible version, GitKraken Client can tap into the architecture’s shared memory pools and improve thread management across its high-performance and high-efficiency cores. We’re ready to compete on the world’s Olympic stage…if they ever add “version control” as a sport.
+
+## **Mac Big Sur Update**
+
+If you’re using macOS Big Sur edition or later on Intel-based machines, we have some great news for you. 🎉 You will no longer need to run the custom terminal commands to solve the partial signature [issue introduced in macOS Big Sur](https://www.gitkraken.com/blog/workaround-gitkraken-big-sur-issues). Previously, it could take multiple seconds to spawn a child process, but now by default, it will take mere milliseconds. All macOS users will have improved process speeds right out of the gate, making the whole application feel snappier.
+
+## **Speeding Up Electron for All Users**
+
+No matter what operating system you’re on, you will notice improvements in application speed and resource consumption. This is because the GitKraken team has updated Electron, the underlying application stack of GitKraken Client, to a very recent version, bringing with it all the improvements the Electron community has added recently.
+
+We have also patched Electron to meet our specific requirements. This will allow us to best support our users across a wide variety of platforms. For example, [Fedora 35](https://getfedora.org/en/workstation/download/) users will no longer be required to use the `--no-sandbox` option when starting GitKraken Client.
+
+While no small feat, we’re committed to ensuring all GitKraken Client users, both current and in the future, have the best experience possible. With this patched update to Electron, we are in a much better position to roll out more advanced features faster in future releases.
+
+## **GitKraken Workspaces for GitHub Enterprise and GitLab Self-Managed**
+
+GitKraken knows development is a team sport, and some teams require enterprise-grade equipment. GitKraken Workspaces, which allow users to group and take actions against multiple repositories at once, is now available for GitHub Enterprise and GitLab Self-Managed repositories. Workspaces can be shared between teammates, helping make getting new team members up to speed and productive a quick and painless process. There has never been a better way to get a high-level view of your repos!
+
+To use Workspaces, navigate to the Workspaces tab, and click the + New Workspace button. This will open a new menu where you can select repositories from [GitHub](https://www.gitkraken.com/integrations/github), GitHub Enterprise, [Bitbucket](https://www.gitkraken.com/integrations/bitbucket), [GitLab](https://www.gitkraken.com/integrations/gitlab), and GitLab Self-Managed hosting sources.
+
+![GitKraken Client Worspeaces tab showing new GitHub Enterprise and GitLab Self managed options](https://lh4.googleusercontent.com/KtFuO_gmEB6qw_v0oVFsid0qoPDSeCJ9-ni_xAkahmzOFb6lRv9HJ0J-dHbQoZl6AAaHesYee-mvqAC5qms7NaDVNNw0drFPfNhPF_M2xgo5QQ8WYUHiyLKf7EIZWyRRVcZa-mGD)
+
+## **Making the GitKraken CLI G.O.A.T.**
+
+### **New Terminal Settings**
+
+We’ve added two new ways GitKraken CLI users can customize their experience.
+
+Users can now specify the Default Directory where new Terminal Tabs instances will open if not opened from within an existing Repo or Terminal Tab, such as when initiated from the New CLI Tab button in the Repo Management Tab, or from the Command Palette.
+
+Users can also set Line Height, determining how much space appears between each line printed to the terminal screen.
+
+Both of these new options can be found in the `Terminal` settings under Preferences.
+
+![Terminal Tab options added to the GitKraken Client preferences menu](https://www.gitkraken.com/wp-content/uploads/2022/02/Terminal-tab-options-1024x567.png)
+
+### **Improved Autocomplete and Autosuggest for Git Commands**
+
+One of the features that GitKraken Client users keep telling us they love is the autocomplete and autosuggest for [Git commands](https://www.gitkraken.com/learn/git/commands). This makes us extra excited to introduce these improvements, designed to make your CLI workflow experience even better.
+
+#### **Git Flow**
+
+Users leveraging `git flow` for their work will now be presented with autocomplete suggestions to meet their use case, such as `git flow init` or `git flow feature start`, or even `git flow release publish`. Psst: GitKraken’s [Learn Git Library](https://www.gitkraken.com/learn/git) has great resources about [Git Flow](https://www.gitkraken.com/learn/git/git-flow) and other [Git branching strategies](https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy).
+
+![Autocomplete suggestions for git flow](https://www.gitkraken.com/wp-content/uploads/2022/02/git-flow-autocomplete-1024x568.png)
+
+#### **Autocomplete for Git Aliases**
+
+Git users can create handy shortcuts inside Git by [adding aliases to their Git configuration](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases). For folks who work in the terminal, these aliases can save a lot of typing to get their work done. [GitKraken CLI](https://www.gitkraken.com/cli) will now pick up those aliases and present them as autocomplete suggestions, saving users even more time.
+
+#### **Staged File Suggestions for Git Reset**
+
+The `git reset` command allows users to undo changes in a repository. This is a very powerful command, in part, because it allows users to get very specific on what they’re resetting, down to the file level. GitKraken CLI’s autocomplete will now suggest staged files to make using Git reset even easier.
+
+#### **Git Add and Relative paths**
+
+When working in a directory, the full pathname is typically going to be quite a bit longer than the autocomplete suggestions window can fully show. Now, when using the `git add` command in a Terminal Tab, users will see relative paths when working in a subfolder of a repository.
+
+### **Updated Terminal Interface Options**
+
+#### **Automatic Visualization Panels for New Repositories**
+
+When users initiate a new Git repository locally and finish making the first commit with the GitKraken CLI, the visualization panel will automatically open. This panel shows the powerful visuals the [Git client](https://www.gitkraken.com/git-client) is known for, including the colorful commit graph and history, Diff, and blame views.
+
+#### **A Context Menu for the CLI**
+
+When working in a Terminal Tab, users can now right-click to open a new context menu. This menu exposes certain options like pasting Git commands into the terminal, copying text, opening new Terminal Tabs, clearing the screen, and closing the Terminal Tab.
+
+![GitKraken CLI showing the new right mouse click context menu](https://www.gitkraken.com/wp-content/uploads/2022/02/terminal-tab-context-menu-1024x428.png)
+
+## **New Theming Options**
+
+While we’re focused on Gold, Silver, or Bronze during the Olympics, you might want your GitKraken Client commit graph to be fuchsia, magenta, and indigo! 🌈
+
+Users can now customize the commit graph colors in their custom themes! Examples of `// graph colors` have been added to the included theme files to point you in the right direction. Custom themes can be set from the Theme drop-down menu, found in the UI Customization section under Preferences.
+
+![Example of custom graph colors now available in GitKraken Client custom themes](https://www.gitkraken.com/wp-content/uploads/2022/02/example-custom-colors-theme-1024x413.png)
+
+## **There Are No Speed Limits on the Road to Success**
+
+This release signifies a major benchmark for [GitKraken Client](https://www.gitkraken.com/git-client) and a new era of performance for GitKraken Client users. Improvements to the tool’s underlying engine will help all users get more done, faster.
+
+The GitKraken team has invested a lot to make sure our tools are innovative and able to deal with any new architectures the computing landscape will adopt next. After all, this is not the first time Apple has disrupted the CPU industry with an architecture switch, having moved from PowerPC to Intel processors in the mid-2000s. We doubt it will be the last time a similar innovation comes along.
+
+No matter what comes next, we are dedicated to making sure that GitKraken Client will continue to make Git-based collaboration with teams easy, safe, and powerful!
+
+You’re going to love the record-breaking performance of v8.3 of GitKraken Client for Windows, Mac, & Linux. Download it now to experience it for yourself!
+
+**Like this post? Share it!
+**
+
+#### **Read More Articles**
+
+### [ Farewell, NodeGit: GitKraken Desktop 12.7+ Runs on Core Git ](https://www.gitkraken.com/blog/farewell-nodegit-from-gitkraken-desktop)
+
+ November 19, 2026
+
+GitKraken Desktop 12.7.0 is out. If you skim the release notes, you’ll see some bug fixes and not much else. But for those of us
+
+[ Read More » ](https://www.gitkraken.com/blog/farewell-nodegit-from-gitkraken-desktop)
+
+### [ 7 Best Git Blame Extensions for Code Editors (2026) ](https://www.gitkraken.com/blog/7-best-git-blame-extensions-for-code-editors-2026)
+
+ November 12, 2026
+
+
+[... middle omitted — see footer ...]
+
+
+ November 9, 2026
+
+Update, Nov 17, 2026: Conductor reversed its shutdown on November 13 and says it’s building again. I’ve updated the post to match and taken out
+
+[ Read More » ](https://www.gitkraken.com/blog/conductor-is-joining-meta-what-that-means-if-you-run-parallel-agents)
+
+### Make Git Easy: Visual, Powerful, AI-Assisted.
+
+[ Start Free GitKraken Pro Trial](https://gitkraken.dev/trial)
+
+**Visual Studio Code is required to install GitLens.**
+
+ Don’t have Visual Studio Code? [Get it now](https://code.visualstudio.com/download).
+
+[Continue to install GitLens](vscode:extension/eamodio.gitlens)
+
+#### Team Collaboration Services
+
+ Secure cloud-backed services that span across all products in the DevEx platform to keep your workflows connected across projects, repos, and team members
+
+**Launchpad** – All your PRs, issues, & tasks in one spot to kick off a focused, unblocked day. **Code Suggest** – Real code suggestions anywhere in your project, as simple as in Google Docs. **Cloud Patches** – Speed up PR reviews by enabling early collaboration on work-in-progress. **Workspaces** – Group & sync repos to simplify multi-repo actions, & get new devs coding faster. **DORA Insights** – Data-driven code insights to track & improve development velocity. **Security & Admin** – Easily set up SSO, manage access, & streamline IdP integrations.
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/Union.svg)
+Start Your Free Trial](https://gitkraken.dev/trial?redirect_uri=https://www.gitkraken.com/typ/trial-start-success)
+
+#### GitKraken Browser Extension
+
+ Your bridge between apps
+
+[Track PRs](https://gitkraken.com/browser-extension#track-prs) – [View PRs in GitKraken or VS Code](https://gitkraken.com/browser-extension#view-prs) – [Work More Effectively with Repo Providers](https://gitkraken.com/browser-extension#work-more-effectively)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/chrome-icon.svg)Add to Chrome ](https://chrome.google.com/webstore/detail/gitkraken/egmopflbpgdjmmkeabegohajillnebco)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/ff-icon.svg)Add to Firefox ](https://addons.mozilla.org/en-US/firefox/addon/gitkraken-browser-extension/)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/edge-icon.svg)Add to Microsoft Edge ](https://microsoftedge.microsoft.com/addons/detail/gitkraken/eehliiniplilmbgcnghhaneefihofjnl)
+
+#### GitKraken CLI
+
+ Ultimate CLI for Git Collaboration
+
+[Bring PRs, WIPs & Issues to the Terminal](https://gitkraken.com/cli#bring-prs-to-terminal) – [Run Multi-Repo Commands](https://gitkraken.com/cli#run-multi-repo-commands) – [Manage Groups of Repos](https://gitkraken.com/cli#manage-groups-of-repos) – [Suggest Code Revisions](https://gitkraken.com/cli#suggest-code-revisions)
+
+#### GitKraken.dev
+
+ Your Command Center in the Browser
+
+[Track PRs & Issues](https://gitkraken.com/gitkraken-dev#track-prs) – [Suggest and Share Code Changes](https://gitkraken.com/gitkraken-dev#suggest-send-code-changes) – [Ramp Up New Devs Faster](https://gitkraken.com/gitkraken-dev#ramp-up-new-devs) – [Bring Your Team Together](https://gitkraken.com/gitkraken-dev#bring-your-team-together) – [Secure and Control Your Data](https://gitkraken.com/gitkraken-dev#secure-control-data)
+
+[ Sign Into Your Account ](https://gitkraken.dev/login)
+
+[ Sign up for free ](https://gitkraken.dev/register)
+
+#### GitKraken Desktop
+
+ Simplify Git For Any OS
+
+[Visualize Git, Minimize Mistakes](https://gitkraken.com/git-client#visualize-git) – [Unblock PR & Code Reviews](https://gitkraken.com/git-client#unblock-pr) – [Manage Multiple Repos](https://gitkraken.com/git-client#manage-multiple-repos) – [Resolve Merge Conflicts with Ease](https://gitkraken.com/git-client#resolve-merge-conflicts) – [Ramp Up Devs Faster](https://gitkraken.com/git-client#ramp-up-new-devs)
+
+[ Start Free GitKraken Pro Trial](https://gitkraken.dev/trial)
+
+──────── [TRUNCATED] ────────
+Showing 11,937 chars (head) + 3,904 chars (tail) of 17,518 total clean characters.
+Full text saved to: /root/.hermes/cache/web/www.gitkraken.com-8adffc5209.md
+To read the omitted middle: read_file path="/root/.hermes/cache/web/www.gitkraken.com-8adffc5209.md" offset=144 limit=200  (the file is the complete page; raise/lower offset to page through it).
+─────────────────────────────

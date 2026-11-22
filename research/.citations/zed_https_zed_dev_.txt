@@ -1,0 +1,51 @@
+# Zed — Your last next editor
+URL: https://zed.dev/
+
+Zed — Your last next editor
+
+# Your last next editor
+
+Zed is a minimal code editor crafted for speed and collaboration with humans and AI.
+
+Available for macOS, Linux, and Windows
+
+Fast
+
+Written from scratch in Rust to efficiently leverage multiple CPU cores and your GPU.
+
+Agentic
+
+Run agents in parallel to smoothly edit files, navigate code, and run tools at native speed.
+
+Collaborative
+
+Chat with teammates, code together, and share your screen and project.
+
+Fix panic in buffer rope on large paste Archive Fix panic in buffer rope on large paste
+
+Add vim motion for surround pairs Archive Add vim motion for surround pairs
+
++23-2•
+
+GPUI text shaping perf regression Archive GPUI text shaping perf regression
+
+Refactor project panel tree diffing Archive Refactor project panel tree diffing
+
+Migrate billing endpoints to axum router Archive Migrate billing endpoints to axum router
+
+Fix stale cache on org membership change Archive Fix stale cache on org membership change 6h
+
+Rust SDK pagination for collab sessions Archive Rust SDK pagination for collab sessions
+
+Fix hydration mismatch in blog layout Archive Fix hydration mismatch in blog layout 45m
+
+Tailwind v4 migration for global.css tokens Archive Tailwind v4 migration for global.css tokens
+
+I want to add AccessKit support to GPUI so screen readers can traverse the element tree. Can you start by figuring out where the accessibility tree should be built and how elements currently expose their roles?
+
+Let me look at the GPUI element trait and the window's paint cycle to understand where we can hook into the tree. I'll also check if there's any existing accessibility scaffolding.
+
+scheduler.tsx
+
+```
+1"use client"2​3import * as React from "react"4import { format, addMinutes, isAfter } from "date-fns"5​6// Types for our "essential" meeting system2 references7interface Meeting {8    id: string9    title: string10    couldHaveBeenAnEmail: boolean'couldHaveBeenAnEmail' is declared but its value is never read.11    attendees: string[]12    snacksProvided: boolean13    actuallyStartsOnTime: numberType 'string' is not assignable to type 'number'.14}15​16type MeetingStatus = "scheduled" | "running-late" | "cancelled" | "eternal"17​1 reference18function validateMeeting(atendees: string[]): boolean {Consider using 'attendees' instead of 'atendees' for clarity.19    return atendees.length > 0 && atendees.length < 5020}21​22let agendaItem = "Discuss why we need more meetings"'agendaItem' can be declared as 'const' since it is never reassigned.23​24const MEETING_EXCUSES = [25    "Sorry, I was on mute",26    "Can everyone see my screen?",27    "Let's take this offline",28    "Per my last email...",29    "I have a hard stop in 5 minutes",30] as const31​32/** Props for the world's most essential component */33interface MeetingSchedulerProps {34    defaultDuration?: number35    maxAttendees?: number36    requiresSnacks?: boolean37    onMeetingCreate?: (meeting: Meeting) => void38    onEscapeAttempt?: () => never39}40​41/**

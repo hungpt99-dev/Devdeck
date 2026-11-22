@@ -1,0 +1,25 @@
+# cargo-bins/cargo-binstall — SIGNING.md
+- Page: GitHub code file
+- URL: https://github.com/cargo-bins/cargo-binstall/blob/main/SIGNING.md
+- Repository: cargo-bins/cargo-binstall
+- Path: SIGNING.md
+- Ref: main
+- Lines: 112
+
+# Signature support
+Binstall supports verifying signatures of downloaded files.
+At the moment, only one algorithm is supported, but this is expected to improve as time goes.
+This feature requires adding to the Cargo.toml metadata: no autodiscovery here!
+
+...
+
+## Just-in-time signing
+- If the Cargo.toml in the source contains a partially-filled `[...signing]` section, Binstall will fail.
+- If the section contains a different key than the ephemeral one used to sign the packages, Binstall will refuse to install what it sees as corrupt packages.
+- If the section is missing entirely, Binstall will work, but of course signatures won't be checked.
+
+...
+
+- Commit the Cargo.toml with the ephemeral public key to the repo when publishing.
+- Omit the `[...signing]` section in the source, and write the entire section on publish instead of just filling in the `pubkey`; signatures won't be checked for `--git` installs. Binstall uses this approach.
+- Instruct your users to use `--skip-signatures` if they want to install with `--git`.

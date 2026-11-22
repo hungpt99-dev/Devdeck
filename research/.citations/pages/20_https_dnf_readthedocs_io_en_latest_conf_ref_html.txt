@@ -1,0 +1,17 @@
+# DNF Configuration Reference 
+## [main] Options 
+List of paths that are likely to cause problems when their contents drift with respect to <code>/usr</code>, e.g. <code>/etc/pam.d/*</code>. If a transient transaction would modify these paths, DNF aborts the operation and prints an error. Supports globs. Defaults to <code>glob:/etc/dnf/usr-drift-protected-paths.d/*.conf</code>.
+
+...
+
+## Options for both [main] and Repo 
+The flag is a simple “countme=N” parameter appended to the metalink URL where N is an integer representing the age “bucket” this system belongs to. Four buckets are defined, based on how many full weeks have passed since the installation of a system:
+
+...
+
+Note: The curl environment variables (such as <code>http_proxy</code>) are effective if this option is unset (or ‘_none_’ is set in the repository configuration). See the <code>curl</code> man page for details.
+
+...
+
+## See Also 
+- *dnf(8)*, [DNF Command Reference](https://dnf.readthedocs.io/en/latest/command_ref.html#command-ref-label)

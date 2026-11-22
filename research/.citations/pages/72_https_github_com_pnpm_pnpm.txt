@@ -1,0 +1,88 @@
+## Repository
+
+- Public, MIT License
+- Website: https://pnpm.io
+- Stars: 37,147 · Watchers: 174 · Forks: 1,996
+- Default branch: main · Releases: 1,235 · Tags: 2,068
+- Created: 2016-01-28
+
+[简体中文](https://pnpm.io/zh/) | [日本語](https://pnpm.io/ja/) | [한국어](https://pnpm.io/ko/) | [Italiano](https://pnpm.io/it/) | [Português Brasileiro](https://pnpm.io/pt/)
+
+![pnpm](https://camo.githubusercontent.com/10dab06bd7037a9b777d99e7863fb5d45e710eaceb0b388a9d02ca350414f96b/68747470733a2f2f692e696d6775722e636f6d2f716c57316545472e706e67)
+
+Fast, disk space efficient package manager:
+
+- **Fast.** Up to 2x faster than the alternatives (see benchmark).
+- **Efficient.** Files inside `node_modules` are linked from a single content-addressable storage.
+- **[Great for monorepos](https://pnpm.io/workspaces).**
+- **Strict.** A package can access only dependencies that are specified in its `package.json`.
+- **Deterministic.** Has a lockfile called `pnpm-lock.yaml`.
+- **Works as a Node.js version manager.** See [pnpm runtime](https://pnpm.io/11.x/cli/runtime).
+- **Works everywhere.** Supports Windows, Linux, and macOS.
+- **Battle-tested.** Used in production by teams of [all sizes](https://pnpm.io/workspaces#usage-examples) since 2016.
+- **Experimental Rust port.** Includes [pacquet](/pnpm/pnpm/blob/main/pnpm), an experimental port of the CLI written in Rust.
+- [See the full feature comparison with npm and Yarn](https://pnpm.io/feature-comparison).
+
+To quote the [Rush](https://rushjs.io/) team:
+
+> Microsoft uses pnpm in Rush repos with hundreds of projects and hundreds of PRs per day, and we've found it to be very fast and reliable.
+
+[![npm version](https://camo.githubusercontent.com/201f6d7645f16505dab752901c05e591b7a73017b5ca02ea6607488a4d8e9055/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f706e706d2e7376673f6c6162656c3d6c6174657374)](https://github.com/pnpm/pnpm/releases/latest) [![Ecosystem E2E](https://github.com/pnpm/pnpm/actions/workflows/ecosystem-e2e.yml/badge.svg?branch=main)](https://github.com/pnpm/pnpm/actions/workflows/ecosystem-e2e.yml) [![OpenCollective](https://camo.githubusercontent.com/d64c0daab9fc3b89475c6faa0168ee47f0c1b5a98ced93524dfa5b5f4bdf7840/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f706e706d2f6261636b6572732f62616467652e737667)](https://opencollective.com/pnpm) [![OpenCollective](https://camo.githubusercontent.com/34eec924669089bf3314487fe477cab8835a5291f52e941a9d0c52dfaee42256/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f706e706d2f73706f6e736f72732f62616467652e737667)](https://opencollective.com/pnpm) [![X Follow](https://camo.githubusercontent.com/7d11213597fa0bdaf58b63a891a613cb785783c268dcd25f24512b0b167dc4d1/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f706e706d6a732e7376673f7374796c653d736f6369616c266c6162656c3d466f6c6c6f77)](https://x.com/intent/follow?screen_name=pnpmjs&region=follow_link) [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
+
+## Platinum Sponsors
+
+| [![Bit](https://camo.githubusercontent.com/49cb14ae387a9b4a128e9fda2921f93cf6715c3fa99bad269373da0b3d882c75/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6269742e737667)](https://bit.cloud/?utm_source=pnpm&utm_medium=readme) | [ ![OpenAI](https://camo.githubusercontent.com/e341813c8db7cee45a7a71afbf080a6e20d094434d76d07e5d5e37e639a10d64/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6f70656e61695f6461726b2e737667) ](https://openai.com/?utm_source=pnpm&utm_medium=readme) | [ ![Notion](https://camo.githubusercontent.com/2cb3f435fa30dac67473e5319ec7bcb8f69f6da0b285cf300d1a34e1298cc1bc/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6e6f74696f6e2e737667) ](https://notion.com/?utm_source=pnpm&utm_medium=readme) |
+|---|---|---|
+| [ ![CodeRabbit](https://camo.githubusercontent.com/3630174586de2744558e13f850adb6f53b1e702a84326d72695af4756f63ffb3/68747470733a2f2f706e706d2e696f2f696d672f75736572732f636f64657261626269742e737667) ](https://coderabbit.ai/?utm_source=pnpm&utm_medium=readme) | [ ![Cloudflare](https://camo.githubusercontent.com/6ba0539235c5055d5eb7e745b959e2036e8bc66716ee40a8096043ce6326e259/68747470733a2f2f706e706d2e696f2f696d672f75736572732f636c6f7564666c6172652e737667) ](https://www.cloudflare.com/?utm_source=pnpm&utm_medium=readme) | |
+
+## Gold Sponsors
+
+| [ ![Sanity](https://camo.githubusercontent.com/8af7a34cf0c85fd0357311fd4c3547ae6670ce7ce8f25b1f44cef25d75bc90c2/68747470733a2f2f706e706d2e696f2f696d672f75736572732f73616e6974792e737667) ](https://sanity.io/?utm_source=pnpm&utm_medium=readme) | [ ![Discord](https://camo.githubusercontent.com/d7004eb0ba5b797028ea652c6f7381b0c74f3f75c41aaaea62ca0e103e9f577a/68747470733a2f2f706e706d2e696f2f696d672f75736572732f646973636f72642e737667) ](https://discord.com/?utm_source=pnpm&utm_medium=readme) | [![Vite](https://camo.githubusercontent.com/1d00b921a9a3e6c6a03261f0b5f415d147c1484fa3e14b1efa3a033fea64200c/68747470733a2f2f706e706d2e696f2f696d672f75736572732f766974656a732e737667)](https://vite.dev/?utm_source=pnpm&utm_medium=readme) |
+|---|---|---|
+| [ ![SerpApi](https://camo.githubusercontent.com/365c7fb33f7dcb635c7f064ee16bca3acd046af4b7e2cf3cbb6baf78a53a0003/68747470733a2f2f706e706d2e696f2f696d672f75736572732f736572706170695f6461726b2e737667) ](https://serpapi.com/?utm_source=pnpm&utm_medium=readme) | [ ![Stackblitz](https://camo.githubusercontent.com/e7ab362e99efa9c5e3418a015ec25a1f992b728e430f9ea8d2d2b4c2468faa25/68747470733a2f2f706e706d2e696f2f696d672f75736572732f737461636b626c69747a2e737667) ](https://stackblitz.com/?utm_source=pnpm&utm_medium=readme) | [ ![Workleap](https://camo.githubusercontent.com/4bd3c0d64f6d63ca630ecb6a14c1dcfd86bf9350d4cb8d97aa1c52cc2a8d9282/68747470733a2f2f706e706d2e696f2f696d672f75736572732f776f726b6c6561702e737667) ](https://workleap.com/?utm_source=pnpm&utm_medium=readme) |
+| [ ![Nx](https://camo.githubusercontent.com/864ab255a121a84e6fe45c5e03396607fa5a5effa41a6700227beb03c579a13b/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6e782e737667) ](https://nx.dev/?utm_source=pnpm&utm_medium=readme) | [ ![Latitude](https://camo.githubusercontent.com/2139fe295b346a728777fea5ebc17adef4481fe09061452dc62dde9536121112/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6c617469747564652e737667) ](https://latitude.so/?utm_source=pnpm&utm_medium=readme) | [ ![Syntax](https://camo.githubusercontent.com/e6248f8e1789f01ce78f561411b875193b38f987114f86ab3477cfae9f21bb0c/68747470733a2f2f706e706d2e696f2f696d672f75736572732f73796e746178666d2e737667) ](https://syntax.fm/?utm_source=pnpm&utm_medium=readme) |
+
+## Silver Sponsors
+
+| [ ![Replit](https://camo.githubusercontent.com/c87057a6dc8daeadb3b3bf8e24f31e6a40d94c66b714998f1161a1273f8a694c/68747470733a2f2f706e706d2e696f2f696d672f75736572732f7265706c69742e706e67) ](https://replit.com/?utm_source=pnpm&utm_medium=readme) | [![Cybozu](https://camo.githubusercontent.com/f4616691b0109113f5a94b873e77e5b4a790b04c70e92ac675b56cea3df1bee0/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6379626f7a752e737667)](https://cybozu.co.jp/?utm_source=pnpm&utm_medium=readme) | [ ![BairesDev](https://camo.githubusercontent.com/cd49651e7567f39f831a6df46607066aa50fcdfa5cfc124a9776c3daa62adeb9/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6261697265736465762e737667) ](https://www.bairesdev.com/?utm_source=pnpm&utm_medium=readme) |
+|---|---|---|
+| [ ![Thesys](https://camo.githubusercontent.com/99f638409484408a74b777c5760a822472ba82b106c846563e23e22c44c93ca1/68747470733a2f2f706e706d2e696f2f696d672f75736572732f7468657379732e737667) ](https://www.thesys.dev/?utm_source=pnpm&utm_medium=readme) | [ ![devowl.io](https://camo.githubusercontent.com/f997d2ec143ccae00a5cb8da86c2e28bc0c910f5fbc4b70315397a9a3b383e1d/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6465766f776c696f2e737667) ](https://devowl.io/?utm_source=pnpm&utm_medium=readme) | [ ![u\|screen](https://camo.githubusercontent.com/232ba5e26df09fcb1f1b6ffc2d13837c4ed5c3219ed115a63103a301fc27cbe9/68747470733a2f2f706e706d2e696f2f696d672f75736572732f7573637265656e2e737667) ](https://uscreen.de/?utm_source=pnpm&utm_medium=readme) |
+| [![Leniolabs_](https://camo.githubusercontent.com/b8c095597b1d004a29034229e672e8dc034d532db5c663e02e1464a73b291dc5/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6c656e696f6c6162732e6a7067)](https://www.leniolabs.com/?utm_source=pnpm&utm_medium=readme) | [ ![Depot](https://camo.githubusercontent.com/53e0a3e16b36c9c4fbcfd11f55eb47aa93731fd1c4b9a362c7a1b890d9e8a7c5/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6465706f742e737667) ](https://depot.dev/?utm_source=pnpm&utm_medium=readme) | [ ![Cerbos](https://camo.githubusercontent.com/bc29134bf779deb0e9871ed82c8c9a4e0ac6fb6860f5b20a4c132c4ed06ede85/68747470733a2f2f706e706d2e696f2f696d672f75736572732f636572626f732e737667) ](https://cerbos.dev/?utm_source=pnpm&utm_medium=readme) |
+| [⏱️ Time.now](https://time.now/?utm_source=pnpm&utm_medium=readme) | | |
+
+Support this project by [becoming a sponsor](https://opencollective.com/pnpm#sponsor).
+
+## Background
+
+pnpm uses a content-addressable filesystem to store all files from all module directories on a disk. When using npm, if you have 100 projects using lodash, you will have 100 copies of lodash on disk. With pnpm, lodash will be stored in a content-addressable storage, so:
+
+1. If you depend on different versions of lodash, only the files that differ are added to the store. If lodash has 100 files, and a new version has a change only in one of those files, `pnpm update` will only add 1 new file to the storage.
+2. All the files are saved in a single place on the disk. When packages are installed, their files are linked from that single place consuming no additional disk space. Linking is performed using either hard-links or reflinks (copy-on-write).
+
+As a result, you save gigabytes of space on your disk and you have a lot faster installations. If you'd like more details about the unique `node_modules` structure that pnpm creates and why it works fine with the Node.js ecosystem, read this small article: [Flat node_modules is not the only way](https://pnpm.io/blog/2020/05/27/flat-node-modules-is-not-the-only-way).
+
+💖 Like this project? Let people know with a [tweet](https://r.pnpm.io/tweet)
+
+## Getting Started
+
+- [Installation](https://pnpm.io/installation)
+- [Usage](https://pnpm.io/pnpm-cli)
+- [Frequently Asked Questions](https://pnpm.io/faq)
+- [X](https://x.com/pnpmjs)
+
+[... middle omitted — see footer ...]
+
+
+## License
+
+[MIT](https://github.com/pnpm/pnpm/blob/main/LICENSE), except the [`pnpr/`](https://github.com/pnpm/pnpm/tree/main/pnpr) directory, which is source-available under the [PolyForm Shield License 1.0.0](https://github.com/pnpm/pnpm/blob/main/pnpr/LICENSE.md).
+
+## Files
+
+[.agents/skills/](https://github.com/pnpm/pnpm/tree/main/.agents/skills), [.cargo/](https://github.com/pnpm/pnpm/tree/main/.cargo), [.changeset/](https://github.com/pnpm/pnpm/tree/main/.changeset), [.claude/](https://github.com/pnpm/pnpm/tree/main/.claude), [.config/](https://github.com/pnpm/pnpm/tree/main/.config), [.devcontainer/](https://github.com/pnpm/pnpm/tree/main/.devcontainer), [.github/](https://github.com/pnpm/pnpm/tree/main/.github), [.meta-updater/](https://github.com/pnpm/pnpm/tree/main/.meta-updater), [docker/](https://github.com/pnpm/pnpm/tree/main/docker), [fixtures/](https://github.com/pnpm/pnpm/tree/main/fixtures), [pnpm/](https://github.com/pnpm/pnpm/tree/main/pnpm), [pnpm11/](https://github.com/pnpm/pnpm/tree/main/pnpm11), [pnpr/](https://github.com/pnpm/pnpm/tree/main/pnpr), [vendor/tar/](https://github.com/pnpm/pnpm/tree/main/vendor/tar), [.coderabbit.yaml](https://github.com/pnpm/pnpm/blob/main/.coderabbit.yaml), [.editorconfig](https://github.com/pnpm/pnpm/blob/main/.editorconfig), [.gitattributes](https://github.com/pnpm/pnpm/blob/main/.gitattributes), [.gitignore](https://github.com/pnpm/pnpm/blob/main/.gitignore), [.pr\_agent.toml](https://github.com/pnpm/pnpm/blob/main/.pr_agent.toml), [.taplo.toml](https://github.com/pnpm/pnpm/blob/main/.taplo.toml), [.typos.toml](https://github.com/pnpm/pnpm/blob/main/.typos.toml), [.vale.ini](https://github.com/pnpm/pnpm/blob/main/.vale.ini), [AGENTS.md](https://github.com/pnpm/pnpm/blob/main/AGENTS.md), [CODE\_OF\_CONDUCT.md](https://github.com/pnpm/pnpm/blob/main/CODE_OF_CONDUCT.md), [CONTRIBUTING.md](https://github.com/pnpm/pnpm/blob/main/CONTRIBUTING.md), [Cargo.lock](https://github.com/pnpm/pnpm/blob/main/Cargo.lock), [Cargo.toml](https://github.com/pnpm/pnpm/blob/main/Cargo.toml), [Cross.toml](https://github.com/pnpm/pnpm/blob/main/Cross.toml), [DOCUMENTATION.md](https://github.com/pnpm/pnpm/blob/main/DOCUMENTATION.md), [FUNDING.json](https://github.com/pnpm/pnpm/blob/main/FUNDING.json), [LICENSE](https://github.com/pnpm/pnpm/blob/main/LICENSE), [PHILOSOPHY.md](https://github.com/pnpm/pnpm/blob/main/PHILOSOPHY.md), [README.md](https://github.com/pnpm/pnpm/blob/main/README.md), [RELEASING.md](https://github.com/pnpm/pnpm/blob/main/RELEASING.md), [SECURITY.md](https://github.com/pnpm/pnpm/blob/main/SECURITY.md), [UNSAFE\_POLICY.md](https://github.com/pnpm/pnpm/blob/main/UNSAFE_POLICY.md), [dylint.toml](https://github.com/pnpm/pnpm/blob/main/dylint.toml), [eslint.config.mjs](https://github.com/pnpm/pnpm/blob/main/eslint.config.mjs), [justfile](https://github.com/pnpm/pnpm/blob/main/justfile), [package.json](https://github.com/pnpm/pnpm/blob/main/package.json), [pnpm-lock.yaml](https://github.com/pnpm/pnpm/blob/main/pnpm-lock.yaml), [pnpm-workspace.yaml](https://github.com/pnpm/pnpm/blob/main/pnpm-workspace.yaml), [renovate.json](https://github.com/pnpm/pnpm/blob/main/renovate.json), [rust-toolchain.toml](https://github.com/pnpm/pnpm/blob/main/rust-toolchain.toml), [rustfmt.toml](https://github.com/pnpm/pnpm/blob/main/rustfmt.toml), [tsconfig.lint.json](https://github.com/pnpm/pnpm/blob/main/tsconfig.lint.json)
+
+──────── [TRUNCATED] ────────
+Showing 10,493 chars (head) + 3,415 chars (tail) of 14,557 total clean characters.
+Full text saved to: /root/.hermes/cache/web/github.com-b399aaf67c.md
+To read the omitted middle: read_file path="/root/.hermes/cache/web/github.com-b399aaf67c.md" offset=72 limit=200  (the file is the complete page; raise/lower offset to page through it).
+─────────────────────────────

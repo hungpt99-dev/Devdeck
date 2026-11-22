@@ -1,0 +1,51 @@
+![Going native](https://blog.postman.com/wp-content/uploads/2023/12/postman-api-platform-social-preview-1024x538.jpeg)
+
+# Going native
+
+If you’ve already downloaded and use the Postman native app, you can stop reading right now. . . but only if you’re really, truly, for absolutely certain. I’ve talked to too many developers who *think* they’re on the Postman native app, but they’re really not. It’s an easy mistake to make. So if you’re not quite sure, please read on.
+
+If you *know* you’re still using the Postman Chrome app, then by all means, read on.
+
+---
+
+Many Postman users believe Postman is only available as a Chrome app. While we started out as a Postman Chrome app used along with the Postman Interceptor Chrome extension, native apps were introduced for [Mac / Windows / Linux](https://www.postman.com/downloads/) users last year.
+
+We know that a lot of Postman users are still on the Chrome app, but really, it’s time to make the switch and go native.
+
+##### **Why go native?**
+
+The Postman native apps are free, like the Chrome app, but better than the Chrome app. The native apps cover all the features and functionality of the Chrome app and Chrome extension together, and more. The native apps run on Electron overcoming a lot of the restrictions of the Chrome platform.
+
+Previously, users of the Postman Chrome app had to download the Postman Interceptor Chrome extension in order to manage cookies and capture requests in the desktop browser. With the native apps, this functionality is provided within the app itself.
+
+**FEATURES EXCLUSIVE TO THE NATIVE APPS:**
+
+- **COOKIES:** The native apps let you work with cookies directly. Unlike the Chrome app, no separate extension (Interceptor) is needed.
+- **BUILT-IN PROXY:** The native apps come with a built-in proxy that you can use to capture network traffic.
+- **RESTRICTED HEADERS:** The latest version of the native apps let you send headers like Origin and User-Agent. These are restricted in the Chrome app.
+- **DON’T FOLLOW REDIRECTS OPTION:** This option exists in the native apps to prevent requests that return a 300-series response from being automatically redirected. Previously, users needed to use the Interceptor extension to do this in the Chrome app.
+- **MENU BAR:** The native apps are not restricted by the Chrome standards for the menu bar.
+- **POSTMAN CONSOLE:** The latest version of the native apps has a built-in console, which allows you to view the network request details for API calls.
+
+##### **Why now?**
+
+Google announced [plans](https://blog.chromium.org/2016/08/from-chrome-apps-to-web.html) to end support for Chrome apps for Windows, Mac, and Linux users. That means that beginning THIS year, support for the Postman Chrome app is going away. In anticipation, Postman engineers have already started to build out new features and enhancements exclusively in the native apps.
+
+##### **How can I tell if I’m on the Postman Chrome app or Postman native app?**
+
+I’ve talked to many developers that assume they’re already on the native app because it was designed to look and feel the same as the Chrome app.
+
+If you don’t remember which one you downloaded, the quickest way to tell if you’re on the Postman Chrome app or native app is to look at the menu bar.
+
+- **Postman Chrome app**: displays a few menu options restricted by the Chrome standard [![](https://blog.postman.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-02-at-3.46.38-PM.png)](https://blog.postman.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-02-at-3.46.38-PM.png)
+- **Postman native app**: displays more menu options making it easier to access specific Postman features[![](https://blog.postman.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-02-at-3.43.45-PM.png)](https://blog.postman.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-02-at-3.43.45-PM.png)
+
+Alternatively, you can visit the About tab under Settings to explicitly see which version you’re using.
+
+[![](https://blog.postman.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-08-at-2.30.58-PM.png)](https://blog.postman.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-08-at-2.30.58-PM.png)
+
+##### **You’ve convinced me. How can I make the switch?**
+
+It’s simple. Sign into your Postman account after you [download](https://www.postman.com/downloads/) and start the new native app, and all your history and Collections will be automatically synced.
+
+For people who are not signed in to their Postman account or who do not have sync enabled, you can export your data and import it into the new native app.

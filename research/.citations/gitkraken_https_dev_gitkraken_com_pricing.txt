@@ -1,0 +1,248 @@
+[ ![](https://www.gitkraken.com/wp-content/uploads/2025/03/gitkraken-logo-stencil-monochrome-light.svg) ](/)
+
+## Community
+
+Basic GitKraken Desktop, CLI & GitLens for OSS development
+
+** Free**
+
+[Download GitKraken Desktop](/download)
+Install GitLens for VS Code
+
+ Includes:
+
+- Free 14-day trial of Advanced plan You can choose to start a 14-day free trial in any of our DevEx products; GitKraken Desktop, GitLens, and the GitKraken CLI.
+- Some features limited or removed
+- Unlimited cloud Git integrations Connect to non-enterprise, cloud integrations such as GitHub, GitLab and Bitbucket
+- Only local repos and public remotes
+- Slack and Help Center support
+- Built-in GitHub Copilot (GitLens) If the user hasn't selected another model, and Copilot is already installed, GitLens will automatically default to Copilot.
+
+## Pro
+
+Robust productivity & private repo access for solo devs
+
+** $** per seat, per month,
+ paid annually*
+
+[Buy Pro](https://gitkraken.dev/purchase/checkout?planType=PRO)
+[Start Free 14-Day Trial](https://gitkraken.dev/trial)
+
+ Everything in Community, plus
+
+- Up to 2 seats Start with 1 seat, and add more as your team grows (max for Pro is 2)
+- Works with private repos Access privately-hosted repo remotes
+- Cloud issue tracker integrations Includes Issue Trackers such as Jira Cloud and Trello.
+- Conflict Prevention Informs you when conflicts are detected and provides options to proactively resolve your conflicts.
+- GitKraken MCP Model Context Protocol (MCP) powers AI IDEs like Copilot & Cursor, and extends to the GitKraken CLI with the MCP server for secure repo and Git context.
+- Launchpad
+- Cloud Patches preview
+- Code Suggest preview
+- Shared Cloud Workspaces Create & share Cloud Workspaces with any users in your GitKraken Organization
+- 25 repos in Cloud Workspaces Connect up to 25 unique repos (per GitKraken Org) to your Cloud Workspaces
+- Multiple profiles Switch between different sets of Git configurations, integrations, and app settings (available only in GitKraken Desktop)
+- Timely email support Email support from GitKraken's team (no bots!)
+
+ ✨ GitKraken AI
+
+- AI tokens: Up to 250,000/week per user Built into GitKraken Products. Utilization is based on Gemini Flash. Usage of a different model will differ in token usage.
+
+Estimated usage rates: 6 AI Commit Messages per user per week. 3 AI Commit Explanations per user per week
+- Bring your own key (user level) Bring your own API Key from an AI Provider of your choice to use with GitKraken Desktop, GitLens, and the DevEx platform.
+- Basic use cases Leverage AI Commit Messages to summarize and write commits and AI Commit Explanations to explain commits.
+
+## Advanced
+
+More integrations, powerful features & enhanced AI to supercharge devs + teams
+
+** $** per seat, per month,
+ paid annually*
+
+[Buy Advanced](https://gitkraken.dev/purchase/checkout?planType=ADVANCED)
+[Start Free 14-Day Trial](https://gitkraken.dev/trial)
+
+ Everything in Pro, plus
+
+- Up to 10 seats Start with 1 seat, and add more as your team grows (max for Advanced is 10)
+- Self-hosted Git integrations Includes GitLab Self-hosted, Github Self-hosted and more.
+- Enterprise integrations (incl. self-hosted) Includes Github Enterprise Cloud, GitHub Enterprise Server, Azure DevOps Server, JIRA Data Center, and Bitbucket Data Center.
+- Single domain SSO SSO with Azure Entra (AD), Okta, Google, Ping Identity, and other providers supporting SAML 2.0
+- GitKraken MCP Model Context Protocol (MCP) powers AI IDEs like Copilot & Cursor, and extends to the GitKraken CLI with the MCP server for secure repo and Git context.
+- Team Launchpad
+- Create and manage teams
+- Automations preview
+- 250 repos in Cloud Workspaces
+- Priority support 1-business-day support response time
+
+ ✨ GitKraken AI
+
+- AI tokens: Up to 1,000,000/week per user Built into GitKraken Products. Utilization is based on Gemini Flash. Usage of a different model will differ in token usage.
+
+12 AI Commit Messages per user per week. 6 AI Commit Explanations per user per week
+- AI security controls Control over how seats in your organization access and use GitKraken AI features across the platform.
+- Private AI model providers
+ (user level) Leverage AI Commit Messages to summarize and write commits and AI Commit Explanations to explain commits.
+- Advanced workflows Leverage workflows such as AI Changelog Generation in GitLens. Coming soon to GitKraken Desktop.
+
+## Business
+
+Security, compliance & control for companies and engineering leaders
+
+** $** per seat, per month,
+ paid annually*
+
+[Buy Business](https://gitkraken.dev/purchase/checkout?planType=BUSINESS)
+[Start Free 30-Day Business Trial](https://gitkraken.dev/trial/launch)
+
+ Everything in Advanced, plus
+
+- Up to 100 seats Start with 1 seat, and add more as your team grows (max for Business is 100)
+- Multi-domain SSO Collaborate across unlimited Teams within your GitKraken Org
+- Internal software directory
+- Customer success manager
+- GitKraken MCP Model Context Protocol (MCP) powers AI IDEs like Copilot & Cursor, and extends to the GitKraken CLI with the MCP server for secure repo and Git context.
+- Insights & DORA metrics Measure how fast your pull requests get merged into your repos with metrics like Cycle Time, Throughput and more
+- Admin Conflict Prevention control
+- Self-hosted Cloud Patches
+- Foundations of Git training and certification
+- 12-hour customer support response time
+
+ ✨ GitKraken AI
+
+- AI tokens: Up to 2,000,000/week per user Built into GitKraken Products. Utilization is based on Gemini Flash. Usage of a different model will differ in token usage.
+
+Estimated usage rates: 18 AI Commit Messages per user per week. 9 AI Commit Explanations per user per week
+- Bring your own key (org Level) Bring your own API Key from an AI Provider of your choice to use with GitKraken Desktop, GitLens, and the DevEx platform for your organization.
+- Private AI model providers
+ (org level)
+- Enforceable AI controls
+ (org level) Select a GitKraken or self-hosted LLM for your org and define permissions for your team.
+
+ Learn about [GitKraken Desktop On-Premise](https://www.gitkraken.com/git-client/on-premise-pricing)
+
+*Listed prices do not include tax
+
+[Calculate Your Price & ROI >](/roi)
+
+ Need enterprise security, contracts, procurement or custom integrations? Contact us
+
+#### X
+
+![](https://www.gitkraken.com/wp-content/uploads/2021/12/Union.svg)
+
+**Products**
+
+[Pricing](/pricing)
+
+[Help Center ](https://help.gitkraken.com/)
+
+[GitKraken AI](https://www.gitkraken.com/solutions/gitkraken-ai)
+
+[**GitKraken Desktop**](/git-client)
+
+- [Login ](https://gitkraken.dev/login)
+- [Documentation ](https://help.gitkraken.com/gitkraken-client/gitkraken-client-home/)
+- [Release Notes ](https://help.gitkraken.com/gitkraken-client/current/)
+- [Roadmap](/git-client/roadmap)
+- [ Feature Upvote ](http://feedback.gitkraken.com/)
+- [Cheat Sheet](https://www.gitkraken.com/pdfs/gitkraken-git-gui-cheat-sheet)
+
+[**GitLens**](/gitlens)
+
+- [Documentation ](https://help.gitkraken.com/gitlens/gitlens-home/)
+- [GitLens for Cursor](https://www.gitkraken.com/gitlens/cursor)
+- [GitLens for Windsurf](https://www.gitkraken.com/gitlens/windsurf)
+- [GitLens for Trae](https://www.gitkraken.com/gitlens/trae)
+- [GitLens for Kiro](https://www.gitkraken.com/gitlens/kiro)
+
+[**GitKraken CLI**](/cli)
+
+[**Git Integration for Jira**](/git-integration-for-jira)
+
+- [Cloud Docs ](https://help.gitkraken.com/git-integration-for-jira-cloud/git-integration-for-jira-home-gij-cloud/)
+- [ Data Center/Server Docs ](https://help.gitkraken.com/git-integration-for-jira-data-center/git-integration-for-jira-home-self-manged/)
+- [Security & Trust ](https://trust.gitkraken.com/)
+
+**Community**
+
+[Referral Program](https://www.gitkraken.com/referral-program)
+[Learn Git Library](/learn/git)
+[Git Commands Cheat Sheet](/pdfs/git-basics-cheat-sheet)
+[Git Blog](/blog)
+[GitKraken Labs](https://www.gitkraken.com/labs)
+[Git Conference](http://gitkon.com/)
+[Ambassador Program](/ambassador)
+[Newsletter](/newsletter)
+[Slack Community ](https://www.gitkraken.com/join-slack-community)
+[GitKraken for Students](/github-student-developer-pack-bundle)
+[Store](/store)
+[Keif Gallery](/keif-gallery)
+[Bug Bounty Program](https://www.gitkraken.com/bug-bounty-program)
+
+**Company**
+
+[Contact Us](/contact)
+[About Us](/about)
+[Careers](/careers)
+[Customers](/sample-customers)
+[Media](/media)
+[News](/media/news)
+[Awards](/media/awards)
+[Events](/media/events)
+[Press Releases](/media/press)
+[Logos](https://www.gitkraken.com/media/press-releases#logos)
+[Privacy](/privacy)
+[Trust Center ](https://trust.gitkraken.com/)
+
+**© 2025 Axosoft, LLC DBA GitKraken**
+
+**Visual Studio Code is required to install GitLens.**
+
+ Don’t have Visual Studio Code? [Get it now](https://code.visualstudio.com/download).
+
+[Continue to install GitLens](vscode:extension/eamodio.gitlens)
+
+#### Team Collaboration Services
+
+ Secure cloud-backed services that span across all products in the DevEx platform to keep your workflows connected across projects, repos, and team members
+
+**Launchpad** – All your PRs, issues, & tasks in one spot to kick off a focused, unblocked day. **Code Suggest** – Real code suggestions anywhere in your project, as simple as in Google Docs. **Cloud Patches** – Speed up PR reviews by enabling early collaboration on work-in-progress. **Workspaces** – Group & sync repos to simplify multi-repo actions, & get new devs coding faster. **DORA Insights** – Data-driven code insights to track & improve development velocity. **Security & Admin** – Easily set up SSO, manage access, & streamline IdP integrations.
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/Union.svg)
+Start Your Free Trial](https://gitkraken.dev/trial?redirect_uri=https://www.gitkraken.com/typ/trial-start-success)
+
+#### GitKraken Browser Extension
+
+ Your bridge between apps
+
+[Track PRs](/browser-extension#track-prs) – [View PRs in GitKraken or VS Code](/browser-extension#view-prs) – [Work More Effectively with Repo Providers](/browser-extension#work-more-effectively)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/chrome-icon.svg)Add to Chrome ](https://chrome.google.com/webstore/detail/gitkraken/egmopflbpgdjmmkeabegohajillnebco)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/ff-icon.svg)Add to Firefox ](https://addons.mozilla.org/en-US/firefox/addon/gitkraken-browser-extension/)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/edge-icon.svg)Add to Microsoft Edge ](https://microsoftedge.microsoft.com/addons/detail/gitkraken/eehliiniplilmbgcnghhaneefihofjnl)
+
+#### GitKraken CLI
+
+ Ultimate CLI for Git Collaboration
+
+[Bring PRs, WIPs & Issues to the Terminal](/cli#bring-prs-to-terminal) – [Run Multi-Repo Commands](/cli#run-multi-repo-commands) – [Manage Groups of Repos](/cli#manage-groups-of-repos) – [Suggest Code Revisions](/cli#suggest-code-revisions)
+
+#### GitKraken.dev
+
+ Your Command Center in the Browser
+
+[Track PRs & Issues](/gitkraken-dev#track-prs) – [Suggest and Share Code Changes](/gitkraken-dev#suggest-send-code-changes) – [Ramp Up New Devs Faster](/gitkraken-dev#ramp-up-new-devs) – [Bring Your Team Together](/gitkraken-dev#bring-your-team-together) – [Secure and Control Your Data](/gitkraken-dev#secure-control-data)
+
+[ Sign Into Your Account ](https://gitkraken.dev/login)
+
+[ Sign up for free ](https://gitkraken.dev/register)
+
+#### GitKraken Desktop
+
+ Simplify Git For Any OS
+
+[Visualize Git, Minimize Mistakes](/git-client#visualize-git) – [Unblock PR & Code Reviews](/git-client#unblock-pr) – [Manage Multiple Repos](/git-client#manage-multiple-repos) – [Resolve Merge Conflicts with Ease](/git-client#resolve-merge-conflicts) – [Ramp Up Devs Faster](/git-client#ramp-up-new-devs)
+
+[ Start Free GitKraken Pro Trial](https://gitkraken.dev/trial)

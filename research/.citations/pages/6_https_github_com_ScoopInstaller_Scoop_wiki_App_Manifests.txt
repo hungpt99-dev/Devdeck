@@ -1,0 +1,46 @@
+# App Manifests · ScoopInstaller/Scoop Wiki · GitHub
+URL: https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests/
+
+App Manifests · ScoopInstaller/Scoop Wiki · GitHub
+
+# App Manifests
+
+An app manifest is a JSON file that describes how to install a program.
+
+A simple example:
+
+```
+{
+    "version": "1.0",
+    "url": "https://github.com/lukesampson/cowsay-psh/archive/master.zip",
+    "extract_dir": "cowsay-psh-master",
+    "bin": "cowsay.ps1"
+}
+```
+
+When this manifest is run with `scoop install` it will download the zip file specified by `url`, extract the "cowsay-psh-master" directory from the zip file, and then make the `cowsay.ps1` script available on your path.
+
+For more examples, see the app manifests in the main Scoop bucket.
+
+### Required Properties
+
+- `version`: The version of the app that this manifest installs.
+- `description`: A one line string containing a short description of the program. Don’t include the name of the program, if it’s the same as the app’s filename. Not technically required, but all new or updated manifests should include a description.
+- `homepage`: The home page for the program.
+- `license`: A string or hash of the software license for the program. For well-known licenses, please use the identifier found at https://spdx.org/licenses For other licenses, use the URL of the license, if available. Otherwise, use “Freeware”, “Proprietary”, “Public Domain”, “Shareware”, or “Unknown” (defined below), as appropriate. If different files have different licenses, separate licenses with a comma (,). If the entire application is dual licensed, separate licenses with a pipe symbol (|). 
+
+- `identifier`: The SPDX identifier, or “Freeware” (free to use forever), “Proprietary” (must pay to use), “Public Domain”, “Shareware” (free to try, must pay eventually), or “Unknown” (unable to determine the license), as appropriate.
+- `url`: For non-SPDX licenses, include a link to the license. It is acceptable to include links to SPDX licenses, as well.
+- If it is difficult to determine all of the different licenses, it is acceptable to add `,...` at the end of the SPDX list. If there are both open-source and not open-source licenses, please list all non-open source licenses first (e.g., Freeware/Proprietary/Shareware).
+- If you are unable to determine what license the application has, use "Unknown".
+
+### Optional Properties
+
+- `##`: A one-line string, or array of strings, containing comments.
+- `architecture`: If the app is not 32bit, architecture can be used to wrap the differences (example). 
+
+- `32bit|64bit|arm64`: contains architecture-specific instructions (`bin`, `checkver`, `extract_dir`, `hash`, `installer`, `pre_install`, `post_install`, `shortcuts`, `uninstaller`, `url`, and `msi` [`msi` is deprecated]).
+- `autoupdate`: Definition of how the manifest can be updated automatically.
+- `bin`: A string or array of strings of programs (executables or scripts) to make available on the user's path. 
+
+- You can also create an alias shim which uses a different name to the real executable and (optionally) passes arguments to the executable. Instead of just u

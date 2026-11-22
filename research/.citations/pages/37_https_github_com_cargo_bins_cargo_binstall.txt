@@ -1,0 +1,87 @@
+# cargo-bins/cargo-binstall
+- Page: GitHub repository
+- URL: https://github.com/cargo-bins/cargo-binstall
+- Description: Binary installation for rust projects
+- Default branch: main
+- Created: 2020-12-14T07:44:17.000Z
+- Commits: 2,633
+
+...
+
+README.md
+
+# Cargo B(inary)Install
+Binstall provides a low-complexity mechanism for installing Rust binaries as an
+alternative to building from source (via `cargo install` ) or manually
+downloading packages. This is intended to work with existing CI artifacts and
+infrastructure, and with minimal overhead for package maintainers.
+Binstall works by fetching the crate information from `crates.io` and searching
+the linked `repository` for matching releases and artifacts, falling back to the [quickinstall](https://github.com/alsuren/cargo-quickinstall) third-party
+artifact host, to alternate targets as supported, and finally to `cargo install` as a last resort.
+
+...
+
+_You may want to [see this page as it was when the latest version was published](https://crates.io/crates/cargo-binstall) ._
+
+...
+
+## Usage
+Binstall aims to be a drop-in replacement for `cargo install` in many cases, and
+supports similar options.
+For unattended use (e.g. in CI), use the `--no-confirm` flag. For additional
+options please see `cargo binstall --help` .
+
+## For Crate Authors
+To support `cargo binstall` for your crate, add metadata to your `Cargo.toml` and publish pre-built binaries to GitHub Releases on each release.
+See [SUPPORT.md](https://github.com/cargo-bins/cargo-binstall/blob/main/SUPPORT.md) for full documentation on the metadata format, artifact naming, and supported
+options.
+
+...
+
+## Installation
+### Quickly
+#### Windows
+```
+Set-ExecutionPolicy Unrestricted -Scope Process; iex (iwr "https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.ps1").Content
+```
+
+### Manually
+Download the relevant package for your system below, unpack it, and move the `cargo-binstall` executable into `$HOME/.cargo/bin` :
+
+...
+
+### From source
+With a recent [Rust](https://rustup.rs/) installed:
+```
+cargo install cargo-binstall --locked
+```
+
+...
+
+## Unsupported crates
+Binstall is generally smart enough to auto-detect artifacts in most situations.
+However, if a package fails to install, you can manually specify the `pkg-url` , `bin-dir` , and `pkg-fmt` as needed at the command line, with values as
+documented in [SUPPORT.md](https://github.com/cargo-bins/cargo-binstall/blob/main/SUPPORT.md) .
+
+...
+
+## FAQ
+### What do the error codes mean?
+You can find a full description of errors including exit codes here: https://docs.rs/binstalk/latest/binstalk/errors/enum.BinstallError.html
+
+### Are debug symbols available?
+Yes! Extra pre-built packages with a `.full` suffix are available and contain
+split debuginfo, documentation files, and extra binaries like the `detect-wasi` utility.
+
+...
+
+## Telemetry collection
+worthwhile to build and host. The aggregated collected telemetry is publicly
+accessible at https://alsuren.grafana.net/public-dashboards/12d4ec3edf2548a1850a813e00592b53 .
+Should you be interested in it, the backend code for these endpoints can be
+found at https://github.com/cargo-bins/cargo-quickinstall/tree/main/stats-server .
+
+...
+
+crate metadata (refer to [the related support documentation](https://github.com/cargo-bins/cargo-binstall/blob/main/SUPPORT.md) for
+more details).

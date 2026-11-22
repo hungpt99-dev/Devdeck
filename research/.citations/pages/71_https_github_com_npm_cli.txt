@@ -1,0 +1,65 @@
+## Repository
+
+- Public, Other
+- Website: https://docs.npmjs.com/cli/
+- Stars: 10,273 · Watchers: 242 · Forks: 4,999
+- Default branch: latest · Releases: 1,111 · Tags: 1,763
+- Created: 2018-07-05
+
+# npm - a JavaScript package manager
+
+### Requirements
+
+You should be running a currently supported version of [Node.js](https://nodejs.org/en/download/) to run **`npm`**. For a list of which versions of Node.js are currently supported, please see the [Node.js releases](https://nodejs.org/en/about/previous-releases) page.
+
+### Installation
+
+**`npm`** comes bundled with [**`node`**](https://nodejs.org/), & most third-party distributions, by default. Officially supported downloads/distributions can be found at: [nodejs.org/en/download](https://nodejs.org/en/download)
+
+#### Direct Download
+
+You can download & install **`npm`** directly from [**npmjs**.com](https://npmjs.com/) using our custom `install.sh` script:
+
+```
+curl -qL https://www.npmjs.com/install.sh | sh
+```
+
+#### Node Version Managers
+
+If you're looking to manage multiple versions of **`Node.js`** &/or **`npm`**, consider using a [node version manager](https://github.com/search?q=node+version+manager+archived%3Afalse&type=repositories&ref=advsearch)
+
+### Usage
+
+```
+npm <command>
+```
+
+### Links & Resources
+
+- [**Documentation**](https://docs.npmjs.com/) - Official docs & how-tos for all things **npm**
+  - Note: you can also search docs locally with `npm help-search <query>`
+- [**Bug Tracker**](https://github.com/npm/cli/issues) - Search or submit bugs against the CLI
+- [**Community Feedback and Discussions**](https://github.com/orgs/community/discussions/categories/npm) - Contribute ideas & discussion around the npm registry, website & CLI
+- [**RFCs**](https://github.com/npm/rfcs) - Contribute ideas & specifications for the API/design of the npm CLI
+- [**Service Status**](https://status.npmjs.org/) - Monitor the current status & see incident reports for the website & registry
+- [**Project Status**](https://npm.github.io/statusboard/) - See the health of all our maintained OSS projects in one view
+- [**Support**](https://www.npmjs.com/support) - Experiencing problems with the **npm** [website](https://npmjs.com) or [registry](https://registry.npmjs.org)? [File a ticket](https://www.npmjs.com/support)
+
+### Acknowledgments
+
+- `npm` is configured to use the **npm Public Registry** at [https://registry.npmjs.org](https://registry.npmjs.org) by default; Usage of this registry is subject to **Terms of Use** available at [https://npmjs.com/policies/terms](https://npmjs.com/policies/terms)
+- You can configure `npm` to use any other compatible registry you prefer. You can read more about [configuring third-party registries](https://docs.npmjs.com/cli/v7/using-npm/registry)
+
+### FAQ on Branding
+
+#### Is it "npm" or "NPM" or "Npm"?
+
+**`npm`** should never be capitalized unless it is being displayed in a location that is customarily all-capitals (ex. titles on `man` pages).
+
+#### Is "npm" an acronym for "Node Package Manager"?
+
+Contrary to popular belief, **`npm`** **is not** an acronym for "Node Package Manager." It is a recursive backronymic abbreviation for **"npm is not an acronym"** (if the project were named "ninaa," then it would be an acronym). The precursor to **`npm`** was actually a bash utility named **"pm"**, which was the shortform name of **"pkgmakeinst"** - a bash function that installed various things on various platforms. If **`npm`** were ever considered an acronym, it would be as "node pm" or, potentially, "new pm".
+
+## Files
+
+[.github/](https://github.com/npm/cli/tree/latest/.github), [bin/](https://github.com/npm/cli/tree/latest/bin), [docs/](https://github.com/npm/cli/tree/latest/docs), [lib/](https://github.com/npm/cli/tree/latest/lib), [mock-globals/](https://github.com/npm/cli/tree/latest/mock-globals), [mock-registry/](https://github.com/npm/cli/tree/latest/mock-registry), [node\_modules/](https://github.com/npm/cli/tree/latest/node_modules), [scripts/](https://github.com/npm/cli/tree/latest/scripts), [smoke-tests/](https://github.com/npm/cli/tree/latest/smoke-tests), [tap-snapshots/test/lib/](https://github.com/npm/cli/tree/latest/tap-snapshots/test/lib), [test/](https://github.com/npm/cli/tree/latest/test), [workspaces/](https://github.com/npm/cli/tree/latest/workspaces), [.commitlintrc.js](https://github.com/npm/cli/blob/latest/.commitlintrc.js), [.eslintrc.js](https://github.com/npm/cli/blob/latest/.eslintrc.js), [.eslintrc.local.js](https://github.com/npm/cli/blob/latest/.eslintrc.local.js), [.gitattributes](https://github.com/npm/cli/blob/latest/.gitattributes), [.gitignore](https://github.com/npm/cli/blob/latest/.gitignore), [.licensee.json](https://github.com/npm/cli/blob/latest/.licensee.json), [.mailmap](https://github.com/npm/cli/blob/latest/.mailmap), [.npmrc](https://github.com/npm/cli/blob/latest/.npmrc), [.release-please-manifest.json](https://github.com/npm/cli/blob/latest/.release-please-manifest.json), [AUTHORS](https://github.com/npm/cli/blob/latest/AUTHORS), [CHANGELOG.md](https://github.com/npm/cli/blob/latest/CHANGELOG.md), [CODE\_OF\_CONDUCT.md](https://github.com/npm/cli/blob/latest/CODE_OF_CONDUCT.md), [CONTRIBUTING.md](https://github.com/npm/cli/blob/latest/CONTRIBUTING.md), [DEPENDENCIES.json](https://github.com/npm/cli/blob/latest/DEPENDENCIES.json), [DEPENDENCIES.md](https://github.com/npm/cli/blob/latest/DEPENDENCIES.md), [LICENSE](https://github.com/npm/cli/blob/latest/LICENSE), [README.md](https://github.com/npm/cli/blob/latest/README.md), [SECURITY.md](https://github.com/npm/cli/blob/latest/SECURITY.md), [configure](https://github.com/npm/cli/blob/latest/configure), [index.js](https://github.com/npm/cli/blob/latest/index.js), [package-lock.json](https://github.com/npm/cli/blob/latest/package-lock.json), [package.json](https://github.com/npm/cli/blob/latest/package.json), [release-please-config.json](https://github.com/npm/cli/blob/latest/release-please-config.json)

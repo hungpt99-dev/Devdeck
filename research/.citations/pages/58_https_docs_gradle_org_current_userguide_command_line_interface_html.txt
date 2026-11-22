@@ -1,0 +1,234 @@
+For AI agents: the documentation index is at https://docs.gradle.org/llms.txt. Request any page with the header `Accept: text/markdown` to get Markdown. User manual pages are also available as Markdown by replacing `.html` with `.md` in the URL.
+
+...
+
+# Command-Line Interface
+**Use of the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html#gradle_wrapper) is highly encouraged**. Substitute `./gradlew` (in macOS / Linux) or `gradlew.bat` (in Windows) for `gradle` in the following examples.
+Executing Gradle on the command-line conforms to the following structure:
+```text
+gradle [taskName...] [--option-name...]
+```
+Options are allowed *before* and *after* task names.
+```text
+gradle [--option-name...] [taskName...]
+```
+
+...
+
+```text
+gradle [...] --console=plain
+```
+Options that enable behavior have long-form options with inverses specified with `--no-`. The following are opposites.
+```text
+gradle [...] --build-cache
+gradle [...] --no-build-cache
+```
+
+...
+
+|  | Many command-line flags can be specified in `gradle.properties` to avoid needing to be typed. See the [Configuring build environment guide](https://docs.gradle.org/current/userguide/build_environment.html#sec:gradle_configuration_properties) for details. |
+
+...
+
+## Command-line usage
+### Executing tasks in multi-project builds
+```bash
+$ gradle :subproject:taskName
+```
+```text
+$ gradle subproject:taskName
+```
+You can also run a task for *all* subprojects using a task *selector* that consists of only the task name.
+
+...
+
+```text
+// Run a task in the root project only
+$ gradle :exampleTask --exampleOption=exampleValue
+
+// Run a task that may exist in the root or any subproject (ambiguous if defined in more than one)
+$ gradle exampleTask --exampleOption=exampleValue
+
+// Run a task in a specific subproject
+$ gradle subproject:exampleTask --exampleOption=exampleValue
+$ gradle :subproject:exampleTask --exampleOption=exampleValue
+```
+
+...
+
+```bash
+$ cd subproject
+```
+```bash
+$ gradle taskName
+```
+|  | When executing the Gradle Wrapper from a subproject directory, reference `gradlew` relatively. For example: `../gradlew taskName`. |
+
+...
+
+### Excluding tasks from execution
+```text
+> Task :compile
+compiling source
+
+> Task :dist
+building the distribution
+
+BUILD SUCCESSFUL in 0s
+2 actionable tasks: 2 executed
+```
+![commandLineTutorialTasks](https://docs.gradle.org/current/userguide/img/commandLineTutorialTasks.png)
+
+...
+
+### Name abbreviation
+More concretely, you can run the `compileTest` task in the `my-awesome-library` subproject with the command `gradle mAL:cT`.
+```bash
+$ ./gradlew mAL:cT
+```
+
+...
+
+## Common tasks
+### Computing all outputs
+It is common in Gradle builds for the `build` task to designate assembling all outputs and running all checks:
+```bash
+$ ./gradlew build
+```
+
+...
+
+## Project reporting
+### Listing tasks
+```text
+> Task :tasks
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build.
+
+Distribution tasks
+------------------
+assembleDist - Assembles the main distributions
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the main source code.
+```
+
+...
+
+### Reporting dependencies
+[Build Scan](https://scans.gradle.com/) gives a full, visual report of what dependencies exist on which configurations, transitive dependencies, and dependency version selection. They can be invoked using the `--scan` options:
+```bash
+$ ./gradlew myTask --scan
+```
+
+...
+
+### Listing project dependencies
+Below is an example of this report:
+```bash
+$ ./gradlew dependencies
+```
+```text
+> Task :app:dependencies
+
+------------------------------------------------------------
+Project ':app'
+------------------------------------------------------------
+
+compileClasspath - Compile classpath for source set 'main'.
++--- project :model
+|    \--- org.json:json:20220924
++--- com.google.inject:guice:5.1.0
+|    +--- javax.inject:javax.inject:1
+|    +--- aopalliance:aopalliance:1.0
+|    \--- com.google.guava:guava:30.1-jre -> 28.2-jre
+|         +--- com.google.guava:failureaccess:1.0.1
+|         +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|         +--- com.google.code.findbugs:jsr305:3.0.2
+|         +--- org.checkerframework:checker-qual:2.10.0 -> 3.28.0
+|         +--- com.google.errorprone:error_prone_annotations:2.3.4
+|         \--- com.google.j2objc:j2objc-annotations:1.3
++--- com.google.inject:guice:{strictly 5.1.0} -> 5.1.0 (c)
++--- org.json:json:{strictly 20220924} -> 20220924 (c)
+```
+
+...
+
+### Listing project properties
+```text
+------------------------------------------------------------
+Project ':api'
+------------------------------------------------------------
+
+allprojects: [project ':api']
+ant: org.gradle.api.internal.project.DefaultAntBuilder@12345
+antBuilderFactory: org.gradle.api.internal.project.DefaultAntBuilderFactory@12345
+artifacts: org.gradle.api.internal.artifacts.dsl.DefaultArtifactHandler_Decorated@12345
+asDynamicObject: DynamicObject for project ':api'
+baseClassLoaderScope: org.gradle.api.internal.initialization.DefaultClassLoaderScope@12345
+```
+
+...
+
+## Performance options
+### Gradle daemon options
+You can manage the [Gradle Daemon](https://docs.gradle.org/current/userguide/gradle_daemon.html#gradle_daemon) through the following command line options.
+<dl><dt><code>--daemon</code>, <code>--no-daemon</code></dt>
+<dd>
+
+...
+
+## Execution options
+</dd><dt><code>-U</code>, <code>--refresh-dependencies</code></dt>
+<dd>
+Refresh the <a href="https://docs.gradle.org/current/userguide/dependency_caching.html#sec:controlling-dependency-caching-command-line">state of dependencies</a>.
+
+...
+
+Run Gradle with all task actions disabled. Use this to show which task would have executed.
+</dd><dt><code>--task-graph</code> Since 9.1.0</dt>
+<dd>
+Run Gradle with all task actions disabled and print the task dependency graph.
+
+...
+
+## Environment options
+Specifies the Gradle User Home directory. The default is the <code>.gradle</code> directory in the user’s home directory.
+</dd><dt><code>-p</code>, <code>--project-dir</code></dt>
+<dd>
+Specifies the start directory for Gradle. Defaults to current directory.
+
+...
+
+## Bootstrapping new projects
+### Creating new Gradle builds
+Most of the time, a project type is specified. Available types include `basic` (default), `java-library`, `java-application`, and more. See [init plugin documentation](https://docs.gradle.org/current/userguide/build_init_plugin.html#build_init_plugin) for details.
+
+...
+
+### Standardize and provision Gradle
+The built-in `gradle :wrapper` task generates a script, `gradlew`, that invokes a declared version of Gradle, downloading it beforehand if necessary.
+```bash
+$ ./gradlew :wrapper --gradle-version=8.1
+```
+You can also specify `--distribution-type=(bin|all)`, `--gradle-distribution-url`, `--gradle-distribution-sha256-sum` in addition to `--gradle-version`.
+Full details on using these options are documented in the [Gradle wrapper section](https://docs.gradle.org/current/userguide/gradle_wrapper.html#gradle_wrapper).
+
+...
+
+## Continuous build
+```json
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "Gradle Documentation",
+  "url": "https://docs.gradle.org/current/userguide/command_line_interface.html"
+}
+```

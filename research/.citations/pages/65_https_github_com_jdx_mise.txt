@@ -1,0 +1,46 @@
+# jdx/mise
+- Page: GitHub repository
+- URL: https://github.com/jdx/mise
+- Description: dev tools, env vars, task runner
+- License: MIT license
+- Default branch: main
+- Created: 2023-01-09T14:44:21.000Z
+- Commits: 10,721
+
+...
+
+# [mise-en-place](https://mise.jdx.dev/)
+## What is mise?
+mise (pronounced "meez", short for _mise-en-place_ ) manages a project's dev
+tools, environment variables, and tasks from one `mise.toml` that works across
+your shell, editor, and CI:
+
+...
+
+* Install [dev tools](https://mise.jdx.dev/dev-tools/) such as Node.js, Python,
+Go, Rust, and Terraform from a [registry of 1,000+ tools](https://mise.jdx.dev/registry.html) or directly
+from [backends](https://mise.jdx.dev/dev-tools/backends/) like GitHub
+releases, Aqua, Cargo, npm, and PyPI, with separate versions per project.
+* Load [environment variables](https://mise.jdx.dev/environments/) , `.env` files, `PATH` entries, virtualenvs, and [secrets](https://mise.jdx.dev/environments/secrets/) automatically as you
+enter a directory.
+* Run [tasks](https://mise.jdx.dev/tasks/) defined in `mise.toml` or as scripts
+in `mise-tasks/` , with dependencies, parallel execution, file watching, and
+the project's tools and environment already configured.
+
+...
+
+## Quickstart
+### 1. Install mise
+On macOS or Linux:
+```shell
+curl -fsSL https://mise.run | sh
+~/.local/bin/mise --version
+```
+On Windows, run `winget install jdx.mise` . For Homebrew, apt, dnf, Scoop, and
+other package managers, see [Installing mise](https://mise.jdx.dev/installing-mise.html) .
+
+...
+
+### 4. Activate mise in your shell (optional)
+If a package manager installed mise, use `mise` in place of `~/.local/bin/mise` .
+With Homebrew, fish activates mise without this step.

@@ -1,0 +1,232 @@
+[![Stack Overflow Developer Survey 2025](https://survey.stackoverflow.co/2025/img/logo.svg)](https://survey.stackoverflow.co/2025)
+
+# 2 Technology
+
+Each year we explore the tools and technologies developers are currently using and the ones they want to use.
+
+This year, we included new questions about embedded technology tools and industry-sourced, community-vetted technology options.
+
+- 2.1. Most popular technologies →
+- 2.2. Admired and Desired →
+- 2.3. Worked with vs. want to work with →
+
+## 2.1 Most popular technologies
+
+| Response | Use Type | Percent |
+|---|---|---|
+| haskell | Have Used | 0.1% |
+| julia | Have Used | 0% |
+| clojure | Have Used | 0% |
+| objectivec | Have Used | 0% |
+| nix | Have Used | 0% |
+| haskell | Want to Use | 0.1% |
+| julia | Want to Use | 0.1% |
+| clojure | Want to Use | 0.1% |
+| nix | Want to Use | 0% |
+| odin | Want to Use | 0% |
+
+| Response | Use Type | Percent |
+|---|---|---|
+| firebird | Have Used | 0% |
+| couchdb | Have Used | 0% |
+| opensearch | Have Used | 0% |
+| couchbase | Have Used | 0% |
+| postgresql | Have Used | 0% |
+| surrealdb | Want to Use | 0% |
+| firebird | Want to Use | 0% |
+| couchdb | Want to Use | 0% |
+| spacetimedb | Want to Use | 0% |
+| timescaledb | Want to Use | 0% |
+
+| Response | Use Type | Percent |
+|---|---|---|
+| htmx | Have Used | 0% |
+| solidjs | Have Used | 0% |
+| flutter | Have Used | 0% |
+| quarkus | Have Used | 0% |
+| hugo | Have Used | 0% |
+| htmx | Want to Use | 0.1% |
+| solidjs | Want to Use | 0% |
+| flutter | Want to Use | 0% |
+| leptos | Want to Use | 0% |
+| quarkus | Want to Use | 0% |
+
+| Response | Use Type | Percent |
+|---|---|---|
+| emacs | Have Used | 0.1% |
+| helix | Have Used | 0.1% |
+| clion | Have Used | 0.1% |
+| goland | Have Used | 0.1% |
+| rubymine | Have Used | 0% |
+| emacs | Want to Use | 0.2% |
+| helix | Want to Use | 0.1% |
+| clion | Want to Use | 0.1% |
+| goland | Want to Use | 0.1% |
+| rstudio | Want to Use | 0% |
+
+| Response | Use Type | Percent |
+|---|---|---|
+| mastodon | Have Used | 0.2% |
+| lobste.rs | Have Used | 0% |
+| matrix | Have Used | 0% |
+| lemmy | Have Used | 0% |
+| discourse | Have Used | 0% |
+| mastodon | Want to Use | 0.2% |
+| matrix | Want to Use | 0% |
+| lobste.rs | Want to Use | 0% |
+| lemmy | Want to Use | 0% |
+| fediverse | Want to Use | 0% |
+
+| Response | Use Type | Percent |
+|---|---|---|
+| copilot | Have Used | 0.1% |
+| github copilot | Have Used | 0.1% |
+| gemma | Have Used | 0.1% |
+| qwen | Have Used | 0% |
+| microsoft copilot | Have Used | 0% |
+| copilot | Want to Use | 0.1% |
+| gemma | Want to Use | 0.1% |
+| github copilot | Want to Use | 0.1% |
+| qwen | Want to Use | 0% |
+| ollama | Want to Use | 0% |
+
+| Response | Use Type | Percent |
+|---|---|---|
+| bitbucket | Have Used | 0.1% |
+| gitea | Have Used | 0.1% |
+| codeberg | Have Used | 0% |
+| forgejo | Have Used | 0% |
+| slack | Have Used | 0% |
+| codeberg | Want to Use | 0.1% |
+| gitea | Want to Use | 0.1% |
+| forgejo | Want to Use | 0.1% |
+| bitbucket | Want to Use | 0% |
+| logseq | Want to Use | 0% |
+
+## 2.2 Admired and Desired
+
+To better gauge hype versus reality, we created a visualization that shows the distance between the proportion of respondents who want to use a technology (“desired”) and the proportion of users that have used the same technology in the past year and want to continue using it (“admired”).
+
+## 2.3 Worked with vs. want to work with
+
+Knowing that developers want to use something is only half of the story. These charts show the technologies developers want to use next year aggregated by the technologies they already use. The sankey chart highlights the strongest relationships between what developers use and want to use, with technologies used justified left and technologies wanted justified right.
+
+Responses: 31,771(64.8%)
+Minimum 2,500 respondents per connection.
+
+Responses: 24,759(50.5%)
+Minimum 2,500 respondents per connection.
+
+Responses: 2,564(5.2%)
+Minimum 250 respondents per connection.
+
+Responses: 20,810(42.5%)
+Minimum 2,500 respondents per connection.
+
+Responses: 1,945(4%)
+Minimum 250 respondents per connection.
+
+Responses: 26,083(53.2%)
+Minimum 2,500 respondents per connection.
+
+Responses: 21,126(43.1%)
+Minimum 2,500 respondents per connection.
+
+Responses: 1,690(3.4%)
+Minimum 250 respondents per connection.
+
+Responses: 18,020(36.8%)
+Minimum 2,500 respondents per connection.
+
+Responses: 1,356(2.8%)
+Minimum 250 respondents per connection.
+
+Responses: 24,473(49.9%)
+Minimum 2,500 respondents per connection.
+
+Responses: 20,070(40.9%)
+Minimum 2,500 respondents per connection.
+
+Responses: 1,558(3.2%)
+Minimum 250 respondents per connection.
+
+Responses: 17,258(35.2%)
+Minimum 2,500 respondents per connection.
+
+Responses: 1,249(2.5%)
+Minimum 250 respondents per connection.
+
+Responses: 23,678(48.3%)
+Minimum 2,000 respondents per connection.
+
+Responses: 19,460(39.7%)
+Minimum 2,000 respondents per connection.
+
+Responses: 1,722(3.5%)
+Minimum 200 respondents per connection.
+
+Responses: 16,853(34.4%)
+Minimum 2,000 respondents per connection.
+
+Responses: 1,410(2.9%)
+Minimum 200 respondents per connection.
+
+Responses: 26,143(53.3%)
+Minimum 2,000 respondents per connection.
+
+Responses: 20,954(42.7%)
+Minimum 2,000 respondents per connection.
+
+Responses: 1,960(4%)
+Minimum 200 respondents per connection.
+
+Responses: 18,521(37.8%)
+Minimum 2,000 respondents per connection.
+
+Responses: 1,626(3.3%)
+Minimum 200 respondents per connection.
+
+Responses: 30,190(61.6%)
+Minimum 500 respondents per connection.
+
+Responses: 23,529(48%)
+Minimum 500 respondents per connection.
+
+Responses: 2,423(4.9%)
+Minimum 50 respondents per connection.
+
+Responses: 19,818(40.4%)
+Minimum 500 respondents per connection.
+
+Responses: 1,863(3.8%)
+Minimum 50 respondents per connection.
+
+Responses: 16,474(33.6%)
+Minimum 500 respondents per connection.
+
+Responses: 13,271(27.1%)
+Minimum 500 respondents per connection.
+
+Responses: 1,257(2.6%)
+Minimum 50 respondents per connection.
+
+Responses: 13,104(26.7%)
+Minimum 500 respondents per connection.
+
+Responses: 1,199(2.4%)
+Minimum 50 respondents per connection.
+
+Responses: 30,065(61.3%)
+Minimum 500 respondents per connection.
+
+Responses: 23,683(48.3%)
+Minimum 500 respondents per connection.
+
+Responses: 2,342(4.8%)
+Minimum 50 respondents per connection.
+
+Responses: 20,001(40.8%)
+Minimum 500 respondents per connection.
+
+Responses: 1,824(3.7%)
+Minimum 50 respondents per connection.

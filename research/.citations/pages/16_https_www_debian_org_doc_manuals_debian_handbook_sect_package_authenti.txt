@@ -1,0 +1,2 @@
+# 6.6. Checking Package Authenticity
+Both contain a list of the `Packages` files (including their compressed forms, `Packages.gz` and `Packages.xz` , and the incremental versions), along with their SHA256 hashes, which ensures that the files haven't been tampered with. These `Packages` files contain a list of the Debian packages available on the mirror, along with their hashes, which ensures in turn that the contents of the packages themselves haven't been altered either.

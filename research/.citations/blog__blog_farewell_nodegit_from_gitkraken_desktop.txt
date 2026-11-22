@@ -1,0 +1,213 @@
+NEW COURSE • 100% FREE
+
+Foundations Of AI For Software Development
+
+[ Enroll To Get Started → ](https://learn.gitkraken.com/courses/foundations-of-ai?coupon=AIFOUNDATIONS)
+
+![](https://www.gitkraken.com/wp-content/uploads/2026/10/marigold.png) OFERTA DÍA DE MUERTOSAHORRA HASTA 70%Oferta Por Tiempo Limitado[Comprar ahora](https://www.gitkraken.com/dia-de-muertos-26)
+
+![](https://www.gitkraken.com/wp-content/uploads/2026/10/marigold.png) DÍA DE MUERTOS [¡Consigue un 60-70% de Descuento!](https://www.gitkraken.com/dia-de-muertos-26)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2025/03/gitkraken-logo-stencil-monochrome-light.svg) ](https://gitkraken.com/)
+
+# Git Blog
+
+Releasing the Power of Git
+
+# Farewell, NodeGit: GitKraken Desktop 12.7+ Runs on Core Git
+
+- November 19, 2026
+
+GitKraken Desktop 12.7.0 is out. If you skim the [release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-12-7-0), you’ll see some bug fixes and not much else. But for those of us who work on GitKraken Desktop, this is one of the biggest releases we’ve ever shipped: as of 12.7.0, **NodeGit is no longer used for any git operations.** Every git operation in GitKraken Desktop now runs on core git, the same git you use in your terminal.
+
+That probably sounds like a strange thing to get excited about. So let me explain what NodeGit is, why we built on it in the first place, and why it took us *five years* to move off it.
+
+![Grampa Simpson telling a group of kids, “Back in my day, GitKraken Desktop was 100% NodeGit.”](https://www.gitkraken.com/wp-content/uploads/2026/11/back-in-my-day-nodegit@2x.png)
+
+NodeGit is a library that lets Node.js code call libgit2, a standalone implementation of git written in C.
+
+When we started building GitKraken Desktop in 2014, the git command line tools didn’t give us much to work with. There weren’t many options for tweaking how an operation ran, and most of the output was meant for a human to read, which made it hard for a program to parse reliably. NodeGit gave us direct access to the repository instead. That was a big part of how GitKraken Desktop could do more than other git clients of the time.
+
+![GitKraken Desktop in its October 2015 beta, with local and remote branches on the left, the commit graph in the middle and unstaged files on the right.](https://www.gitkraken.com/wp-content/uploads/2026/11/gkd-beta-oct-2015@2x.png)
+
+[Download GitKraken Desktop](http://gitkraken.com/download)
+
+Fast-forward to about 2020. Big players (mostly Microsoft) started investing *hugely* in core git, and options were getting added for the exact things we had needed back in 2014.
+
+And right as more of our customers were working in very large repositories, git was landing new large-repo optimizations every few months. Those optimizations go into git itself. libgit2 is an independent implementation, so it doesn’t get them unless someone does the work to add them there too. For us, keeping up would have meant Microsoft-level investment in a library that wasn’t our product.
+
+One of our other early decisions presented a second problem. GitKraken Desktop is built on Electron, and keeping NodeGit compatible with Electron was getting harder with every release.
+
+By late 2021, it was clear to us that NodeGit wasn’t our future. We decided to stop relying on it and put that effort into the things that make GitKraken Desktop worth using.
+
+While the decision came quickly, the work took way way longer. GitKraken Desktop had been built on NodeGit for seven years at that point, so nearly every feature touched it somewhere. We also couldn’t stop shipping releases while we rewrote the foundation, so the move happened piece by piece, alongside everything else on the roadmap.
+
+Ask anyone who has spent a long time in the GitKraken Desktop codebase, and they’ll tell you what a big deal this is. We couldn’t have finished it without years of work from a lot of talented engineers. *(If you’re reading this, kudos to the dedicated effort, my friends)*.
+
+Okay okay, so what does this mean for you? In day-to-day use, you shouldn’t notice a difference, and that was the goal.
+
+The difference is in where our time goes. For years, part of our engineering time went to keeping NodeGit working instead of building things for you. That time now goes to GitKraken Desktop itself. And because we’re on core git, the work the git community puts into git (including all those large-repo improvements) is work we can build on directly, instead of rebuilding it ourselves.
+
+![The About screen in GitKraken Desktop 12.7.0, which credits NodeGit, Electron, Monaco Editor, libgit2 and Dugite-Native.](https://www.gitkraken.com/wp-content/uploads/2026/11/gkd-12-7-0-about@2x.png)
+
+We still have a bit of clean-up left: NodeGit will be fully removed from dead code paths and our build system soon. After that, the first thing we’re putting the freed-up engineering time toward is performance, since it’s one of the things you ask us for most.
+
+[Download GitKraken Desktop](http://gitkraken.com/download)
+
+**Like this post? Share it!
+**
+
+#### **Read More Articles**
+
+### [ 7 Best Git Blame Extensions for Code Editors (2026) ](https://www.gitkraken.com/blog/7-best-git-blame-extensions-for-code-editors-2026)
+
+ November 12, 2026
+
+Tracking down who changed a specific line of code shouldn’t require a scavenger hunt through terminal output. The right Git blame extension puts authorship, commit
+
+[ Read More » ](https://www.gitkraken.com/blog/7-best-git-blame-extensions-for-code-editors-2026)
+
+### [ 6 Engineering Intelligence Platforms Compared (2026) ](https://www.gitkraken.com/blog/6-engineering-intelligence-platforms-compared-2026)
+
+ November 11, 2026
+
+Your engineering org has 500+ developers, AI agents writing production code, and a board that wants to know whether the investment is paying off. The
+
+[ Read More » ](https://www.gitkraken.com/blog/6-engineering-intelligence-platforms-compared-2026)
+
+### [ A Simple Software Factory with Kepler ](https://www.gitkraken.com/blog/a-simple-software-factory-with-kepler)
+
+ November 10, 2026
+
+I kept seeing people talking about “Software Factories” on social media, but I’ll admit that I had no idea what a software factory was. So,
+
+[ Read More » ](https://www.gitkraken.com/blog/a-simple-software-factory-with-kepler)
+
+### [ 6 Best Code Review Platforms for Hybrid Dev Teams (2026) ](https://www.gitkraken.com/blog/6-best-code-review-platforms-for-hybrid-dev-teams-2026)
+
+ November 10, 2026
+
+Your team splits repos across GitHub, GitLab, and Bitbucket. Pull requests pile up in different interfaces, reviewers lose context jumping between platforms, and code review
+
+[ Read More » ](https://www.gitkraken.com/blog/6-best-code-review-platforms-for-hybrid-dev-teams-2026)
+
+### [ Conductor is joining Meta. What that means if you run parallel agents ](https://www.gitkraken.com/blog/conductor-is-joining-meta-what-that-means-if-you-run-parallel-agents)
+
+ November 9, 2026
+
+Update, Nov 17, 2026: Conductor reversed its shutdown on November 13 and says it’s building again. I’ve updated the post to match and taken out
+
+[ Read More » ](https://www.gitkraken.com/blog/conductor-is-joining-meta-what-that-means-if-you-run-parallel-agents)
+
+### [ 6 Best Code Review Platforms for GitHub and Jira (2026) ](https://www.gitkraken.com/blog/6-best-code-review-platforms-for-github-and-jira-2026)
+
+ November 9, 2026
+
+Your team runs on GitHub for code and Jira for planning. But when it comes to code review tools, those two worlds rarely talk to
+
+[ Read More » ](https://www.gitkraken.com/blog/6-best-code-review-platforms-for-github-and-jira-2026)
+
+### Make Git Easy: Visual, Powerful, AI-Assisted.
+
+[ Start Free GitKraken Pro Trial](https://gitkraken.dev/trial)
+
+GitKraken Desktop 12.7.0 is out. If you skim the [release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-12-7-0), you’ll see some bug fixes and not much else. But for those of us who work on GitKraken Desktop, this is one of the biggest releases we’ve ever shipped: as of 12.7.0, **NodeGit is no longer used for any git operations.** Every git operation in GitKraken Desktop now runs on core git, the same git you use in your terminal.
+
+That probably sounds like a strange thing to get excited about. So let me explain what NodeGit is, why we built on it in the first place, and why it took us *five years* to move off it.
+
+![Grampa Simpson telling a group of kids, “Back in my day, GitKraken Desktop was 100% NodeGit.”](https://www.gitkraken.com/wp-content/uploads/2026/11/back-in-my-day-nodegit@2x.png)
+
+NodeGit is a library that lets Node.js code call libgit2, a standalone implementation of git written in C.
+
+When we started building GitKraken Desktop in 2014, the git command line tools didn’t give us much to work with. There weren’t many options for tweaking how an operation ran, and most of the output was meant for a human to read, which made it hard for a program to parse reliably. NodeGit gave us direct access to the repository instead. That was a big part of how GitKraken Desktop could do more than other git clients of the time.
+
+![GitKraken Desktop in its October 2015 beta, with local and remote branches on the left, the commit graph in the middle and unstaged files on the right.](https://www.gitkraken.com/wp-content/uploads/2026/11/gkd-beta-oct-2015@2x.png)
+
+[Download GitKraken Desktop](http://gitkraken.com/download)
+
+Fast-forward to about 2020. Big players (mostly Microsoft) started investing *hugely* in core git, and options were getting added for the exact things we had needed back in 2014.
+
+And right as more of our customers were working in very large repositories, git was landing new large-repo optimizations every few months. Those optimizations go into git itself. libgit2 is an independent implementation, so it doesn’t get them unless someone does the work to add them there too. For us, keeping up would have meant Microsoft-level investment in a library that wasn’t our product.
+
+One of our other early decisions presented a second problem. GitKraken Desktop is built on Electron, and keeping NodeGit compatible with Electron was getting harder with every release.
+
+By late 2021, it was clear to us that NodeGit wasn’t our future. We decided to stop relying on it and put that effort into the things that make GitKraken Desktop worth using.
+
+While the decision came quickly, the work took way way longer. GitKraken Desktop had been built on NodeGit for seven years at that point, so nearly every feature touched it somewhere. We also couldn’t stop shipping releases while we rewrote the foundation, so the move happened piece by piece, alongside everything else on the roadmap.
+
+Ask anyone who has spent a long time in the GitKraken Desktop codebase, and they’ll tell you what a big deal this is. We couldn’t have finished it without years of work from a lot of talented engineers. *(If you’re reading this, kudos to the dedicated effort, my friends)*.
+
+Okay okay, so what does this mean for you? In day-to-day use, you shouldn’t notice a difference, and that was the goal.
+
+The difference is in where our time goes. For years, part of our engineering time went to keeping NodeGit working instead of building things for you. That time now goes to GitKraken Desktop itself. And because we’re on core git, the work the git community puts into git (including all those large-repo improvements) is work we can build on directly, instead of rebuilding it ourselves.
+
+![The About screen in GitKraken Desktop 12.7.0, which credits NodeGit, Electron, Monaco Editor, libgit2 and Dugite-Native.](https://www.gitkraken.com/wp-content/uploads/2026/11/gkd-12-7-0-about@2x.png)
+
+We still have a bit of clean-up left: NodeGit will be fully removed from dead code paths and our build system soon. After that, the first thing we’re putting the freed-up engineering time toward is performance, since it’s one of the things you ask us for most.
+
+[Download GitKraken Desktop](http://gitkraken.com/download)
+
+
+[... middle omitted — see footer ...]
+
+
+We still have a bit of clean-up left: NodeGit will be fully removed from dead code paths and our build system soon. After that, the first thing we’re putting the freed-up engineering time toward is performance, since it’s one of the things you ask us for most.
+
+[Download GitKraken Desktop](http://gitkraken.com/download)
+
+**Visual Studio Code is required to install GitLens.**
+
+ Don’t have Visual Studio Code? [Get it now](https://code.visualstudio.com/download).
+
+[Continue to install GitLens](vscode:extension/eamodio.gitlens)
+
+#### Team Collaboration Services
+
+ Secure cloud-backed services that span across all products in the DevEx platform to keep your workflows connected across projects, repos, and team members
+
+**Launchpad** – All your PRs, issues, & tasks in one spot to kick off a focused, unblocked day. **Code Suggest** – Real code suggestions anywhere in your project, as simple as in Google Docs. **Cloud Patches** – Speed up PR reviews by enabling early collaboration on work-in-progress. **Workspaces** – Group & sync repos to simplify multi-repo actions, & get new devs coding faster. **DORA Insights** – Data-driven code insights to track & improve development velocity. **Security & Admin** – Easily set up SSO, manage access, & streamline IdP integrations.
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/Union.svg)
+Start Your Free Trial](https://gitkraken.dev/trial?redirect_uri=https://www.gitkraken.com/typ/trial-start-success)
+
+#### GitKraken Browser Extension
+
+ Your bridge between apps
+
+[Track PRs](https://gitkraken.com/browser-extension#track-prs) – [View PRs in GitKraken or VS Code](https://gitkraken.com/browser-extension#view-prs) – [Work More Effectively with Repo Providers](https://gitkraken.com/browser-extension#work-more-effectively)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/chrome-icon.svg)Add to Chrome ](https://chrome.google.com/webstore/detail/gitkraken/egmopflbpgdjmmkeabegohajillnebco)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/ff-icon.svg)Add to Firefox ](https://addons.mozilla.org/en-US/firefox/addon/gitkraken-browser-extension/)
+
+[ ![](https://www.gitkraken.com/wp-content/uploads/2024/05/edge-icon.svg)Add to Microsoft Edge ](https://microsoftedge.microsoft.com/addons/detail/gitkraken/eehliiniplilmbgcnghhaneefihofjnl)
+
+#### GitKraken CLI
+
+ Ultimate CLI for Git Collaboration
+
+[Bring PRs, WIPs & Issues to the Terminal](https://gitkraken.com/cli#bring-prs-to-terminal) – [Run Multi-Repo Commands](https://gitkraken.com/cli#run-multi-repo-commands) – [Manage Groups of Repos](https://gitkraken.com/cli#manage-groups-of-repos) – [Suggest Code Revisions](https://gitkraken.com/cli#suggest-code-revisions)
+
+#### GitKraken.dev
+
+ Your Command Center in the Browser
+
+[Track PRs & Issues](https://gitkraken.com/gitkraken-dev#track-prs) – [Suggest and Share Code Changes](https://gitkraken.com/gitkraken-dev#suggest-send-code-changes) – [Ramp Up New Devs Faster](https://gitkraken.com/gitkraken-dev#ramp-up-new-devs) – [Bring Your Team Together](https://gitkraken.com/gitkraken-dev#bring-your-team-together) – [Secure and Control Your Data](https://gitkraken.com/gitkraken-dev#secure-control-data)
+
+[ Sign Into Your Account ](https://gitkraken.dev/login)
+
+[ Sign up for free ](https://gitkraken.dev/register)
+
+#### GitKraken Desktop
+
+ Simplify Git For Any OS
+
+[Visualize Git, Minimize Mistakes](https://gitkraken.com/git-client#visualize-git) – [Unblock PR & Code Reviews](https://gitkraken.com/git-client#unblock-pr) – [Manage Multiple Repos](https://gitkraken.com/git-client#manage-multiple-repos) – [Resolve Merge Conflicts with Ease](https://gitkraken.com/git-client#resolve-merge-conflicts) – [Ramp Up Devs Faster](https://gitkraken.com/git-client#ramp-up-new-devs)
+
+[ Start Free GitKraken Pro Trial](https://gitkraken.dev/trial)
+
+──────── [TRUNCATED] ────────
+Showing 11,996 chars (head) + 3,830 chars (tail) of 19,755 total clean characters.
+Full text saved to: /root/.hermes/cache/web/www.gitkraken.com-1e2faff9fa.md
+To read the omitted middle: read_file path="/root/.hermes/cache/web/www.gitkraken.com-1e2faff9fa.md" offset=150 limit=200  (the file is the complete page; raise/lower offset to page through it).
+─────────────────────────────

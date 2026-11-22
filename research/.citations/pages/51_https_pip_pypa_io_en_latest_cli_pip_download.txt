@@ -1,0 +1,68 @@
+# pip download ¶
+URL: https://pip.pypa.io/en/latest/cli/pip_download/
+
+Skip to content
+
+pip documentation v27.0.dev0
+
+- Getting Started
+- Installation
+- User Guide
+- Topic Guides Authentication Caching Configuration Dependency Resolution More on Dependency Resolution HTTPS Certificates Local project installs Repeatable Installs Secure installs VCS Support Managing a different Python interpreter Pip is not a workflow management tool
+- Reference Build System Interface Requirement Specifiers Requirements File Format Installation Report`pip inspect` JSON output specification
+- Commands pip pip install pip uninstall pip inspect pip list pip show pip freeze pip check pip lock pip download pip wheel pip hash pip search pip index pip cache pip config pip debug
+
+Project
+
+- Development Getting Started Contributing Continuous Integration Issue Triage Architecture of pip’s internals Broad functionality overview Repository anatomy & directory structure Configuration File Handling Finding and choosing files ( `index` and `PackageFinder`) Command Line Interface Options that control the installation process Release process Vendoring Policy
+- UX Research & Design How to Contribute UX Guidance UX Research Results About pip’s Users How Users Understand pip How pip users think about security How pip is used in interactive environments (i.e. CI, CD) pip Personas Prioritizing pip Features Providing an override to install packages with conflicting dependencies pip --force-reinstall pip search pip Upgrade Conflict Improving pip’s Documentation
+- Changelog
+- Code of Conduct
+- GitHub
+
+Back to top
+
+View this page
+
+# pip download ¶
+
+## Usage ¶
+
+Unix/macOS
+
+```
+python -m pip download [options] <requirement specifier> [package-index-options] ...
+python -m pip download [options] -r <requirements file> [package-index-options] ...
+python -m pip download [options] <vcs project url> ...
+python -m pip download [options] <local project path> ...
+python -m pip download [options] <archive url/path> ...
+
+```
+
+Windows
+
+```
+py -m pip download [options] <requirement specifier> [package-index-options] ...
+py -m pip download [options] -r <requirements file> [package-index-options] ...
+py -m pip download [options] <vcs project url> ...
+py -m pip download [options] <local project path> ...
+py -m pip download [options] <archive url/path> ...
+
+```
+
+## Description ¶
+
+Download packages from:
+
+- PyPI (and other indexes) using requirement specifiers.
+- VCS project urls.
+- Local project directories.
+- Local or remote source archives.
+
+pip also supports downloading from “requirements files”, which provide an easy way to specify a whole environment to be downloaded.
+
+### Overview ¶
+
+`pip download` does the same resolution and downloading as `pip install`, but instead of installing the dependencies, it collects the downloaded distributions into the directory provided (defaulting to the current directory). This directory can later be passed as the value to `pip install --find-links` to facilitate offline or locked down package installation.
+
+`pip download` with the `--plat

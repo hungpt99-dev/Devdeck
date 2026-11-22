@@ -1,0 +1,300 @@
+[Skip to content](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#_top)
+
+This is the unreleased documentation for the **next** version of Slint. Switch to [the latest released version](https://docs.slint.dev/).
+
+You are viewing contents of an older version. Switch to [the latest released version](https://docs.slint.dev/).
+
+# TextEdit
+
+Every page of the Slint documentation has a Markdown version, ~10x smaller. Replace a link's trailing slash with .md: this page is /latest/docs/slint/reference/std-widgets/views/textedit.md. /latest/docs/slint/llms.txt lists all pages.
+
+```
+import { TextEdit, VerticalBox } from "std-widgets.slint";
+
+export component Example inherits Window {
+
+    width: 200px;
+
+    height: 200px;
+
+    VerticalBox {
+
+        TextEdit {
+
+            font-size: 14px;
+
+            text: "Lorem ipsum dolor sit amet,\n consectetur adipisici elit";
+
+        }
+
+    }
+
+}
+```
+
+[Open in SlintPad](https://slintpad.com/?snippet=import%20%7B%20TextEdit%2C%20VerticalBox%20%7D%20from%20%22std-widgets.slint%22%3B%0Aexport%20component%20Example%20inherits%20Window%20%7B%0A%20%20%20%20width%3A%20200px%3B%0A%20%20%20%20height%3A%20200px%3B%0A%0A%20%20%20%20VerticalBox%20%7B%0A%20%20%20%20%20%20%20%20TextEdit%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2014px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20text%3A%20%22Lorem%20ipsum%20dolor%20sit%20amet%2C%5Cn%20consectetur%20adipisici%20elit%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%7D "Open in SlintPad")
+
+slint
+
+![std-widgets textedit example](https://docs.slint.dev/latest/docs/slint/_astro/std-widgets-textedit.WlTRdTV1_DsskA.webp)
+
+Similar to [LineEdit](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/lineedit/), but can be used to enter several lines of text
+
+## Properties
+
+[Section titled “Properties”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#properties)
+
+### font-size
+
+[Section titled “font-size”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#font-size)
+
+[length](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#length) default: `0px`
+
+The size of the font of the input text.
+
+### font-family
+
+[Section titled “font-family”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#font-family)
+
+[string](https://docs.slint.dev/latest/docs/slint/reference/property-types/strings/#string) default: `""`
+
+The name of the font family selected for rendering the text.
+
+### font-italic
+
+[Section titled “font-italic”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#font-italic)
+
+[bool](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#bool) default: `false`
+
+The italic state of the font of the input text
+
+### text
+
+[Section titled “text”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#text)
+
+[string](https://docs.slint.dev/latest/docs/slint/reference/property-types/strings/#string)`(in-out)`default: `""`
+
+The text being edited
+
+```
+TextEdit {
+
+    text: "Initial text";
+
+}
+```
+
+slint
+
+### has-focus
+
+[Section titled “has-focus”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#has-focus)
+
+[bool](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#bool)`(out)`
+
+Set to true when the widget currently has the focus.
+
+### has-selection
+
+[Section titled “has-selection”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#has-selection)
+
+[bool](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#bool)`(out)`
+
+`true` when text is selected.
+
+### enabled
+
+[Section titled “enabled”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#enabled)
+
+[bool](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#bool) default: `true`
+
+When false, nothing can be entered.
+
+### input-method-hints
+
+[Section titled “input-method-hints”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#input-method-hints)
+
+[struct InputMethodHints](https://docs.slint.dev/latest/docs/slint/reference/property-types/builtin-structs/#inputmethodhints) default: `a struct with all default values`
+
+Hints for the platform’s input method (such as a soft keyboard), for example to configure auto-capitalization.
+The input method may take these hints into account, but might also ignore them.
+
+```
+TextEdit {
+
+    input-method-hints: { capitalization: CapitalizationMode.words };
+
+}
+```
+
+slint
+
+`InputMethodHints`
+
+This structure holds the hints that a `TextInput` gives to the platform’s input method
+(e.g. a soft keyboard) about the expected input.
+The input method may take these hints into account, but might also ignore them.
+
+- **`capitalization`** ( [_CapitalizationMode_](https://docs.slint.dev/latest/docs/slint/reference/property-types/builtin-enums/#capitalizationmode)): The auto-capitalization behavior that the input method should apply. Defaults to [`sentences`](https://docs.slint.dev/latest/docs/slint/reference/property-types/builtin-enums/#capitalizationmode-sentences).
+- **`auto-correct`** ( _bool_): Hint that the input method may automatically correct spelling mistakes as the user types. Defaults to `true`.
+- **`auto-complete`** ( _bool_): Hint that the input method may offer auto-completion suggestions for the entered text. Defaults to `true`.
+
+### read-only
+
+[Section titled “read-only”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#read-only)
+
+[bool](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#bool) default: `false`
+
+When set to true, text editing via keyboard and mouse is disabled but selecting text is still enabled as well as editing text programmatically.
+
+### wrap
+
+[Section titled “wrap”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#wrap)
+
+[enum TextWrap](https://docs.slint.dev/latest/docs/slint/reference/property-types/builtin-enums/#textwrap) default: `the first enum value`
+
+The way the text wraps (default: word-wrap).
+
+`TextWrap`
+
+This enum describes the how the text wraps if it is too wide to fit in the width of a `Text` or `StyledText` element.
+
+- **`no-wrap`**: The text won’t wrap, but instead will overflow.
+- **`word-wrap`**: The text will be wrapped at word boundaries if possible, or at any location for very long words.
+- **`char-wrap`**: The text will be wrapped at any character. Currently only supported by the Qt and Software renderers.
+
+### horizontal-alignment
+
+[Section titled “horizontal-alignment”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#horizontal-alignment)
+
+[enum TextHorizontalAlignment](https://docs.slint.dev/latest/docs/slint/reference/property-types/builtin-enums/#texthorizontalalignment) default: `the first enum value`
+
+The horizontal alignment of the text.
+
+`TextHorizontalAlignment`
+
+This enum describes the different types of alignment of text along the horizontal axis of a `Text` or `StyledText` element.
+
+- **`start`**: The text will be aligned with the start edge of the containing box. This could be left or right depending on the direction of the text.
+- **`end`**: The text will be aligned with the end edge of the containing box. This could be left or right depending on the direction of the text.
+- **`left`**: The text will be aligned with the left edge of the containing box.
+- **`center`**: The text will be horizontally centered within the containing box.
+- **`right`**: The text will be aligned to the right of the containing box.
+
+### placeholder-text
+
+[Section titled “placeholder-text”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#placeholder-text)
+
+[string](https://docs.slint.dev/latest/docs/slint/reference/property-types/strings/#string)`(in)`default: `""`
+
+A placeholder text being shown when there is no text in the edit field.
+
+### content-width
+
+[Section titled “content-width”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#content-width)
+
+[length](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#length)`(in-out)`default: `0px`
+
+The width of the scrollable content of the text edit.
+This property was formerly known as `viewport-width`, which is still available as a deprecated alias.
+
+### content-height
+
+[Section titled “content-height”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#content-height)
+
+[length](https://docs.slint.dev/latest/docs/slint/reference/property-types/numeric-types/#length)`(in-out)`default: `0px`
+
+The height of the scrollable content of the text edit.
+This property was formerly known as `viewport-height`, which is still available as a deprecated alias.
+
+### content-x
+
+
+[... middle omitted — see footer ...]
+
+
+### clear-selection()
+
+[Section titled “clear-selection()”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#clear-selection)
+
+Clears the selection. This function takes effect regardless of the `read-only` and `enabled` properties.
+
+### copy()
+
+[Section titled “copy()”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#copy)
+
+Copies the selected text to the clipboard.
+
+### cut()
+
+[Section titled “cut()”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#cut)
+
+Copies the selected text to the clipboard and removes it from the editable area. This function takes effect regardless of the `read-only` and `enabled` properties.
+
+### paste()
+
+[Section titled “paste()”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#paste)
+
+Pastes the text content of the clipboard at the cursor position. This function takes effect regardless of the `read-only` and `enabled` properties.
+
+### undo()
+
+[Section titled “undo()”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#undo)
+
+Undoes the last text operation. This function takes effect regardless of the `read-only` and `enabled` properties.
+
+### redo()
+
+[Section titled “redo()”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#redo)
+
+Redoes the last undone text operation. This function takes effect regardless of the `read-only` and `enabled` properties.
+
+## Callbacks
+
+[Section titled “Callbacks”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#callbacks)
+
+### edited(string)
+
+[Section titled “edited(string)”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#editedstring)
+
+Emitted when the text has changed because the user modified it
+
+```
+TextEdit {
+
+    edited(text) => {
+
+        debug("Edited: ", text);
+
+    }
+
+}
+```
+
+slint
+
+### key-pressed(KeyEvent) -> EventResult
+
+[Section titled “key-pressed(KeyEvent) -> EventResult”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#key-pressedkeyevent---eventresult)
+
+Invoked when a key is pressed, the argument is a [KeyEvent](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/overview/) struct. Use this callback to
+handle keys before `TextEdit` does. Return `accept` to indicate that you’ve handled the event, or return
+`reject` to let `TextEdit` handle it.
+
+### key-released(KeyEvent) -> EventResult
+
+[Section titled “key-released(KeyEvent) -> EventResult”](https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit/#key-releasedkeyevent---eventresult)
+
+Invoked when a key is released, the argument is a [KeyEvent](https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/overview/) struct. Use this callback to
+handle keys before `TextEdit` does. Return `accept` to indicate that you’ve handled the event, or return
+`reject` to let `TextEdit` handle it.
+
+* * *
+
+© 2026 SixtyFPS GmbH
+
+──────── [TRUNCATED] ────────
+Showing 8,928 chars (head) + 2,998 chars (tail) of 14,872 total clean characters.
+Full text saved to: /root/.hermes/cache/web/docs.slint.dev-ecc8adb4a1.md
+To read the omitted middle: read_file path="/root/.hermes/cache/web/docs.slint.dev-ecc8adb4a1.md" offset=212 limit=200  (the file is the complete page; raise/lower offset to page through it).
+─────────────────────────────

@@ -1,0 +1,91 @@
+# Library/Homebrew/env_config.rb
+URL: https://github.com/Homebrew/brew/blob/main/Library/Homebrew/env_config.rb
+
+# Library/Homebrew/env_config.rb
+
+- Branch: main
+- Repository: Homebrew/brew
+
+---
+
+# typed: strict
+# frozen_string_literal: true
+
+require "utils/output"
+require "bundle/extensions"
+
+module Homebrew
+ # Helper module for querying Homebrew-specific environment variables.
+ #
+ # @api internal
+ module EnvConfig
+ include Utils::Output::Mixin
+ extend Utils::Output::Mixin
+
+ module_function
+
+ BUNDLE_CORE_TYPES = T.let({
+ brew: "formula dependencies",
+ cask: "cask dependencies",
+ tap: "tap dependencies",
+ }.freeze, T::Hash[Symbol, String])
+
+ BUNDLE_DISABLE_ENVS = T.let(
+ {
+ cleanup: [BUNDLE_CORE_TYPES, Homebrew::Bundle.extensions.select(&:cleanup_supported?).to_h do |extension|
+ [extension.type, extension.banner_name]
+ end],
+ dump: [BUNDLE_CORE_TYPES, Homebrew::Bundle.extensions.select(&:dump_disable_supported?).to_h do |extension|
+ [extension.type, extension.banner_name]
+ end],
+ }.flat_map do |command, type_descriptions|
+ type_descriptions.reduce(&:merge).map do |type, description|
+ verb = (command == :cleanup) ? "clean up" : "dump"
+ [
+ :"HOMEBREW_BUNDLE_#{command.upcase}_NO_#{type.to_s.upcase}",
+ {
+ description: "If set, `brew bundle #{command}` will not #{verb} #{description}.",
+ boolean: true,
+ },
+ ]
+ end
+ end.sort.to_h.freeze,
+ T::Hash[Symbol, T::Hash[Symbol, T.untyped]],
+ )
+
+ ENVS = T.let({
+ HOMEBREW_ALLOWED_TAPS: {
+ description: "A space-separated list of taps. Homebrew will refuse to install a " \
+ "formula unless it and all of its dependencies are in an official tap " \
+ "or in a tap on this list. Each entry is a `user/repository` name " \
+ "(which matches only taps using the default GitHub remote) or a remote " \
+ "URL (required to match taps with a custom remote).",
+ odeprecated: true,
+ },
+ HOMEBREW_API_AUTO_UPDATE_SECS: {
+ description: "Check Homebrew's API for new formulae or cask data every " \
+ "`$HOMEBREW_API_AUTO_UPDATE_SECS` seconds. Alternatively, disable API auto-update " \
+ "checks entirely with `$HOMEBREW_NO_AUTO_UPDATE`.",
+ default: 450,
+ },
+ HOMEBREW_API_DOMAIN: {
+ description: "Use this URL as the download mirror for Homebrew JSON API. " \
+ "If metadata files at that URL are temporarily unavailable, " \
+ "the default API domain will be used as a fallback mirror.",
+ default_text: "`https://formulae.brew.sh/api`.",
+ default: HOMEBREW_API_DEFAULT_DOMAIN,
+ },
+ HOMEBREW_ARCH: {
+ description: "Linux only: Pass this value to a type name representing the compiler's `-march` option.",
+ default: "native",
+ replacement: "the default native CPU optimisation",
+ odeprecated: true,
+ },
+ HOMEBREW_ARTIFACT_DOMAIN: {
+ description: "Prefix all download URLs, including those for bottles, with this value. " \
+ "For example, `export HOMEBREW_ARTIFACT_DOMAIN=http://localhost:8080` will cause a " \
+ "formula with the URL `https://example.com/foo.tar.gz` to instead download from " \
+ "`http://localhost:8080/https://example.com/foo.tar.gz`. " \
+ "Bottle URLs however, have their domain replaced with this prefix. " \
+ "This results in e.g. " \
+ "`https://ghcr.

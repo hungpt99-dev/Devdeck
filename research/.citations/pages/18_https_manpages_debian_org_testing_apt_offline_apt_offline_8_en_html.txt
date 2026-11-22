@@ -1,0 +1,134 @@
+/ [testing](https://manpages.debian.org/contents-testing.html) / [apt-offline](https://manpages.debian.org/testing/apt-offline/index.html) / apt-offline(8)
+links
+* [language-indep link](https://manpages.debian.org/testing/apt-offline/apt-offline.8)
+* [package tracker](https://tracker.debian.org/pkg/apt-offline)
+* [raw man page](https://manpages.debian.org/testing/apt-offline/apt-offline.8.en.gz)
+table of contents
+
+...
+
+| [apt-offline(8)](https://manpages.debian.org/testing/apt-offline/apt-offline.8.en.html) | USER COMMANDS | [apt-offline(8)](https://manpages.debian.org/testing/apt-offline/apt-offline.8.en.html) |
+
+# NAME ¶
+apt-offline - Offline APT Package manager
+
+# SYNOPSIS ¶
+**apt-offline** [ARGUMENTS] [OPTIONS]
+
+# DESCRIPTION ¶
+apt-offline brings offline package management functionality to
+Debian based system. It can be used to download packages and its
+dependencies to be installed later on (or required to update) a disconnected
+machine. Packages can be downloaded from a different connected machine.
+It can also fetch bug reports for the packages that are
+downloaded.
+Unless the -h/-v or --help/--version options are given, one of the **get, set** or **install** commands must be provided.
+
+## set FILENAME [-h] [--install-packages PKG...PKG_N] [--install-src-packages PKG...PKG_N] --src-build-dep [--release release_name] [--update] [--upgrade] [--upgrade-type upgrade] ¶
+**set** generates a signature file with the data required to
+install on or update the disconnected machine.
+**FILENAME {apt-offline.sig}** is the signature file generated
+on the machine. This file will contain all the information necessary for
+apt.
+--simulate
+Developer only. Used for testing.
+[**--install-packages [PKG...PKG_N]**]()
+Packages that need to be installed
+[**--install-src-packages [PKG...PKG_N]**](~2)
+Source packages that need to be installed
+**--src-build-dep**
+Download Build Dependency packages for the source packages requested
+**--release release_name**
+Release target to install packages from
+**--apt-backend apt-get**
+APT backend to use. One of: apt, apt-get, python-apt
+**--generate-changelog**
+Generate changelog of the version to be downloaded
+**--update**
+Generate APT Database signature for an update. This is the equivalent of
+using **apt-get update**
+
+...
+
+## get FILENAME [-h] [--socket-timeout ] [-d / --download-dir] [-s / --cache-dir] [--no-checksum] [-t / --threads ] [--bundle] [--bug-reports] [--proxy-host] [--proxy-port] [--https-cert-file --https-key-file] [--http-basicauth] [--disable-cert-check] ¶
+**-d, --download-dir DIR_NAME**
+Download data to the specified DIR_NAME folder. If no folder name is
+specified, data is downloaded to a folder in the TEMPDIR path in the
+format **apt-offline-download-$PID**
+**-s, --cache-dir DIR_NAME**
+
+...
+
+## install FILE/FOLDER [-h] [--skip-bug-reports ] [--install-src-path PATH] [--allow-unauthenticated] ¶
+**--skip-bug-reports**
+Skip listing of downloaded bug reports, if any.
+**--skip-changelog**
+Skip display of changelog, if any.
+**--allow-unauthenticated**
+Don't verify GPG signatures for the data to be installed to APT. Usage of
+this option is highly discouraged.
+**--strict-deb-check**
+With this option enabled, apt-offline delegate's .deb package checksum
+validation to apt.
+
+...
+
+# EXAMPLES ¶
+**NOTE: argument/option handling**
+apt-offline relies on argparse for argument/option parsing. To explicitly
+instruct apt-offline about an argument, you can pass it with the --
+delimiter.
+**Ex. apt-offline set --update --upgrade --install-packages
+wm2 -- foo.sig**
+By specifying the **--** delimiter, we instruct apt-offline
+that foo.sig is an argument to the **apt-offline** command and not to
+the **--install-packages** option.
+Otherwise, you could also use it positionally next to the set
+command
+**Ex. apt-offline set foo.sig --update --upgrade
+--install-packages wm2**
+**apt-offline set FILENAME**
+This command will generate a signature file FILENAME for APT Package
+Database. To generate only the signature for updates, use the --update
+option. To generate only the signature for package upgrades, use the
+--upgrade option.
+**apt-offline get FILENAME**
+This command will fetch the data required for APT Package Database as per
+
+...
+
+**NOTE1:** On a freshly installed box, that was installed
+without the network, the package database is null. In that case, you
+first need to run **apt-offline** with just the **--update** option to ensure you have a meaningful package database
+
+...
+
+**(Security Updates for Debian Testing)**
+Sequence 1: The following set of commands, when run in sequence, will update a disconnected machine.
+**apt-offline set update.sig --update**
+
+...
+
+(Generate the required data needed to upgrade the upgradable
+packages. Should be run on the disconnected machine)
+**apt-offline get upgrade.sig --bundle upgrade.zip**
+(Download the required data needed to upgrade the upgradable
+packages. Should be run on a machine with internet connectivity)
+**apt-offline install upgrade.zip**
+
+...
+
+# AUTHOR ¶
+**apt-offline is written by Ritesh Raj Sarraf
+(rrs@researchut.com)**
+If you wish to report a bug in apt-offline, please see **https://github.com/rickysarraf/apt-offline** or else, send an email to
+me at **rrs@researchut.com**
+
+...
+
+# DEDICATION ¶
+| Source file: | apt-offline.8.en.gz (from [apt-offline 1.8.6-1](http://snapshot.debian.org/package/apt-offline/1.8.6-1/) ) |
+| Source last updated: | 2025-02-08T15:16:24Z |
+| Converted to HTML: | 2026-06-25T06:42:42Z |
+debiman df2f1b6, see [github.com/Debian/debiman](https://github.com/Debian/debiman/) .
+Found a problem? See the [FAQ](https://manpages.debian.org/faq.html) .

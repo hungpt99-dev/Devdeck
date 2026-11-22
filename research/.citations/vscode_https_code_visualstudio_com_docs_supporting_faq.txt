@@ -1,0 +1,220 @@
+* [Agents](https://code.visualstudio.com/features/agents)
+* [Models](https://code.visualstudio.com/features/models)
+* [Customizations](https://code.visualstudio.com/features/customizations)
+* [Continuity](https://code.visualstudio.com/features/continuity)
+Editor
+* [Write code](https://code.visualstudio.com/features/code-editing)
+* [Enterprise](https://code.visualstudio.com/features/enterprise)
+* [Extensibility](https://code.visualstudio.com/features/extensibility)
+
+...
+
+* [Extension Marketplace (opens in new tab)](https://marketplace.visualstudio.com/VSCode)
+* [MCP registry (opens in new tab)](https://github.com/mcp?utm_source=vscode-website&utm_campaign=mcp-registry-server-launch-2025)
+Connect
+* [Events (opens in new tab)](https://aka.ms/vscode/live)
+* [GitHub repository (opens in new tab)](https://github.com/microsoft/vscode)
+[Download](https://code.visualstudio.com/download)
+Search ⌘ ⇧ P
+[Download](https://code.visualstudio.com/download)
+
+...
+
+# Documentation
+* [Overview](https://code.visualstudio.com/docs)
+* Get Started
++ [Download and Install](https://code.visualstudio.com/docs/getstarted/overview)
++ [Get to Know VS Code](https://code.visualstudio.com/docs/getstarted/what-is-vscode)
++ [Agents Quickstart](https://code.visualstudio.com/docs/agents/quickstart)
++ [Editor Tutorial](https://code.visualstudio.com/docs/editing/getting-started/editor-tutorial)
++ [Intro Videos](https://code.visualstudio.com/docs/getstarted/introvideos)
+* AI in VS Code
++ [Overview](https://code.visualstudio.com/docs/agents/overview)
++ Get Started
+- [Find a Guide](https://code.visualstudio.com/docs/agents/guides/overview)
+- [Choose an AI Feature](https://code.visualstudio.com/docs/agents/reference/ai-features-cheat-sheet)
+- [Set Up GitHub Copilot](https://code.visualstudio.com/docs/setup/copilot)
+- [Agents Quickstart](https://code.visualstudio.com/docs/agents/quickstart)
+
+...
+
++ [Overview](https://code.visualstudio.com/docs/sourcecontrol/overview)
++ [Quickstart](https://code.visualstudio.com/docs/sourcecontrol/quickstart)
++ [Repositories & Remotes](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes)
++ [Staging, Commits & Undo](https://code.visualstudio.com/docs/sourcecontrol/staging-commits)
++ [History & Blame](https://code.visualstudio.com/docs/sourcecontrol/history)
++ [Branches, Stashes & Worktrees](https://code.visualstudio.com/docs/sourcecontrol/branches-worktrees)
++ [Merge Conflicts](https://code.visualstudio.com/docs/sourcecontrol/merge-conflicts)
++ [Collaborate on GitHub](https://code.visualstudio.com/docs/sourcecontrol/github)
++ [Troubleshooting](https://code.visualstudio.com/docs/sourcecontrol/troubleshooting)
++ [FAQ](https://code.visualstudio.com/docs/sourcecontrol/faq)
+* Terminal
+
+...
+
++ [SSH Tutorial](https://code.visualstudio.com/docs/remote/ssh-tutorial)
++ [Tunnels](https://code.visualstudio.com/docs/remote/tunnels)
++ [Dev Containers](https://code.visualstudio.com/docs/remote/dev-containers)
++ [WSL](https://code.visualstudio.com/docs/remote/wsl)
++ [WSL Tutorial](https://code.visualstudio.com/docs/remote/wsl-tutorial)
++ [GitHub Codespaces](https://code.visualstudio.com/docs/remote/codespaces)
++ [VS Code Server](https://code.visualstudio.com/docs/remote/vscode-server)
++ [Linux Prerequisites](https://code.visualstudio.com/docs/remote/linux)
++ [Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting)
++ [FAQ](https://code.visualstudio.com/docs/remote/faq)
+* Advanced Setup
++ [GitHub Copilot Setup](https://code.visualstudio.com/docs/setup/copilot)
++ [Linux](https://code.visualstudio.com/docs/setup/linux)
+
+...
+
+# Visual Studio Code FAQ
+If you don't see an answer to your question here, check our previously [reported issues on GitHub](https://github.com/microsoft/vscode/issues) and our [release notes](https://code.visualstudio.com/updates) .
+
+...
+
+## Can I use VS Code without signing in?
+Signing in with GitHub connects VS Code to your GitHub Copilot plan and gives you access to the AI features, models, and usage allowances included with that plan. If you don't want to sign in, you can still use chat with a [bring-your-own-key model](https://code.visualstudio.com/docs/agent-customization/language-models) without a GitHub account or Copilot plan.
+Features that depend on the GitHub Copilot service, such as inline suggestions, semantic search, and embeddings, aren't available through bring-your-own-key models.
+
+...
+
+## Open sourcing AI in VS Code
+We've open sourced the GitHub Copilot Chat extension under the MIT license and are bringing relevant components into VS Code core. Read all details in our [announcement blog post](https://aka.ms/vscode-copilot-oss-blog) and [first milestone update](https://code.visualstudio.com/blogs/2025/06/30/openSourceAIEditorFirstMilestone) .
+
+...
+
+### What is the timeline? When can I provide a contribution to the AI experience in VS Code?
+We have [completed the first step](https://code.visualstudio.com/blogs/2025/06/30/openSourceAIEditorFirstMilestone) of this process by open sourcing the GitHub Copilot Chat extension. The source code is available in the [microsoft/vscode-copilot-chat](https://github.com/microsoft/vscode-copilot-chat) repository.
+In the coming months, we will bring the relevant components of the Copilot Chat extension into the core VS Code repository. Check our [plan item](https://github.com/microsoft/vscode/issues/249031) for details and updates about the timeline.
+Our goal is to make the experience for contributing to our AI features as simple as contributing to any part of VS Code. As part of this, we want to make it possible to use the Copilot backend services for debugging and testing purposes when contributing.
+Check the [CONTRIBUTING.md](https://github.com/microsoft/vscode-copilot-chat/blob/main/CONTRIBUTING.md) file for details on how to contribute.
+
+...
+
+### I'm an extension author. How am I affected?
+We maintain backwards compatibility for stable APIs. You should not expect any impact on your extension.
+We're continuously evolving and expanding the VS Code extension APIs based on feedback from extension authors. If you need additional APIs to make your extension successful, we would love to hear from you – please file an API request in the [microsoft/vscode repo](https://github.com/microsoft/vscode/issues) .
+
+...
+
+### Will this change anything about how you collect data?
+No, nothing is changing. By open sourcing GitHub Copilot Chat, we are making it fully transparent how we collect data and enable you to verify this in the source code. Learn more about [telemetry in VS Code](https://code.visualstudio.com/docs/configure/telemetry) and the [GitHub Copilot Trust Center](https://copilot.github.trust.page/) .
+
+...
+
+## What is the difference between Visual Studio Code and Visual Studio IDE?
+Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as [Visual Studio IDE](https://visualstudio.microsoft.com/) .
+
+...
+
+## Platform support
+### Can I run VS Code on older Windows versions?
+Microsoft ended support and is no longer providing security updates for [Windows 7](https://learn.microsoft.com/lifecycle/products/windows-7) , [Windows 8, and Windows 8.1](https://learn.microsoft.com/en-us/lifecycle/announcements/windows-8-1-end-support-january-2023) . VS Code desktop versions starting with 1.71 (August 2022) no longer run on Windows 7 and starting with 1.80 (June 2023) will no longer run on Windows 8 and 8.1.
+
+...
+
+VS Code will no longer provide product updates or security fixes on old Windows versions. VS Code [version 1.70.3](https://code.visualstudio.com/updates/v1_70) is the last available release for Windows 7 users and version 1.79 will be the last available release for Windows 8 and 8.1 users.
+
+...
+
+### Can I run VS Code on older Linux distributions?
+Starting with VS Code release 1.86.1 (January 2024), VS Code desktop is only compatible with Linux distributions based on glibc 2.28 or later, for example, Debian 10, RHEL 8, or Ubuntu 20.04.
+
+...
+
+## Telemetry and crash reporting
+### How to disable telemetry reporting
+VS Code collects usage data and sends it to Microsoft to help improve our products and services. Read our [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409) and [telemetry documentation](https://code.visualstudio.com/docs/configure/telemetry) to learn more.
+If you don't want to send usage data to Microsoft, you can set the telemetry.telemetryLevel Open in VS Code Open in VS Code Insiders user [setting](https://code.visualstudio.com/docs/configure/settings) to `off` .
+
+...
+
+## GDPR and VS Code
+* The VS Code product notifies all users that they can opt out of telemetry collection.
+* The team actively reviews and classifies all telemetry sent (documented in [our OSS codebase](https://github.com/microsoft/vscode/pull/34997) ).
+* There are valid data retention policies in place for any data collected, for example crash dumps.
+
+...
+
+## Licensing
+### Why does Visual Studio Code have a different license than the vscode GitHub repository?
+To learn why Visual Studio Code, the product, has a different license than the open-source [vscode GitHub repository](https://github.com/microsoft/vscode) , see [issue #60](https://github.com/microsoft/vscode/issues/60) for a detailed explanation.
+
+### What is the difference between the `vscode` repository and the Microsoft Visual Studio Code distribution?
+The [github.com/microsoft/vscode](https://github.com/microsoft/vscode) repository ( `Code - OSS` ) is where we develop the Visual Studio Code product. Not only do we write code and work on issues there, we also publish our roadmap and iteration and endgame plans.
+The source code is available to everyone under a standard [MIT license](https://github.com/microsoft/vscode/blob/main/LICENSE.txt) .
+Visual Studio Code is a distribution of the `Code - OSS` repository with Microsoft specific customizations (including source code), released under a traditional [Microsoft product license](https://code.visualstudio.com/License/) .
+See the [Visual Studio Code and 'Code - OSS' Differences](https://github.com/microsoft/vscode/wiki/Differences-between-the-repository-and-Visual-Studio-Code) article for more details.
+
+### What does "Built on Open Source" mean?
+[Microsoft Visual Studio Code](https://code.visualstudio.com/) is a [Microsoft licensed](https://code.visualstudio.com/License/) distribution of ['Code - OSS'](https://github.com/microsoft/vscode) that includes Microsoft proprietary assets (such as icons) and features (Visual Studio Marketplace integration, small aspects of enabling Remote Development).
+While these additions make up a very small percentage of the overall distribution code base, it is more accurate to say that Visual Studio Code is "built" on open source, rather than "is" open source, because of these differences.
+More information on what each distribution includes can be found in the [Visual Studio Code and 'Code - OSS' Differences](https://github.com/microsoft/vscode/wiki/Differences-between-the-repository-and-Visual-Studio-Code) article.
+
+...
+
+## Extensions
+### Are all VS Code extensions open source?
+extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) use proprietary licenses.
+
+...
+
+Reliance on existing proprietary source code or libraries, source code that crosses into Microsoft licensed tools or services (e.g., the C# DevKit extension uses the Visual Studio subscription license model, see [License](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) ), and business model differences across the entirety of Microsoft may result in extensions choosing a proprietary license.
+
+...
+
+### Can I use a Microsoft extension outside of VS Code?
+such as GitHub, Inc. We build, test, deploy, and support these extensions and services only in the Visual Studio family of products, to ensure they meet our security and quality standards. We do not do this for extensions elsewhere, including those built on a fork of the [Code - OSS Repository](https://github.com/microsoft/vscode) .
+Please see _Conditions: Use Rights for Marketplace/NuGet Offerings_ in the Visual Studio Marketplace [Terms of Service](https://aka.ms/vsmarketplace-ToU) for more information.
+
+### I can't access the Visual Studio Marketplace from product << fill in the blank >>, why not?
+We provide the Visual Studio Marketplace for use only by the Visual Studio family of products: Microsoft Visual Studio, Visual Studio Code, GitHub Codespaces, Azure DevOps, Azure DevOps Server, and successor products and services offered by us and Microsoft affiliates, such as GitHub, Inc.
+Therefore, alternative products including those built on a fork of the [Code - OSS Repository](https://github.com/microsoft/vscode) , are not permitted to access the Visual Studio Marketplace. We do this to protect the security and quality of the ecosystem, including the following measures:
+* Extensions run in the context and with the permissions of the product, and they might contain executable code. The [Marketplace vets every extension](https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security) for security and to prevent them from performing malicious activity.
+
+...
+
+See [#31168](https://github.com/microsoft/vscode/issues/31168) for additional details on this topic.
+
+...
+
+## Problems and issues
+### Installation appears to be corrupt [Unsupported]
+You may also see the **[Unsupported]** message if VS Code files have been mistakenly quarantined or removed by anti-virus software (see issue [#94858](https://github.com/microsoft/vscode/issues/94858) for an example). Check your anti-virus software settings and reinstall VS Code to repair the missing files.
+
+...
+
+### Resolving shell environment fails
+If you see other errors, please create an [issue](https://github.com/microsoft/vscode/issues) to get help.
+
+...
+
+## Technical support channels
+You can ask questions and search for answers on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) and enter issues and feature requests directly in our [GitHub repository](https://github.com/microsoft/vscode/issues) .
+If you'd like to contact a professional support engineer, you can open a ticket with the [Microsoft assisted support team](https://support.microsoft.com/oas/default.aspx?prid=16064) .
+02/04/2026
+
+...
+
+## Community
+* [GitHub](https://github.com/microsoft/vscode)
+* [Reddit](https://www.reddit.com/r/vscode/)
+* [X](https://go.microsoft.com/fwlink/?LinkID=533687)
+* [Bluesky](https://bsky.app/profile/vscode.dev)
+* [LinkedIn](https://www.linkedin.com/showcase/vs-code)
+
+...
+
+## Help
+* [GitHub](https://github.com/microsoft/vscode)
+* [Reddit](https://www.reddit.com/r/vscode/)
+* [X](https://go.microsoft.com/fwlink/?LinkID=533687)
+* [Bluesky](https://bsky.app/profile/vscode.dev)
+* [LinkedIn](https://www.linkedin.com/showcase/vs-code)
+Watch & listen
+* [YouTube](https://www.youtube.com/@code)
+* [Podcast](https://www.vscodepodcast.com/)
+* [TikTok](https://www.tiktok.com/@vscode)
+* [Instagram](https://www.instagram.com/vscode)
+Legal

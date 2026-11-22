@@ -1,0 +1,49 @@
+# Chocolatey Software Docs | Configuration
+URL: https://docs.chocolatey.org/en-us/configuration
+Author: Chocolatey Software
+
+Chocolatey Software Docs | Configuration
+
+# Configuration
+
+There are settings and features that can customize the way that Chocolatey works for you. The following is a list of config settings and features and their default values.
+
+> NOTE
+> 
+> When a Chocolatey configuration or feature is removed (for example, it becomes deprecated and no longer required), it will not be removed from the chocolatey.config file automatically when you upgrade Chocolatey. This is in order to preserve backwards compatibility, should the user decide to go back to a previous version of Chocolatey.
+
+## Config Settings
+
+Config settings are adjusted using `choco config set --name="' '" --value="' '"` and set back to default with `choco config unset --name="' '"`. For more information See Xref title=“`choco config` command” value=“choco-command-config” /> or run `choco config -?`.
+
+### General
+
+- `cacheLocation` = ’ ’ - Cache location if not TEMP folder. Replaces `$env:TEMP` value. It is highly recommended this be set to make Chocolatey more deterministic in cleanup.
+- `upgradeAllExceptions` = ’ ’ - A comma-separated list of package names that should not be upgraded when running `choco upgrade all’. Defaults to empty.
+- `defaultTemplateName` = ’ ’ - Default template name used when running `choco new` command.
+- `defaultPushSource` = ’ ’ - Default source to push packages to when running `choco push` command.
+
+### Proxy
+
+- `proxy` = ’ ’ - Explicit proxy location.
+- `proxyUser` = ’ ’ - Optional proxy user. Requires explicit proxy configured.
+- `proxyPassword` = ’ ’ - Optional proxy password. Encrypted. Requires explicit proxy and proxyUser configured.
+- `proxyBypassList` = ’ ’ - Optional regex proxy bypass list. Comma separated. Requires explicit proxy configured.
+- `proxyBypassOnLocal` = ‘true’ - Bypass proxy for local connections. Requires explicit proxy configured.
+
+### Timeouts
+
+- `commandExecutionTimeoutSeconds` = ‘2700’ - Default timeout for command execution. ‘0’ for infinite. It is recommended that organizations bump this up to at least 4 hours (14400).
+- `webRequestTimeoutSeconds` = ‘30’ - Default timeout for web requests.
+
+### Other
+
+- `containsLegacyPackageInstalls` = ‘true’ - Install has packages installed prior to 0.9.9 series.
+
+## Config Settings - Licensed Edition
+
+### Chocolatey Central Management
+
+- `centralManagementServiceUrl` = ’ ’ - The URL that should be used to communicate with Chocolatey Central Management. It should look something like `https://servicemachineFQDN:24020/ChocolateyManagementService`. See https://docs.chocolatey.org/en-us/features/chocolatey-central-management#fqdn-usage. Available in business editions only.
+- `centralManagementReportPackagesTimerIntervalInSeconds` = ‘1800’ - Amount of time, in seconds, between each execution of the background service to report installed and outdated packages to Chocolatey Central Management. Available in business editions only.
+- `centralManagementReceiveTimeoutInSeconds` = ‘30’ - The amount of time, in

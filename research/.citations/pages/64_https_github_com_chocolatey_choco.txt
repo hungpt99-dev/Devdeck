@@ -1,0 +1,21 @@
+# chocolatey/choco
+- Page: GitHub repository
+- URL: https://github.com/chocolatey/choco
+- Description: Chocolatey - the package manager for Windows
+- Default branch: develop
+- Created: 2014-12-30T22:12:11.000Z
+- Commits: 5,177
+
+...
+
+# Chocolatey - like yum or apt-get, but for Windows
+You can just call me choco.
+
+...
+
+## Committers
+### Installing on Other Platforms:
+1. Get a copy of the source code and build.
+2. Copy (or link) the contents of `./code_drop/temp/_PublishedApps/choco` to your preferred install directory. On Linux, the preferred directory is `/opt/chocolatey`
+3. Export the `ChocolateyInstall` environment variable, pointing to the install directory the build output was copied too.
+4.

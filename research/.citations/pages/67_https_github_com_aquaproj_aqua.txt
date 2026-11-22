@@ -1,0 +1,55 @@
+## Repository
+
+- Public
+- Website: https://aquaproj.github.io
+- Stars: 1,888 · Watchers: 3 · Forks: 77
+- Default branch: main · Releases: 583 · Tags: 594
+- Created: 2021-08-25
+
+![logo](/aquaproj/aqua/raw/main/logo/aqua_horizontal.svg)
+
+#
+
+[![Ask DeepWiki](https://camo.githubusercontent.com/b876cdb51d268b8a0cfce1b2864a90ee8f7a16ac8d39c439d6367495a3b63dd9/68747470733a2f2f6465657077696b692e636f6d2f62616467652e737667)](https://deepwiki.com/aquaproj/aqua) [Document](https://aquaproj.github.io/) | [Contributing](/aquaproj/aqua/blob/main/CONTRIBUTING.md) | [Logo](/aquaproj/aqua/blob/main/logo) | [Scorecard](https://securityscorecards.dev/viewer/?uri=github.com/aquaproj/aqua)
+
+Declarative CLI Version Manager written in Go.
+
+- Switch tool versions per project
+- Unify tool versions and how to install in your teams and CI
+- Continuous update by Renovate
+- Lazy Install
+- Ecosystem by Registry
+- Secure
+- Easy to use
+
+[![Star History Chart](https://camo.githubusercontent.com/5b9d8800caa0b4c4d3b6035eb24f053240ca42fbddf943137f1cc48e4aca1f27/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d6171756170726f6a2f6171756126747970653d44617465)](https://star-history.com/#aquaproj/aqua&Date)
+
+## Who uses aqua?
+
+Note
+
+If you want to add your company, organization, project to the list, please send a pull request or send a comment to the [GitHub Discussion](https://github.com/orgs/aquaproj/discussions/2124)!
+
+- [GitHub Public repositories that use aqua](https://github.com/aquaproj/user-list)
+- [tfaction](https://github.com/suzuki-shunsuke/tfaction) uses aqua heavily to install various tools such as Terraform, tfsec, tflint, tfcmt, and so on
+- Recruit Co., Ltd. - [StudySapuri](https://brand.studysapuri.jp/) and [Quipper](https://www.quipper.com/) product team
+- [Masterpoint Consulting](https://masterpoint.io/) ([ref](https://github.com/orgs/aquaproj/discussions/2124#discussioncomment-6553057))
+- [Retty](https://retty.me/) ([ref](https://engineer.retty.me/entry/2022/12/14/130000))
+- [Mercari, Inc.](https://about.mercari.com/en/)
+- [Gunosy Inc.](https://gunosy.co.jp/en/) ([ref](https://tech.gunosy.io/entry/snyk_iac_reviewdog_aqua_devsecops))
+- [DeNA Co., Ltd.](https://dena.com/intl/)
+- [CADDi Inc.](https://caddi.com/)
+- [Studist](https://studist.jp/) ([ref](https://studist.tech/entrance-book-4a57bc50aace))
+- [Connehito Inc.](https://connehito.com/) ([ref](https://tech.connehito.com/entry/2024/10/01/184156#%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%A7%E6%89%B1%E3%81%86CLI%E3%83%84%E3%83%BC%E3%83%AB%E3%81%AF-aqua-%E3%81%A7%E7%AE%A1%E7%90%86))
+- [LayerX Inc.](https://layerx.co.jp/) ([ref](https://tech.layerx.co.jp/entry/aqua-local-setup))
+- [Cybozu, Inc.](https://cybozu.co.jp/) ([ref](https://blog.cybozu.io/entry/2025/04/14/100000#%E3%83%93%E3%83%AB%E3%83%89%E3%82%84%E3%83%AA%E3%83%B3%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB))
+
+## License
+
+[MIT](/aquaproj/aqua/blob/main/LICENSE)
+
+About the license of logo, please see [here](/aquaproj/aqua/blob/main/logo/README.md#license).
+
+## Files
+
+[.clinerules/](https://github.com/aquaproj/aqua/tree/main/.clinerules), [.github/](https://github.com/aquaproj/aqua/tree/main/.github), [aqua/](https://github.com/aquaproj/aqua/tree/main/aqua), [cmd/](https://github.com/aquaproj/aqua/tree/main/cmd), [json-schema/](https://github.com/aquaproj/aqua/tree/main/json-schema), [logo/](https://github.com/aquaproj/aqua/tree/main/logo), [pkg/](https://github.com/aquaproj/aqua/tree/main/pkg), [scripts/](https://github.com/aquaproj/aqua/tree/main/scripts), [tests/](https://github.com/aquaproj/aqua/tree/main/tests), [website/](https://github.com/aquaproj/aqua/tree/main/website), [.gitignore](https://github.com/aquaproj/aqua/blob/main/.gitignore), [.golangci.yml](https://github.com/aquaproj/aqua/blob/main/.golangci.yml), [.goreleaser.yml](https://github.com/aquaproj/aqua/blob/main/.goreleaser.yml), [AGENTS.md](https://github.com/aquaproj/aqua/blob/main/AGENTS.md), [CLAUDE.md](https://github.com/aquaproj/aqua/blob/main/CLAUDE.md), [CONTRIBUTING.md](https://github.com/aquaproj/aqua/blob/main/CONTRIBUTING.md), [Dockerfile](https://github.com/aquaproj/aqua/blob/main/Dockerfile), [LICENSE](https://github.com/aquaproj/aqua/blob/main/LICENSE), [README.md](https://github.com/aquaproj/aqua/blob/main/README.md), [\_typos.toml](https://github.com/aquaproj/aqua/blob/main/_typos.toml), [cmdx.yaml](https://github.com/aquaproj/aqua/blob/main/cmdx.yaml), [ghalint.yaml](https://github.com/aquaproj/aqua/blob/main/ghalint.yaml), [go.mod](https://github.com/aquaproj/aqua/blob/main/go.mod), [go.sum](https://github.com/aquaproj/aqua/blob/main/go.sum), [hk.pkl](https://github.com/aquaproj/aqua/blob/main/hk.pkl), [package-lock.json](https://github.com/aquaproj/aqua/blob/main/package-lock.json), [package.json](https://github.com/aquaproj/aqua/blob/main/package.json), [renovate.json5](https://github.com/aquaproj/aqua/blob/main/renovate.json5)

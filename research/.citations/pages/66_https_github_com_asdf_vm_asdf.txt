@@ -1,0 +1,83 @@
+## Repository
+
+- Public, MIT License
+- Website: https://asdf-vm.com/
+- Stars: 25,629 · Watchers: 112 · Forks: 989
+- Default branch: master · Releases: 28 · Tags: 54
+- Created: 2014-11-29
+
+# asdf
+
+[![Lint](https://github.com/asdf-vm/asdf/actions/workflows/lint.yml/badge.svg)](https://github.com/asdf-vm/asdf/actions/workflows/lint.yml) [![Tests](https://github.com/asdf-vm/asdf/actions/workflows/tests.yml/badge.svg)](https://github.com/asdf-vm/asdf/actions/workflows/tests.yml)
+
+**Manage multiple runtime versions with a single CLI tool, extendable via plugins** - [docs at asdf-vm.com](https://asdf-vm.com/)
+
+asdf is a CLI tool that can manage multiple language runtime versions on a per-project basis. It is like `gvm`, `nvm`, `rbenv` & `pyenv` (and more) all in one! Simply install your language's plugin!
+
+## Why use asdf?
+
+- single CLI for multiple languages
+- consistent commands to manage all your languages
+- single global config keeping defaults in one place
+- single `.tool-versions` config file per project
+- support for existing config files `.node-version`, `.nvmrc`, `.ruby-version` for easy migration
+- automatically switches runtime versions as you traverse your directories
+- simple plugin system to add support for your language of choice
+- shell completion available for common shells (Bash, Zsh, Fish, Elvish)
+
+## Documentation
+
+[Please head over to the documentation site for more information](https://asdf-vm.com/)!
+
+- [Getting Started](https://asdf-vm.com/guide/getting-started.html)
+- [All Commands](https://asdf-vm.com/manage/commands.html)
+- [All Plugins](https://github.com/asdf-vm/asdf-plugins)
+- [Create a Plugin](https://asdf-vm.com/plugins/create.html) with our [asdf-plugin-template](https://github.com/asdf-vm/asdf-plugin-template)
+- [asdf GitHub Actions](https://github.com/asdf-vm/actions)
+
+## Contributing
+
+See [CONTRIBUTING.md in the repo](https://github.com/asdf-vm/asdf/blob/master/CONTRIBUTING.md) or the [Contributing section on the docs site](http://asdf-vm.com/contribute/core.html#initial-setup).
+
+## Community & Questions
+
+- [FAQ](https://asdf-vm.com/more/faq.html)
+- [![GitHub Issues](https://camo.githubusercontent.com/1ff727dd83b037106dcff1c844e5baaf892886b51dcbf9d7c079a17a49d81993/68747470733a2f2f69636f6e67722e616d2f73696d706c652f6769746875622e7376673f636f6c6f723d3830383038302673697a653d3136) GitHub Issues](https://github.com/asdf-vm/asdf/issues): report a bug or raise a feature request to the `asdf` core team
+- [![StackOverflow Tag](https://camo.githubusercontent.com/f96255ee8d77bc3acfa81e589f59fc8ff2caae9dfe81bade969acc036feaae58/68747470733a2f2f69636f6e67722e616d2f666f6e74617765736f6d652f737461636b2d6f766572666c6f772e7376673f73697a653d313626636f6c6f723d383038303830) StackOverflow Tag](https://stackoverflow.com/questions/tagged/asdf-vm): see existing Q&A for `asdf`. Some of the core team watch this tag in addition to our helpful community
+
+## Ballad of asdf
+
+> Once upon a time there was a programming language
+> There were many versions of it
+> So people wrote a version manager for it
+> To switch between versions for projects
+> Different, old, new.
+>
+> Then there came more programming languages
+> So there came more version managers
+> And many commands for them
+>
+> I installed a lot of them
+> I learnt a lot of commands
+>
+> Then I said, just one more version manager
+> Which I will write instead
+>
+> So, there came another version manager
+> **asdf version manager** - [https://github.com/asdf-vm/asdf](https://github.com/asdf-vm/asdf)
+>
+> A version manager so extendable
+> for which anyone can create a plugin
+> To support their favourite language
+> No more installing more version managers
+> Or learning more commands
+
+---
+
+> This was the mail I wrote to a few friends to tell them about the project. Thanks to [@roshanvid](https://twitter.com/roshanvid) for suggesting that this go into the readme
+
+[@HashNuke](https://github.com/HashNuke)
+
+## Files
+
+[.github/](https://github.com/asdf-vm/asdf/tree/master/.github), [cmd/asdf/](https://github.com/asdf-vm/asdf/tree/master/cmd/asdf), [docs/](https://github.com/asdf-vm/asdf/tree/master/docs), [internal/](https://github.com/asdf-vm/asdf/tree/master/internal), [scripts/](https://github.com/asdf-vm/asdf/tree/master/scripts), [test/](https://github.com/asdf-vm/asdf/tree/master/test), [.editorconfig](https://github.com/asdf-vm/asdf/blob/master/.editorconfig), [.git-blame-ignore-revs](https://github.com/asdf-vm/asdf/blob/master/.git-blame-ignore-revs), [.gitattributes](https://github.com/asdf-vm/asdf/blob/master/.gitattributes), [.gitignore](https://github.com/asdf-vm/asdf/blob/master/.gitignore), [.release-please-manifest.json](https://github.com/asdf-vm/asdf/blob/master/.release-please-manifest.json), [.tool-versions](https://github.com/asdf-vm/asdf/blob/master/.tool-versions), [CHANGELOG.md](https://github.com/asdf-vm/asdf/blob/master/CHANGELOG.md), [CONTRIBUTING.md](https://github.com/asdf-vm/asdf/blob/master/CONTRIBUTING.md), [LICENSE](https://github.com/asdf-vm/asdf/blob/master/LICENSE), [Makefile](https://github.com/asdf-vm/asdf/blob/master/Makefile), [README.md](https://github.com/asdf-vm/asdf/blob/master/README.md), [SECURITY.md](https://github.com/asdf-vm/asdf/blob/master/SECURITY.md), [ballad-of-asdf.md](https://github.com/asdf-vm/asdf/blob/master/ballad-of-asdf.md), [defaults](https://github.com/asdf-vm/asdf/blob/master/defaults), [go.mod](https://github.com/asdf-vm/asdf/blob/master/go.mod), [go.sum](https://github.com/asdf-vm/asdf/blob/master/go.sum), [release-please-config.json](https://github.com/asdf-vm/asdf/blob/master/release-please-config.json), [staticcheck.conf](https://github.com/asdf-vm/asdf/blob/master/staticcheck.conf), [tools.go](https://github.com/asdf-vm/asdf/blob/master/tools.go)

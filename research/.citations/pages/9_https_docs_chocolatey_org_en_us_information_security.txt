@@ -1,0 +1,37 @@
+# Chocolatey Software Docs | Security
+URL: https://docs.chocolatey.org/en-us/information/security
+Author: Chocolatey Software
+
+Chocolatey Software Docs | Security
+
+# Security
+
+## TLDR
+
+Let’s start here. We know you are going to read this entire document anyway. But to give you a high level of what to expect with Chocolatey.
+
+### Chocolatey Client
+
+With Chocolatey (choco) client itself, these are the important things to know:
+
+- Chocolatey is Open source.
+- On release, everything is authenticode signed. Binaries and PowerShell scripts.
+- Chocolatey is also verified against VirusTotal - 60-70 ramped up anti-virus scanners.
+- Completely offline - By default choco is installed with the community package repository as a source, but that is easily adjusted to internal repositories.
+- No Data Collection / Telemetry - No call home, not even in our commercial options (license tracking is honor-based) and there are organizations (or internal processes) that verify/validate (and karma) that will adjust any abuses of licensing.
+- No 3rd party advertising - We do feel that our commercial options make sense for anyone that can afford them, so you will see we lean folks to that.
+- Commercial code is not open source - and it won’t be open sourced. No need for discussion, there are many reasons we don’t need to get into, mostly it protects our ability to ensure all infrastructure costs can be paid for.
+
+### Chocolatey Community Package Repository
+
+Use of the community package repository is optional. Community package repository is the same thing as community.chocolatey.org packages, and represents less than 5% of the existing packages in existence (nearly all are internal). Most organizations using Chocolatey do NOT use the community repository, and Chocolatey Software DOES NOT RECOMMEND using the community repository either for organizational deployments for a variety of reasons.
+
+Here are some other important things to understand:
+
+- Every version of every package submitted must pass through a rigorous moderation review process before they become publicly available (includes checks for quality, consistency, installation, and validations against VirusTotal). 
+
+> NOTE
+> 
+> The Package Scanner runs with no language or region set. A package that chooses its installer by language is scanned with its fallback installer, often the en-US one, so installers for other languages aren’t scanned.
+- Data Collection / Telemetry - IP address, package, and a timestamp - this provides statistics for install counts for community folks. Google analytics for site usage. For more information on what is automatically collected for the Community Repository, see our Privacy Policy
+- No 3rd party advertising - That’s right, we don’t have any advertising on the site. We don’t agree with the ideas behind ad-based income (but others might and that is fine). People should never be the product and we don’t want to waste your time. If you see any of the tools we use (like Disqus) put up advertisements on our pages, please notify us immediately as we might have missed a policy change with them and will need to seek al

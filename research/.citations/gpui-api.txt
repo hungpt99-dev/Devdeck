@@ -1,0 +1,25 @@
+2","num_versions":7,"yanked":false,"max_version":"0.2.2","newest_version":"0.2.2","max_stable_version":"0.2.2","description":"Zed's GPU-accelerated UI framework","homepage":"https://gpui.rs","documentation":null,"repository":"https://github.
+
+...
+
+framework","homepage":"https://gpui.rs","documentation":null,"repository":"https://github.
+
+...
+
+framework","homepage":"https://gpui.rs","documentation":null,"repository":"https://github.
+
+...
+
+framework","homepage":"https://gpui.rs","documentation":null,"repository":"https://github.
+
+...
+
+framework","homepage":"https://gpui.rs","documentation":null,"repository":"https://github.
+
+...
+
+framework","homepage":"https://gpui.rs","documentation":null,"repository":"https://github.
+
+...
+
+framework","homepage":"https://gpui.rs","documentation":null,"repository":"https://github.com/zed-industries/zed","trustpub_data":null,"linecounts":{"languages":{},"total_code_lines":0,"total_comment_lines":0

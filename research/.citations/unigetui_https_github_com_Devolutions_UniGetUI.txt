@@ -1,0 +1,254 @@
+## Repository
+
+- Public, MIT License
+- Website: https://devolutions.net/unigetui/
+- Stars: 27,111 · Watchers: 128 · Forks: 983
+- Default branch: main · Releases: 127 · Tags: 131
+- Created: 2021-06-15
+
+# WARNING: **wingetui•com** and **unigetui•com** are fake websites hosted by a third-party. please do NOT trust them
+
+## [![](/Devolutions/UniGetUI/raw/main/media/icon.png)](/Devolutions/UniGetUI/blob/main/media/icon.png)Devolutions UniGetUI
+
+Important
+
+**Major announcement:** UniGetUI has entered its next chapter with Devolutions. Read the [blog post](https://devolutions.net/blog/2026/03/unigetui-enters-its-next-chapter-with-devolutions/) and the [official press release](https://www.globenewswire.com/news-release/2026/03/10/3253012/0/en/Devolutions-Acquires-UniGetUI-Strengthening-Security-and-Enterprise-Readiness.html).
+
+[![Downloads](https://camo.githubusercontent.com/b9cf30419bc9068b0d7753e58a17fc277280c81bfd1e1f79027736ce25639415/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f646f776e6c6f6164732f4465766f6c7574696f6e732f556e6947657455492f746f74616c3f7374796c653d666f722d7468652d6261646765)](https://github.com/Devolutions/UniGetUI/releases/latest) [![Release Version Badge](https://camo.githubusercontent.com/95f3e84989d9fa62b2c9b6d92f3e064e0853863cbe8596ec17a2e7a47986ea70/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f762f72656c656173652f4465766f6c7574696f6e732f556e6947657455493f7374796c653d666f722d7468652d6261646765)](https://github.com/Devolutions/UniGetUI/releases) [![Issues Badge](https://camo.githubusercontent.com/37fe345cb1920fa8bd40f0d945e507bfb3df0c54034dfffb5609dbe088d3f37c/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f4465766f6c7574696f6e732f556e6947657455493f7374796c653d666f722d7468652d6261646765)](https://github.com/Devolutions/UniGetUI/issues) [![Closed Issues Badge](https://camo.githubusercontent.com/ea83113f69c90447bf7065e5d10a28f081ce190661dcf5573b88425677611eb5/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732d636c6f7365642f4465766f6c7574696f6e732f556e6947657455493f636f6c6f723d253233383235366430267374796c653d666f722d7468652d6261646765)](https://github.com/Devolutions/UniGetUI/issues?q=is%3Aissue+is%3Aclosed)
+ UniGetUI is a Windows-first, intuitive GUI for the most common CLI package managers on Windows 10 and 11. Cross-platform builds are also available for macOS and Linux, with support for package managers including [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/), [Scoop](https://scoop.sh/), [Chocolatey](https://chocolatey.org/), [Homebrew](https://brew.sh/), [APT](https://wiki.debian.org/Apt), [DNF](https://dnf.readthedocs.io/), [Pacman](https://wiki.archlinux.org/title/Pacman), [Flatpak](https://flatpak.org/), [Snap](https://snapcraft.io/), [pip](https://pypi.org/), [npm](https://www.npmjs.com/), [Bun](https://bun.sh/), [.NET Tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-install), [PowerShell Gallery](https://www.powershellgallery.com/), and more. With UniGetUI, you can discover, install, update, and uninstall software from multiple package managers through one interface.
+
+[![image](/Devolutions/UniGetUI/raw/main/media/UniGetUI-Image.png)](/Devolutions/UniGetUI/blob/main/media/UniGetUI-Image.png) View more screenshots here
+
+Check out the Package Managers section for more details!
+
+**Disclaimer:** UniGetUI is not affiliated with the package managers it integrates with. Packages are provided by third parties, so review sources and publishers before installation.
+
+[![GitHub Actions Workflow Status](https://camo.githubusercontent.com/f314b4374454eafd613804e32717e8e2fc1cd6bbc364d94cc2b039dc454cee46/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f616374696f6e732f776f726b666c6f772f7374617475732f4465766f6c7574696f6e732f556e6947657455492f646f746e65742d746573742e796d6c3f6272616e63683d6d61696e267374796c653d666f722d7468652d6261646765266c6162656c3d5465737473)](https://camo.githubusercontent.com/f314b4374454eafd613804e32717e8e2fc1cd6bbc364d94cc2b039dc454cee46/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f616374696f6e732f776f726b666c6f772f7374617475732f4465766f6c7574696f6e732f556e6947657455492f646f746e65742d746573742e796d6c3f6272616e63683d6d61696e267374796c653d666f722d7468652d6261646765266c6162656c3d5465737473)
+
+Caution
+
+**The official website for UniGetUI is [https://devolutions.net/unigetui/](https://devolutions.net/unigetui/).**
+**The official source repository is [https://github.com/Devolutions/UniGetUI](https://github.com/Devolutions/UniGetUI).**
+**Any other website should be considered unofficial, despite what they may say.**
+
+🔒 Found a security issue? Please report it via the [Devolutions security page](https://devolutions.net/security/)
+
+## Project stewardship
+
+UniGetUI was created by Martí Climent and is now maintained by Devolutions. The project remains free, open source, and MIT-licensed. Devolutions' stewardship brings long-term investment, structured governance, stronger security processes, and a roadmap for broader enterprise readiness while keeping UniGetUI standalone and community-driven.
+
+Read more in the [Devolutions announcement](https://devolutions.net/blog/2026/03/unigetui-enters-its-next-chapter-with-devolutions/) and the [official press release](https://www.globenewswire.com/news-release/2026/03/10/3253012/0/en/Devolutions-Acquires-UniGetUI-Strengthening-Security-and-Enterprise-Readiness.html).
+
+## Table of contents
+
+- **[UniGetUI Homepage](https://devolutions.net/unigetui/)**
+- Table of contents
+- Installation
+- Update UniGetUI
+- Project stewardship
+- Features
+- Package Managers
+- Translations
+- Contributions
+- Screenshots
+- Frequently Asked Questions
+- [CLI reference](/Devolutions/UniGetUI/blob/main/docs/CLI.md)
+- [IPC reference](/Devolutions/UniGetUI/blob/main/docs/IPC.md)
+- [Portable mode](/Devolutions/UniGetUI/blob/main/docs/PORTABLE.md)
+
+## Installation
+
+There are multiple ways to install UniGetUI — choose whichever one you prefer!
+
+### Windows
+
+UniGetUI is primarily built for Windows. The Microsoft Store is the recommended installation method, but direct installer and package-manager options are also available.
+
+#### Microsoft Store installation (recommended)
+
+[![alt_text](https://camo.githubusercontent.com/d7967af3dd1864a128a3f62f6fd1469319bc96c33918902ea0ff5bdb90694e5a/68747470733a2f2f6765742e6d6963726f736f66742e636f6d2f696d616765732f656e2d75732532306461726b2e737667)](https://apps.microsoft.com/detail/xpfftq032ptphf)
+
+#### Download the Windows installer:
+
+[![GitHub Release](https://camo.githubusercontent.com/95f3e84989d9fa62b2c9b6d92f3e064e0853863cbe8596ec17a2e7a47986ea70/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f762f72656c656173652f4465766f6c7574696f6e732f556e6947657455493f7374796c653d666f722d7468652d6261646765)](https://camo.githubusercontent.com/95f3e84989d9fa62b2c9b6d92f3e064e0853863cbe8596ec17a2e7a47986ea70/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f762f72656c656173652f4465766f6c7574696f6e732f556e6947657455493f7374796c653d666f722d7468652d6261646765) Use the installer for the best Windows experience. `UniGetUI.Installer.exe` is the legacy/default x64 installer alias; use the explicit architecture downloads if needed.
+
+The `.zip` is portable: it keeps settings and caches next to the executable rather than in your user profile. See [docs/PORTABLE.md](/Devolutions/UniGetUI/blob/main/docs/PORTABLE.md).
+
+| Architecture | Installer | Portable `.zip` |
+|---|---|---|
+| x64 | [UniGetUI.Installer.x64.exe](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.Installer.x64.exe) ([default x64 alias](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.Installer.exe)) | [UniGetUI.x64.zip](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.x64.zip) |
+| arm64 | [UniGetUI.Installer.arm64.exe](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.Installer.arm64.exe) | [UniGetUI.arm64.zip](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.arm64.zip) |
+
+#### Install via WinGet:
+
+[![WinGet Package Version](https://camo.githubusercontent.com/65bc986744ca96b7b0611a52857dce0d976d84e127b1efc55a8358e64326d1ef/68747470733a2f2f696d672e736869656c64732e696f2f77696e6765742f762f4465766f6c7574696f6e732e556e6947657455493f7374796c653d666f722d7468652d6261646765)](https://camo.githubusercontent.com/65bc986744ca96b7b0611a52857dce0d976d84e127b1efc55a8358e64326d1ef/68747470733a2f2f696d672e736869656c64732e696f2f77696e6765742f762f4465766f6c7574696f6e732e556e6947657455493f7374796c653d666f722d7468652d6261646765)
+
+```
+winget install --exact --id Devolutions.UniGetUI --source winget
+```
+
+#### Install via Scoop:
+
+[![Scoop version](https://camo.githubusercontent.com/e757a33137ac139e792599efe5a3515771d9ec36bf9ca1a92a355a5d11cf3062/68747470733a2f2f696d672e736869656c64732e696f2f73636f6f702f762f756e6967657475693f6275636b65743d657874726173267374796c653d666f722d7468652d6261646765)](https://camo.githubusercontent.com/e757a33137ac139e792599efe5a3515771d9ec36bf9ca1a92a355a5d11cf3062/68747470733a2f2f696d672e736869656c64732e696f2f73636f6f702f762f756e6967657475693f6275636b65743d657874726173267374796c653d666f722d7468652d6261646765)
+
+```
+scoop bucket add extras
+scoop install extras/unigetui
+```
+
+#### Install via Chocolatey:
+
+[![Chocolatey Version](https://camo.githubusercontent.com/a9caffc32c9e0c5900b144f34fa6fe32c43b5a436bcbb8f06857a6a784e657cf/68747470733a2f2f696d672e736869656c64732e696f2f63686f636f6c617465792f762f756e6967657475693f7374796c653d666f722d7468652d6261646765)](https://camo.githubusercontent.com/a9caffc32c9e0c5900b144f34fa6fe32c43b5a436bcbb8f06857a6a784e657cf/68747470733a2f2f696d672e736869656c64732e696f2f63686f636f6c617465792f762f756e6967657475693f7374796c653d666f722d7468652d6261646765)
+
+```
+choco install unigetui
+```
+
+### NativeAOT builds
+
+Release packages are compiled with NativeAOT on all supported platforms (Windows, macOS, and Linux) for improved startup performance and a reduced attack surface. If you want to build the same configuration locally, the repository includes helper publish profiles and a script:
+
+```
+pwsh ./scripts/publish-nativeaot.ps1 -Platform x64   # or arm64
+```
+
+This publishes `src/UniGetUI.Avalonia/UniGetUI.Avalonia.csproj` as a self-contained NativeAOT build into `artifacts/nativeaot/win-<platform>/`.
+
+### macOS
+
+macOS builds are available from GitHub Releases. Use the `.dmg` for the standard installer experience, or the `.tar.gz` archive for a portable app bundle.
+
+| Architecture | `.dmg` | `.tar.gz` |
+|---|---|---|
+| Apple silicon (arm64) | [UniGetUI.macos-arm64.dmg](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.macos-arm64.dmg) | [UniGetUI.macos-arm64.tar.gz](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.macos-arm64.tar.gz) |
+| Intel (x64) | [UniGetUI.macos-x64.dmg](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.macos-x64.dmg) | [UniGetUI.macos-x64.tar.gz](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.macos-x64.tar.gz) |
+
+### Linux
+
+Linux builds are available from GitHub Releases. Use the `.deb` package for Debian/Ubuntu-based distributions, the `.rpm` package for Fedora/RHEL-based distributions, or the `.tar.gz` archive for a portable build.
+
+The binaries require **glibc 2.27 or newer** (Ubuntu 18.04+, Debian 10+, RHEL 8+, Fedora 28+). On older distributions the app exits at startup with a `version 'GLIBC_x.y' not found` message.
+
+| Architecture | `.deb` | `.rpm` | `.tar.gz` |
+|---|---|---|---|
+| x64 | [Download](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.linux-x64.deb) | [Download](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.linux-x64.rpm) | [Download](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.linux-x64.tar.gz) |
+| arm64 | [Download](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.linux-arm64.deb) | [Download](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.linux-arm64.rpm) | [Download](https://github.com/Devolutions/UniGetUI/releases/latest/download/UniGetUI.linux-arm64.tar.gz) |
+
+Install the package that matches your distribution and architecture:
+
+```
+# Debian/Ubuntu-based distributions
+sudo apt install ./UniGetUI.linux-x64.deb
+
+# Fedora/RHEL-based distributions
+sudo dnf install ./UniGetUI.linux-x64.rpm
+
+# Portable archive
+tar -xzf UniGetUI.linux-x64.tar.gz
+./UniGetUI
+```
+
+Replace `x64` with `arm64` in the file name when using the arm64 build.
+
+### Portable installations
+
+The `.zip` and `.tar.gz` downloads are portable in the sense that they need no installer, but they still store settings in your user profile. To make UniGetUI keep its data alongside the executable — and for the Windows installer's portable installation type — see [portable mode](/Devolutions/UniGetUI/blob/main/docs/PORTABLE.md).
+
+## Update UniGetUI
+
+UniGetUI has a built-in autoupdater. On Windows, it can also be updated like any other package within UniGetUI when installed through WinGet, Scoop, or Chocolatey.
+
+## Features
+
+- Install, update, and remove software from your system easily at one click: UniGetUI combines packages from the most used package managers for your platform, including WinGet, Chocolatey, Scoop, Homebrew, APT, DNF, Pacman, Flatpak, Snap, Pip, npm, Bun, and .NET Tool.
+- Discover new packages and filter them to easily find the package you want.
+- View detailed metadata about any package before installing it. Get the direct download URL or the name of the publisher, as well as the size of the download.
+- Easily bulk-install, update, or uninstall multiple packages at once selecting multiple packages before performing an operation
+- Automatically update packages, or be notified when updates become available. Skip versions or completely ignore updates on a per-package basis, or restrict automatic updating to a hand-picked set of packages.
+- Schedule maintenance, with the triggers each task supports: update checks on an interval or daily/weekly at a chosen time, update installation after every update check or daily/weekly, and local or cloud backups at app start or daily/weekly.
+- The system tray icon will also show the available updates and installed packages where supported, to efficiently update a program or remove a package from your system.
+- Easily customize how and where packages are installed. Select different installation options and switches for each package. Install an older version or force a specific architecture where supported. [But don't worry, those options will be saved for future updates for this package*]
+- Share packages with your friends using generated package links.
+- Export custom lists of packages to then import them to another machine and install those packages with previously specified, custom installation parameters. Setting up machines or configuring a specific software setup has never been easier.
+- Backup your packages to a local file to easily recover your setup in a matter of seconds when migrating to a new machine*. By default, each backup overwrites the previous file; enable timestamped file names to keep separate backups, and optionally choose a retention limit to keep only the most recent ones.
+- Sync those backups to a secret GitHub Gist, so a new machine can restore your package list after a single sign-in.
+- Review the 1,000 most recent operations in the operation history, with up to 5,000 log lines per operation kept for troubleshooting.
+- On Windows, decide which desktop and Start Menu shortcuts installers are allowed to create, and pin a package's shortcuts to a Start Menu folder of your choosing — both re-applied on every upgrade.
+- Drive the whole application from the command line, or from scripts through its local automation API. See the [CLI reference](/Devolutions/UniGetUI/blob/main/docs/CLI.md) and the [IPC reference](/Devolutions/UniGetUI/blob/main/docs/IPC.md).
+- Run UniGetUI as a portable app that keeps its settings next to the executable. See the [portable mode reference](/Devolutions/UniGetUI/blob/main/docs/PORTABLE.md).
+
+## Package Managers
+
+**NOTE:** All package managers do support basic install, update, and uninstall processes, as well as checking for updates, finding new packages, and retrieving details from a package.
+
+
+[... middle omitted — see footer ...]
+
+
+[![image](/Devolutions/UniGetUI/raw/main/media/UniGetUI_5.png)](/Devolutions/UniGetUI/blob/main/media/UniGetUI_5.png)
+
+[![image](/Devolutions/UniGetUI/raw/main/media/UniGetUI_6.png)](/Devolutions/UniGetUI/blob/main/media/UniGetUI_6.png)
+
+[![image](/Devolutions/UniGetUI/raw/main/media/UniGetUI_7.png)](/Devolutions/UniGetUI/blob/main/media/UniGetUI_7.png)
+
+[![image](/Devolutions/UniGetUI/raw/main/media/UniGetUI_8.png)](/Devolutions/UniGetUI/blob/main/media/UniGetUI_8.png)
+
+[![image](/Devolutions/UniGetUI/raw/main/media/UniGetUI_9.png)](/Devolutions/UniGetUI/blob/main/media/UniGetUI_9.png)
+
+## Contributions
+
+UniGetUI continues to grow thanks to its community of contributors. Devolutions is grateful to everyone who contributes code, translations, documentation, testing, and feedback to the project.
+
+[![Contributors](https://camo.githubusercontent.com/2c0f9a80b49fa3869556225d8d1d8d5e3d39980b6f4b740f192d1b177b0684d0/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d4465766f6c7574696f6e732f556e694765745549)](https://github.com/Devolutions/UniGetUI/graphs/contributors)
+
+## Frequently asked questions
+
+**Q: I am unable to install or upgrade a specific Winget package! What should I do?**
+
+A: This is likely an issue with Winget rather than UniGetUI.
+
+Please check if it's possible to install/upgrade the package through PowerShell or the Command Prompt by using the commands `winget upgrade` or `winget install`, depending on the situation (for example: `winget upgrade --id Microsoft.PowerToys`).
+
+If this doesn't work, consider asking for help at [Winget's project page](https://github.com/microsoft/winget-cli).
+
+#
+
+**Q: The name of a package is trimmed with ellipsis — how do I see its full name/id?**
+
+A: This is a known limitation of Winget.
+
+For more details, see this issue: [microsoft/winget-cli#2603](https://github.com/microsoft/winget-cli/issues/2603).
+
+#
+
+**Q: My antivirus is telling me that UniGetUI is a virus! / My browser is blocking the download of UniGetUI!**
+
+A: A common reason apps (i.e., executables) get blocked and/or detected as a virus — even when there's nothing malicious about them, like in the case of UniGetUI — is because a relatively large amount of people are not using them.
+
+Combine that with the fact that you might be downloading something recently released, and blocking unknown apps is in many cases a good precaution to take to prevent actual malware.
+
+Since UniGetUI is open source and safe to use, whitelist the app in the settings of your antivirus/browser.
+
+#
+
+**Q: Are packages from third-party package managers safe?**
+
+A: UniGetUI and the package-manager maintainers aren't responsible for every package available for download. Packages are provided by third parties and can theoretically be compromised, regardless of whether they come from WinGet, Scoop, Chocolatey, Homebrew, APT, DNF, Pacman, Flatpak, Snap, or another source.
+
+Some package managers and repositories implement checks to mitigate the risks of downloading malware. Even so, it's recommended that you only download software from trusted publishers.
+
+## Command-line interface:
+
+Check out the CLI reference [here](/Devolutions/UniGetUI/blob/main/docs/CLI.md) and the IPC reference [here](/Devolutions/UniGetUI/blob/main/docs/IPC.md).
+
+For portable installations and where UniGetUI keeps its data, see the [portable mode reference](/Devolutions/UniGetUI/blob/main/docs/PORTABLE.md).
+
+## Files
+
+[.agents/skills/](https://github.com/Devolutions/UniGetUI/tree/main/.agents/skills), [.claude/](https://github.com/Devolutions/UniGetUI/tree/main/.claude), [.githooks/](https://github.com/Devolutions/UniGetUI/tree/main/.githooks), [.github/](https://github.com/Devolutions/UniGetUI/tree/main/.github), [InstallerExtras/](https://github.com/Devolutions/UniGetUI/tree/main/InstallerExtras), [WebBasedData/](https://github.com/Devolutions/UniGetUI/tree/main/WebBasedData), [configuration.winget/](https://github.com/Devolutions/UniGetUI/tree/main/configuration.winget), [docs/](https://github.com/Devolutions/UniGetUI/tree/main/docs), [media/](https://github.com/Devolutions/UniGetUI/tree/main/media), [package/chocolatey/unigetui/](https://github.com/Devolutions/UniGetUI/tree/main/package/chocolatey/unigetui), [scripts/](https://github.com/Devolutions/UniGetUI/tree/main/scripts), [src/](https://github.com/Devolutions/UniGetUI/tree/main/src), [testing/](https://github.com/Devolutions/UniGetUI/tree/main/testing), [.deepsource.toml](https://github.com/Devolutions/UniGetUI/blob/main/.deepsource.toml), [.gitattributes](https://github.com/Devolutions/UniGetUI/blob/main/.gitattributes), [.gitignore](https://github.com/Devolutions/UniGetUI/blob/main/.gitignore), [AGENTS.md](https://github.com/Devolutions/UniGetUI/blob/main/AGENTS.md), [CLAUDE.md](https://github.com/Devolutions/UniGetUI/blob/main/CLAUDE.md), [CODE\_OF\_CONDUCT.md](https://github.com/Devolutions/UniGetUI/blob/main/CODE_OF_CONDUCT.md), [CONTRIBUTING.md](https://github.com/Devolutions/UniGetUI/blob/main/CONTRIBUTING.md), [LICENSE](https://github.com/Devolutions/UniGetUI/blob/main/LICENSE), [README.md](https://github.com/Devolutions/UniGetUI/blob/main/README.md), [TRANSLATION.md](https://github.com/Devolutions/UniGetUI/blob/main/TRANSLATION.md), [UniGetUI.iss](https://github.com/Devolutions/UniGetUI/blob/main/UniGetUI.iss), [global.json](https://github.com/Devolutions/UniGetUI/blob/main/global.json)
+
+──────── [TRUNCATED] ────────
+Showing 16,439 chars (head) + 5,410 chars (tail) of 37,770 total clean characters.
+Full text saved to: /root/.hermes/cache/web/github.com-5a844efdfa.md
+To read the omitted middle: read_file path="/root/.hermes/cache/web/github.com-5a844efdfa.md" offset=184 limit=200  (the file is the complete page; raise/lower offset to page through it).
+─────────────────────────────

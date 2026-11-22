@@ -1,0 +1,33 @@
+# Software Overview - Zed — Your last next editor
+URL: https://zed.dev/software-overview
+
+Software Overview - Zed — Your last next editor
+
+# Software Overview
+
+Zed's source code is open source and is governed by the open source licenses listed below. The Zed application distributed by Zed Industries, and Zed-operated services accessed through it, are governed by Zed's Terms of Service. If you build Zed from source, those open source licenses govern your use of the source code; if you use that build to access Zed-operated services, Zed's Terms of Service govern your use of those services. By downloading or using Zed, you agree to Zed's Terms of Service and Privacy Policy.
+
+## Source code
+
+The source for Zed is published at github.com/zed-industries/zed.
+
+## Licenses
+
+Different portions of Zed's source code are released under different open source licenses:
+
+- GNU General Public License v3.0 — most Zed source code.
+- Apache License 2.0 — components intended for reuse, such as `gpui`.
+
+Each file in the source tree indicates the license under which it is distributed.
+
+## Third-party dependencies
+
+The Software includes third-party open source components. See Attributions for the list, or open Help → View Dependency Licenses inside Zed for the full license text of each dependency.
+
+## Contributing
+
+If you'd like to contribute to Zed, see the Contributor License Agreement.
+
+## Trademarks
+
+The open source licenses above grant rights in the source code. They do not grant rights in Zed Industries' trademarks, names, or logos, including "Zed" and the Zed logo. For permitted uses, see the brand guidelines.
