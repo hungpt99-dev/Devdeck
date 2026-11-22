@@ -183,17 +183,70 @@ impl NewAuditEntry {
 /// Replace credential-shaped values before anything is persisted.
 /// Deliberately conservative: false positives are preferable to leaks.
 pub fn redact(input: &str) -> String {
-    // Markers are ASCII; compare byte slices case-insensitively so no Unicode
-    // case-mapping can shift offsets and accidentally expose a suffix.
-    const MARKERS: [&str; 7] = [
+    // Markers and token shapes are ASCII; compare byte slices
+    // case-insensitively so no Unicode case-mapping can shift offsets and
+    // accidentally expose a suffix.
+    const MARKERS: &[&str] = &[
         "bearer ",
         "authorization:",
-        "password",
-        "passwd",
+        "auth-token",
+        "access-token",
+        "access_key",
+        "access-key",
         "api_key",
+        "api-key",
         "apikey",
+        "client_secret",
+        "client-secret",
+        "connection_string",
+        "database_url",
+        "db_url",
+        "passwd",
+        "password",
+        "private_key",
         "private key",
+        "refresh_token",
+        "secret",
+        "session_token",
+        "token",
     ];
+    // `Authorization: Bearer <token>` has a second qualifier after the marker.
+    const AUTH_SCHEMES: &[&str] = &["bearer ", "basic ", "token "];
+    // Some tokens arrive without a surrounding `KEY=value` marker (pasted
+    // credentials, tool output). Mask those shapes too.
+    const TOKEN_SHAPES: &[&str] = &[
+        "ghp_",
+        "github_pat_",
+        "gho_",
+        "ghu_",
+        "ghs_",
+        "ghr_",
+        "sk-",
+        "sk_",
+        "AKIA",
+        "ASIA",
+        "xoxb-",
+        "xoxp-",
+        "AIza",
+    ];
+
+    fn mask_value(out: &mut String, input: &str, index: &mut usize) {
+        let bytes = input.as_bytes();
+        let mut masked = false;
+        while *index < bytes.len()
+            && !bytes[*index].is_ascii_whitespace()
+            && !matches!(bytes[*index], b'"' | b'\'' | b',' | b'}' | b';' | b')')
+        {
+            let ch = input[*index..].chars().next().expect("char boundary");
+            out.push('*');
+            masked = true;
+            *index += ch.len_utf8();
+        }
+        if !masked {
+            out.push_str("[redacted]");
+        }
+    }
+
     let bytes = input.as_bytes();
     let mut out = String::with_capacity(input.len());
     let mut i = 0usize;
@@ -204,37 +257,32 @@ pub fn redact(input: &str) -> String {
         if let Some(marker) = marker {
             out.push_str(&input[i..i + marker.len()]);
             i += marker.len();
-            while i < bytes.len() && matches!(bytes[i], b':' | b'=' | b' ') {
+            while i < bytes.len() && matches!(bytes[i], b':' | b'=' | b' ' | b'\t' | b'"' | b'\'') {
                 out.push(bytes[i] as char);
                 i += 1;
-                if bytes[i - 1] != b' ' {
-                    break;
-                }
             }
-            let mut masked = false;
-            while i < bytes.len()
-                && !bytes[i].is_ascii_whitespace()
-                && !matches!(bytes[i], b'"' | b'\'' | b',' | b'}')
-            {
-                let ch = input[i..]
-                    .chars()
-                    .next()
-                    .expect("byte index is a char boundary");
-                out.push('*');
-                masked = true;
-                i += ch.len_utf8();
+            if let Some(scheme) = AUTH_SCHEMES.iter().find(|s| {
+                bytes[i..].len() >= s.len()
+                    && bytes[i..i + s.len()].eq_ignore_ascii_case(s.as_bytes())
+            }) {
+                out.push_str(&input[i..i + scheme.len()]);
+                i += scheme.len();
             }
-            if !masked {
-                out.push_str("[redacted]");
-            }
-        } else {
-            let ch = input[i..]
-                .chars()
-                .next()
-                .expect("byte index is a char boundary");
-            out.push(ch);
-            i += ch.len_utf8();
+            mask_value(&mut out, input, &mut i);
+            continue;
         }
+        let shape = TOKEN_SHAPES.iter().find(|s| {
+            bytes[i..].len() >= s.len() && bytes[i..i + s.len()].eq_ignore_ascii_case(s.as_bytes())
+        });
+        if let Some(shape) = shape {
+            out.push_str(&input[i..i + shape.len()]);
+            i += shape.len();
+            mask_value(&mut out, input, &mut i);
+            continue;
+        }
+        let ch = input[i..].chars().next().expect("char boundary");
+        out.push(ch);
+        i += ch.len_utf8();
     }
     out
 }
@@ -280,6 +328,29 @@ mod tests {
         ));
         let reloaded = AuditLog::open(&dir).unwrap();
         assert!(reloaded.verify_chain().is_ok());
+        fs::remove_dir_all(&dir).ok();
+    }
+
+    #[test]
+    fn planted_token_appears_in_zero_audit_entries() {
+        let token = "ghp_fakeAuditToken0123456789";
+        let dir = std::env::temp_dir().join(format!("devdeck-audit-secret-{}", std::process::id()));
+        let _ = fs::remove_dir_all(&dir);
+        let mut log = AuditLog::open(&dir).unwrap();
+        let mut entry = NewAuditEntry::new(
+            Actor::Agent {
+                id: "terminal".into(),
+            },
+            "tool.call",
+        );
+        entry.tool = Some("terminal.spawn".into());
+        entry.detail = format!("command=echo API_TOKEN={token} | policy-dangerous");
+        log.append(entry).unwrap();
+        assert!(log.entries().iter().all(|e| !e.detail.contains(token)));
+        let on_disk = fs::read_to_string(log.path()).unwrap();
+        assert!(!on_disk.contains(token));
+        let reloaded = AuditLog::open(&dir).unwrap();
+        assert!(reloaded.entries().iter().all(|e| !e.detail.contains(token)));
         fs::remove_dir_all(&dir).ok();
     }
 }
