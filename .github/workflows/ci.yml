@@ -30,9 +30,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: rustsec/audit-check@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo install cargo-audit --locked
+      # Warnings stay visible in the log; they are tracked in docs/progress.md
+      # rather than silently added to an `ignore` list.
+      - run: cargo audit
 
   build:
     name: build (${{ matrix.os }})
