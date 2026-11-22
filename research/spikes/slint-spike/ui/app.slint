@@ -1,0 +1,16 @@
+import { VerticalBox, LineEdit, ListView } from "std-widgets.slint";
+
+export component App inherits Window {
+    title: "Devdeck UI spike (Slint 1.19)";
+    width: 800px;
+    height: 600px;
+
+    VerticalBox {
+        Text { text: "IME / preedit input:"; }
+        LineEdit { placeholder-text: "Type here (IME)"; }
+        Text { text: "Virtualized list (100k rows):"; }
+        ListView {
+            for i in 100000: Text { text: "row " + i; }
+        }
+    }
+}

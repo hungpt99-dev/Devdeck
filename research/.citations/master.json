@@ -1,0 +1,3815 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://github.com/l0ng-ai/openidea",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 2,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 3,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/package.json",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 4,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 5,
+      "url": "https://api.github.com/repos/l0ng-ai/openidea",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 6,
+      "url": "https://api.github.com/repos/l0ng-ai/openidea/releases?per_page=10",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 7,
+      "url": "https://api.github.com/repos/l0ng-ai/openidea/issues?state=open&per_page=100",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 8,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/src-tauri/tauri.conf.json",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 9,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/src-tauri/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 10,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/index.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 11,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-lsp/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 12,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-dap/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 13,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/docs/en/guide/debugging.mdx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 14,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/docs/en/guide/code-intelligence.mdx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 15,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/docs/en/plugins/architecture.mdx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 16,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/perf/budgets.json",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 17,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/perf/compare/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 18,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/NOTICE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 19,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/THIRD_PARTY_LICENSES.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 20,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/docs/en/changelog.mdx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 21,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-vcs/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 22,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-terminal/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 23,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-db/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 24,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-http/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 25,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-plugin/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 26,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 27,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/languages/python.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 28,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-jsonrpc/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 29,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/docs/en/introduction.mdx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 30,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-plugin/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 31,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-text/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 32,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-syntax/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 33,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/crates/ide-spell/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 34,
+      "url": "https://github.com/l0ng-ai/openidea/blob/c209e189e082fe4b59e00ee9d7b13a19d0ae6458/src/editor/core/cm/setup.ts",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 35,
+      "url": "https://api.github.com/search/issues?q=repo%3Al0ng-ai%2Fopenidea+is%3Aissue+is%3Aopen",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 36,
+      "url": "https://github.com/l0ng-ai/openidea/commits/main",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 37,
+      "url": "https://github.com/MrGru/dodo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 38,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 39,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 40,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//THIRD-PARTY-NOTICES.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 41,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 42,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//deny.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 43,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/architecture/workspace-layout.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 44,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/architecture/app-shell.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 45,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/architecture/persistence.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 46,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/build-optimization.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 47,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/contributing.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 48,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/main.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 49,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/app.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 50,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/tools.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 51,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/layout.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 52,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/session/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 53,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 54,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 55,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/services/engine.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 56,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/models/runtime.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 57,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 58,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 59,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 60,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 61,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-cleaner/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 62,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-flow/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 63,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-i18n/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 64,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-paths/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 65,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-dialog-slot/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 66,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.claude/skills/gpui-component-recipes/SKILL.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 67,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.claude/skills/dodo-docker-internals/SKILL.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 68,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.claude/skills/dodo-database-internals/SKILL.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 69,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.claude/skills/dodo-api-explorer-internals/SKILL.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 70,
+      "url": "https://api.github.com/repos/MrGru/dodo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 71,
+      "url": "https://api.github.com/repos/MrGru/dodo/commits?per_page=10",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 72,
+      "url": "https://api.github.com/repos/MrGru/dodo/issues?state=all&per_page=30",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 73,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-flow/src/budgets.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 74,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-flow/src/instrument.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 75,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-flow/src/runtime/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 76,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/services/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 77,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/src/services/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 78,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/src/services/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 79,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/views/runtime.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 80,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/src/models/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 81,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/flow-rotation-grouping-plan.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 82,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/release.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 83,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//AGENTS.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 84,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.cargo/config.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 85,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.github/workflows/release.yml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 86,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/quick_nav/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 87,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-updater/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 88,
+      "url": "https://api.github.com/repos/MrGru/dodo/releases?per_page=5",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 89,
+      "url": "https://api.github.com/repos/MrGru/dodo/contributors",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 90,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/src/models/local.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 91,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/models/running.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 92,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-i18n/src/ui.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 93,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.github/workflows/analysis.yml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 94,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.github/workflows/ci.yml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 95,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/src/services/script/quickjs.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 96,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/views/containers.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 97,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/src/services/send.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 98,
+      "url": "https://github.com/Alno0/navop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 99,
+      "url": "https://api.github.com/repos/Alno0/navop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 100,
+      "url": "https://api.github.com/repos/feigeCode/navop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 101,
+      "url": "https://api.github.com/repos/feigeCode/navop/releases",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 102,
+      "url": "https://github.com/feigeCode/navop/blob/dev/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 103,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/NAVOP_LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 104,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 105,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/main/src/main.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 106,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/db/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 107,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/db/src/ipc/protocol.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 108,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/ssh/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 109,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/terminal/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 110,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/terminal_view/src/sidebar/server_monitor_panel.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 111,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/agent_runtime/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 112,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/public_mcp/src/server.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 113,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/tool_runtime/src/permission.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 114,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/extension-protocol/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 115,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/extension-wasm/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 116,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/main/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 117,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/ai_chat_view/src/html_code_block.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 118,
+      "url": "https://api.github.com/repos/feigeCode/navop/actions/runs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 119,
+      "url": "https://api.github.com/repos/feigeCode/navop/commits",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 120,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/core/src/license/models.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 121,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/remote_desktop/src/backends/rdp/transport.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 122,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/CLAUDE.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 123,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/sftp/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 124,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/ai_chat_view/src/cards.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 125,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/terminal/src/performance_metrics.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 126,
+      "url": "https://api.github.com/search/issues?q=repo%3AfeigeCode%2Fnavop%2Btype%3Aissue%2Bstate%3Aopen",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 127,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/extension-runtime/src/extension_downloader/transfer.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 128,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/db-value/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 129,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/db_view/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 130,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/db/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 131,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/extension-runtime/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 132,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/crates/sftp_transfer/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 133,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/CHANGELOG.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 134,
+      "url": "https://github.com/Alno0/navop/blob/78dba5c/docs/superpowers/plans/2026-08-07-windows-native-rdp.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 135,
+      "url": "https://github.com/zed-industries/zed",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 136,
+      "url": "https://zed.dev/software-overview",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 137,
+      "url": "https://github.com/zed-industries/zed/blob/main/LICENSE-GPL",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 138,
+      "url": "https://github.com/microsoft/vscode",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 139,
+      "url": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 140,
+      "url": "https://www.jetbrains.com/store",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 141,
+      "url": "https://www.jetbrains.com/all",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 142,
+      "url": "https://docker.com/pricing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 143,
+      "url": "https://docs.docker.com/subscription/desktop-license",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 144,
+      "url": "https://dbeaver.io/about",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 145,
+      "url": "https://github.com/dbeaver/dbeaver/blob/HEAD/LICENSE.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 146,
+      "url": "https://www.postman.com/pricing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 147,
+      "url": "https://dev.gitkraken.com/pricing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 148,
+      "url": "https://github.com/Devolutions/UniGetUI",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 149,
+      "url": "https://github.com/Devolutions/UniGetUI/blob/HEAD/LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 150,
+      "url": "https://mise.jdx.dev",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 151,
+      "url": "https://github.com/loft-sh/devpod/blob/main/LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 152,
+      "url": "https://devpod.sh/docs/what-is-devpod",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 153,
+      "url": "https://github.com/gni/devcat",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 154,
+      "url": "https://lib.rs/crates/devcat",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 155,
+      "url": "https://zed.dev",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 156,
+      "url": "https://raw.githubusercontent.com/zed-industries/zed/main/LICENSE-GPL",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 157,
+      "url": "https://code.visualstudio.com/docs/supporting/faq",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 158,
+      "url": "https://raw.githubusercontent.com/microsoft/vscode/main/package.json",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 159,
+      "url": "https://www.jetbrains.com/idea/buy",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 160,
+      "url": "https://www.jetbrains.com/help/idea/licensing.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 161,
+      "url": "https://www.docker.com/pricing/faq",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 162,
+      "url": "https://dbeaver.io/product",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 163,
+      "url": "https://dbeaver.com",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 164,
+      "url": "https://github.com/DODOEX/ChainPilot",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 165,
+      "url": "https://jotrorox.github.io/dodo/installation",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 166,
+      "url": "https://github.com/dodopayments/dodopayments-rust",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 167,
+      "url": "https://github.com/orgs/dodopayments/repositories?language=rust&type=all",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 168,
+      "url": "https://awesome.ecosyste.ms/projects/github.com%2Foksure%2Fdodo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 169,
+      "url": "https://docs.rs/dodo/latest",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 170,
+      "url": "https://dodopayments.com/downloads",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 171,
+      "url": "https://github.com/dodopayments/dodo-desktop/blob/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 172,
+      "url": "https://docs.dodopayments.com/features/mobile-app",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 173,
+      "url": "https://www.linkedin.com/posts/aagarwal1012_dodo-payments-now-has-a-desktop-app-available-activity-7454439157222789120-yl2l",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 174,
+      "url": "https://paymentreview.com/reviews/dodo-payments",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 175,
+      "url": "https://docs.dodopayments.com/developer-resources/sdks/cli",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 176,
+      "url": "https://github.com/jonnyparris/dodo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 177,
+      "url": "https://github.com/dodopayments/dodopayments-cli",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 178,
+      "url": "https://dodopayments.mintlify.app/developer-resources/sdks/cli",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 179,
+      "url": "https://docs.dodopayments.com/introduction",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 180,
+      "url": "https://gpui-kit.com/apps/dodo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 181,
+      "url": "https://docs.rs/devcat",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 182,
+      "url": "https://medium.com/@luci/your-ai-development-workflow-deserves-a-better-scratchpad-5f3d9ea3acf4",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 183,
+      "url": "https://awesome.ecosyste.ms/projects/github.com%2Fgni%2Fdevcat",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 184,
+      "url": "https://github.com/topics/developpement?l=rust",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 185,
+      "url": "https://github.com/Jotrorox/dodo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 186,
+      "url": "https://raw.githubusercontent.com/gni/devcat/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 187,
+      "url": "https://raw.githubusercontent.com/jdx/mise/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 188,
+      "url": "https://raw.githubusercontent.com/Devolutions/UniGetUI/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 189,
+      "url": "https://raw.githubusercontent.com/loft-sh/devpod/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 190,
+      "url": "https://api.github.com/repos/zed-industries/zed",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 191,
+      "url": "https://api.github.com/repos/microsoft/vscode",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 192,
+      "url": "https://api.github.com/repos/JetBrains/intellij-community",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 193,
+      "url": "https://api.github.com/repos/docker/docker",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 194,
+      "url": "https://api.github.com/repos/docker/desktop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 195,
+      "url": "https://api.github.com/repos/dbeaver/dbeaver",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 196,
+      "url": "https://api.github.com/repos/postmanlabs/postman-app-support",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 197,
+      "url": "https://api.github.com/repos/Devolutions/UniGetUI",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 198,
+      "url": "https://api.github.com/repos/jdx/mise",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 199,
+      "url": "https://api.github.com/repos/loft-sh/devpod",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 200,
+      "url": "https://api.github.com/repos/gni/devcat",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 201,
+      "url": "https://api.github.com/repos/helix-editor/helix",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 202,
+      "url": "https://api.github.com/repos/lapce/lapce",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 203,
+      "url": "https://api.github.com/repos/zellij-org/zellij",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 204,
+      "url": "https://api.github.com/repos/extrawurst/gitui",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 205,
+      "url": "https://api.github.com/repos/atuinsh/atuin",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 206,
+      "url": "https://api.github.com/repos/starship/starship",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 207,
+      "url": "https://api.github.com/repos/nushell/nushell",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 208,
+      "url": "https://api.github.com/repos/longbridge/gpui-kit",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 209,
+      "url": "https://github.com/longbridge/gpui-kit",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 210,
+      "url": "https://crates.io/crates/gpui-kit",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 211,
+      "url": "https://github.com/longbridge/gpui-kit/releases/tag/v0.9.1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 212,
+      "url": "https://github.com/longbridge/gpui-kit/blob/main/skills/gpui-kit/references/usage.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 213,
+      "url": "https://github.com/mesa-hills-research/gpui_kit/blob/main/website/shell/api.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 214,
+      "url": "https://github.com/cortexkit/gpui-kit/blob/cortexkit/website/shell/api.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 215,
+      "url": "https://github.com/longbridge/gpui-kit/blob/main/website/shell/api.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 216,
+      "url": "https://github.com/longbridge/gpui-kit/blob/main/docs/ARCHITECTURE.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 217,
+      "url": "https://github.com/longbridge/gpui-kit/releases/tag/v0.6.0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 218,
+      "url": "https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 219,
+      "url": "https://blog.jetbrains.com/idea/2025/12/intellij-idea-unified-release",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 220,
+      "url": "https://dotnetfoundation.org/news-events/detail/jetbrains-supports-.net-open-source-developers-with-free-non-commercial-licenses",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 221,
+      "url": "https://lp.jetbrains.com/intellij-idea-unified-faq",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 222,
+      "url": "https://sales.jetbrains.com/hc/en-gb/articles/360021922640-Can-I-use-free-versions-of-IntelliJ-IDEA-and-PyCharm-for-developing-commercial-proprietary-software",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 223,
+      "url": "https://blog.postman.com/spotlight-on-engineering-kamalakannan",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 224,
+      "url": "https://blog.postman.com/going-native",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 225,
+      "url": "https://blog.postman.com/spotlight-on-engineering-samvelraja-sakthivel",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 226,
+      "url": "https://blog.postman.com/2016/10/21/postman-linux-app-now-available",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 227,
+      "url": "https://community.postman.com/t/what-browser-is-used-by-the-postman-app/56490",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 228,
+      "url": "https://www.gitkraken.com/blog/gitkraken-git-gui-client-mac-windows-linux",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 229,
+      "url": "https://www.gitkraken.com/blog/5-electron-apps",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 230,
+      "url": "https://www.gitkraken.com/blog/gitkraken-client-v8-3",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 231,
+      "url": "https://www.gitkraken.com/blog/nodegit-libgit2",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 232,
+      "url": "https://www.gitkraken.com/blog/farewell-nodegit-from-gitkraken-desktop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 233,
+      "url": "https://www.docker.com/products/docker-desktop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 234,
+      "url": "https://docs.docker.com/extensions/extensions-sdk/build/frontend-extension-tutorial.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 235,
+      "url": "https://docs.docker.com/desktop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 236,
+      "url": "https://www.docker.com/blog/the-magic-behind-the-scenes-of-docker-desktop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 237,
+      "url": "https://docs.docker.com/extensions/extensions-sdk/build/frontend-extension-tutorial",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 238,
+      "url": "https://api.github.com/repos/zed-industries/zed/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 239,
+      "url": "https://api.github.com/repos/microsoft/vscode/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 240,
+      "url": "https://api.github.com/repos/dbeaver/dbeaver/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 241,
+      "url": "https://api.github.com/repos/jdx/mise/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 242,
+      "url": "https://api.github.com/repos/Devolutions/UniGetUI/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 243,
+      "url": "https://api.github.com/repos/loft-sh/devpod/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 244,
+      "url": "https://api.github.com/repos/gni/devcat/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 245,
+      "url": "https://api.github.com/repos/helix-editor/helix/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 246,
+      "url": "https://api.github.com/repos/longbridge/gpui-kit/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 247,
+      "url": "https://api.github.com/repos/JetBrains/intellij-community/releases?per_page=1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 248,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 249,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit/main/LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 250,
+      "url": "https://github.com/Devolutions/UniGetUI/blob/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 251,
+      "url": "https://github.com/Devolutions/UniGetUI/blob/main/docs/CLI.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 252,
+      "url": "https://github.com/marticliment/UniGetUI/releases/tag/3.1.0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 253,
+      "url": "https://deepwiki.com/marticliment/UniGetUI",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 254,
+      "url": "https://github.com/Devolutions/UniGetUI/blob/main/UniGetUI.iss",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 255,
+      "url": "https://survey.stackoverflow.co/2025?lid=pk3t0pnb051z",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 256,
+      "url": "https://visualstudiomagazine.com/articles/2025/08/01/stack-overflow-dev-survey-visual-studio-vs-code-hold-of-ai-ides-to-remain-on-top.aspx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 257,
+      "url": "https://survey.stackoverflow.co/2025/technology",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 258,
+      "url": "https://stackoverflow.blog/2025/08/01/diving-into-the-results-of-the-2025-developer-survey?lid=drihiki0rm4n",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 259,
+      "url": "https://visualstudiomagazine.com/Articles/2025/08/01/Stack-Overflow-Dev-Survey-Visual-Studio-VS-Code-Hold-of-AI-IDEs-to-Remain-on-Top.aspx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 260,
+      "url": "https://zed.dev/pricing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 261,
+      "url": "https://github.com/zed-industries/zed/blob/main/docs/src/account/plans-and-pricing.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 262,
+      "url": "https://zed.dev/education",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 263,
+      "url": "https://finderatlas.com/tools/zed",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 264,
+      "url": "https://origotech.dev/tools/zed",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 265,
+      "url": "https://jetbrains.com/help/idea/get-started-with-kotlin.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 266,
+      "url": "https://plugins.jetbrains.com/docs/intellij/using-kotlin.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 267,
+      "url": "https://jetbrains.com/help/idea/2026.2/discover-intellij-idea.html.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 268,
+      "url": "https://jetbrains.com/help/idea/get-started-with-kotlin.html.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 269,
+      "url": "https://jetbrains.com/help/idea/2026.3/create-your-first-kotlin-app.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 270,
+      "url": "https://github.com/dbeaver/dbeaver/wiki/Develop-in-Eclipse",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 271,
+      "url": "https://github.com/dbeaver/dbeaver",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 272,
+      "url": "https://github.com/dbeaver/dbeaver/blob/devel/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 273,
+      "url": "https://github.com/dbeaver/dbeaver/wiki/Build-from-sources",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 274,
+      "url": "https://github.com/dbeaver/dbeaver/blob/devel/AGENTS.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 275,
+      "url": "https://api.github.com/repos/longbridge/gpui-kit-showcases/contents/apps/dodo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 276,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit-showcases/main/apps/dodo/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 277,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit-showcases/main/apps/dodo/manifest.json",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 278,
+      "url": "https://raw.githubusercontent.com/dbeaver/dbeaver/devel/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 279,
+      "url": "https://crates.io/api/v1/crates/gpui-kit",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 280,
+      "url": "https://crates.io/api/v1/crates/gpui",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 281,
+      "url": "https://api.github.com/repos/zed-industries/zed/contents/crates/gpui",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 282,
+      "url": "https://api.github.com/repos/Devolutions/UniGetUI/contents/src",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 283,
+      "url": "https://raw.githubusercontent.com/Devolutions/UniGetUI/main/src/UniGetUI.Avalonia/UniGetUI.Avalonia.csproj",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 284,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit/main/crates/gpui-kit/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 285,
+      "url": "https://raw.githubusercontent.com/zed-industries/zed/main/crates/gpui/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 286,
+      "url": "https://devolutions.net/blog/2026/03/unigetui-enters-its-next-chapter-with-devolutions",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 287,
+      "url": "https://dbeaver.com/edition",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 288,
+      "url": "https://dbeaver.com/feed",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 289,
+      "url": "https://inletdb.com/compare/dbeaver",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 290,
+      "url": "https://codewithsql.com/compare/dbeaver-community-vs-dbeaver-pro",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 291,
+      "url": "https://queryglow.com/blog/dbeaver-sql-client",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 292,
+      "url": "https://pluginstats.com/companies/microsoft",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 293,
+      "url": "https://pluginstats.com/marketplaces/vscode",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 294,
+      "url": "https://vester.si/ai-impact/vscode",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 295,
+      "url": "https://github.com/sujeito-operator/vscode-marketplace-data/blob/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 296,
+      "url": "https://testmuai.com/blog/best-vs-code-extensions",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 297,
+      "url": "https://help.gitkraken.com/gk-dev/gk-dev-subscription",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 298,
+      "url": "https://code.visualstudio.com",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 299,
+      "url": "https://www.gitkraken.com/pricing-c",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 300,
+      "url": "https://learning.postman.com/docs/billing/about-plans",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 301,
+      "url": "https://crates.io/api/v1/crates/slint",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 302,
+      "url": "https://crates.io/api/v1/crates/iced",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 303,
+      "url": "https://docs.rs/slint/1.19.0/slint",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 304,
+      "url": "https://github.com/slint-ui/slint/blob/master/LICENSE.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 305,
+      "url": "https://github.com/slint-ui/slint/blob/master/FAQ.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 306,
+      "url": "https://slint.dev/faqs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 307,
+      "url": "https://github.com/iced-rs/iced",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 308,
+      "url": "https://gpui.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 309,
+      "url": "https://docs.slint.dev/latest/docs/rust/slint/docs/cargo_features",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 310,
+      "url": "https://docs.slint.dev/latest/docs/slint/guide/backends-and-renderers/backend_winit",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 311,
+      "url": "https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 312,
+      "url": "https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 313,
+      "url": "https://github.com/slint-ui/slint/blob/master/docs/development/input-event-system.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 314,
+      "url": "https://crates.io/api/v1/crates/slint/1.19.0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 315,
+      "url": "https://docs.rs/crate/slint/1.19.0/features",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 316,
+      "url": "https://docs.rs/slint/1.19.0/slint/docs/cargo_features/index.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 317,
+      "url": "https://github.com/slint-ui/slint/blob/v1.19.0/internal/core/textlayout/shaping.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 318,
+      "url": "https://github.com/slint-ui/slint/blob/v1.19.0/internal/core/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 319,
+      "url": "https://github.com/iced-rs/iced/blob/0.14.0/core/src/input_method.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 320,
+      "url": "https://github.com/zed-industries/zed/blob/main/crates/gpui/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 321,
+      "url": "https://github.com/zed-industries/zed/blob/main/crates/gpui/src/_accessibility.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 322,
+      "url": "https://slint.dev/blog/slint-1.14-released",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 323,
+      "url": "https://docs.rs/iced/0.14.0/iced/advanced/widget/trait.Widget.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 324,
+      "url": "https://github.com/iced-rs/iced/pull/3111",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 325,
+      "url": "https://github.com/slint-ui/slint/issues/4698",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 326,
+      "url": "https://github.com/slint-ui/slint/pull/14292",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 327,
+      "url": "https://github.com/zed-industries/zed/discussions/57066",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 328,
+      "url": "https://github.com/zed-industries/zed/discussions/50972",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 329,
+      "url": "https://docs.slint.dev/latest/docs/slint/guide/language/custom_controls",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 330,
+      "url": "https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/listview",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 331,
+      "url": "https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/tableview",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 332,
+      "url": "https://docs.rs/gpui/0.2.2/gpui/trait.Render.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 333,
+      "url": "https://crates.io/api/v1/crates/iced/0.14.0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 334,
+      "url": "https://zed.dev/features/terminal",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 335,
+      "url": "https://github.com/pop-os/cosmic-text/blob/0.15.0/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 336,
+      "url": "https://github.com/iced-rs/iced/blob/0.14.0/graphics/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 337,
+      "url": "https://book.iced.rs/philosophy.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 338,
+      "url": "https://docs.rs/cosmic-text/0.15.0/cosmic_text/struct.Buffer.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 339,
+      "url": "https://github.com/slint-ui/slint/blob/v1.19.0/internal/core/input.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 340,
+      "url": "https://github.com/iced-rs/iced/issues/552",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 341,
+      "url": "https://docs.rs/crate/gpui/0.2.2/source/src/platform/linux/x11/xim_handler.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 342,
+      "url": "https://docs.rs/crate/gpui/0.2.2/source/examples/input.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 343,
+      "url": "https://docs.rs/crate/i-slint-core/1.19.0/source/textlayout/shaping.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 344,
+      "url": "https://zed.dev/docs/terminal",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 345,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 346,
+      "url": "https://component-model.bytecodealliance.org/design/wit.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 347,
+      "url": "https://component-model.bytecodealliance.org/design/worlds.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 348,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/macro.bindgen.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 349,
+      "url": "https://docs.wasmtime.dev/examples-interrupting-wasm.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 350,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/struct.Config.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 351,
+      "url": "https://docs.wasmtime.dev/api/src/wasmtime/runtime/store.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 352,
+      "url": "https://docs.wasmtime.dev/examples-deterministic-wasm-execution.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 353,
+      "url": "https://docs.rs/tokio/latest/tokio/task/fn.spawn_blocking.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 354,
+      "url": "https://docs.rs/tokio/latest/tokio%20/task/fn.spawn_blocking.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 355,
+      "url": "https://docs.rs/tokio/latest/tokio/task",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 356,
+      "url": "https://docs.rs/tokio/latest/src/tokio/task/blocking.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 357,
+      "url": "https://docs.rs/crate/iced/latest/features",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 358,
+      "url": "https://users.rust-lang.org/t/rust-iced-tokio-problem-with-async-function/139222/2",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 359,
+      "url": "https://stackoverflow.com/questions/79903204/how-to-upgrade-code-from-rust-iced-0-12-to-iced-0-14",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 360,
+      "url": "https://microsoft.github.io/language-server-protocol/specification",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 361,
+      "url": "https://github.com/microsoft/language-server-protocol/blob/main/indexFormat/specification.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 362,
+      "url": "https://github.com/Microsoft/language-server-protocol/blob/gh-pages/_specifications/specification-3-14.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 363,
+      "url": "https://microsoft.github.io/language-server-protocol",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 364,
+      "url": "https://microsoft.github.io/debug-adapter-protocol",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 365,
+      "url": "https://github.com/microsoft/debug-adapter-protocol/blob/main/specification.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 366,
+      "url": "https://github.com/microsoft/debug-adapter-protocol",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 367,
+      "url": "https://github.com/Microsoft/debug-adapter-protocol/blob/gh-pages/debugAdapterProtocol.json",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 368,
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 369,
+      "url": "https://modelcontextprotocol.io/docs/concepts/tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 370,
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/schema",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 371,
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/schema/2026-07-28/schema.ts",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 372,
+      "url": "https://docs.rs/portable-pty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 373,
+      "url": "https://crates.io/crates/portable-pty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 374,
+      "url": "https://lib.rs/crates/portable-pty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 375,
+      "url": "https://github.com/wez/wezterm/tree/main/pty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 376,
+      "url": "https://alacritty.org",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 377,
+      "url": "https://alacritty.org/config-alacritty.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 378,
+      "url": "https://github.com/alacritty/alacritty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 379,
+      "url": "https://www.reddit.com/r/archlinux/comments/19bdt8i/how_well_documented_is_alacritty_i_cant_find_much",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 380,
+      "url": "https://emacs-tree-sitter.github.io/api/parsing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 381,
+      "url": "https://github.com/tree-sitter/tree-sitter/blob/master/docs/src/using-parsers/3-advanced-parsing.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 382,
+      "url": "https://gist.github.com/dmnkhorvath/9e74bed01f0fa2557a6b6e2708905d6b",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 383,
+      "url": "https://gotreesitter.m31labs.dev/docs/incremental-parsing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 384,
+      "url": "https://github.com/gitoxidelabs/gitoxide",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 385,
+      "url": "https://rustutils.com/tools/gitoxide",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 386,
+      "url": "https://crates.io/crates/gitoxide/0.5.0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 387,
+      "url": "https://lobste.rs/s/3skmql/gitoxide_pure_rust_implementation_git",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 388,
+      "url": "https://docs.rs/git2/latest/git2",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 389,
+      "url": "https://github.com/rust-lang/git2-rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 390,
+      "url": "https://crates.io/crates/git2/0.10.2/code",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 391,
+      "url": "https://www.reddit.com/r/rust/comments/1gshlja/how_to_use_git_in_a_rust_application",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 392,
+      "url": "https://docs.rs/sqlx/latest/sqlx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 393,
+      "url": "https://docs.rs/sqlx_wasi",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 394,
+      "url": "https://docs.rs/crate/sqlx/latest",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 395,
+      "url": "https://crates.io/crates/sqlx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 396,
+      "url": "https://docs.rs/rusqlite/latest/rusqlite",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 397,
+      "url": "https://docs.rs/crate/rusqlite/latest",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 398,
+      "url": "https://docs.rs/rusqlite/latest/rusqlite/struct.Connection.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 399,
+      "url": "https://docs.rs/crate/rusqlite/latest/source",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 400,
+      "url": "https://docs.rs/bollard",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 401,
+      "url": "https://crates.io/crates/bollard",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 402,
+      "url": "https://docs.rs/bollard-next",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 403,
+      "url": "https://docs.rs/bollard/latest/bollard/struct.Docker.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 404,
+      "url": "https://docs.rs/schemars/latest/schemars/derive.JsonSchema.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 405,
+      "url": "https://docs.rs/schemars/latest/schemars/trait.JsonSchema.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 406,
+      "url": "https://docs.rs/schemars/latest/schemars",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 407,
+      "url": "https://docs.rs/schemars/latest/schemars?search=JsonSchema_repr",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 408,
+      "url": "https://lucioduran.com/blog/capability-based-security-wasi-preview2",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 409,
+      "url": "https://systemshardening.com/articles/wasm/wasi-preview-2-capabilities",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 410,
+      "url": "https://wasi.dev/security",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 411,
+      "url": "https://github.com/golang/go/issues/65333",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 412,
+      "url": "https://github.com/WebAssembly/component-model/blob/main/design/mvp/CanonicalABI.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 413,
+      "url": "https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 414,
+      "url": "https://component-model.bytecodealliance.org/design/component-model-concepts.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 415,
+      "url": "https://component-model.bytecodealliance.org/advanced/canonical-abi.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 416,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/index.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 417,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/struct.Store.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 418,
+      "url": "https://github.com/bytecodealliance/wasmtime/issues/6848",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 419,
+      "url": "https://docs.rs/wasmtime",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 420,
+      "url": "https://www.jsonrpc.org/specification",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 421,
+      "url": "https://www.jsonrpc.org/historical/json-rpc-2-0.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 422,
+      "url": "https://json-rpc.org/specification",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 423,
+      "url": "https://apiguide.dev/specifications/json-rpc",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 424,
+      "url": "https://docs.rs/tracing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 425,
+      "url": "https://docs.rs/log",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 426,
+      "url": "https://crates.io/crates/tracing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 427,
+      "url": "https://docs.rs/tracing-subscriber",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 428,
+      "url": "https://docs.rs/landlock/latest/landlock",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 429,
+      "url": "https://docs.rs/crate/rstrict/latest",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 430,
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/crates/openshell-sandbox/src/sandbox/linux/landlock.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 431,
+      "url": "https://docs.rs/ai-sandbox/latest/src/ai_sandbox/linux_sandbox/landlock.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 432,
+      "url": "https://doc.rust-lang.org/reference/linkage.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 433,
+      "url": "https://users.rust-lang.org/t/abi-stability-guarantee-of-dylib-vs-cdylib/50879",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 434,
+      "url": "https://users.rust-lang.org/t/what-is-the-difference-between-dylib-and-cdylib/28847",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 435,
+      "url": "https://internals.rust-lang.org/t/stability-of-dylibs-per-compiler-release/12648",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 436,
+      "url": "https://crates.io/crates/wasm-metadata/0.245.0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 437,
+      "url": "https://crates.io/crates/wasmtime",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 438,
+      "url": "https://crates.io/crates/wasmtime-api",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 439,
+      "url": "https://crates.io/crates/wasmtime-types/15.0.1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 440,
+      "url": "https://docs.rs/iced/latest/iced/trait.Application.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 441,
+      "url": "https://brianch.github.io/iced-twentyone-tutorial/subscription.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 442,
+      "url": "https://docs.rs/iced/latest/iced/struct.Subscription.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 443,
+      "url": "https://users.rust-lang.org/t/fs-rename-overwriting-existing-file/17314",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 444,
+      "url": "https://stackoverflow.com/questions/70947790/is-using-fsrename-to-move-files-between-different-file-systems-atomic",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 445,
+      "url": "https://github.com/rust-lang/libs-team/issues/131",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 446,
+      "url": "https://docs.rs/renamore",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 447,
+      "url": "https://www.sqlite.org/walformat.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 448,
+      "url": "https://sqlite.org/tempfiles.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 449,
+      "url": "https://sqlite.org/c3ref/wal_hook.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 450,
+      "url": "https://sqlite.org/fileformat.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 451,
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/stdio",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 452,
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/transports",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 453,
+      "url": "https://modelcontextprotocol.io/specification/draft/basic/transports",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 454,
+      "url": "https://ts.sdk.modelcontextprotocol.io/v2/api/@modelcontextprotocol/server/server/stdio.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 455,
+      "url": "https://docs.rs/semver",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 456,
+      "url": "https://doc.rust-lang.org/cargo/reference/semver.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 457,
+      "url": "https://rustprojectprimer.com/checks/semver.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 458,
+      "url": "https://www.reddit.com/r/rust/comments/n4ni2d/arent_many_rust_crates_abusing_semantic_versioning",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 459,
+      "url": "https://embarkstudios.github.io/cargo-deny/checks/licenses",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 460,
+      "url": "https://embarkstudios.github.io/cargo-deny/checks/licenses/cfg.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 461,
+      "url": "https://embarkstudios.github.io/cargo-deny/checks/licenses/diags.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 462,
+      "url": "https://embarkstudios.github.io/cargo-deny/checks/cfg.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 463,
+      "url": "https://doc.rust-lang.org/embedded-book/interoperability/rust-with-c.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 464,
+      "url": "https://doc.rust-lang.org/unstable-book/language-features/rustc-private.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 465,
+      "url": "https://doc.rust-lang.org/beta/nightly-rustc/src/rustc_codegen_ssa/back/link.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 466,
+      "url": "https://doc.rust-lang.org/reference/items/external-blocks.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 467,
+      "url": "https://component-model.bytecodealliance.org/design/packages.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 468,
+      "url": "https://component-model.bytecodealliance.org/language-support/building-a-simple-component/javascript.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 469,
+      "url": "https://component-model.bytecodealliance.org/composing-and-distributing/distributing.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 470,
+      "url": "https://docs.rs/iced/0.14.0/iced/trait.Executor.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 471,
+      "url": "https://docs.rs/iced/0.14.0/iced/application/struct.Application.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 472,
+      "url": "https://docs.rs/iced/0.14.0/src/iced/application.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 473,
+      "url": "https://docs.rs/iced/0.14.0/iced/application/fn.application.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 474,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/struct.Linker.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 475,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/struct.Component.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 476,
+      "url": "https://docs.wasmtime.dev/api/src/wasmtime/runtime/component/linker.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 477,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/struct.LinkerInstance.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 478,
+      "url": "https://modelcontextprotocol.io/specification/draft/server/tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 479,
+      "url": "https://ts.sdk.modelcontextprotocol.io/v2/migration/upgrade-to-v2.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 480,
+      "url": "https://ts.sdk.modelcontextprotocol.io/v2/servers/tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 481,
+      "url": "https://modelcontextprotocol.io/seps/2106-json-schema-2020-12",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 482,
+      "url": "https://docs.rs/iced/0.14.0/iced/trait.Application.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 483,
+      "url": "https://docs.rs/tokio/latest/tokio/runtime/struct.Runtime.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 484,
+      "url": "https://doc.rust-lang.org/cargo/reference/workspaces.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 485,
+      "url": "https://learn.microsoft.com/en-us/windows/package-manager/winget",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 486,
+      "url": "https://learn.microsoft.com/en-us/windows/package-manager/winget/install",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 487,
+      "url": "https://learn.microsoft.com/en-us/windows/package-manager/winget/settings",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 488,
+      "url": "https://github.com/microsoft/winget-pkgs/blob/master/doc/manifest/schema/1.10.0/singleton.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 489,
+      "url": "https://github.com/microsoft/winget-cli/blob/master/doc/windows/package-manager/winget/install.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 490,
+      "url": "https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 491,
+      "url": "https://github.com/ScoopInstaller/Scoop/wiki/Buckets",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 492,
+      "url": "https://docs.chocolatey.org/en-us/create/functions/get-checksumvalid",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 493,
+      "url": "https://docs.chocolatey.org/en-us/information/security",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 494,
+      "url": "https://docs.chocolatey.org/en-us/choco/commands/download",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 495,
+      "url": "https://docs.chocolatey.org/en-us/configuration",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 496,
+      "url": "https://docs.brew.sh/Brew-Bundle-and-Brewfile",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 497,
+      "url": "https://docs.brew.sh/Installation",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 498,
+      "url": "https://docs.brew.sh/Manpage",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 499,
+      "url": "https://github.com/Homebrew/brew/blob/main/Library/Homebrew/env_config.rb",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 500,
+      "url": "https://www.debian.org/doc/manuals/debian-handbook/sect.package-authentication.en.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 501,
+      "url": "https://www.debian.org/doc/manuals/debian-faq/pkgtools.en.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 502,
+      "url": "https://manpages.debian.org/testing/apt-offline/apt-offline.8.en.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 503,
+      "url": "https://dnf.readthedocs.io/en/latest/command_ref.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 504,
+      "url": "https://dnf.readthedocs.io/en/latest/conf_ref.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 505,
+      "url": "https://man.archlinux.org/man/pacman.8.en.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 506,
+      "url": "https://wiki.archlinux.org/title/Pacman/Package_signing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 507,
+      "url": "https://mise.jdx.dev/getting-started",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 508,
+      "url": "https://mise.jdx.dev/dev-tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 509,
+      "url": "https://mise.jdx.dev/dev-tools/versions",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 510,
+      "url": "https://asdf-vm.com/guide/getting-started.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 511,
+      "url": "https://asdf-vm.com/manage/configuration.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 512,
+      "url": "https://asdf-vm.com/manage/versions.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 513,
+      "url": "https://aquaproj.github.io/docs/reference/config",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 514,
+      "url": "https://aquaproj.github.io/docs/reference/security",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 515,
+      "url": "https://moonrepo.dev/docs/proto",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 516,
+      "url": "https://moonrepo.dev/docs/proto/config",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 517,
+      "url": "https://moonrepo.dev/docs/proto/version-spec",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 518,
+      "url": "https://unigetuisoftware.com/winget-vs-chocolatey-vs-scoop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 519,
+      "url": "https://github.com/devolutions/unigetui",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 520,
+      "url": "https://devolutions.net/unigetui",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 521,
+      "url": "https://github.com/cargo-bins/cargo-binstall",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 522,
+      "url": "https://github.com/cargo-bins/cargo-binstall/blob/main/HELP.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 523,
+      "url": "https://github.com/cargo-bins/cargo-binstall/blob/main/SIGNING.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 524,
+      "url": "https://github.com/cargo-bins/cargo-binstall/blob/main/SUPPORT.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 525,
+      "url": "https://docs.astral.sh/uv/concepts/cache",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 526,
+      "url": "https://docs.astral.sh/uv/reference/cli",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 527,
+      "url": "https://docs.astral.sh/uv/concepts/indexes",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 528,
+      "url": "https://docs.npmjs.com/cli/v11/commands/npm-ci",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 529,
+      "url": "https://docs.npmjs.com/cli/v12/commands/npm-cache",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 530,
+      "url": "https://docs.npmjs.com/cli/v11/using-npm/config",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 531,
+      "url": "https://pnpm.io/cli/store",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 532,
+      "url": "https://pnpm.io/cli/install",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 533,
+      "url": "https://yarnpkg.com/cli/install",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 534,
+      "url": "https://pip.pypa.io/en/stable/topics/secure-installs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 535,
+      "url": "https://pip.pypa.io/en/latest/cli/pip_download",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 536,
+      "url": "https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 537,
+      "url": "https://doc.rust-lang.org/cargo/reference/registry-index.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 538,
+      "url": "https://maven.apache.org/resolver/about-checksums.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 539,
+      "url": "https://maven.apache.org/guides/introduction/introduction-to-repositories.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 540,
+      "url": "https://maven.apache.org/ref/current/maven-embedder/cli.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 541,
+      "url": "https://docs.gradle.org/current/userguide/dependency_caching.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 542,
+      "url": "https://docs.gradle.org/current/userguide/command_line_interface.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 543,
+      "url": "https://devpod.sh/docs/developing-in-workspaces/what-are-workspaces",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 544,
+      "url": "https://devpod.sh/docs/managing-providers/add-provider",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 545,
+      "url": "https://docs.fedoraproject.org/en-US/security/cryptography/signatures",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 546,
+      "url": "https://github.com/Homebrew/brew",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 547,
+      "url": "https://github.com/ScoopInstaller/Scoop",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 548,
+      "url": "https://github.com/chocolatey/choco",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 549,
+      "url": "https://github.com/jdx/mise",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 550,
+      "url": "https://github.com/asdf-vm/asdf",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 551,
+      "url": "https://github.com/aquaproj/aqua",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 552,
+      "url": "https://github.com/moonrepo/proto",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 553,
+      "url": "https://github.com/astral-sh/uv",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 554,
+      "url": "https://github.com/microsoft/winget-cli",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 555,
+      "url": "https://github.com/npm/cli",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 556,
+      "url": "https://github.com/pnpm/pnpm",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 557,
+      "url": "https://github.com/yarnpkg/berry",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 558,
+      "url": "https://github.com/pypa/pip",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 559,
+      "url": "https://github.com/apache/maven",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 560,
+      "url": "https://github.com/gradle/gradle",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 561,
+      "url": "https://github.com/rust-lang/cargo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 562,
+      "url": "https://github.com/ScoopInstaller/Scoop/blob/master/LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 563,
+      "url": "https://github.com/chocolatey/choco/blob/develop/LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 564,
+      "url": "https://github.com/aquaproj/aqua/blob/main/LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 565,
+      "url": "https://github.com/npm/cli/blob/latest/LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 566,
+      "url": "https://code.visualstudio.com/docs/editing/getting-started/userinterface",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 567,
+      "url": "https://code.visualstudio.com/docs/configure/custom-layout",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 568,
+      "url": "https://code.visualstudio.com/docs/configure/keybindings",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 569,
+      "url": "https://code.visualstudio.com/docs/configure/settings",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 570,
+      "url": "https://code.visualstudio.com/docs/configure/profiles",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 571,
+      "url": "https://code.visualstudio.com/docs/configure/settings-sync",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 572,
+      "url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 573,
+      "url": "https://www.designtokens.org/tr/2025.10/format",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 574,
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 575,
+      "url": "https://code.visualstudio.com/docs/terminal/basics",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 576,
+      "url": "https://learning.postman.com/docs/sending-requests/variables/environment-variables.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 577,
+      "url": "https://docs.docker.com/desktop/use-desktop/container",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 578,
+      "url": "https://www.pgadmin.org/docs/pgadmin4/9.19/query_tool.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 579,
+      "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 580,
+      "url": "https://code.visualstudio.com/docs/configure/themes",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 581,
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 582,
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 583,
+      "url": "https://git-scm.com/docs/git-diff",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 584,
+      "url": "https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 585,
+      "url": "https://code.visualstudio.com/api/language-extensions/language-server-extension-guide",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 586,
+      "url": "https://code.visualstudio.com/api/extension-guides/debugger-extension",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 587,
+      "url": "https://zed.dev/blog/videogame",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 588,
+      "url": "https://zed.dev/blog/zed-1-0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 589,
+      "url": "https://github.com/docker/for-mac/issues/7749",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 590,
+      "url": "https://www.lihuanyu.com/en/posts/2025/rethinking-docker-development-linux-redis",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 591,
+      "url": "https://plugins.jetbrains.com/docs/intellij/intellij-platform.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 592,
+      "url": "https://jetbrains.com/help/idea/discover-intellij-idea.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 593,
+      "url": "https://jetbrains.com/help/idea/managing-plugins.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 594,
+      "url": "https://code.visualstudio.com/blogs/2018/08/07/debug-adapter-protocol-website",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 595,
+      "url": "https://www.postman.com/product/api-client",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 596,
+      "url": "https://learning.postman.com/docs/use/send-requests/protocols/protocols",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 597,
+      "url": "https://tableplus.com/docs/overview",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 598,
+      "url": "https://tableplus.com",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 599,
+      "url": "https://mise.jdx.dev/dev-tools/comparison-to-asdf.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 600,
+      "url": "https://stackoverflow.co/company/press/archive/stack-overflow-2025-developer-survey",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 601,
+      "url": "https://survey.stackoverflow.co/2025",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 602,
+      "url": "https://www.openapis.org",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 603,
+      "url": "https://grpc.io/docs/what-is-grpc/introduction",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 604,
+      "url": "https://docs.docker.com/compose",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 605,
+      "url": "https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_12",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 606,
+      "url": "https://www.research.autodesk.com/app/uploads/2024/02/Task-Centric-Application-Switching_GI23.pdf",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 607,
+      "url": "https://accesskit.dev",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 608,
+      "url": "https://tree-sitter.github.io/tree-sitter",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 609,
+      "url": "https://criterion-rs.github.io/book/user_guide/analysis.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 610,
+      "url": "https://criterion-rs.github.io/book/user_guide/command_line_output.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 611,
+      "url": "https://docs.rs/criterion/latest/criterion/struct.Criterion.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 612,
+      "url": "https://github.com/sharkdp/hyperfine",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 613,
+      "url": "https://man.archlinux.org/man/extra/hyperfine/hyperfine.1.en",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 614,
+      "url": "https://kernel.org/doc/Documentation/accounting/psi.txt",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 615,
+      "url": "https://systemd.io/PRESSURE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 616,
+      "url": "https://perfwiki.github.io/main",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 617,
+      "url": "https://man7.org/linux/man-pages/man1/perf-stat.1.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 618,
+      "url": "https://man7.org/linux/man-pages/man1/perf-record.1.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 619,
+      "url": "https://docs.wasmtime.dev/security.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 620,
+      "url": "https://perfetto.dev/docs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 621,
+      "url": "https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 622,
+      "url": "https://perfetto.dev/docs/instrumentation/track-events",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 623,
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/test/wpt",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 624,
+      "url": "https://learn.microsoft.com/en-us/windows/win32/etw/event-tracing-tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 625,
+      "url": "https://developer.apple.com/documentation/xcode/reducing-your-app-s-launch-time",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 626,
+      "url": "https://developer.apple.com/documentation/xcode/improving-your-app-s-performance",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 627,
+      "url": "https://tokio.rs/tokio/tutorial/channels",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 628,
+      "url": "https://rfd.shared.oxide.computer/rfd/0400",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 629,
+      "url": "https://docs.rs/wgpu/latest/wgpu/type.RequestAdapterOptions.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 630,
+      "url": "https://docs.rs/wgpu/latest/wgpu/struct.Instance.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 631,
+      "url": "https://github.com/alacritty/vtebench",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 632,
+      "url": "https://man7.org/linux/man-pages/man5/proc_pid_status.5.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 633,
+      "url": "https://www.man7.org/linux/man-pages/man5/proc_pid_statm.5.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 634,
+      "url": "https://web.dev/articles/rail",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 635,
+      "url": "https://doc.rust-lang.org/cargo/reference/profiles.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    }
+  ]
+}

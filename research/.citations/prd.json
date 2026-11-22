@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://code.visualstudio.com/api/language-extensions/language-server-extension-guide",
+      "title": "VS Code Language Server Extension Guide",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 2,
+      "url": "https://code.visualstudio.com/api/extension-guides/debugger-extension",
+      "title": "VS Code Debugger Extension guide (DAP architecture)",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 3,
+      "url": "https://zed.dev/blog/videogame",
+      "title": "Zed blog: Leveraging Rust and the GPU to render UIs at 120 FPS",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 4,
+      "url": "https://zed.dev/blog/zed-1-0",
+      "title": "Zed blog: Zed is 1.0",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 5,
+      "url": "https://github.com/docker/for-mac/issues/7749",
+      "title": "docker/for-mac issue 7749: com.docker.krun memory usage",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 6,
+      "url": "https://www.lihuanyu.com/en/posts/2025/rethinking-docker-development-linux-redis",
+      "title": "Docker Performance: Linux vs Docker Desktop Overhead",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 7,
+      "url": "https://plugins.jetbrains.com/docs/intellij/intellij-platform.html",
+      "title": "IntelliJ Platform Plugin SDK: The IntelliJ Platform",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 8,
+      "url": "https://jetbrains.com/help/idea/discover-intellij-idea.html",
+      "title": "IntelliJ IDEA overview",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 9,
+      "url": "https://jetbrains.com/help/idea/managing-plugins.html",
+      "title": "IntelliJ IDEA: Managing plugins / Marketplace",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 10,
+      "url": "https://code.visualstudio.com/blogs/2018/08/07/debug-adapter-protocol-website",
+      "title": "VS Code blog: New home for the Debug Adapter Protocol",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 11,
+      "url": "https://www.postman.com/product/api-client",
+      "title": "Postman API Client product page",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 12,
+      "url": "https://learning.postman.com/docs/use/send-requests/protocols/protocols",
+      "title": "Postman Docs: Other API protocols in Postman",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 13,
+      "url": "https://tableplus.com/docs/overview",
+      "title": "TablePlus Docs: Overview of supported databases",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 14,
+      "url": "https://tableplus.com",
+      "title": "TablePlus homepage: native database client",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 15,
+      "url": "https://github.com/dbeaver/dbeaver",
+      "title": "DBeaver GitHub README: universal database tool",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 16,
+      "url": "https://mise.jdx.dev/dev-tools",
+      "title": "mise-en-place: Dev tools documentation",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 17,
+      "url": "https://mise.jdx.dev/dev-tools/comparison-to-asdf.html",
+      "title": "mise: Migrating from asdf / plugin security",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 18,
+      "url": "https://survey.stackoverflow.co/2025/technology",
+      "title": "2025 Stack Overflow Developer Survey: Technology",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 19,
+      "url": "https://stackoverflow.co/company/press/archive/stack-overflow-2025-developer-survey",
+      "title": "Stack Overflow 2025 Developer Survey press release",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 20,
+      "url": "https://survey.stackoverflow.co/2025",
+      "title": "2025 Stack Overflow Developer Survey: home",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 21,
+      "url": "https://microsoft.github.io/language-server-protocol",
+      "title": "Official page for Language Server Protocol",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 22,
+      "url": "https://microsoft.github.io/debug-adapter-protocol",
+      "title": "Official page for Debug Adapter Protocol",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 23,
+      "url": "https://www.openapis.org",
+      "title": "OpenAPI Initiative: What is OpenAPI?",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 24,
+      "url": "https://grpc.io/docs/what-is-grpc/introduction",
+      "title": "gRPC: Introduction to gRPC and protocol buffers",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 25,
+      "url": "https://docs.docker.com/compose",
+      "title": "Docker Compose documentation",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 26,
+      "url": "https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_12",
+      "title": "Developers' Diverging Perceptions of Productivity: The Cost of Context Switching",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 27,
+      "url": "https://www.research.autodesk.com/app/uploads/2024/02/Task-Centric-Application-Switching_GI23.pdf",
+      "title": "Task-centric Application Switching (Autodesk Research)",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 28,
+      "url": "https://accesskit.dev",
+      "title": "AccessKit: Accessibility infrastructure for UI toolkits",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 29,
+      "url": "https://tree-sitter.github.io/tree-sitter",
+      "title": "Tree-sitter: incremental parsing library",
+      "accessed": "2026-11-22"
+    }
+  ]
+}

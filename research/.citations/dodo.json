@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://github.com/MrGru/dodo",
+      "title": "MrGru/dodo GitHub repository",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 2,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 3,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 4,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//THIRD-PARTY-NOTICES.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 5,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 6,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//deny.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 7,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/architecture/workspace-layout.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 8,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/architecture/app-shell.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 9,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/architecture/persistence.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 10,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/build-optimization.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 11,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/contributing.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 12,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/main.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 13,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/app.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 14,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/tools.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 15,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/layout.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 16,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/session/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 17,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 18,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 19,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/services/engine.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 20,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/models/runtime.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 21,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 22,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 23,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 24,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 25,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-cleaner/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 26,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-flow/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 27,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-i18n/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 28,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-paths/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 29,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-dialog-slot/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 30,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.claude/skills/gpui-component-recipes/SKILL.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 31,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.claude/skills/dodo-docker-internals/SKILL.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 32,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.claude/skills/dodo-database-internals/SKILL.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 33,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.claude/skills/dodo-api-explorer-internals/SKILL.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 34,
+      "url": "https://api.github.com/repos/MrGru/dodo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 35,
+      "url": "https://api.github.com/repos/MrGru/dodo/commits?per_page=10",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 36,
+      "url": "https://api.github.com/repos/MrGru/dodo/issues?state=all&per_page=30",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 37,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-flow/src/budgets.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 38,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-flow/src/instrument.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 39,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-flow/src/runtime/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 40,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/services/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 41,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/src/services/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 42,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/src/services/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 43,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/views/runtime.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 44,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/src/models/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 45,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/flow-rotation-grouping-plan.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 46,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//docs/release.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 47,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//AGENTS.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 48,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.cargo/config.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 49,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.github/workflows/release.yml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 50,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//src/quick_nav/mod.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 51,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-updater/src/lib.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 52,
+      "url": "https://api.github.com/repos/MrGru/dodo/releases?per_page=5",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 53,
+      "url": "https://api.github.com/repos/MrGru/dodo/contributors",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 54,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-database/src/models/local.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 55,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/models/running.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 56,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-i18n/src/ui.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 57,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.github/workflows/analysis.yml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 58,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//.github/workflows/ci.yml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 59,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/src/services/script/quickjs.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 60,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-docker/src/views/containers.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 61,
+      "url": "https://raw.githubusercontent.com/MrGru/dodo/b7b964d7916c059789cbceefb7d9941569dadd5c//crates/dodo-api-explorer/src/services/send.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    }
+  ]
+}

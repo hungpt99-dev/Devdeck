@@ -1,0 +1,491 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://learn.microsoft.com/en-us/windows/package-manager/winget",
+      "title": "Use WinGet to install and manage applications | Microsoft Learn",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 2,
+      "url": "https://learn.microsoft.com/en-us/windows/package-manager/winget/install",
+      "title": "install command (winget) | Microsoft Learn",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 3,
+      "url": "https://learn.microsoft.com/en-us/windows/package-manager/winget/settings",
+      "title": "settings command (winget) | Microsoft Learn",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 4,
+      "url": "https://github.com/microsoft/winget-pkgs/blob/master/doc/manifest/schema/1.10.0/singleton.md",
+      "title": "winget-pkgs manifest schema 1.10.0 singleton | Microsoft",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 5,
+      "url": "https://github.com/microsoft/winget-cli/blob/master/doc/windows/package-manager/winget/install.md",
+      "title": "winget-cli install command documentation | Microsoft",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 6,
+      "url": "https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests",
+      "title": "App Manifests | Scoop Wiki",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 7,
+      "url": "https://github.com/ScoopInstaller/Scoop/wiki/Buckets",
+      "title": "Buckets | Scoop Wiki",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 8,
+      "url": "https://docs.chocolatey.org/en-us/create/functions/get-checksumvalid",
+      "title": "Get-CheckSumValid | Chocolatey Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 9,
+      "url": "https://docs.chocolatey.org/en-us/information/security",
+      "title": "Security | Chocolatey Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 10,
+      "url": "https://docs.chocolatey.org/en-us/choco/commands/download",
+      "title": "Download command | Chocolatey Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 11,
+      "url": "https://docs.chocolatey.org/en-us/configuration",
+      "title": "Configuration | Chocolatey Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 12,
+      "url": "https://docs.brew.sh/Brew-Bundle-and-Brewfile",
+      "title": "Homebrew Bundle and Brewfile | Homebrew Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 13,
+      "url": "https://docs.brew.sh/Installation",
+      "title": "Installation | Homebrew Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 14,
+      "url": "https://docs.brew.sh/Manpage",
+      "title": "brew(1) Manpage | Homebrew Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 15,
+      "url": "https://github.com/Homebrew/brew/blob/main/Library/Homebrew/env_config.rb",
+      "title": "Homebrew env_config.rb | Homebrew/brew",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 16,
+      "url": "https://www.debian.org/doc/manuals/debian-handbook/sect.package-authentication.en.html",
+      "title": "Checking Package Authenticity | Debian Handbook",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 17,
+      "url": "https://www.debian.org/doc/manuals/debian-faq/pkgtools.en.html",
+      "title": "Debian package management tools | Debian FAQ",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 18,
+      "url": "https://manpages.debian.org/testing/apt-offline/apt-offline.8.en.html",
+      "title": "apt-offline(8) | Debian Manpages",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 19,
+      "url": "https://dnf.readthedocs.io/en/latest/command_ref.html",
+      "title": "DNF Command Reference",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 20,
+      "url": "https://dnf.readthedocs.io/en/latest/conf_ref.html",
+      "title": "DNF Configuration Reference",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 21,
+      "url": "https://man.archlinux.org/man/pacman.8.en.html",
+      "title": "pacman(8) | Arch Manual Pages",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 22,
+      "url": "https://wiki.archlinux.org/title/Pacman/Package_signing",
+      "title": "Pacman/Package signing | ArchWiki",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 23,
+      "url": "https://mise.jdx.dev/getting-started",
+      "title": "Getting started | mise-en-place",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 24,
+      "url": "https://mise.jdx.dev/dev-tools",
+      "title": "Dev tools | mise-en-place",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 25,
+      "url": "https://mise.jdx.dev/dev-tools/versions",
+      "title": "Version requests and version files | mise-en-place",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 26,
+      "url": "https://asdf-vm.com/guide/getting-started.html",
+      "title": "Getting Started | asdf",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 27,
+      "url": "https://asdf-vm.com/manage/configuration.html",
+      "title": "Configuration | asdf",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 28,
+      "url": "https://asdf-vm.com/manage/versions.html",
+      "title": "Versions | asdf",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 29,
+      "url": "https://aquaproj.github.io/docs/reference/config",
+      "title": "Configuration | aqua",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 30,
+      "url": "https://aquaproj.github.io/docs/reference/security",
+      "title": "Security | aqua",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 31,
+      "url": "https://moonrepo.dev/docs/proto",
+      "title": "What is proto? | moonrepo",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 32,
+      "url": "https://moonrepo.dev/docs/proto/config",
+      "title": "Configuration | proto | moonrepo",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 33,
+      "url": "https://moonrepo.dev/docs/proto/version-spec",
+      "title": "Version specification | proto | moonrepo",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 34,
+      "url": "https://unigetuisoftware.com/winget-vs-chocolatey-vs-scoop",
+      "title": "WinGet vs Chocolatey vs Scoop | UniGetUI",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 35,
+      "url": "https://github.com/devolutions/unigetui",
+      "title": "UniGetUI | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 36,
+      "url": "https://devolutions.net/unigetui",
+      "title": "UniGetUI for Windows, macOS, and Linux | Devolutions",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 37,
+      "url": "https://github.com/cargo-bins/cargo-binstall",
+      "title": "cargo-binstall | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 38,
+      "url": "https://github.com/cargo-bins/cargo-binstall/blob/main/HELP.md",
+      "title": "cargo-binstall HELP.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 39,
+      "url": "https://github.com/cargo-bins/cargo-binstall/blob/main/SIGNING.md",
+      "title": "cargo-binstall SIGNING.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 40,
+      "url": "https://github.com/cargo-bins/cargo-binstall/blob/main/SUPPORT.md",
+      "title": "cargo-binstall SUPPORT.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 41,
+      "url": "https://docs.astral.sh/uv/concepts/cache",
+      "title": "Caching | uv",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 42,
+      "url": "https://docs.astral.sh/uv/reference/cli",
+      "title": "Commands | uv CLI reference",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 43,
+      "url": "https://docs.astral.sh/uv/concepts/indexes",
+      "title": "Package indexes | uv",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 44,
+      "url": "https://docs.npmjs.com/cli/v11/commands/npm-ci",
+      "title": "npm-ci | npm Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 45,
+      "url": "https://docs.npmjs.com/cli/v12/commands/npm-cache",
+      "title": "npm-cache | npm Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 46,
+      "url": "https://docs.npmjs.com/cli/v11/using-npm/config",
+      "title": "Config | npm Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 47,
+      "url": "https://pnpm.io/cli/store",
+      "title": "store command | pnpm",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 48,
+      "url": "https://pnpm.io/cli/install",
+      "title": "install command | pnpm",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 49,
+      "url": "https://yarnpkg.com/cli/install",
+      "title": "yarn install | Yarn",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 50,
+      "url": "https://pip.pypa.io/en/stable/topics/secure-installs",
+      "title": "Secure installs | pip",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 51,
+      "url": "https://pip.pypa.io/en/latest/cli/pip_download",
+      "title": "pip download | pip",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 52,
+      "url": "https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html",
+      "title": "Cargo.toml vs Cargo.lock | Cargo Book",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 53,
+      "url": "https://doc.rust-lang.org/cargo/reference/registry-index.html",
+      "title": "Registry Index | Cargo Book",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 54,
+      "url": "https://maven.apache.org/resolver/about-checksums.html",
+      "title": "Checksums | Artifact Resolver | Maven",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 55,
+      "url": "https://maven.apache.org/guides/introduction/introduction-to-repositories.html",
+      "title": "Introduction to Repositories | Maven",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 56,
+      "url": "https://maven.apache.org/ref/current/maven-embedder/cli.html",
+      "title": "Maven CLI Options Reference",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 57,
+      "url": "https://docs.gradle.org/current/userguide/dependency_caching.html",
+      "title": "Dependency caching | Gradle",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 58,
+      "url": "https://docs.gradle.org/current/userguide/command_line_interface.html",
+      "title": "Command Line Interface | Gradle",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 59,
+      "url": "https://devpod.sh/docs/developing-in-workspaces/what-are-workspaces",
+      "title": "What are Workspaces? | DevPod docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 60,
+      "url": "https://devpod.sh/docs/managing-providers/add-provider",
+      "title": "Add a Provider | DevPod docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 61,
+      "url": "https://docs.fedoraproject.org/en-US/security/cryptography/signatures",
+      "title": "Cryptographic Signatures in Fedora | Fedora Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 62,
+      "url": "https://github.com/Homebrew/brew",
+      "title": "Homebrew/brew | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 63,
+      "url": "https://github.com/ScoopInstaller/Scoop",
+      "title": "ScoopInstaller/Scoop | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 64,
+      "url": "https://github.com/chocolatey/choco",
+      "title": "chocolatey/choco | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 65,
+      "url": "https://github.com/jdx/mise",
+      "title": "jdx/mise | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 66,
+      "url": "https://github.com/asdf-vm/asdf",
+      "title": "asdf-vm/asdf | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 67,
+      "url": "https://github.com/aquaproj/aqua",
+      "title": "aquaproj/aqua | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 68,
+      "url": "https://github.com/moonrepo/proto",
+      "title": "moonrepo/proto | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 69,
+      "url": "https://github.com/astral-sh/uv",
+      "title": "astral-sh/uv | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 70,
+      "url": "https://github.com/microsoft/winget-cli",
+      "title": "microsoft/winget-cli | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 71,
+      "url": "https://github.com/npm/cli",
+      "title": "npm/cli | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 72,
+      "url": "https://github.com/pnpm/pnpm",
+      "title": "pnpm/pnpm | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 73,
+      "url": "https://github.com/yarnpkg/berry",
+      "title": "yarnpkg/berry | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 74,
+      "url": "https://github.com/pypa/pip",
+      "title": "pypa/pip | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 75,
+      "url": "https://github.com/apache/maven",
+      "title": "apache/maven | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 76,
+      "url": "https://github.com/gradle/gradle",
+      "title": "gradle/gradle | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 77,
+      "url": "https://github.com/rust-lang/cargo",
+      "title": "rust-lang/cargo | GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 78,
+      "url": "https://github.com/ScoopInstaller/Scoop/blob/master/LICENSE",
+      "title": "Scoop LICENSE",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 79,
+      "url": "https://github.com/chocolatey/choco/blob/develop/LICENSE",
+      "title": "Chocolatey choco LICENSE",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 80,
+      "url": "https://github.com/aquaproj/aqua/blob/main/LICENSE",
+      "title": "aqua LICENSE",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 81,
+      "url": "https://github.com/npm/cli/blob/latest/LICENSE",
+      "title": "npm/cli LICENSE",
+      "accessed": "2026-11-22"
+    }
+  ]
+}

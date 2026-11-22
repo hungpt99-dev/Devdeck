@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://code.visualstudio.com/docs/editing/getting-started/userinterface",
+      "title": "VS Code \u2014 User interface",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 2,
+      "url": "https://code.visualstudio.com/docs/configure/custom-layout",
+      "title": "VS Code \u2014 Custom Layout",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 4,
+      "url": "https://code.visualstudio.com/docs/configure/keybindings",
+      "title": "VS Code \u2014 Keyboard shortcuts",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 6,
+      "url": "https://code.visualstudio.com/docs/configure/settings",
+      "title": "VS Code \u2014 User and workspace settings",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 7,
+      "url": "https://code.visualstudio.com/docs/configure/profiles",
+      "title": "VS Code \u2014 Profiles",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 8,
+      "url": "https://code.visualstudio.com/docs/configure/settings-sync",
+      "title": "VS Code \u2014 Settings Sync",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 9,
+      "url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "title": "VS Code \u2014 Source control overview",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 10,
+      "url": "https://www.designtokens.org/tr/2025.10/format",
+      "title": "Design Tokens Format Module 2025.10 (DTCG)",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 11,
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html",
+      "title": "WCAG 2.2 \u2014 SC 2.4.7 Focus Visible",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 13,
+      "url": "https://code.visualstudio.com/docs/terminal/basics",
+      "title": "VS Code \u2014 Terminal Basics",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 14,
+      "url": "https://learning.postman.com/docs/sending-requests/variables/environment-variables.md",
+      "title": "Postman \u2014 Environment variables",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 15,
+      "url": "https://docs.docker.com/desktop/use-desktop/container",
+      "title": "Docker Desktop \u2014 Containers view",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 17,
+      "url": "https://www.pgadmin.org/docs/pgadmin4/9.19/query_tool.html",
+      "title": "pgAdmin 4 \u2014 Query Tool",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 18,
+      "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config",
+      "title": "Kubernetes \u2014 Declarative management with config files",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 19,
+      "url": "https://code.visualstudio.com/docs/configure/themes",
+      "title": "VS Code \u2014 Themes",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 20,
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast",
+      "title": "WCAG 2.2 \u2014 SC 1.4.11 Non-text Contrast",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 21,
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html",
+      "title": "WCAG 2.2 \u2014 SC 2.3.3 Animation from Interactions",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 22,
+      "url": "https://git-scm.com/docs/git-diff",
+      "title": "Git \u2014 git-diff documentation",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 23,
+      "url": "https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html",
+      "title": "JetBrains \u2014 Configure keyboard shortcuts",
+      "accessed": "2026-11-22"
+    }
+  ]
+}

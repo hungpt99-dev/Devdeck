@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://criterion-rs.github.io/book/user_guide/analysis.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 2,
+      "url": "https://criterion-rs.github.io/book/user_guide/command_line_output.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 3,
+      "url": "https://docs.rs/criterion/latest/criterion/struct.Criterion.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 4,
+      "url": "https://github.com/sharkdp/hyperfine",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 5,
+      "url": "https://man.archlinux.org/man/extra/hyperfine/hyperfine.1.en",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 6,
+      "url": "https://kernel.org/doc/Documentation/accounting/psi.txt",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 7,
+      "url": "https://systemd.io/PRESSURE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 8,
+      "url": "https://perfwiki.github.io/main",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 9,
+      "url": "https://man7.org/linux/man-pages/man1/perf-stat.1.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 10,
+      "url": "https://man7.org/linux/man-pages/man1/perf-record.1.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 11,
+      "url": "https://docs.wasmtime.dev/security.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 12,
+      "url": "https://docs.wasmtime.dev/examples-interrupting-wasm.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 13,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/struct.Config.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 14,
+      "url": "https://perfetto.dev/docs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 15,
+      "url": "https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 16,
+      "url": "https://perfetto.dev/docs/instrumentation/track-events",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 17,
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/test/wpt",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 18,
+      "url": "https://learn.microsoft.com/en-us/windows/win32/etw/event-tracing-tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 19,
+      "url": "https://developer.apple.com/documentation/xcode/reducing-your-app-s-launch-time",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 20,
+      "url": "https://developer.apple.com/documentation/xcode/improving-your-app-s-performance",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 21,
+      "url": "https://tokio.rs/tokio/tutorial/channels",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 22,
+      "url": "https://rfd.shared.oxide.computer/rfd/0400",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 23,
+      "url": "https://docs.rs/wgpu/latest/wgpu/type.RequestAdapterOptions.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 24,
+      "url": "https://docs.rs/wgpu/latest/wgpu/struct.Instance.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 25,
+      "url": "https://github.com/alacritty/vtebench",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 26,
+      "url": "https://man7.org/linux/man-pages/man5/proc_pid_status.5.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 27,
+      "url": "https://www.man7.org/linux/man-pages/man5/proc_pid_statm.5.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 28,
+      "url": "https://web.dev/articles/rail",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 29,
+      "url": "https://doc.rust-lang.org/cargo/reference/profiles.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    }
+  ]
+}

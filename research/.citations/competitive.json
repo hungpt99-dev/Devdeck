@@ -1,0 +1,1013 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://github.com/zed-industries/zed",
+      "title": "Zed GitHub repository",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 2,
+      "url": "https://zed.dev/software-overview",
+      "title": "Zed software overview",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 3,
+      "url": "https://github.com/zed-industries/zed/blob/main/LICENSE-GPL",
+      "title": "Zed GPL license",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 4,
+      "url": "https://github.com/microsoft/vscode",
+      "title": "VS Code GitHub repository",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 5,
+      "url": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+      "title": "VS Code license",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 6,
+      "url": "https://www.jetbrains.com/store",
+      "title": "JetBrains store pricing",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 7,
+      "url": "https://www.jetbrains.com/all",
+      "title": "JetBrains All Products Pack",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 8,
+      "url": "https://docker.com/pricing",
+      "title": "Docker pricing",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 9,
+      "url": "https://docs.docker.com/subscription/desktop-license",
+      "title": "Docker Desktop license",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 10,
+      "url": "https://dbeaver.io/about",
+      "title": "DBeaver about",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 11,
+      "url": "https://github.com/dbeaver/dbeaver/blob/HEAD/LICENSE.md",
+      "title": "DBeaver license",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 12,
+      "url": "https://www.postman.com/pricing",
+      "title": "Postman pricing",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 13,
+      "url": "https://dev.gitkraken.com/pricing",
+      "title": "GitKraken pricing",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 14,
+      "url": "https://github.com/Devolutions/UniGetUI",
+      "title": "UniGetUI GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 15,
+      "url": "https://github.com/Devolutions/UniGetUI/blob/HEAD/LICENSE",
+      "title": "UniGetUI license",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 16,
+      "url": "https://mise.jdx.dev",
+      "title": "mise official site",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 17,
+      "url": "https://github.com/loft-sh/devpod/blob/main/LICENSE",
+      "title": "DevPod license",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 18,
+      "url": "https://devpod.sh/docs/what-is-devpod",
+      "title": "DevPod docs what is",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 19,
+      "url": "https://github.com/gni/devcat",
+      "title": "DevCat GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 20,
+      "url": "https://lib.rs/crates/devcat",
+      "title": "DevCat crates listing",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 21,
+      "url": "https://zed.dev",
+      "title": "Zed official homepage",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 22,
+      "url": "https://raw.githubusercontent.com/zed-industries/zed/main/LICENSE-GPL",
+      "title": "Zed GPL license text",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 23,
+      "url": "https://code.visualstudio.com/docs/supporting/faq",
+      "title": "VS Code official FAQ",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 24,
+      "url": "https://raw.githubusercontent.com/microsoft/vscode/main/package.json",
+      "title": "VS Code package.json",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 25,
+      "url": "https://www.jetbrains.com/idea/buy",
+      "title": "IntelliJ IDEA buy page",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 26,
+      "url": "https://www.jetbrains.com/help/idea/licensing.html",
+      "title": "JetBrains licensing help",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 27,
+      "url": "https://www.docker.com/pricing/faq",
+      "title": "Docker pricing FAQ",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 28,
+      "url": "https://dbeaver.io/product",
+      "title": "DBeaver product page",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 29,
+      "url": "https://dbeaver.com",
+      "title": "DBeaver commercial site",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 30,
+      "url": "https://github.com/DODOEX/ChainPilot",
+      "title": "GitHub - DODOEX/ChainPilot",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 31,
+      "url": "https://jotrorox.github.io/dodo/installation",
+      "title": "Install Dodo · Dodo",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 32,
+      "url": "https://github.com/dodopayments/dodopayments-rust",
+      "title": "GitHub - dodopayments/dodopayments-rust: The official Rust library for the Dodo",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 33,
+      "url": "https://github.com/orgs/dodopayments/repositories?language=rust&type=all",
+      "title": "Dodo Payments",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 34,
+      "url": "https://awesome.ecosyste.ms/projects/github.com%2Foksure%2Fdodo",
+      "title": "Ecosyste.ms: Awesome",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 35,
+      "url": "https://docs.rs/dodo/latest",
+      "title": "dodo - Rust",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 36,
+      "url": "https://dodopayments.com/downloads",
+      "title": "Download Dodo Payments — Desktop & Mobile Apps | Dodo Payments",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 37,
+      "url": "https://github.com/dodopayments/dodo-desktop/blob/main/README.md",
+      "title": "README.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 38,
+      "url": "https://docs.dodopayments.com/features/mobile-app",
+      "title": "Mobile & Desktop Apps",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 39,
+      "url": "https://github.com/MrGru/dodo",
+      "title": "MrGru/dodo",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 40,
+      "url": "https://www.linkedin.com/posts/aagarwal1012_dodo-payments-now-has-a-desktop-app-available-activity-7454439157222789120-yl2l",
+      "title": "Dodo Payments now has a desktop app. Available on macOS, Windows, and Linux. | A",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 41,
+      "url": "https://paymentreview.com/reviews/dodo-payments",
+      "title": "Dodo Payments Review",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 42,
+      "url": "https://docs.dodopayments.com/developer-resources/sdks/cli",
+      "title": "Dodo CLI",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 43,
+      "url": "https://github.com/jonnyparris/dodo",
+      "title": "GitHub - jonnyparris/dodo: Autonomous coding agent on Cloudflare Workers + Durab",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 44,
+      "url": "https://github.com/dodopayments/dodopayments-cli",
+      "title": "GitHub - dodopayments/dodopayments-cli: Official Dodo Payments CLI — manage paym",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 45,
+      "url": "https://dodopayments.mintlify.app/developer-resources/sdks/cli",
+      "title": "Dodo CLI",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 46,
+      "url": "https://docs.dodopayments.com/introduction",
+      "title": "Welcome to Dodo Payments",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 47,
+      "url": "https://gpui-kit.com/apps/dodo",
+      "title": "Dodo — GPUI Kit",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 48,
+      "url": "https://docs.rs/devcat",
+      "title": "Docs.rs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 49,
+      "url": "https://medium.com/@luci/your-ai-development-workflow-deserves-a-better-scratchpad-5f3d9ea3acf4",
+      "title": "Your AI Development Workflow Deserves a Better Scratchpad",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 50,
+      "url": "https://awesome.ecosyste.ms/projects/github.com%2Fgni%2Fdevcat",
+      "title": "Ecosyste.ms: Awesome",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 51,
+      "url": "https://github.com/topics/developpement?l=rust",
+      "title": "developpement · GitHub Topics · GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 52,
+      "url": "https://github.com/Jotrorox/dodo",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 53,
+      "url": "https://raw.githubusercontent.com/gni/devcat/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 54,
+      "url": "https://raw.githubusercontent.com/jdx/mise/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 55,
+      "url": "https://raw.githubusercontent.com/Devolutions/UniGetUI/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 56,
+      "url": "https://raw.githubusercontent.com/loft-sh/devpod/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 57,
+      "url": "https://api.github.com/repos/zed-industries/zed",
+      "title": "GitHub API metadata zed-industries/zed",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 58,
+      "url": "https://api.github.com/repos/microsoft/vscode",
+      "title": "GitHub API metadata microsoft/vscode",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 59,
+      "url": "https://api.github.com/repos/JetBrains/intellij-community",
+      "title": "GitHub API metadata JetBrains/intellij-community",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 60,
+      "url": "https://api.github.com/repos/docker/docker",
+      "title": "GitHub API metadata docker/docker",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 61,
+      "url": "https://api.github.com/repos/docker/desktop",
+      "title": "GitHub API metadata docker/desktop",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 62,
+      "url": "https://api.github.com/repos/dbeaver/dbeaver",
+      "title": "GitHub API metadata dbeaver/dbeaver",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 63,
+      "url": "https://api.github.com/repos/postmanlabs/postman-app-support",
+      "title": "GitHub API metadata postmanlabs/postman-app-support",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 64,
+      "url": "https://api.github.com/repos/Devolutions/UniGetUI",
+      "title": "GitHub API metadata Devolutions/UniGetUI",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 65,
+      "url": "https://api.github.com/repos/jdx/mise",
+      "title": "GitHub API metadata jdx/mise",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 66,
+      "url": "https://api.github.com/repos/loft-sh/devpod",
+      "title": "GitHub API metadata loft-sh/devpod",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 67,
+      "url": "https://api.github.com/repos/gni/devcat",
+      "title": "GitHub API metadata gni/devcat",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 68,
+      "url": "https://api.github.com/repos/helix-editor/helix",
+      "title": "GitHub API metadata helix-editor/helix",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 69,
+      "url": "https://api.github.com/repos/lapce/lapce",
+      "title": "GitHub API metadata lapce/lapce",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 70,
+      "url": "https://api.github.com/repos/zellij-org/zellij",
+      "title": "GitHub API metadata zellij-org/zellij",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 71,
+      "url": "https://api.github.com/repos/extrawurst/gitui",
+      "title": "GitHub API metadata extrawurst/gitui",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 72,
+      "url": "https://api.github.com/repos/atuinsh/atuin",
+      "title": "GitHub API metadata atuinsh/atuin",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 73,
+      "url": "https://api.github.com/repos/starship/starship",
+      "title": "GitHub API metadata starship/starship",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 74,
+      "url": "https://api.github.com/repos/nushell/nushell",
+      "title": "GitHub API metadata nushell/nushell",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 75,
+      "url": "https://api.github.com/repos/longbridge/gpui-kit",
+      "title": "GitHub API metadata longbridge/gpui-kit",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 76,
+      "url": "https://github.com/longbridge/gpui-kit",
+      "title": "longbridge/gpui-kit",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 77,
+      "url": "https://crates.io/crates/gpui-kit",
+      "title": "gpui-kit",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 78,
+      "url": "https://github.com/longbridge/gpui-kit/releases/tag/v0.9.1",
+      "title": "v0.9.1",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 79,
+      "url": "https://github.com/longbridge/gpui-kit/blob/main/skills/gpui-kit/references/usage.md",
+      "title": "skills/gpui-kit/references/usage.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 80,
+      "url": "https://github.com/mesa-hills-research/gpui_kit/blob/main/website/shell/api.md",
+      "title": "gpui_kit/website/shell/api.md at main · mesa-hills-research/gpui_kit · GitH",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 81,
+      "url": "https://github.com/cortexkit/gpui-kit/blob/cortexkit/website/shell/api.md",
+      "title": "gpui-kit/website/shell/api.md at cortexkit · cortexkit/gpui-kit · GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 82,
+      "url": "https://github.com/longbridge/gpui-kit/blob/main/website/shell/api.md",
+      "title": "gpui-kit/website/shell/api.md at main · longbridge/gpui-kit · GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 83,
+      "url": "https://github.com/longbridge/gpui-kit/blob/main/docs/ARCHITECTURE.md",
+      "title": "gpui-kit/docs/ARCHITECTURE.md at main · longbridge/gpui-kit · GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 84,
+      "url": "https://github.com/longbridge/gpui-kit/releases/tag/v0.6.0",
+      "title": "Release v0.6.0 · longbridge/gpui-kit · GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 85,
+      "url": "https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use",
+      "title": "WebStorm and Rider Are Now Free for Non-Commercial Use - The JetBrains Blog",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 86,
+      "url": "https://blog.jetbrains.com/idea/2025/12/intellij-idea-unified-release",
+      "title": "The Unified IntelliJ IDEA: More Free Features, a Better Experience, Smoothe",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 87,
+      "url": "https://dotnetfoundation.org/news-events/detail/jetbrains-supports-.net-open-source-developers-with-free-non-commercial-licenses",
+      "title": "JetBrains Supports .NET Open-Source Developers With Free Non-Commercial Lic",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 88,
+      "url": "https://lp.jetbrains.com/intellij-idea-unified-faq",
+      "title": "Introducing The Unified IntelliJ IDEA | FAQ",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 89,
+      "url": "https://sales.jetbrains.com/hc/en-gb/articles/360021922640-Can-I-use-free-versions-of-IntelliJ-IDEA-and-PyCharm-for-developing-commercial-proprietary-software",
+      "title": "Can I use free versions of IntelliJ IDEA and PyCharm for developing commerc",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 90,
+      "url": "https://blog.postman.com/spotlight-on-engineering-kamalakannan",
+      "title": "Spotlight on Engineering: Kamalakannan",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 91,
+      "url": "https://blog.postman.com/going-native",
+      "title": "Going native",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 92,
+      "url": "https://blog.postman.com/spotlight-on-engineering-samvelraja-sakthivel",
+      "title": "Spotlight on Engineering: SamvelRaja Sakthivel",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 93,
+      "url": "https://blog.postman.com/2016/10/21/postman-linux-app-now-available",
+      "title": "Postman Linux App Now Available - Postman Blog",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 94,
+      "url": "https://community.postman.com/t/what-browser-is-used-by-the-postman-app/56490",
+      "title": "What Browser is used by the postman app?",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 95,
+      "url": "https://www.gitkraken.com/blog/gitkraken-git-gui-client-mac-windows-linux",
+      "title": "GitKraken: The New Git Client that Unleashes Devs’ Repos",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 96,
+      "url": "https://www.gitkraken.com/blog/5-electron-apps",
+      "title": "5 Electron Apps You Need to Try",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 97,
+      "url": "https://www.gitkraken.com/blog/gitkraken-client-v8-3",
+      "title": "GitKraken Client v8.3 Release - Now 2x Faster for Apple Silicon Users",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 98,
+      "url": "https://www.gitkraken.com/blog/nodegit-libgit2",
+      "title": "How NodeGit and libgit2 Power GitKraken | Free Git GUI Download",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 99,
+      "url": "https://www.gitkraken.com/blog/farewell-nodegit-from-gitkraken-desktop",
+      "title": "Farewell, NodeGit: GitKraken Desktop Now Runs on Core Git",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 100,
+      "url": "https://www.docker.com/products/docker-desktop",
+      "title": "Docker Desktop: The #1 Containerization Tool for Developers | Docker",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 101,
+      "url": "https://docs.docker.com/extensions/extensions-sdk/build/frontend-extension-tutorial.md",
+      "title": "Create an advanced frontend extension",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 102,
+      "url": "https://docs.docker.com/desktop",
+      "title": "Docker Desktop",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 103,
+      "url": "https://www.docker.com/blog/the-magic-behind-the-scenes-of-docker-desktop",
+      "title": "The Magic Behind the Scenes of Docker Desktop | Docker",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 104,
+      "url": "https://docs.docker.com/extensions/extensions-sdk/build/frontend-extension-tutorial",
+      "title": "Create an advanced frontend extension | Docker Docs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 105,
+      "url": "https://api.github.com/repos/zed-industries/zed/releases?per_page=1",
+      "title": "Latest GitHub release zed-industries/zed",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 106,
+      "url": "https://api.github.com/repos/microsoft/vscode/releases?per_page=1",
+      "title": "Latest GitHub release microsoft/vscode",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 107,
+      "url": "https://api.github.com/repos/dbeaver/dbeaver/releases?per_page=1",
+      "title": "Latest GitHub release dbeaver/dbeaver",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 108,
+      "url": "https://api.github.com/repos/jdx/mise/releases?per_page=1",
+      "title": "Latest GitHub release jdx/mise",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 109,
+      "url": "https://api.github.com/repos/Devolutions/UniGetUI/releases?per_page=1",
+      "title": "Latest GitHub release Devolutions/UniGetUI",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 110,
+      "url": "https://api.github.com/repos/loft-sh/devpod/releases?per_page=1",
+      "title": "Latest GitHub release loft-sh/devpod",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 111,
+      "url": "https://api.github.com/repos/gni/devcat/releases?per_page=1",
+      "title": "Latest GitHub release gni/devcat",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 112,
+      "url": "https://api.github.com/repos/helix-editor/helix/releases?per_page=1",
+      "title": "Latest GitHub release helix-editor/helix",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 113,
+      "url": "https://api.github.com/repos/longbridge/gpui-kit/releases?per_page=1",
+      "title": "Latest GitHub release longbridge/gpui-kit",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 114,
+      "url": "https://api.github.com/repos/JetBrains/intellij-community/releases?per_page=1",
+      "title": "Latest GitHub release JetBrains/intellij-community",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 115,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit/main/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 116,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit/main/LICENSE",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 117,
+      "url": "https://github.com/Devolutions/UniGetUI/blob/main/README.md",
+      "title": "README.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 118,
+      "url": "https://github.com/Devolutions/UniGetUI/blob/main/docs/CLI.md",
+      "title": "docs/CLI.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 119,
+      "url": "https://github.com/marticliment/UniGetUI/releases/tag/3.1.0",
+      "title": "UniGetUI 3.1.0",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 120,
+      "url": "https://deepwiki.com/marticliment/UniGetUI",
+      "title": "marticliment/UniGetUI | DeepWiki",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 121,
+      "url": "https://github.com/Devolutions/UniGetUI/blob/main/UniGetUI.iss",
+      "title": "UniGetUI.iss",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 122,
+      "url": "https://survey.stackoverflow.co/2025?lid=pk3t0pnb051z",
+      "title": "2025 Stack Overflow Developer Survey",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 123,
+      "url": "https://visualstudiomagazine.com/articles/2025/08/01/stack-overflow-dev-survey-visual-studio-vs-code-hold-of-ai-ides-to-remain-on-top.aspx",
+      "title": "Stack Overflow Dev Survey: Visual Studio, VS Code Hold Off AI IDEs to",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 124,
+      "url": "https://survey.stackoverflow.co/2025/technology",
+      "title": "Technology | 2025 Stack Overflow Developer Survey",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 125,
+      "url": "https://stackoverflow.blog/2025/08/01/diving-into-the-results-of-the-2025-developer-survey?lid=drihiki0rm4n",
+      "title": "Diving into the results of the 2025 Developer Survey - Stack Overflow",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 126,
+      "url": "https://visualstudiomagazine.com/Articles/2025/08/01/Stack-Overflow-Dev-Survey-Visual-Studio-VS-Code-Hold-of-AI-IDEs-to-Remain-on-Top.aspx",
+      "title": "Stack Overflow Dev Survey: Visual Studio, VS Code Hold Off AI IDEs to",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 127,
+      "url": "https://zed.dev/pricing",
+      "title": "Pricing",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 128,
+      "url": "https://github.com/zed-industries/zed/blob/main/docs/src/account/plans-and-pricing.md",
+      "title": "zed/docs/src/account/plans-and-pricing.md at main · zed-industries/zed",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 129,
+      "url": "https://zed.dev/education",
+      "title": "Zed Pro, free for students",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 130,
+      "url": "https://finderatlas.com/tools/zed",
+      "title": "Zed: Pricing, Features & Alternatives",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 131,
+      "url": "https://origotech.dev/tools/zed",
+      "title": "Zed · OrigoTech",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 132,
+      "url": "https://jetbrains.com/help/idea/get-started-with-kotlin.html",
+      "title": "Get started with Kotlin | IntelliJ IDEA",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 133,
+      "url": "https://plugins.jetbrains.com/docs/intellij/using-kotlin.html",
+      "title": "Configuring Kotlin Support | IntelliJ Platform Plugin SDK",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 134,
+      "url": "https://jetbrains.com/help/idea/2026.2/discover-intellij-idea.html.md",
+      "title": "jetbrains.com/help/idea/2026.2/discover-intellij-idea.html.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 135,
+      "url": "https://jetbrains.com/help/idea/get-started-with-kotlin.html.md",
+      "title": "jetbrains.com/help/idea/get-started-with-kotlin.html.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 136,
+      "url": "https://jetbrains.com/help/idea/2026.3/create-your-first-kotlin-app.html",
+      "title": "Tutorial: Create your first Kotlin application | IntelliJ IDEA",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 137,
+      "url": "https://github.com/dbeaver/dbeaver/wiki/Develop-in-Eclipse",
+      "title": "Develop in Eclipse · dbeaver/dbeaver Wiki · GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 138,
+      "url": "https://github.com/dbeaver/dbeaver",
+      "title": "dbeaver/dbeaver",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 139,
+      "url": "https://github.com/dbeaver/dbeaver/blob/devel/README.md",
+      "title": "README.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 140,
+      "url": "https://github.com/dbeaver/dbeaver/wiki/Build-from-sources",
+      "title": "Build from sources · dbeaver/dbeaver Wiki · GitHub",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 141,
+      "url": "https://github.com/dbeaver/dbeaver/blob/devel/AGENTS.md",
+      "title": "AGENTS.md",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 142,
+      "url": "https://api.github.com/repos/longbridge/gpui-kit-showcases/contents/apps/dodo",
+      "title": "Dodo showcase app files",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 143,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit-showcases/main/apps/dodo/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 144,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit-showcases/main/apps/dodo/manifest.json",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 145,
+      "url": "https://raw.githubusercontent.com/dbeaver/dbeaver/devel/README.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 146,
+      "url": "https://api.github.com/repos/MrGru/dodo",
+      "title": "API https://api.github.com/repos/MrGru/dodo",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 147,
+      "url": "https://crates.io/api/v1/crates/gpui-kit",
+      "title": "API https://crates.io/api/v1/crates/gpui-kit",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 148,
+      "url": "https://crates.io/api/v1/crates/gpui",
+      "title": "API https://crates.io/api/v1/crates/gpui",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 149,
+      "url": "https://api.github.com/repos/zed-industries/zed/contents/crates/gpui",
+      "title": "API https://api.github.com/repos/zed-industries/zed/contents/crates/gpui",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 150,
+      "url": "https://api.github.com/repos/Devolutions/UniGetUI/contents/src",
+      "title": "UniGetUI src listing",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 151,
+      "url": "https://raw.githubusercontent.com/Devolutions/UniGetUI/main/src/UniGetUI.Avalonia/UniGetUI.Avalonia.csproj",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 152,
+      "url": "https://raw.githubusercontent.com/longbridge/gpui-kit/main/crates/gpui-kit/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 153,
+      "url": "https://raw.githubusercontent.com/zed-industries/zed/main/crates/gpui/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 154,
+      "url": "https://devolutions.net/blog/2026/03/unigetui-enters-its-next-chapter-with-devolutions",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 155,
+      "url": "https://dbeaver.com/edition",
+      "title": "Compare DBeaver Products & Pricing - DBeaver Enterprise, Lite",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 156,
+      "url": "https://dbeaver.com/feed",
+      "title": "DBeaver PRO | Manage 100+ Databases in One Place",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 157,
+      "url": "https://inletdb.com/compare/dbeaver",
+      "title": "Inlet vs DBeaver",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 158,
+      "url": "https://codewithsql.com/compare/dbeaver-community-vs-dbeaver-pro",
+      "title": "DBeaver Community vs PRO: Editions Compared (2026)",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 159,
+      "url": "https://queryglow.com/blog/dbeaver-sql-client",
+      "title": "Best DBeaver Alternatives 2026 for Web-Based SQL Access - DBeaver",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 160,
+      "url": "https://pluginstats.com/companies/microsoft",
+      "title": "Microsoft plugins & extensions — 224 listings across 9 marketplac",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 161,
+      "url": "https://pluginstats.com/marketplaces/vscode",
+      "title": "Best VS Code extensions (2026) — ranked by installs",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 162,
+      "url": "https://vester.si/ai-impact/vscode",
+      "title": "GitHub Copilot installs on VS Code: 74.7M, +25.8M in yr | AI Impa",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 163,
+      "url": "https://github.com/sujeito-operator/vscode-marketplace-data/blob/main/README.md",
+      "title": "vscode-marketplace-data/README.md at main · sujeito-operator/vsco",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 164,
+      "url": "https://testmuai.com/blog/best-vs-code-extensions",
+      "title": "21 Best VS Code Extensions for 2026, by Category",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 165,
+      "url": "https://help.gitkraken.com/gk-dev/gk-dev-subscription",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 166,
+      "url": "https://code.visualstudio.com",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 167,
+      "url": "https://www.gitkraken.com/pricing-c",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 168,
+      "url": "https://learning.postman.com/docs/billing/about-plans",
+      "title": "Postman plans documentation",
+      "accessed": "2026-11-22"
+    }
+  ]
+}

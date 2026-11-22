@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://crates.io/api/v1/crates/slint",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 2,
+      "url": "https://crates.io/api/v1/crates/iced",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 3,
+      "url": "https://crates.io/api/v1/crates/gpui",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 4,
+      "url": "https://docs.rs/slint/1.19.0/slint",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 5,
+      "url": "https://github.com/slint-ui/slint/blob/master/LICENSE.md",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "You can use the Slint framework under ***any*** of the following licenses, at your choice:",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://github.com/slint-ui/slint/blob/master/FAQ.md",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "The Royalty-free license is free for desktop, mobile, and web, as long as you show the Slint attribution.",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": "https://slint.dev/faqs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 8,
+      "url": "https://github.com/iced-rs/iced",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 9,
+      "url": "https://gpui.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 10,
+      "url": "https://docs.slint.dev/latest/docs/rust/slint/docs/cargo_features",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "selects the winit backend with the software renderer",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "url": "https://docs.slint.dev/latest/docs/slint/guide/backends-and-renderers/backend_winit",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "The Winit backend supports practically all relevant operating systems and windowing systems, including macOS, Windows, Linux with Wayland and X11.",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "url": "https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/textedit",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 13,
+      "url": "https://docs.slint.dev/latest/docs/slint/reference/keyboard-input/textinput",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 14,
+      "url": "https://github.com/slint-ui/slint/blob/master/docs/development/input-event-system.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 15,
+      "url": "https://crates.io/api/v1/crates/slint/1.19.0",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "\"license\":\"GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0\"",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "url": "https://docs.rs/crate/slint/1.19.0/features",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 17,
+      "url": "https://docs.rs/slint/1.19.0/slint/docs/cargo_features/index.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 18,
+      "url": "https://github.com/slint-ui/slint/blob/v1.19.0/internal/core/textlayout/shaping.rs",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "impl TextShaper for &rustybuzz::Face<'_>",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "url": "https://github.com/slint-ui/slint/blob/v1.19.0/internal/core/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 20,
+      "url": "https://github.com/iced-rs/iced/blob/0.14.0/core/src/input_method.rs",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "runtime will display it as an overlay (i.e. \"Over-the-spot IME\").",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "url": "https://github.com/zed-industries/zed/blob/main/crates/gpui/README.md",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "GPUI is still in active development as we work on the Zed code editor, and is still pre-1.0.",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "url": "https://github.com/zed-industries/zed/blob/main/crates/gpui/src/_accessibility.rs",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "GPUI integrates with [AccessKit] to provide programmatic accessibility",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "url": "https://slint.dev/blog/slint-1.14-released",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "we've unified everything behind the Fontique and Parley crates",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "url": "https://docs.rs/iced/0.14.0/iced/advanced/widget/trait.Widget.html",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "pub trait Widget<Message, Theme, Renderer>",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "url": "https://github.com/iced-rs/iced/pull/3111",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "draft: Accesskit integration",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "url": "https://github.com/slint-ui/slint/issues/4698",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 27,
+      "url": "https://github.com/slint-ui/slint/pull/14292",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 28,
+      "url": "https://github.com/zed-industries/zed/discussions/57066",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 29,
+      "url": "https://github.com/zed-industries/zed/discussions/50972",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 30,
+      "url": "https://docs.slint.dev/latest/docs/slint/guide/language/custom_controls",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 31,
+      "url": "https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/listview",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 32,
+      "url": "https://docs.slint.dev/latest/docs/slint/reference/std-widgets/views/tableview",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 33,
+      "url": "https://docs.rs/gpui/0.2.2/gpui/trait.Render.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 34,
+      "url": "https://crates.io/api/v1/crates/iced/0.14.0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 35,
+      "url": "https://zed.dev/features/terminal",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 36,
+      "url": "https://github.com/pop-os/cosmic-text/blob/0.15.0/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "harfrust = { version = \"0.3.1\", default-features = false }",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "url": "https://github.com/iced-rs/iced/blob/0.14.0/graphics/Cargo.toml",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 38,
+      "url": "https://book.iced.rs/philosophy.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 39,
+      "url": "https://docs.rs/cosmic-text/0.15.0/cosmic_text/struct.Buffer.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 40,
+      "url": "https://github.com/slint-ui/slint/blob/v1.19.0/internal/core/input.rs",
+      "title": "",
+      "accessed": "2026-11-22",
+      "quotes": [
+        {
+          "text": "The input method updates the currently composed text.",
+          "added": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "url": "https://github.com/iced-rs/iced/issues/552",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 42,
+      "url": "https://docs.rs/crate/gpui/0.2.2/source/src/platform/linux/x11/xim_handler.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 43,
+      "url": "https://docs.rs/crate/gpui/0.2.2/source/examples/input.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 44,
+      "url": "https://docs.rs/crate/i-slint-core/1.19.0/source/textlayout/shaping.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 45,
+      "url": "https://zed.dev/docs/terminal",
+      "title": "",
+      "accessed": "2026-11-22"
+    }
+  ]
+}

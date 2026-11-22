@@ -4,3 +4,6 @@
 *.log
 .DS_Store
 .spikes-target/
+
+spikes/*/target/
+research/spikes/*/target/

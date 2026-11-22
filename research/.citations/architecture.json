@@ -1,0 +1,851 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 2,
+      "url": "https://component-model.bytecodealliance.org/design/wit.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 3,
+      "url": "https://component-model.bytecodealliance.org/design/worlds.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 4,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/macro.bindgen.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 5,
+      "url": "https://docs.wasmtime.dev/examples-interrupting-wasm.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 6,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/struct.Config.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 7,
+      "url": "https://docs.wasmtime.dev/api/src/wasmtime/runtime/store.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 8,
+      "url": "https://docs.wasmtime.dev/examples-deterministic-wasm-execution.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 9,
+      "url": "https://docs.rs/tokio/latest/tokio/task/fn.spawn_blocking.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 10,
+      "url": "https://docs.rs/tokio/latest/tokio%20/task/fn.spawn_blocking.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 11,
+      "url": "https://docs.rs/tokio/latest/tokio/task",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 12,
+      "url": "https://docs.rs/tokio/latest/src/tokio/task/blocking.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 13,
+      "url": "https://docs.rs/crate/iced/latest/features",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 14,
+      "url": "https://users.rust-lang.org/t/rust-iced-tokio-problem-with-async-function/139222/2",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 15,
+      "url": "https://github.com/iced-rs/iced",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 16,
+      "url": "https://stackoverflow.com/questions/79903204/how-to-upgrade-code-from-rust-iced-0-12-to-iced-0-14",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 17,
+      "url": "https://microsoft.github.io/language-server-protocol/specification",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 18,
+      "url": "https://github.com/microsoft/language-server-protocol/blob/main/indexFormat/specification.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 19,
+      "url": "https://github.com/Microsoft/language-server-protocol/blob/gh-pages/_specifications/specification-3-14.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 20,
+      "url": "https://microsoft.github.io/language-server-protocol",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 21,
+      "url": "https://microsoft.github.io/debug-adapter-protocol",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 22,
+      "url": "https://github.com/microsoft/debug-adapter-protocol/blob/main/specification.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 23,
+      "url": "https://github.com/microsoft/debug-adapter-protocol",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 24,
+      "url": "https://github.com/Microsoft/debug-adapter-protocol/blob/gh-pages/debugAdapterProtocol.json",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 25,
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 26,
+      "url": "https://modelcontextprotocol.io/docs/concepts/tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 27,
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/schema",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 28,
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/schema/2026-07-28/schema.ts",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 29,
+      "url": "https://docs.rs/portable-pty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 30,
+      "url": "https://crates.io/crates/portable-pty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 31,
+      "url": "https://lib.rs/crates/portable-pty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 32,
+      "url": "https://github.com/wez/wezterm/tree/main/pty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 33,
+      "url": "https://alacritty.org",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 34,
+      "url": "https://alacritty.org/config-alacritty.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 35,
+      "url": "https://github.com/alacritty/alacritty",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 36,
+      "url": "https://www.reddit.com/r/archlinux/comments/19bdt8i/how_well_documented_is_alacritty_i_cant_find_much",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 37,
+      "url": "https://emacs-tree-sitter.github.io/api/parsing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 38,
+      "url": "https://github.com/tree-sitter/tree-sitter/blob/master/docs/src/using-parsers/3-advanced-parsing.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 39,
+      "url": "https://gist.github.com/dmnkhorvath/9e74bed01f0fa2557a6b6e2708905d6b",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 40,
+      "url": "https://gotreesitter.m31labs.dev/docs/incremental-parsing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 41,
+      "url": "https://github.com/gitoxidelabs/gitoxide",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 42,
+      "url": "https://rustutils.com/tools/gitoxide",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 43,
+      "url": "https://crates.io/crates/gitoxide/0.5.0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 44,
+      "url": "https://lobste.rs/s/3skmql/gitoxide_pure_rust_implementation_git",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 45,
+      "url": "https://docs.rs/git2/latest/git2",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 46,
+      "url": "https://github.com/rust-lang/git2-rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 47,
+      "url": "https://crates.io/crates/git2/0.10.2/code",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 48,
+      "url": "https://www.reddit.com/r/rust/comments/1gshlja/how_to_use_git_in_a_rust_application",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 49,
+      "url": "https://docs.rs/sqlx/latest/sqlx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 50,
+      "url": "https://docs.rs/sqlx_wasi",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 51,
+      "url": "https://docs.rs/crate/sqlx/latest",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 52,
+      "url": "https://crates.io/crates/sqlx",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 53,
+      "url": "https://docs.rs/rusqlite/latest/rusqlite",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 54,
+      "url": "https://docs.rs/crate/rusqlite/latest",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 55,
+      "url": "https://docs.rs/rusqlite/latest/rusqlite/struct.Connection.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 56,
+      "url": "https://docs.rs/crate/rusqlite/latest/source",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 57,
+      "url": "https://docs.rs/bollard",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 58,
+      "url": "https://crates.io/crates/bollard",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 59,
+      "url": "https://docs.rs/bollard-next",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 60,
+      "url": "https://docs.rs/bollard/latest/bollard/struct.Docker.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 61,
+      "url": "https://docs.rs/schemars/latest/schemars/derive.JsonSchema.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 62,
+      "url": "https://docs.rs/schemars/latest/schemars/trait.JsonSchema.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 63,
+      "url": "https://docs.rs/schemars/latest/schemars",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 64,
+      "url": "https://docs.rs/schemars/latest/schemars?search=JsonSchema_repr",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 65,
+      "url": "https://lucioduran.com/blog/capability-based-security-wasi-preview2",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 66,
+      "url": "https://systemshardening.com/articles/wasm/wasi-preview-2-capabilities",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 67,
+      "url": "https://wasi.dev/security",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 68,
+      "url": "https://github.com/golang/go/issues/65333",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 69,
+      "url": "https://github.com/WebAssembly/component-model/blob/main/design/mvp/CanonicalABI.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 70,
+      "url": "https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 71,
+      "url": "https://component-model.bytecodealliance.org/design/component-model-concepts.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 72,
+      "url": "https://component-model.bytecodealliance.org/advanced/canonical-abi.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 73,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/index.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 74,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/struct.Store.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 75,
+      "url": "https://github.com/bytecodealliance/wasmtime/issues/6848",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 76,
+      "url": "https://docs.rs/wasmtime",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 77,
+      "url": "https://www.jsonrpc.org/specification",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 78,
+      "url": "https://www.jsonrpc.org/historical/json-rpc-2-0.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 79,
+      "url": "https://json-rpc.org/specification",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 80,
+      "url": "https://apiguide.dev/specifications/json-rpc",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 81,
+      "url": "https://docs.rs/tracing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 82,
+      "url": "https://docs.rs/log",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 83,
+      "url": "https://crates.io/crates/tracing",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 84,
+      "url": "https://docs.rs/tracing-subscriber",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 85,
+      "url": "https://docs.rs/landlock/latest/landlock",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 86,
+      "url": "https://docs.rs/crate/rstrict/latest",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 87,
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/crates/openshell-sandbox/src/sandbox/linux/landlock.rs",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 88,
+      "url": "https://docs.rs/ai-sandbox/latest/src/ai_sandbox/linux_sandbox/landlock.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 89,
+      "url": "https://doc.rust-lang.org/reference/linkage.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 90,
+      "url": "https://users.rust-lang.org/t/abi-stability-guarantee-of-dylib-vs-cdylib/50879",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 91,
+      "url": "https://users.rust-lang.org/t/what-is-the-difference-between-dylib-and-cdylib/28847",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 92,
+      "url": "https://internals.rust-lang.org/t/stability-of-dylibs-per-compiler-release/12648",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 93,
+      "url": "https://crates.io/crates/wasm-metadata/0.245.0",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 94,
+      "url": "https://crates.io/crates/wasmtime",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 95,
+      "url": "https://crates.io/crates/wasmtime-api",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 96,
+      "url": "https://crates.io/crates/wasmtime-types/15.0.1",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 97,
+      "url": "https://docs.rs/iced/latest/iced/trait.Application.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 98,
+      "url": "https://brianch.github.io/iced-twentyone-tutorial/subscription.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 99,
+      "url": "https://docs.rs/iced/latest/iced/struct.Subscription.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 100,
+      "url": "https://users.rust-lang.org/t/fs-rename-overwriting-existing-file/17314",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 101,
+      "url": "https://stackoverflow.com/questions/70947790/is-using-fsrename-to-move-files-between-different-file-systems-atomic",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 102,
+      "url": "https://github.com/rust-lang/libs-team/issues/131",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 103,
+      "url": "https://docs.rs/renamore",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 104,
+      "url": "https://www.sqlite.org/walformat.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 105,
+      "url": "https://sqlite.org/tempfiles.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 106,
+      "url": "https://sqlite.org/c3ref/wal_hook.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 107,
+      "url": "https://sqlite.org/fileformat.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 108,
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/stdio",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 109,
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/transports",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 110,
+      "url": "https://modelcontextprotocol.io/specification/draft/basic/transports",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 111,
+      "url": "https://ts.sdk.modelcontextprotocol.io/v2/api/@modelcontextprotocol/server/server/stdio.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 112,
+      "url": "https://docs.rs/semver",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 113,
+      "url": "https://doc.rust-lang.org/cargo/reference/semver.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 114,
+      "url": "https://rustprojectprimer.com/checks/semver.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 115,
+      "url": "https://www.reddit.com/r/rust/comments/n4ni2d/arent_many_rust_crates_abusing_semantic_versioning",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 116,
+      "url": "https://embarkstudios.github.io/cargo-deny/checks/licenses",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 117,
+      "url": "https://embarkstudios.github.io/cargo-deny/checks/licenses/cfg.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 118,
+      "url": "https://embarkstudios.github.io/cargo-deny/checks/licenses/diags.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 119,
+      "url": "https://embarkstudios.github.io/cargo-deny/checks/cfg.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 120,
+      "url": "https://doc.rust-lang.org/embedded-book/interoperability/rust-with-c.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 121,
+      "url": "https://doc.rust-lang.org/unstable-book/language-features/rustc-private.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 122,
+      "url": "https://doc.rust-lang.org/beta/nightly-rustc/src/rustc_codegen_ssa/back/link.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 123,
+      "url": "https://doc.rust-lang.org/reference/items/external-blocks.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 124,
+      "url": "https://component-model.bytecodealliance.org/design/packages.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 125,
+      "url": "https://component-model.bytecodealliance.org/language-support/building-a-simple-component/javascript.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 126,
+      "url": "https://component-model.bytecodealliance.org/composing-and-distributing/distributing.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 127,
+      "url": "https://docs.rs/iced/0.14.0/iced/trait.Executor.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 128,
+      "url": "https://docs.rs/iced/0.14.0/iced/application/struct.Application.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 129,
+      "url": "https://docs.rs/iced/0.14.0/src/iced/application.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 130,
+      "url": "https://docs.rs/iced/0.14.0/iced/application/fn.application.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 131,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/struct.Linker.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 132,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/struct.Component.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 133,
+      "url": "https://docs.wasmtime.dev/api/src/wasmtime/runtime/component/linker.rs.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 134,
+      "url": "https://docs.wasmtime.dev/api/wasmtime/component/struct.LinkerInstance.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 135,
+      "url": "https://modelcontextprotocol.io/specification/draft/server/tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 136,
+      "url": "https://ts.sdk.modelcontextprotocol.io/v2/migration/upgrade-to-v2.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 137,
+      "url": "https://ts.sdk.modelcontextprotocol.io/v2/servers/tools",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 138,
+      "url": "https://modelcontextprotocol.io/seps/2106-json-schema-2020-12",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 139,
+      "url": "https://docs.rs/iced/0.14.0/iced/trait.Application.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 140,
+      "url": "https://docs.rs/tokio/latest/tokio/runtime/struct.Runtime.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": 141,
+      "url": "https://doc.rust-lang.org/cargo/reference/workspaces.html",
+      "title": "",
+      "accessed": "2026-11-22"
+    }
+  ]
+}

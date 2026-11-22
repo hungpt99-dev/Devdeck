@@ -49,3 +49,10 @@ Last updated: 2026-11-22. Status-first summary: **Phase 0 and the Phase 1 slice 
 ## Next action
 
 Hosted CI is green. Next: start Phase 2: terminal (portable-pty + alacritty_terminal), task runner and extension-host MVP loading a WASM command/tool with permission enforcement and crash isolation.
+
+
+## Research & architecture initiative (2026-11-22)
+
+Ten independent research agents investigated OpenIDEA, Dodo, Navop, the competitive set, native UI frameworks (GPUI/Iced/Slint), modular architecture, tool-management orchestration, UX, PRD and performance. Their evidence lives in `research/` (3,527 lines; 635 unique sources consolidated in `research/.citations/master.json`; all 10 reports pass `sources.py verify`). The CEO synthesis and the 8 requested deliverables are in `blueprint/`, starting with `blueprint/00-ceo-recommendation.md`.
+
+Status: research and architecture are COMPLETE and awaiting review. No product code was changed; the implementation tree remains at `7929181`. Implementation must not start until the blueprint is reviewed and approved.
