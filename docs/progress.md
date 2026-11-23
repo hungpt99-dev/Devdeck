@@ -84,3 +84,8 @@ Exit criteria (all must have recorded evidence before Phase 3 starts):
 Explicitly out of scope for Phase 2 Foundation: WASM extension host, LSP/DAP, mise consent-gated install slice (Phase 4 Gate C), editor/Tree-sitter, Git essentials (Phase 3), Docker/DB/API client, agents/MCP, extension registry and updater (Phase 5+). No design-review gate is invented: Product/UX Lead approval is pending, so UI children carry their own spec/mockup notes and screenshot requirements only.
 
 Budget discipline: Tech Lead 2500 cents (0 spent), Developer 3000 (200 spent, 4 children), Art Director 1500 (0 spent, 3 children), QA 2000 (0 spent, reviewer only). All assigned agents are idle and under budget; no new agents were created (four hire approvals remain pending with the founder).
+
+## IND-213 terminal engine (2026-11-22)
+
+Implemented in `crates/terminal` on a dedicated branch from `main`: real PTY sessions (`portable-pty 0.9.0`), vte 0.15.0 grid with `rows + scrollback_lines` cap, bounded/coalesced tokio events, one shared redactor in `devdeck-audit`, and typed `terminal.spawn/write/resize/close` tools. `terminal.spawn` calls `devdeck_core::PermissionPolicy::decide`; dangerous commands return a decision and never auto-execute. Tests cover grid parsing/cap, redaction, policy decisions, localized missing-cwd errors, PTY lifecycle, idempotent resize/close and zero planted tokens in audit. en/vi bundles updated; no UI, task runner or approval dialog. Status: in review — founder human review (Security Lead not yet approved) and QA verdict still required; not done.
+

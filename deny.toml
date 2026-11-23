@@ -43,3 +43,9 @@ unknown-registry = "deny"
 unknown-git = "deny"
 allow-registry = ["https://github.com/rust-lang/crates.io-index"]
 allow-git = []
+
+# IND-213 justification: portable-pty 0.9.0 is MIT and vte 0.15.0 is
+# Apache-2.0 OR MIT (both already covered by `allow` above, no exception
+# needed). Both are exact-pinned in [workspace.dependencies]; portable-pty's
+# transitive set (nix, filedescriptor, serial2, shell-words, winapi) is likewise
+# permissive. `cargo deny check` passes with no new exceptions.
