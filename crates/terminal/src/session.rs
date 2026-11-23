@@ -146,8 +146,13 @@ impl Session {
             let event = if events == 0 {
                 self.events.recv().await
             } else {
-                match self.events.try_recv() {
-                    Ok(event) => Some(event),
+                // The reader runs on its own thread: an empty try_recv here does
+                // not mean EOF, only that the next chunk has not been queued yet.
+                // Wait briefly so a still-producing session is not truncated.
+                match tokio::time::timeout(std::time::Duration::from_millis(20), self.events.recv())
+                    .await
+                {
+                    Ok(event) => event,
                     Err(_) => break,
                 }
             };

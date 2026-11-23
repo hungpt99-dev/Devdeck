@@ -13,6 +13,6 @@ devdeck-tools = { workspace = true }
 devdeck-audit = { workspace = true }
 devdeck-i18n = { workspace = true }
 thiserror = { workspace = true }
-tokio = { workspace = true, features = ["macros"] }
+tokio = { workspace = true, features = ["macros", "time"] }
 portable-pty = { workspace = true }
 vte = { workspace = true }
