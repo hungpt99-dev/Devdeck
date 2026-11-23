@@ -100,6 +100,50 @@ fn default_max_parallel() -> u8 {
     4
 }
 
+/// File name of the versioned config stored inside each workspace. Keeping it
+/// in the project root makes tasks Git-friendly and prevents a run from
+/// picking up another project's commands.
+pub const WORKSPACE_CONFIG_FILE: &str = "devdeck.toml";
+
+/// Schema version of the workspace-scoped `devdeck.toml` config. It shares
+/// the v2 schema generation with the user-level [`AppConfig`] but has its own
+/// document: user preferences stay machine-local, tasks stay with the repo.
+pub const WORKSPACE_CONFIG_SCHEMA_VERSION: u32 = 2;
+
+/// Workspace-scoped task section of the v2 schema. A task is a name mapped to
+/// a plain shell command string. The command's cwd is always the workspace
+/// root that owns this file — a cwd is deliberately NOT a field here, so a
+/// config cannot redirect execution into another project.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(default)]
+pub struct WorkspaceConfig {
+    pub schema_version: u32,
+    #[serde(default)]
+    pub tasks: BTreeMap<String, String>,
+}
+
+impl Default for WorkspaceConfig {
+    fn default() -> Self {
+        Self {
+            schema_version: WORKSPACE_CONFIG_SCHEMA_VERSION,
+            tasks: BTreeMap::new(),
+        }
+    }
+}
+
+impl WorkspaceConfig {
+    /// Absolute path of the document inside `root`.
+    pub fn path_in(root: &Path) -> PathBuf {
+        root.join(WORKSPACE_CONFIG_FILE)
+    }
+
+    /// Reject a future schema version rather than downgrading it silently.
+    /// Returns the unsupported version so the caller can raise a typed error.
+    pub fn unsupported_version(&self) -> Option<u32> {
+        (self.schema_version > WORKSPACE_CONFIG_SCHEMA_VERSION).then_some(self.schema_version)
+    }
+}
+
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct AppConfig {
     pub schema_version: u32,
@@ -499,6 +543,25 @@ mod tests {
         let _ = fs::remove_dir_all(&dir);
         fs::create_dir_all(&dir).unwrap();
         dir
+    }
+
+    #[test]
+    fn workspace_v2_config_roundtrips_named_tasks() {
+        let raw = "schema_version = 2\n[tasks]\nbuild = \"cargo build\"\ntest = \"cargo test\"\n";
+        let config: WorkspaceConfig = toml::from_str(raw).unwrap();
+        assert_eq!(config.schema_version, WORKSPACE_CONFIG_SCHEMA_VERSION);
+        assert_eq!(config.tasks["build"], "cargo build");
+        assert_eq!(config.tasks["test"], "cargo test");
+        assert_eq!(config.unsupported_version(), None);
+        let future: WorkspaceConfig = toml::from_str("schema_version = 99\n").unwrap();
+        assert_eq!(future.unsupported_version(), Some(99));
+        let implicit: WorkspaceConfig =
+            toml::from_str("[tasks]\nlint = \"cargo clippy\"\n").unwrap();
+        assert_eq!(implicit.schema_version, WORKSPACE_CONFIG_SCHEMA_VERSION);
+        assert_eq!(
+            WorkspaceConfig::path_in(Path::new("/tmp/project")),
+            PathBuf::from("/tmp/project/devdeck.toml")
+        );
     }
 
     #[test]

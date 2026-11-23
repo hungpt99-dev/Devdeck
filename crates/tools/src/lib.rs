@@ -372,6 +372,83 @@ pub fn terminal_close_tool() -> ToolDefinition {
     tool
 }
 
+/// Input of `tasks.list`: only the workspace root; tasks always live in that
+/// project's `devdeck.toml`, never in a global or neighbouring project.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct TasksListInput {
+    /// Absolute path to the workspace root that owns `devdeck.toml`.
+    pub workspace: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct TasksListOutput {
+    /// Declared task names in stable (B-tree) order.
+    pub names: Vec<String>,
+}
+
+/// Input of `tasks.run`. The command is resolved from the workspace config by
+/// name; callers cannot inject an arbitrary command line. The cwd is the
+/// workspace root, enforced by the F3 terminal engine.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct TasksRunInput {
+    /// Absolute path to the workspace root that owns `devdeck.toml`.
+    pub workspace: String,
+    /// Name of the task declared in `[tasks]`.
+    pub task: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct TasksRunOutput {
+    pub task: String,
+    /// Exact command string read from the config and sent to the F3 session.
+    pub command: String,
+    /// Numeric exit status when the task completed, or `None` when it was
+    /// awaiting approval.
+    pub status: Option<u32>,
+    /// `allow`, `ask` or `deny` from the shared permission policy.
+    pub decision: String,
+}
+
+/// Canonical `tasks.list` tool. Read-only, so its default permission is Allow.
+pub fn tasks_list_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "tasks.list",
+        "List named tasks declared in the workspace devdeck.toml.",
+        serde_json::to_value(schemars::schema_for!(TasksListInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Low,
+        ToolSource::BuiltIn,
+    );
+    tool.output_schema = serde_json::to_value(schemars::schema_for!(TasksListOutput))
+        .expect("JSON Schema serialization cannot fail");
+    tool.command_palette_key = "tool-tasks-list".into();
+    tool.cli_subcommand = Some("tasks".into());
+    tool.activation_events = vec!["workspace.opened".into()];
+    tool
+}
+
+/// Canonical `tasks.run` tool. The command's approval is decided by
+/// `devdeck_core::PermissionPolicy::decide` in the task runner before F3 is
+/// allowed to start a PTY; dangerous commands are never auto-executed.
+pub fn tasks_run_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "tasks.run",
+        "Run a named task as a shell command in the workspace terminal.",
+        serde_json::to_value(schemars::schema_for!(TasksRunInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Medium,
+        ToolSource::BuiltIn,
+    );
+    tool.output_schema = serde_json::to_value(schemars::schema_for!(TasksRunOutput))
+        .expect("JSON Schema serialization cannot fail");
+    tool.command_palette_key = "tool-tasks-run".into();
+    tool.cli_subcommand = Some("task".into());
+    tool.activation_events = vec!["workspace.opened".into()];
+    tool
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -485,5 +562,34 @@ mod tests {
             registry.register(tool).unwrap();
         }
         assert_eq!(registry.len(), 4);
+    }
+
+    #[test]
+    fn task_tools_have_generated_schemas_and_register() {
+        let list = tasks_list_tool();
+        let run = tasks_run_tool();
+        assert_eq!(list.name, "tasks.list");
+        assert_eq!(run.name, "tasks.run");
+        assert_eq!(
+            list.input_schema["properties"]["workspace"]["type"],
+            "string"
+        );
+        assert_eq!(run.input_schema["properties"]["task"]["type"], "string");
+        assert_eq!(list.output_schema["properties"]["names"]["type"], "array");
+        assert_eq!(
+            run.output_schema["properties"]["status"]["type"],
+            json!(["integer", "null"])
+        );
+        assert_eq!(list.permission, PermissionLevel::Allow);
+        assert_eq!(run.permission, PermissionLevel::Allow);
+        assert_eq!(list.risk, RiskLevel::Low);
+        assert_eq!(run.risk, RiskLevel::Medium);
+        let mut registry = ToolRegistry::new();
+        registry.register(list).unwrap();
+        registry.register(run).unwrap();
+        assert_eq!(registry.len(), 2);
+        let json = registry.to_mcp_json();
+        assert_eq!(json[0]["name"], "tasks.list");
+        assert_eq!(json[1]["name"], "tasks.run");
     }
 }

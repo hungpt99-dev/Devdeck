@@ -25,6 +25,9 @@ use devdeck_tools::{terminal_spawn_tool, terminal_write_tool};
 use thiserror::Error;
 
 pub use grid::{DEFAULT_COLS, DEFAULT_ROWS, DEFAULT_SCROLLBACK_LINES as DEFAULT_SCROLLBACK};
+/// Exit status of a spawned command, re-exported so callers do not depend on
+/// the PTY implementation crate directly.
+pub use portable_pty::ExitStatus as CommandExitStatus;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct TerminalSettings {
@@ -143,6 +146,14 @@ impl Terminal {
             grid: Grid::new(settings.cols, settings.rows, settings.scrollback_lines),
             translator,
         })))
+    }
+
+    /// Non-blocking status of a spawned command. `None` while it is still
+    /// running; keep calling [`Self::pump`] while polling to drain output.
+    pub fn try_wait(&mut self) -> Result<Option<CommandExitStatus>, TerminalError> {
+        self.session
+            .try_wait()
+            .map_err(|error| session_error(&self.translator, error))
     }
 
     pub fn write(&mut self, bytes: &[u8]) -> Result<(), TerminalError> {
