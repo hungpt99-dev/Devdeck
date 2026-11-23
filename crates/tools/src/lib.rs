@@ -191,6 +191,82 @@ pub fn files_read_tool() -> ToolDefinition {
     tool
 }
 
+/// Input of `projects.open`: the workspace root to activate and remember.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct OpenProjectInput {
+    /// Absolute or workspace-relative path to the project root.
+    pub root: String,
+}
+
+/// Input of `projects.recent`; omitting `limit` returns the full bounded list.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema, Default)]
+#[serde(default)]
+pub struct RecentProjectsInput {
+    /// Maximum number of entries to return (the store itself caps at 10).
+    pub limit: Option<usize>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct ProjectSummary {
+    pub root: String,
+    /// Unix time in milliseconds.
+    pub last_opened: u64,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct OpenProjectOutput {
+    pub root: String,
+    pub languages: Vec<String>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct RecentProjectsOutput {
+    pub projects: Vec<ProjectSummary>,
+}
+
+/// Canonical `projects.open` tool: changes the active workspace and records a
+/// recent project, so it is auditable through the normal tool-call path.
+pub fn projects_open_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "projects.open",
+        "Open a project workspace and add it to recent projects.",
+        serde_json::to_value(schemars::schema_for!(OpenProjectInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Low,
+        ToolSource::BuiltIn,
+    );
+    tool.output_schema = serde_json::to_value(schemars::schema_for!(OpenProjectOutput))
+        .expect("JSON Schema serialization cannot fail");
+    tool.command_palette_key = "tool-projects-open".into();
+    tool.keybinding = Some("ctrl+shift+o".into());
+    tool.cli_subcommand = Some("open".into());
+    tool.mcp_exposed = true;
+    tool.activation_events = vec!["workspace.opened".into()];
+    tool
+}
+
+/// Canonical read-only `projects.recent` tool used by the shell and MCP.
+pub fn projects_recent_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "projects.recent",
+        "List recently opened project workspaces, newest first.",
+        serde_json::to_value(schemars::schema_for!(RecentProjectsInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Low,
+        ToolSource::BuiltIn,
+    );
+    tool.output_schema = serde_json::to_value(schemars::schema_for!(RecentProjectsOutput))
+        .expect("JSON Schema serialization cannot fail");
+    tool.command_palette_key = "tool-projects-recent".into();
+    tool.keybinding = Some("ctrl+shift+r".into());
+    tool.cli_subcommand = Some("recent".into());
+    tool.mcp_exposed = true;
+    tool.activation_events = Vec::new();
+    tool
+}
+
 /// Input of `terminal.spawn`. The workspace cwd comes from the active
 /// `WorkspaceInfo`, never from the caller, so a tool cannot escape the project.
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
@@ -335,6 +411,43 @@ mod tests {
         let json = registry.to_mcp_json();
         assert_eq!(json[0]["name"], "files.read");
         assert_eq!(json[0]["annotations"]["risk"], "low");
+    }
+
+    #[test]
+    fn project_tools_have_generated_schemas_and_full_metadata() {
+        let open = projects_open_tool();
+        let recent = projects_recent_tool();
+        assert_eq!(open.name, "projects.open");
+        assert_eq!(recent.name, "projects.recent");
+        assert_eq!(open.input_schema["properties"]["root"]["type"], "string");
+        assert!(recent.input_schema["properties"]["limit"]["type"]
+            .as_array()
+            .is_some_and(|types| types.iter().any(|t| t == "integer")));
+        assert!(recent.input_schema["required"].is_null());
+        assert_eq!(
+            open.output_schema["properties"]["languages"]["type"],
+            "array"
+        );
+        assert_eq!(
+            recent.output_schema["properties"]["projects"]["type"],
+            "array"
+        );
+        for tool in [&open, &recent] {
+            assert_eq!(tool.permission, PermissionLevel::Allow);
+            assert_eq!(tool.risk, RiskLevel::Low);
+            assert_eq!(tool.source, ToolSource::BuiltIn);
+            assert!(tool.mcp_exposed);
+            assert!(tool.keybinding.is_some());
+            assert!(tool.cli_subcommand.is_some());
+            assert!(!tool.command_palette_key.is_empty());
+        }
+        let mut registry = ToolRegistry::new();
+        registry.register(open).unwrap();
+        registry.register(recent).unwrap();
+        assert_eq!(registry.len(), 2);
+        let json = registry.to_mcp_json();
+        assert_eq!(json[0]["name"], "projects.open");
+        assert_eq!(json[1]["name"], "projects.recent");
     }
 
     #[test]
