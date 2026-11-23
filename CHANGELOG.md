@@ -10,3 +10,4 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 - Visual smoke screenshot under Xvfb (docs/screenshots/phase1-shell.png).
 - UI framework spikes for Iced 0.14 and GPUI 0.2.2 with measured results in ADR 0001.
 - Phase 2 (IND-216): read-only tool detection backend with `tools.detect`/`tools.list_detected`, typed failure reasons, fake-PATH tests and en/vi labels; no install or environment changes.
+- Phase 2 F5: workspace `devdeck.toml` task runner with typed `tasks.list`/`tasks.run` tools, F3 PTY execution, shared permission decision, localized errors and hash-chained audit entries (en/vi).

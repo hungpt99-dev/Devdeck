@@ -18,8 +18,9 @@ Scope: host core, extensions, agents, MCP/API servers, registry/updater, secrets
 | Config | Corruption / version skew | Atomic writes, schema version, forward migration, backup before destructive migration | [I] v0→v1 migration and atomic save |
 | Audit log | Tampering / secret leakage | SHA-256 hash chain, append-only JSONL, redaction before write | [I] |
 | Crash reports | Paths/secrets uploaded | Local-first, opt-in upload, scrubbed bundles | [G] Phase 7 |
+| Task runner | A workspace task escapes its project or a dangerous command auto-runs | Tasks live in `<workspace>/devdeck.toml`; cwd is always that workspace root and is never a config field; missing config is an error, not a fallback; exact command goes through `PermissionPolicy::decide` before F3 spawns a PTY; `Ask`/`Deny` never start a process; every attempt is hash-chained audited with a redacted command | [I] F5; [G] founder human review (Security Lead not approved) |
 
-Human review required before 1.0: sandbox design for native sidecars, MCP authentication, registry signing/key management, and prompt-injection defenses. IND-213's PTY engine and approval boundary additionally require founder human review (Security Lead not yet approved); the engine exposes a permission decision only and is not marked done until that review and QA's verdict are recorded.
+Human review required before 1.0: sandbox design for native sidecars, MCP authentication, registry signing/key management, and prompt-injection defenses. IND-213's PTY engine and approval boundary additionally require founder human review (Security Lead not yet approved); the engine exposes a permission decision only and is not marked done until that review and QA's verdict are recorded. IND-215's task execution and approval flow requires the same founder human review; it is not marked done until that review and QA's verdict are recorded.
 
 ## IND-213 terminal engine — implementation note (2026-11-22)
 

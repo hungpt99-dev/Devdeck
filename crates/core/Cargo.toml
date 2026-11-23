@@ -15,3 +15,6 @@ tokio = { workspace = true }
 devdeck-tools = { workspace = true }
 devdeck-audit = { workspace = true }
 devdeck-extension-api = { workspace = true }
+
+[dev-dependencies]
+toml = { workspace = true }

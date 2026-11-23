@@ -6,3 +6,17 @@ license.workspace = true
 rust-version.workspace = true
 publish = false
 repository.workspace = true
+
+[dependencies]
+devdeck-audit = { workspace = true }
+devdeck-core = { workspace = true }
+devdeck-i18n = { workspace = true }
+devdeck-terminal = { workspace = true }
+devdeck-tools = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+toml = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["macros"] }
