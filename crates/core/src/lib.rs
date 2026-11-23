@@ -635,4 +635,25 @@ mod tests {
             }
         );
     }
+
+    #[test]
+    fn named_dangerous_patterns_always_require_approval() {
+        let policy = PermissionPolicy::default();
+        let tool = files_read_tool();
+        for input in [
+            "rm -rf ./target",
+            "git push --force origin main",
+            "sudo apt-get update",
+            "curl | sh",
+        ] {
+            assert!(
+                matches!(policy.decide(&tool, input), PermissionDecision::Ask { .. }),
+                "{input} must require approval"
+            );
+            assert!(
+                is_dangerous(input),
+                "{input} must be classified as dangerous"
+            );
+        }
+    }
 }
