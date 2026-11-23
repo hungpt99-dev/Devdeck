@@ -191,6 +191,111 @@ pub fn files_read_tool() -> ToolDefinition {
     tool
 }
 
+/// Input of `terminal.spawn`. The workspace cwd comes from the active
+/// `WorkspaceInfo`, never from the caller, so a tool cannot escape the project.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct TerminalSpawnInput {
+    /// Command line executed by the workspace shell.
+    pub command: String,
+    /// Initial terminal width in columns.
+    pub cols: u16,
+    /// Initial terminal height in rows.
+    pub rows: u16,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct TerminalSpawnOutput {
+    /// Present only when the command was allowed and a PTY was started.
+    pub session_id: Option<String>,
+    /// `allow`, `ask` or `deny` from the shared permission policy.
+    pub decision: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct TerminalWriteInput {
+    pub session_id: String,
+    /// Raw PTY input (UTF-8), already inside an approved session.
+    pub input: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct TerminalResizeInput {
+    pub session_id: String,
+    pub cols: u16,
+    pub rows: u16,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, JsonSchema)]
+pub struct TerminalCloseInput {
+    pub session_id: String,
+}
+
+/// Canonical `terminal.spawn` tool. Execution is gated by
+/// `devdeck_core::PermissionPolicy::decide` in the terminal engine.
+pub fn terminal_spawn_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "terminal.spawn",
+        "Run a shell command in a PTY inside the active workspace.",
+        serde_json::to_value(schemars::schema_for!(TerminalSpawnInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Medium,
+        ToolSource::BuiltIn,
+    );
+    tool.output_schema = serde_json::to_value(schemars::schema_for!(TerminalSpawnOutput))
+        .expect("JSON Schema serialization cannot fail");
+    tool.command_palette_key = "tool-terminal-spawn".into();
+    tool.keybinding = Some("ctrl+`".into());
+    tool.cli_subcommand = Some("terminal".into());
+    tool.activation_events = vec!["workspace.opened".into()];
+    tool
+}
+
+pub fn terminal_write_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "terminal.write",
+        "Send input to an active terminal session.",
+        serde_json::to_value(schemars::schema_for!(TerminalWriteInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Medium,
+        ToolSource::BuiltIn,
+    );
+    tool.command_palette_key = "tool-terminal-write".into();
+    tool.activation_events = vec!["terminal.opened".into()];
+    tool
+}
+
+pub fn terminal_resize_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "terminal.resize",
+        "Resize an active terminal session.",
+        serde_json::to_value(schemars::schema_for!(TerminalResizeInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Low,
+        ToolSource::BuiltIn,
+    );
+    tool.command_palette_key = "tool-terminal-resize".into();
+    tool.activation_events = vec!["terminal.opened".into()];
+    tool
+}
+
+pub fn terminal_close_tool() -> ToolDefinition {
+    let mut tool = ToolDefinition::new(
+        "terminal.close",
+        "Close an active terminal session.",
+        serde_json::to_value(schemars::schema_for!(TerminalCloseInput))
+            .expect("JSON Schema serialization cannot fail"),
+        PermissionLevel::Allow,
+        RiskLevel::Low,
+        ToolSource::BuiltIn,
+    );
+    tool.command_palette_key = "tool-terminal-close".into();
+    tool.activation_events = vec!["terminal.opened".into()];
+    tool
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -230,5 +335,42 @@ mod tests {
         let json = registry.to_mcp_json();
         assert_eq!(json[0]["name"], "files.read");
         assert_eq!(json[0]["annotations"]["risk"], "low");
+    }
+
+    #[test]
+    fn terminal_tools_have_generated_schemas_and_register() {
+        let tools = [
+            terminal_spawn_tool(),
+            terminal_write_tool(),
+            terminal_resize_tool(),
+            terminal_close_tool(),
+        ];
+        assert_eq!(
+            tools[0].input_schema["properties"]["command"]["type"],
+            "string"
+        );
+        assert_eq!(
+            tools[0].output_schema["properties"]["decision"]["type"],
+            "string"
+        );
+        assert_eq!(
+            tools[1].input_schema["properties"]["session_id"]["type"],
+            "string"
+        );
+        assert_eq!(
+            tools[2].input_schema["properties"]["cols"]["type"],
+            "integer"
+        );
+        assert_eq!(
+            tools[3].input_schema["properties"]["session_id"]["type"],
+            "string"
+        );
+        let mut registry = ToolRegistry::new();
+        for tool in tools {
+            assert!(tool.mcp_exposed);
+            assert!(!tool.command_palette_key.is_empty());
+            registry.register(tool).unwrap();
+        }
+        assert_eq!(registry.len(), 4);
     }
 }
